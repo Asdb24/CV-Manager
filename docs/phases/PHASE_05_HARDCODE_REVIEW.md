@@ -1,9 +1,20 @@
-# PHASE 05 HARDCODE REVIEW
+# Phase 05 hardcode review
 
-Date:2026-10-14. Predecessor:current source-matched Phase04 PASS;185 hashes verified before edits.
+Date: 2026-10-14. Owner: main agent. This is a manual review of changed CI paths, not an independent review or a claim that the entire repository has zero literals. The 35 located candidates are in [candidate evidence](evidence-05/hardcode-candidates.json); action SHA and fixed policy definitions were also inspected directly.
 
-Phase05 owns45-phase continuation/ledger and real qualityCI. Main agent implements/checks;no subagent or independent review is required or invoked. Local checks,reviewed delivery,default-branch registration and actual manually dispatched run must complete.
+| Active path / value class | Disposition and owner | Verification |
+| --- | --- | --- |
+| Approved repository URLs/name in the manifest, workflow admission and validator | Required Phase 05 delivery identity from the supplied prompt. It cannot select an application origin. Repetition is checked against the closed manifest. | Foreign repository rejected; actual dispatch reports approved repo and reviewed SHA. |
+| Hosted Windows runner, work-ref prefix, read permissions, no caches, fixed release owners | Phase-owned trust/scope constraints. Do not expose a setting that admits recipient-PC/self-hosted release packaging, secrets, automatic Releases or deployment. | YAML/manifest structural checks and unsafe runner/permission/cache/trigger/pin tests. |
+| Full SHA action pins, exact Node/npm/Python/uv/Rust and YAML parser versions | Reproducibility/security pins, sourced from official repositories/toolchain and locked package metadata. YAML declarations and installation commands must match the manifest. | Four official commit records and MIT licenses; yaml 2.9.1 ISC; local and hosted frozen installs. |
+| Job timeout and local output-capture capacity | Operational values centralized in `contracts/quality-ci.json`: 30 minutes and 32 MiB. The local recorder reads the manifest. The validator's 1–120 minute and 1 byte–128 MiB limits are explicit CI admission bounds owned by Phase 05. | Distinct valid 20-minute/16-MiB configuration; every missing field and zero/over-limit/invalid values rejected. Capture failure cannot return checkpoint PASS. |
+| Repository root, Python path and synthetic frontend build configuration | Resolve root from source/native working context; workflow uses `github.workspace` and explicit `infra/config/test.json`/test profile. No personal workstation path, default account, runtime server fallback or model download is added. | Actual Vite build using validated test configuration; clean hosted checkout and existing runtime config checks. |
+| Closed manifest version, exact task list, safe failure codes and 40-hex SHA grammar | Fixed CI state/protocol definitions and existing quality commands. They cannot disable lint, typing or test assertions. | Malformed YAML, missing/unsafe manifest and moving action tags rejected. |
+| Synthetic negative-test values and existing test fixture references | Test-only inputs; no release account or personal dataset. Existing backend, scoring and migration fixtures remain unchanged. | Unit contract tests; protected delivery scan excludes private credentials/runtime/data. |
+| Raw byte preservation via `.gitattributes` | Preserve immutable migration/evidence bytes across Windows Git checkouts. Formatting and lint still run their existing rules. CRLF and historical prompt whitespace are retained deliberately. | 56 migration hashes unchanged; 180/185 final Phase 04 manifest entries unchanged, five changes are phase-owned docs/lock/task wiring. New Phase 05 owned diff whitespace check passes with CR-at-EOL recognition. |
 
-No UI,installer,model/runtime payloads,database/account/schema changes,paid service or deployment. Future behavior remains UNVERIFIED under the45-phase roadmap.
+Changed paths contain no business/UI origin, personal path, account/password or scoring literal. Main traced the workflow → manifest validator → existing tasks → synthetic asset preparation and local recorder, and reviewed resulting delivery exclusions. The regex output is supporting discovery only. Real database/auth/migration evidence remains with Phase 03/04; this phase does not alter or re-prove those implementations.
+
+Actual hosted outcome remains pending in the verification report. Future runtime/build/offline/HTTPS behavior remains UNVERIFIED at owners 21–25/34–44.
 
 Gate decision: STOP

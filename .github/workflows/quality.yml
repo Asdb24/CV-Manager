@@ -69,6 +69,12 @@ jobs:
         run: node scripts/quality-ci.mjs validate --manifest contracts/quality-ci.json
       - name: Format
         run: node scripts/tasks.mjs format:check
+      - name: Prepare existing desktop assets for Rust checks
+        working-directory: apps/desktop
+        env:
+          APP_CONFIG_FILE: ${{ github.workspace }}/infra/config/test.json
+          APP_PROFILE: test
+        run: node ../../node_modules/vite/bin/vite.js build
       - name: Lint
         run: node scripts/tasks.mjs lint
       - name: Types

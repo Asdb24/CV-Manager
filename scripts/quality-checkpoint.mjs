@@ -20,7 +20,7 @@ for (const task of manifest.quality_tasks) {
     cwd: root,
     encoding: "utf8",
     shell: false,
-    maxBuffer: 32 * 1024 * 1024,
+    maxBuffer: manifest.log_capture_max_bytes,
   });
   writeFileSync(
     path.join(evidence, `${task.replace(":", "-")}.log`),

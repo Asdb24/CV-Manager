@@ -21,6 +21,7 @@ export function validateQuality(manifest, workflowText) {
     "git_remote",
     "runner",
     "job_timeout_minutes",
+    "log_capture_max_bytes",
     "ref_prefix",
     "tools",
     "actions",
@@ -47,6 +48,11 @@ export function validateQuality(manifest, workflowText) {
     Number.isInteger(manifest.job_timeout_minutes) &&
       manifest.job_timeout_minutes > 0 &&
       manifest.job_timeout_minutes <= 120,
+  );
+  assert(
+    Number.isInteger(manifest.log_capture_max_bytes) &&
+      manifest.log_capture_max_bytes > 0 &&
+      manifest.log_capture_max_bytes <= 128 * 1024 * 1024,
   );
   assert.deepEqual(
     Object.keys(manifest.actions).sort(),
@@ -140,6 +146,15 @@ export function validateQuality(manifest, workflowText) {
     ),
   );
   assert(install.includes("cargo fetch --locked"));
+  const assets = job.steps.find(
+    (step) => step.name === "Prepare existing desktop assets for Rust checks",
+  );
+  assert.equal(assets["working-directory"], "apps/desktop");
+  assert.equal(assets.run, "node ../../node_modules/vite/bin/vite.js build");
+  assert.deepEqual(assets.env, {
+    APP_CONFIG_FILE: "${{ github.workspace }}/infra/config/test.json",
+    APP_PROFILE: "test",
+  });
   for (const task of manifest.quality_tasks)
     assert(
       job.steps.some((step) => step.run === `node scripts/tasks.mjs ${task}`),

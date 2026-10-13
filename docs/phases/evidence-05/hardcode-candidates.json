@@ -1,0 +1,177 @@
+[
+  {
+    "path": ".github/workflows/quality.yml",
+    "line": 20,
+    "text": "runs-on: windows-2025"
+  },
+  {
+    "path": ".github/workflows/quality.yml",
+    "line": 21,
+    "text": "timeout-minutes: 30"
+  },
+  {
+    "path": ".github/workflows/quality.yml",
+    "line": 33,
+    "text": "if ($env:REPOSITORY -cne 'Asdb24/CV-Manager') { throw 'REPOSITORY_MISMATCH' }"
+  },
+  {
+    "path": ".github/workflows/quality.yml",
+    "line": 34,
+    "text": "if ($env:SOURCE_REF -cnotmatch '^refs/heads/codex/[a-z0-9-]+$') { throw 'REVIEWED_WORK_BRANCH_REQUIRED' }"
+  },
+  {
+    "path": ".github/workflows/quality.yml",
+    "line": 44,
+    "text": "node-version: 26.8.2"
+  },
+  {
+    "path": ".github/workflows/quality.yml",
+    "line": 48,
+    "text": "python-version: 3.13.15"
+  },
+  {
+    "path": ".github/workflows/quality.yml",
+    "line": 52,
+    "text": "version: 0.12.19"
+  },
+  {
+    "path": ".github/workflows/quality.yml",
+    "line": 56,
+    "text": "npm.cmd install --global npm@12.0.2 --ignore-scripts"
+  },
+  {
+    "path": ".github/workflows/quality.yml",
+    "line": 58,
+    "text": "rustup toolchain install 1.98.1-x86_64-pc-windows-msvc --profile minimal --component rustfmt --component clippy"
+  },
+  {
+    "path": ".github/workflows/quality.yml",
+    "line": 60,
+    "text": "rustup default 1.98.1-x86_64-pc-windows-msvc"
+  },
+  {
+    "path": ".github/workflows/quality.yml",
+    "line": 64,
+    "text": "uv sync --frozen --group dev --python 3.13.15"
+  },
+  {
+    "path": ".github/workflows/quality.yml",
+    "line": 75,
+    "text": "APP_CONFIG_FILE: ${{ github.workspace }}/infra/config/test.json"
+  },
+  {
+    "path": "contracts/quality-ci.json",
+    "line": 3,
+    "text": "\"repository\": \"Asdb24/CV-Manager\","
+  },
+  {
+    "path": "contracts/quality-ci.json",
+    "line": 4,
+    "text": "\"repository_url\": \"https://github.com/Asdb24/CV-Manager\","
+  },
+  {
+    "path": "contracts/quality-ci.json",
+    "line": 5,
+    "text": "\"git_remote\": \"https://github.com/Asdb24/CV-Manager.git\","
+  },
+  {
+    "path": "contracts/quality-ci.json",
+    "line": 6,
+    "text": "\"runner\": \"windows-2025\","
+  },
+  {
+    "path": "contracts/quality-ci.json",
+    "line": 7,
+    "text": "\"job_timeout_minutes\": 30,"
+  },
+  {
+    "path": "contracts/quality-ci.json",
+    "line": 8,
+    "text": "\"ref_prefix\": \"refs/heads/codex/\","
+  },
+  {
+    "path": "contracts/quality-ci.json",
+    "line": 10,
+    "text": "\"node\": \"26.8.2\","
+  },
+  {
+    "path": "contracts/quality-ci.json",
+    "line": 11,
+    "text": "\"npm\": \"12.0.2\","
+  },
+  {
+    "path": "contracts/quality-ci.json",
+    "line": 12,
+    "text": "\"python\": \"3.13.15\","
+  },
+  {
+    "path": "contracts/quality-ci.json",
+    "line": 13,
+    "text": "\"uv\": \"0.12.19\","
+  },
+  {
+    "path": "contracts/quality-ci.json",
+    "line": 14,
+    "text": "\"rust\": \"1.98.1\""
+  },
+  {
+    "path": "scripts/quality-ci.mjs",
+    "line": 8,
+    "text": "const approved = \"Asdb24/CV-Manager\";"
+  },
+  {
+    "path": "scripts/quality-ci.mjs",
+    "line": 42,
+    "text": "assert.equal(manifest.repository_url, `https://github.com/${approved}`);"
+  },
+  {
+    "path": "scripts/quality-ci.mjs",
+    "line": 43,
+    "text": "assert.equal(manifest.git_remote, `https://github.com/${approved}.git`);"
+  },
+  {
+    "path": "scripts/quality-ci.mjs",
+    "line": 44,
+    "text": "assert.equal(manifest.runner, \"windows-2025\");"
+  },
+  {
+    "path": "scripts/quality-ci.mjs",
+    "line": 45,
+    "text": "assert.equal(manifest.ref_prefix, \"refs/heads/codex/\");"
+  },
+  {
+    "path": "scripts/quality-ci.mjs",
+    "line": 50,
+    "text": "manifest.job_timeout_minutes <= 120,"
+  },
+  {
+    "path": "scripts/quality-ci.mjs",
+    "line": 55,
+    "text": "manifest.log_capture_max_bytes <= 128 * 1024 * 1024,"
+  },
+  {
+    "path": "scripts/quality-ci.mjs",
+    "line": 155,
+    "text": "APP_CONFIG_FILE: \"${{ github.workspace }}/infra/config/test.json\","
+  },
+  {
+    "path": "tests/quality-ci.mjs",
+    "line": 11,
+    "text": "second.job_timeout_minutes = 20;"
+  },
+  {
+    "path": "tests/quality-ci.mjs",
+    "line": 12,
+    "text": "second.log_capture_max_bytes = 16 * 1024 * 1024;"
+  },
+  {
+    "path": "tests/quality-ci.mjs",
+    "line": 13,
+    "text": "secondWorkflow.jobs.quality[\"timeout-minutes\"] = 20;"
+  },
+  {
+    "path": "tests/quality-ci.mjs",
+    "line": 31,
+    "text": "m.log_capture_max_bytes = 129 * 1024 * 1024;"
+  }
+]

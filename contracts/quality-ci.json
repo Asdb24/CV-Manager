@@ -24,5 +24,6 @@
   "release_packaging_owner": "40",
   "payload_recipe_owner": "34",
   "offline_qualification_owner": "41",
-  "https_qualification_owner": "42"
+  "https_qualification_owner": "42",
+  "log_capture_max_bytes": 33554432
 }

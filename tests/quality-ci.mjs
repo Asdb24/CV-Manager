@@ -9,6 +9,7 @@ assert.equal(validateQuality(manifest, text).valid, true);
 const second = structuredClone(manifest);
 const secondWorkflow = parse(text);
 second.job_timeout_minutes = 20;
+second.log_capture_max_bytes = 16 * 1024 * 1024;
 secondWorkflow.jobs.quality["timeout-minutes"] = 20;
 assert.equal(validateQuality(second, stringify(secondWorkflow)).valid, true);
 for (const field of Object.keys(manifest)) {
@@ -22,6 +23,12 @@ for (const change of [
   },
   (m) => {
     m.job_timeout_minutes = 0;
+  },
+  (m) => {
+    m.log_capture_max_bytes = 0;
+  },
+  (m) => {
+    m.log_capture_max_bytes = 129 * 1024 * 1024;
   },
   (m) => {
     m.cache_policy = "trust-any-hit";

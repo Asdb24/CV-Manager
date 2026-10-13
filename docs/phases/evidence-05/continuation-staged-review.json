@@ -1,0 +1,23 @@
+{
+  "reason": "prepare real existing Vite assets required by fresh Tauri lint; centrally validate local capture bound",
+  "files": [
+    ".github/workflows/quality.yml",
+    "contracts/quality-ci.json",
+    "docs/DECISIONS.md",
+    "docs/ci/QUALITY_WORKFLOW.md",
+    "docs/phases/PHASE_05_HARDCODE_REVIEW.md",
+    "docs/phases/evidence-05/hardcode-candidates.json",
+    "docs/phases/evidence-05/lint.log",
+    "docs/phases/evidence-05/local-commands.json",
+    "docs/phases/evidence-05/source-delivery.json",
+    "docs/phases/evidence-05/test.log",
+    "scripts/quality-checkpoint.mjs",
+    "scripts/quality-ci.mjs",
+    "tests/quality-ci.mjs"
+  ],
+  "parent": "6fee8bea8ccdd2509dce60145d5c774f0744713c",
+  "previous_run": 38451060914,
+  "checks": "current four-command local checkpoint PASS, CI validator and two valid/missing/invalid cases PASS",
+  "secret_scan": "protected values and token/private-key patterns zero matches",
+  "status": "main reviewed; no independent review"
+}
