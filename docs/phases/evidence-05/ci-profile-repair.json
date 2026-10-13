@@ -1,0 +1,19 @@
+{
+  "cause": "CI dev-only group lacked httpx2; Starlette 1.7.0 TYPE_CHECKING imports httpx2, while runtime can fall back to deprecated httpx",
+  "before": "isolated frozen dev-only mypy --no-incremental failed no-any-return at tests/auth/test_identity.py:28; full selected environment passes",
+  "repair": "explicit dev httpx2==2.13.1, already present at that version in the full lock",
+  "locked_package_versions_changed": 0,
+  "auth_test_or_backend_source_changes": 0,
+  "phase04_manifest_changed_paths": [
+    "AGENTS.md",
+    "docs/DECISIONS.md",
+    "docs/STATUS.md",
+    "package-lock.json",
+    "pyproject.toml",
+    "scripts/tasks.mjs",
+    "uv.lock"
+  ],
+  "official_testclient": "https://starlette.dev/testclient/",
+  "official_package": "https://pypi.org/project/httpx2/2.13.1/",
+  "license": "BSD-3-Clause"
+}

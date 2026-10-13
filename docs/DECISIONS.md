@@ -153,10 +153,14 @@ These append to the earlier implementation assessment; they do not retroactively
 
 | ID | Status/owner | Decision and evidence |
 | --- | --- | --- |
-| ADR-057 | AGREED/05 | Supplied Phase 05 supersedes remaining 18-phase numbering. User chose main-defined 45-phase roadmap constrained by06/34/40/41/42. 86 stable IDs/history remain; individual current owners are in ACCEPTANCE_LEDGER. No authentication replay or migration change. |
-| ADR-058 | AGREED/05 | Release packaging exclusively GitHub-hosted Windows x64: recipes34, real remote build/artifacts40, cleanoffline Phase 41, approvedHTTPS Phase 42. NSIS/per-user/retained LocalAppData and single-EXE portable/local NTFS sibling workspace are required. Local development checks/inference qualification remain allowed; no local release substitution. |
-| ADR-059 | IMPLEMENTED, CI PENDING/05 | Approved new-project repo is Asdb24/CV-Manager. Existing main history contains only README at 0d8ce319b6e462785d0b1e8b4a87f3dac85f6041 and is preserved. Local root was not Git; 185 Phase 04 hashes matched. Scoped qualityCI uses manual dispatch, explicit SHA, a codex branch, hosted Windows, read permissions, pinned actions/tools and disabled caches. No public Release/deployment. |
+| ADR-057 | AGREED/05 | Supplied Phase 05 supersedes remaining 18-phase numbering. User chose main-defined 45-phase roadmap constrained by 06/34/40/41/42. 86 stable IDs/history remain; individual current owners are in ACCEPTANCE_LEDGER. No authentication replay or migration change. |
+| ADR-058 | AGREED/05 | Release packaging exclusively GitHub-hosted Windows x64: recipes 34, real remote builds/artifacts 40, clean offline 41, approved HTTPS 42. NSIS/per-user/retained LocalAppData and single-EXE portable/local NTFS sibling workspace are required. Local development checks/inference qualification remain allowed; no local release substitution. |
+| ADR-059 | IMPLEMENTED, CI PENDING/05 | Approved new-project repo is Asdb24/CV-Manager. Existing main history contains only README at 0d8ce319b6e462785d0b1e8b4a87f3dac85f6041 and is preserved. Local root was not Git; 185 Phase 04 hashes matched. Scoped quality CI uses manual dispatch, explicit SHA, a codex branch, hosted Windows, read permissions, pinned actions/tools and disabled caches. No public Release/deployment. |
 
 | ID | Status / owner | Decision and evidence |
 | --- | --- | --- |
 | ADR-060 | IMPLEMENTED / 05 | Fresh hosted lint requires real Vite shell assets because Tauri code generation embeds the configured frontend directory. Prepare them with the validated synthetic test profile before existing Rust Clippy. This adds no UI feature, installer or runtime payload. CI timeout/capture values are central settings; safe admission ranges are 1–120 minutes and up to 128 MiB of local captured output. |
+
+| ID | Status / owner | Decision and evidence |
+| --- | --- | --- |
+| ADR-061 | REPAIRED, CI PENDING / 05 | The deliberately reduced CI dev profile omitted httpx2, while Starlette 1.7.0 imports it for TYPE_CHECKING. Its runtime httpx fallback explains the isolated unit success and type failure. Pin the already locked httpx2 2.13.1 directly in dev; no package version, auth/test source or assertion changes. Fresh dev-only mypy without cache and 73 tests pass; actual hosted re-verification remains required. |

@@ -11,7 +11,7 @@ tests\python\test_foundation.py ........................................ [ 73%]
 ..............                                                           [ 93%]
 tests\python\test_owned_inputs.py .....                                  [100%]
 
-============================= 73 passed in 2.77s ==============================
+============================= 73 passed in 2.78s ==============================
 MEMORY_SESSION_REALM_EXPIRY_AND_STALE_REPLY_CONTRACT: PASS (no native keyring claim)
 QUALITY_CI_MANIFEST_AND_WORKFLOW: PASS; two valid configurations and missing/unsafe cases rejected
 REAL API/WORKER START, UNAVAILABLE READINESS, STRICT PORT AND OWNED STOP: PASS

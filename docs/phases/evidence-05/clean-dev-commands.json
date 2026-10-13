@@ -1,0 +1,19 @@
+[
+  {
+    "environment": ".local/phase05/ci-venv (ignored)",
+    "command": [
+      "-m",
+      "mypy",
+      "--no-incremental"
+    ],
+    "exit_code": 0
+  },
+  {
+    "environment": ".local/phase05/ci-venv (ignored)",
+    "command": [
+      "-m",
+      "pytest"
+    ],
+    "exit_code": 0
+  }
+]
