@@ -1,0 +1,501 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\DHTT\\Downloads\\Download\\do an cn\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "-c",
+      "tests/ui/playwright.config.ts"
+    ],
+    "configFile": "C:\\Users\\DHTT\\Downloads\\Download\\do an cn\\tests\\ui\\playwright.config.ts",
+    "rootDir": "C:/Users/DHTT/Downloads/Download/do an cn/tests/ui",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/DHTT/Downloads/Download/do an cn/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/DHTT/Downloads/Download/do an cn/tests/ui",
+        "testIgnore": [],
+        "testMatch": [
+          "shell.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\DHTT\\Downloads\\Download\\do an cn\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "C:\\Users\\DHTT\\Downloads\\Download\\do an cn\\tests\\ui",
+        "snapshotDir": "C:\\Users\\DHTT\\Downloads\\Download\\do an cn\\tests\\ui",
+        "testIgnore": [],
+        "testMatch": "shell.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "browserName": "chromium",
+          "headless": true,
+          "deviceScaleFactor": 1
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "C:\\Users\\DHTT\\Downloads\\Download\\do an cn\\.local\\ui-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "shell.spec.ts",
+      "file": "shell.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "desktop 1280x800 light: actual shell and connection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 777,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T18:05:29.320Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "computed-enabled-button-contrast",
+                      "contentType": "application/json",
+                      "body": "W3sibGFiZWwiOiJU4buVbmcgcXVhbiIsInJhdGlvIjo1LjM4NDM5MzAxMzM3MzU3Mn0seyJsYWJlbCI6Ikvhur90IG7hu5FpIiwicmF0aW8iOjkuNjI4MzU2NTQyNTIzODF9LHsibGFiZWwiOiJLaeG7g20gdHJhIGvhur90IG7hu5FpIiwicmF0aW8iOjUuMzg0MzkzMDEzMzczNTcyfV0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3420664513cb0bae123e-6217de2eabbad35c408f",
+          "file": "shell.spec.ts",
+          "line": 30,
+          "column": 7
+        },
+        {
+          "title": "desktop 1024x768 light: actual shell and connection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 506,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T18:05:30.261Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "computed-enabled-button-contrast",
+                      "contentType": "application/json",
+                      "body": "W3sibGFiZWwiOiJU4buVbmcgcXVhbiIsInJhdGlvIjo1LjM4NDM5MzAxMzM3MzU3Mn0seyJsYWJlbCI6Ikvhur90IG7hu5FpIiwicmF0aW8iOjkuNjI4MzU2NTQyNTIzODF9LHsibGFiZWwiOiJLaeG7g20gdHJhIGvhur90IG7hu5FpIiwicmF0aW8iOjUuMzg0MzkzMDEzMzczNTcyfV0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3420664513cb0bae123e-b5be0b184f836314f489",
+          "file": "shell.spec.ts",
+          "line": 30,
+          "column": 7
+        },
+        {
+          "title": "public 390x844 light: actual shell and connection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 512,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T18:05:30.786Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "computed-enabled-button-contrast",
+                      "contentType": "application/json",
+                      "body": "W3sibGFiZWwiOiJLaeG7g20gdHJhIGvhur90IG7hu5FpIiwicmF0aW8iOjUuMzg0MzkzMDEzMzczNTcyfV0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3420664513cb0bae123e-a2c00b6cee670f76e761",
+          "file": "shell.spec.ts",
+          "line": 30,
+          "column": 7
+        },
+        {
+          "title": "public 360x800 light: actual shell and connection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 505,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T18:05:31.314Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "computed-enabled-button-contrast",
+                      "contentType": "application/json",
+                      "body": "W3sibGFiZWwiOiJLaeG7g20gdHJhIGvhur90IG7hu5FpIiwicmF0aW8iOjUuMzg0MzkzMDEzMzczNTcyfV0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3420664513cb0bae123e-084e10846116feeff827",
+          "file": "shell.spec.ts",
+          "line": 30,
+          "column": 7
+        },
+        {
+          "title": "desktop 1280x800 dark: actual shell and connection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 552,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T18:05:31.838Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "computed-enabled-button-contrast",
+                      "contentType": "application/json",
+                      "body": "W3sibGFiZWwiOiJU4buVbmcgcXVhbiIsInJhdGlvIjo2LjY1ODY2NzEzMjA4Njk1NH0seyJsYWJlbCI6Ikvhur90IG7hu5FpIiwicmF0aW8iOjExLjM0MDk2NTk4NDEzMjM2Nn0seyJsYWJlbCI6Iktp4buDbSB0cmEga+G6v3QgbuG7kWkiLCJyYXRpbyI6Ni42NTg2NjcxMzIwODY5NTR9XQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3420664513cb0bae123e-3af812138df0382fbff2",
+          "file": "shell.spec.ts",
+          "line": 30,
+          "column": 7
+        },
+        {
+          "title": "desktop 1024x768 dark: actual shell and connection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 478,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T18:05:32.407Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "computed-enabled-button-contrast",
+                      "contentType": "application/json",
+                      "body": "W3sibGFiZWwiOiJU4buVbmcgcXVhbiIsInJhdGlvIjo2LjY1ODY2NzEzMjA4Njk1NH0seyJsYWJlbCI6Ikvhur90IG7hu5FpIiwicmF0aW8iOjExLjM0MDk2NTk4NDEzMjM2Nn0seyJsYWJlbCI6Iktp4buDbSB0cmEga+G6v3QgbuG7kWkiLCJyYXRpbyI6Ni42NTg2NjcxMzIwODY5NTR9XQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3420664513cb0bae123e-6a621a4a96c8c5b52d06",
+          "file": "shell.spec.ts",
+          "line": 30,
+          "column": 7
+        },
+        {
+          "title": "public 390x844 dark: actual shell and connection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 451,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T18:05:32.898Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "computed-enabled-button-contrast",
+                      "contentType": "application/json",
+                      "body": "W3sibGFiZWwiOiJLaeG7g20gdHJhIGvhur90IG7hu5FpIiwicmF0aW8iOjYuNjU4NjY3MTMyMDg2OTU0fV0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3420664513cb0bae123e-97965bfa62a756406696",
+          "file": "shell.spec.ts",
+          "line": 30,
+          "column": 7
+        },
+        {
+          "title": "public 360x800 dark: actual shell and connection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 523,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T18:05:33.370Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "computed-enabled-button-contrast",
+                      "contentType": "application/json",
+                      "body": "W3sibGFiZWwiOiJLaeG7g20gdHJhIGvhur90IG7hu5FpIiwicmF0aW8iOjYuNjU4NjY3MTMyMDg2OTU0fV0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3420664513cb0bae123e-f17c7339ef92401ca6f2",
+          "file": "shell.spec.ts",
+          "line": 30,
+          "column": 7
+        },
+        {
+          "title": "desktop discard an old reply after changing selection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 466,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T18:05:33.906Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3420664513cb0bae123e-f1343a6ce546759b65fa",
+          "file": "shell.spec.ts",
+          "line": 147,
+          "column": 1
+        },
+        {
+          "title": "public connection loss is actionable and exposes no data",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 354,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T18:05:34.390Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3420664513cb0bae123e-16a64bb572bba802dc3f",
+          "file": "shell.spec.ts",
+          "line": 199,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-12T18:05:18.870Z",
+    "duration": 16685.155,
+    "expected": 10,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

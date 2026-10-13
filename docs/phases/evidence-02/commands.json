@@ -1,0 +1,107 @@
+[
+  {
+    "name": "install-frozen",
+    "command": "node scripts/tasks.mjs install:frozen",
+    "startedAt": "2026-10-12T17:59:53.865Z",
+    "finishedAt": "2026-10-12T18:02:12.765Z",
+    "exitCode": 0
+  },
+  {
+    "name": "format",
+    "command": "node scripts/tasks.mjs format:check",
+    "startedAt": "2026-10-12T18:02:12.767Z",
+    "finishedAt": "2026-10-12T18:02:14.415Z",
+    "exitCode": 0
+  },
+  {
+    "name": "lint",
+    "command": "node scripts/tasks.mjs lint",
+    "startedAt": "2026-10-12T18:02:14.416Z",
+    "finishedAt": "2026-10-12T18:02:25.895Z",
+    "exitCode": 0
+  },
+  {
+    "name": "typecheck",
+    "command": "node scripts/tasks.mjs typecheck",
+    "startedAt": "2026-10-12T18:02:25.896Z",
+    "finishedAt": "2026-10-12T18:02:52.697Z",
+    "exitCode": 0
+  },
+  {
+    "name": "test",
+    "command": "node scripts/tasks.mjs test",
+    "startedAt": "2026-10-12T18:02:52.698Z",
+    "finishedAt": "2026-10-12T18:03:36.835Z",
+    "exitCode": 0
+  },
+  {
+    "name": "client",
+    "command": "node scripts/clients.mjs check",
+    "startedAt": "2026-10-12T18:03:36.835Z",
+    "finishedAt": "2026-10-12T18:03:58.094Z",
+    "exitCode": 0
+  },
+  {
+    "name": "migration",
+    "command": "node scripts/tasks.mjs migration:check",
+    "startedAt": "2026-10-12T18:03:58.094Z",
+    "finishedAt": "2026-10-12T18:03:59.493Z",
+    "exitCode": 0
+  },
+  {
+    "name": "infra",
+    "command": "node scripts/tasks.mjs infra:check",
+    "startedAt": "2026-10-12T18:03:59.494Z",
+    "finishedAt": "2026-10-12T18:04:03.727Z",
+    "exitCode": 0
+  },
+  {
+    "name": "build",
+    "command": "node scripts/tasks.mjs build --config infra/config/development.json --profile development",
+    "startedAt": "2026-10-12T18:04:03.728Z",
+    "finishedAt": "2026-10-12T18:04:44.174Z",
+    "exitCode": 0
+  },
+  {
+    "name": "ui-dev",
+    "command": "node scripts/tasks.mjs verify:ui:dev --config infra/config/development.json --profile development",
+    "startedAt": "2026-10-12T18:04:44.174Z",
+    "finishedAt": "2026-10-12T18:05:16.129Z",
+    "exitCode": 0
+  },
+  {
+    "name": "ui",
+    "command": "node scripts/tasks.mjs verify:ui --config infra/config/development.json --profile development",
+    "startedAt": "2026-10-12T18:05:16.130Z",
+    "finishedAt": "2026-10-12T18:05:35.597Z",
+    "exitCode": 0
+  },
+  {
+    "name": "audit",
+    "command": "node scripts/tasks.mjs verify:audit --config infra/config/development.json --profile development",
+    "startedAt": "2026-10-12T18:05:35.598Z",
+    "finishedAt": "2026-10-12T18:06:35.883Z",
+    "exitCode": 0
+  },
+  {
+    "name": "model",
+    "command": "node scripts/tasks.mjs model:check",
+    "startedAt": "2026-10-12T18:06:35.884Z",
+    "finishedAt": "2026-10-12T18:06:39.876Z",
+    "exitCode": 0
+  },
+  {
+    "name": "model-fetch",
+    "command": "node scripts/fetch_model.mjs --config infra/config/development.json --profile development",
+    "startedAt": "2026-10-12T18:06:39.877Z",
+    "finishedAt": "2026-10-12T18:06:40.863Z",
+    "exitCode": 0
+  },
+  {
+    "name": "licenses",
+    "command": "node scripts/tasks.mjs licenses:record",
+    "startedAt": "2026-10-12T18:06:40.864Z",
+    "finishedAt": "2026-10-12T18:06:43.983Z",
+    "exitCode": 0
+  }
+]

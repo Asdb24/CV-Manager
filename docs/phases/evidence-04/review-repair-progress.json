@@ -1,0 +1,13 @@
+{
+  "head": "0021_auth_hash_admission",
+  "reviewer_id": "01a13643-d742-7f91-9778-0f443a2eb895",
+  "main_confirmed": [
+    "R1",
+    "R2",
+    "R3"
+  ],
+  "before": "review-repairs-before.log: 7 failed",
+  "initial_after": "review-repairs-after.log: 7 passed",
+  "current_checkpoint": "IN_PROGRESS",
+  "follow_up": "NOT_DISPATCHED; main must finish checks first"
+}

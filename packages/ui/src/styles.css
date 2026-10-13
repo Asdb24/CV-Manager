@@ -1,0 +1,194 @@
+/* Shared shell tokens extend the official Fluent theme, without replacing its controls. */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.cv-theme {
+  --cv-space-page: clamp(20px, 4vw, 56px);
+  --cv-radius: 8px;
+  min-height: 100dvh;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--colorNeutralForeground1);
+  background: var(--colorNeutralBackground1);
+}
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--colorBrandStroke1);
+  outline-offset: 4px;
+}
+button:active {
+  transform: translateY(1px);
+}
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+h1 {
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+h2 {
+  font-size: 22px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+p {
+  line-height: 1.65;
+  color: var(--colorNeutralForeground2);
+  max-width: 65ch;
+}
+.brand {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.025em;
+}
+.shell-label {
+  font-size: 13px;
+  color: var(--colorNeutralForeground2);
+  padding: 7px 10px;
+  border: 1px solid var(--colorNeutralStroke2);
+  border-radius: var(--cv-radius);
+}
+.desktop-layout {
+  display: grid;
+  grid-template-columns: 224px 1fr;
+  min-height: 100dvh;
+}
+.sidebar {
+  padding: 32px 22px;
+  background: var(--colorNeutralBackground2);
+  border-right: 1px solid var(--colorNeutralStroke2);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: stretch;
+}
+.sidebar button {
+  justify-content: flex-start;
+}
+.workspace {
+  padding: 32px var(--cv-space-page);
+}
+.workspace-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 28px;
+}
+.content-heading {
+  padding: 36px 0 24px;
+  border-bottom: 1px solid var(--colorNeutralStroke2);
+}
+.empty-content {
+  padding-top: 36px;
+  max-width: 720px;
+}
+.empty-content p {
+  margin-bottom: 24px;
+}
+.status-message {
+  margin-top: 24px;
+  padding: 18px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 65ch;
+  color: var(--colorNeutralForeground2);
+  line-height: 1.6;
+}
+.status-message svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.status-error {
+  color: var(--colorPaletteRedForeground1);
+}
+.public-header {
+  max-width: 1180px;
+  margin: auto;
+  padding: 26px var(--cv-space-page);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid var(--colorNeutralStroke2);
+}
+.public-main {
+  max-width: 1180px;
+  margin: auto;
+  padding: 60px var(--cv-space-page);
+}
+.public-main .empty-content {
+  padding-top: 28px;
+}
+.public-footer {
+  max-width: 1180px;
+  margin: auto;
+  padding: 24px var(--cv-space-page);
+  color: var(--colorNeutralForeground2);
+  font-size: 13px;
+  line-height: 1.6;
+}
+.public-main h1 {
+  max-width: 18ch;
+}
+@media (max-width: 767px) {
+  .desktop-layout {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    padding: 18px 20px;
+    border-right: 0;
+    border-bottom: 1px solid var(--colorNeutralStroke2);
+    gap: 16px;
+  }
+  .sidebar nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .workspace {
+    padding: 20px;
+  }
+  .workspace-header {
+    align-items: flex-start;
+  }
+  .content-heading {
+    padding: 18px 0 20px;
+  }
+  .public-header {
+    padding: 20px;
+    align-items: flex-start;
+  }
+  .public-main {
+    padding: 38px 20px;
+  }
+  .public-footer {
+    padding: 24px 20px;
+  }
+  .shell-label {
+    max-width: 132px;
+    text-align: center;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  button:active {
+    transform: none;
+  }
+}

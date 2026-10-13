@@ -1,0 +1,6 @@
+
+C:\Users\DHTT\Downloads\Download\do an cn\tests\ui\shell.spec.ts
+  120:13  error  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+
+✖ 1 problem (1 error, 0 warnings)
+

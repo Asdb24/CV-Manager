@@ -1,0 +1,19 @@
+{
+  "observed_at": "2026-10-13T17:39:52.181030+00:00",
+  "head": "0021_auth_hash_admission",
+  "checkpoint_all_pass": true,
+  "auth_tests": 27,
+  "python_tests": 73,
+  "database_regression_tests": 94,
+  "mypy_files": 48,
+  "forced_rls_tables": 59,
+  "migration_bytes_verified": 56,
+  "secret_scan_hits": [],
+  "repairs": {
+    "R1": "admission distinguishes denied/unknown; denied0hash/unknown5dummy; staff current valid after global rejection",
+    "R2": "startup admission beforehash, same lock/final proof expiry preserved; forced late expiry rolls back",
+    "R3": "shared password/text UTF8 validation; safe422 for lone surrogates; valid Vietnamese/emoji login"
+  },
+  "review": "SAME_REVIEWER_FOLLOWUP_PENDING",
+  "limits": "Native first-launch/device Credential Manager 15, deployed HTTPS 17, public browse/intake 06/08 and subsequent domain/AI/release work remain UNVERIFIED. No visible UI, production recovery or legal/security certification claimed."
+}

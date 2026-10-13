@@ -1,0 +1,28 @@
+{
+  "development": {
+    "profile": "development",
+    "project": "cv-synthetic-development",
+    "bind_host": "127.0.0.1",
+    "port": 5437,
+    "database": "cv_synthetic_development",
+    "role": "cv_synthetic_development",
+    "password_environment": "CV_DEV_DATABASE_PASSWORD",
+    "health_interval_seconds": 5,
+    "health_timeout_seconds": 3,
+    "health_retries": 10,
+    "memory_bytes": 1073741824
+  },
+  "test": {
+    "profile": "test",
+    "project": "cv-synthetic-test",
+    "bind_host": "127.0.0.1",
+    "port": 5447,
+    "database": "cv_synthetic_test",
+    "role": "cv_synthetic_test",
+    "password_environment": "CV_TEST_DATABASE_PASSWORD",
+    "health_interval_seconds": 5,
+    "health_timeout_seconds": 3,
+    "health_retries": 10,
+    "memory_bytes": 1073741824
+  }
+}

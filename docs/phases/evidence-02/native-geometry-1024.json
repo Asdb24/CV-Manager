@@ -1,0 +1,20 @@
+{
+  "hwnd": 10684750,
+  "title": "Quản lý hồ sơ tuyển dụng",
+  "client_physical_pixels": [
+    2048,
+    1536
+  ],
+  "outer_physical_pixels": [
+    2074,
+    1607
+  ],
+  "dpi": 192,
+  "display_scale": 2.0,
+  "client_logical_pixels": [
+    1024.0,
+    768.0
+  ],
+  "binary_sha256": "bd2237778972aa22ea7432a9471164a317bcc0cd1dc678886944febb77729f8b",
+  "method": "Read-only Win32 client rect and DPI, selected HWND from Computer Use"
+}

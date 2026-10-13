@@ -1,0 +1,74 @@
+{
+  "realm": "local",
+  "realm_key": "synthetic-development-workspace",
+  "execution_mode": "standalone",
+  "release_manifest": null,
+  "network": {
+    "approved_server_origin": null,
+    "cors_origins": [
+      "http://127.0.0.1:1427",
+      "http://127.0.0.1:3027",
+      "http://tauri.localhost"
+    ],
+    "request_timeout_ms": 10000,
+    "shutdown_timeout_ms": 5000,
+    "keep_alive_seconds": 5,
+    "tls_verify": true,
+    "redirect_policy": "deny",
+    "csp_script_policy": "nonce-self",
+    "csp_frame_ancestors": "none",
+    "api_origin": "http://127.0.0.1:8127",
+    "desktop_origin": "http://127.0.0.1:1427",
+    "native_desktop_origin": "http://tauri.localhost",
+    "web_origin": "http://127.0.0.1:3027",
+    "worker_origin": "http://127.0.0.1:8137",
+    "ai_origin": "http://127.0.0.1:8147",
+    "api_binding": {
+      "host": "127.0.0.1",
+      "port": 8127
+    },
+    "worker_binding": {
+      "host": "127.0.0.1",
+      "port": 8137
+    }
+  },
+  "resources": {
+    "policy_version": "synthetic-resource-v1",
+    "ai_peak_working_set_bytes": 1610612736,
+    "ai_threads": 2,
+    "ai_batch_size": 4,
+    "ai_concurrency": 1,
+    "ai_timeout_ms": 60000,
+    "ai_max_tokens": 512,
+    "ai_max_chunks": 128,
+    "max_pdf_bytes": 10485760,
+    "max_pdf_pages": 100,
+    "max_text_characters": 500000,
+    "worker_queue_size": 16,
+    "worker_concurrency": 1,
+    "worker_task_timeout_ms": 60000,
+    "temp_expiry_seconds": 900,
+    "temp_capacity_bytes": 268435456,
+    "public_page_size": 20,
+    "public_submission_quota": 10
+  },
+  "dependencies": {
+    "database_secret_env": null,
+    "document_root": null,
+    "temporary_root": ".local/ai-inputs",
+    "model_manifest": "contracts/model-manifest.json",
+    "authentication_policy_file": "infra/config/authentication-test.json"
+  },
+  "privacy": {
+    "version": "synthetic-only-v1",
+    "owner_role": "workspace-admin",
+    "data_class": "synthetic-only",
+    "real_onboarding_approved": false,
+    "source_policy_version": "synthetic-source-v1",
+    "consent_policy_version": "synthetic-consent-v1",
+    "purpose_policy_version": "synthetic-recruitment-v1",
+    "retention_policy_version": "synthetic-task-only-v1",
+    "erasure_policy_version": "synthetic-erasure-v1"
+  },
+  "profile": "development"
+}

@@ -1,0 +1,21 @@
+name: ${CV_COMPOSE_PROJECT:?Explicit development/test project required}
+services:
+  database:
+    image: ${CV_POSTGRES_IMAGE:?Pinned image digest required}
+    platform: linux/amd64
+    environment:
+      POSTGRES_DB: ${CV_POSTGRES_DATABASE:?Explicit synthetic database required}
+      POSTGRES_USER: ${CV_POSTGRES_ROLE:?Explicit synthetic role required}
+      POSTGRES_PASSWORD: ${CV_POSTGRES_PASSWORD:?Development secret required}
+    ports:
+      - "${CV_POSTGRES_HOST:?Owned loopback required}:${CV_POSTGRES_PORT:?Explicit port required}:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", 'pg_isready -U "$$POSTGRES_USER" -d "$$POSTGRES_DB"']
+      interval: ${CV_POSTGRES_HEALTH_INTERVAL:?Explicit interval required}
+      timeout: ${CV_POSTGRES_HEALTH_TIMEOUT:?Explicit timeout required}
+      retries: ${CV_POSTGRES_HEALTH_RETRIES:?Explicit retry bound required}
+    mem_limit: ${CV_POSTGRES_MEMORY_BYTES:?Explicit memory bound required}
+volumes:
+  postgres-data:

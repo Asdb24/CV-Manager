@@ -1,0 +1,72 @@
+[
+  {
+    "name": "format",
+    "command": "node scripts/tasks.mjs format:check",
+    "startedAt": "2026-10-13T17:34:08.039Z",
+    "finishedAt": "2026-10-13T17:34:09.405Z",
+    "exitCode": 0
+  },
+  {
+    "name": "lint",
+    "command": "node scripts/tasks.mjs lint",
+    "startedAt": "2026-10-13T17:34:09.408Z",
+    "finishedAt": "2026-10-13T17:34:17.655Z",
+    "exitCode": 0
+  },
+  {
+    "name": "typecheck",
+    "command": "node scripts/tasks.mjs typecheck",
+    "startedAt": "2026-10-13T17:34:17.656Z",
+    "finishedAt": "2026-10-13T17:34:37.639Z",
+    "exitCode": 0
+  },
+  {
+    "name": "test",
+    "command": "node scripts/tasks.mjs test",
+    "startedAt": "2026-10-13T17:34:37.639Z",
+    "finishedAt": "2026-10-13T17:35:17.461Z",
+    "exitCode": 0
+  },
+  {
+    "name": "client",
+    "command": "node scripts/clients.mjs check",
+    "startedAt": "2026-10-13T17:35:17.462Z",
+    "finishedAt": "2026-10-13T17:35:36.082Z",
+    "exitCode": 0
+  },
+  {
+    "name": "database",
+    "command": "node scripts/tasks.mjs database:check --config infra/config/database-test.json",
+    "startedAt": "2026-10-13T17:35:36.083Z",
+    "finishedAt": "2026-10-13T17:36:30.309Z",
+    "exitCode": 0
+  },
+  {
+    "name": "authentication",
+    "command": "node scripts/tasks.mjs auth:check --config infra/config/database-test.json",
+    "startedAt": "2026-10-13T17:36:30.310Z",
+    "finishedAt": "2026-10-13T17:37:31.977Z",
+    "exitCode": 0
+  },
+  {
+    "name": "migration",
+    "command": "node scripts/tasks.mjs migration:check --config infra/config/database-test.json",
+    "startedAt": "2026-10-13T17:37:31.977Z",
+    "finishedAt": "2026-10-13T17:37:40.983Z",
+    "exitCode": 0
+  },
+  {
+    "name": "infra",
+    "command": "node scripts/tasks.mjs infra:check",
+    "startedAt": "2026-10-13T17:37:40.984Z",
+    "finishedAt": "2026-10-13T17:37:43.934Z",
+    "exitCode": 0
+  },
+  {
+    "name": "build",
+    "command": "node scripts/tasks.mjs build --config infra/config/development.json --profile development",
+    "startedAt": "2026-10-13T17:37:43.934Z",
+    "finishedAt": "2026-10-13T17:38:16.278Z",
+    "exitCode": 0
+  }
+]

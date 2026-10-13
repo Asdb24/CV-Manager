@@ -1,0 +1,16 @@
+[
+  {
+    "name": "format",
+    "command": "node scripts/tasks.mjs format:check",
+    "startedAt": "2026-10-13T06:43:35.089Z",
+    "finishedAt": "2026-10-13T06:43:36.581Z",
+    "exitCode": 0
+  },
+  {
+    "name": "lint",
+    "command": "node scripts/tasks.mjs lint",
+    "startedAt": "2026-10-13T06:43:36.583Z",
+    "finishedAt": "2026-10-13T06:43:43.473Z",
+    "exitCode": 1
+  }
+]

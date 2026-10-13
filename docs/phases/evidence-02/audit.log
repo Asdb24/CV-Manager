@@ -1,0 +1,17 @@
+
+Running 2 tests using 1 worker
+
+{"kind":"desktop","at":"2026-10-12T18:05:53.585Z","lighthouseVersion":"13.5.0","browser":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36","scores":{"performance":1,"accessibility":1,"best-practices":1,"seo":0.82},"failedAccessibility":[],"limits":"Developer shell and this host only; not product performance or complete accessibility qualification"}
+
+  ok 1 tests\ui\audit.spec.ts:11:3 › desktop actual Lighthouse audit (24.5s)
+{"kind":"public","at":"2026-10-12T18:06:17.732Z","lighthouseVersion":"13.5.0","browser":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36","scores":{"performance":1,"accessibility":1,"best-practices":1,"seo":1},"failedAccessibility":[],"limits":"Developer shell and this host only; not product performance or complete accessibility qualification"}
+
+  ok 2 tests\ui\audit.spec.ts:11:3 › public actual Lighthouse audit (22.7s)
+
+  2 passed (57.5s)
+[WebServer] (node:22432) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:19820) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+(node:16604) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

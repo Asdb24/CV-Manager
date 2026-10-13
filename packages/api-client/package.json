@@ -1,0 +1,16 @@
+{
+  "name": "@cv/api-client",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./public": "./src/public.ts",
+    "./staff": "./src/staff.ts",
+    "./local-ai": "./src/local-ai.ts",
+    "./configuration": "./src/configuration.ts",
+    "./session": "./src/session.ts"
+  },
+  "dependencies": {
+    "openapi-fetch": "0.17.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "observed_at": "2026-10-13T17:37:40.740446+00:00",
+  "attempted_head": "0021_auth_hash_admission",
+  "legacy_precision_upgrade_denied": "PASS",
+  "old_revision_preserved": "PASS",
+  "legacy_total_preserved": "12.5",
+  "legacy_final_integer_preserved": 13,
+  "legacy_components_preserved": "PASS",
+  "data": "isolated synthetic only"
+}

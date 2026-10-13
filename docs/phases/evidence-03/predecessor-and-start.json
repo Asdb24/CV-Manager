@@ -1,0 +1,10 @@
+{
+  "predecessor": "02",
+  "gate": "PASS",
+  "source_hashes_verified": 253,
+  "mismatches": [],
+  "prompt_sha256": "fe99a17842deae32ce6ece6fb02f69db00c076a7fd97b38004e3b61c002eaf87",
+  "review_policy": "Exactly one independent read-only sub-agent after main implementation and checks; not yet invoked",
+  "postgres_skill": "supabase:supabase-postgres-best-practices unavailable; official PostgreSQL 18 documentation used",
+  "host_postgresql": "18.6; existing PATH tools; isolated project cluster planned; existing services untouched"
+}

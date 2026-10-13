@@ -1,0 +1,42 @@
+[
+  {
+    "path": "acl-proof",
+    "parent_protected": true,
+    "ace_count": 1,
+    "foreign_principal_count": 0,
+    "current_user_only": true,
+    "rights": [
+      "FullControl"
+    ]
+  },
+  {
+    "path": "1d286c0f42ab72b16bcb63defc4a435fcca717106a76c9d1fd21afb839284e9a",
+    "parent_protected": false,
+    "ace_count": 1,
+    "foreign_principal_count": 0,
+    "current_user_only": true,
+    "rights": [
+      "FullControl"
+    ]
+  },
+  {
+    "path": "input.bin",
+    "parent_protected": false,
+    "ace_count": 1,
+    "foreign_principal_count": 0,
+    "current_user_only": true,
+    "rights": [
+      "FullControl"
+    ]
+  },
+  {
+    "path": "manifest.json",
+    "parent_protected": false,
+    "ace_count": 1,
+    "foreign_principal_count": 0,
+    "current_user_only": true,
+    "rights": [
+      "FullControl"
+    ]
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "format",
+    "command": "node scripts/tasks.mjs format:check",
+    "startedAt": "2026-10-13T11:48:12.503Z",
+    "finishedAt": "2026-10-13T11:48:13.438Z",
+    "exitCode": 0
+  },
+  {
+    "name": "lint",
+    "command": "node scripts/tasks.mjs lint",
+    "startedAt": "2026-10-13T11:48:13.439Z",
+    "finishedAt": "2026-10-13T11:48:20.053Z",
+    "exitCode": 0
+  },
+  {
+    "name": "typecheck",
+    "command": "node scripts/tasks.mjs typecheck",
+    "startedAt": "2026-10-13T11:48:20.053Z",
+    "finishedAt": "2026-10-13T11:48:32.303Z",
+    "exitCode": 0
+  },
+  {
+    "name": "test",
+    "command": "node scripts/tasks.mjs test",
+    "startedAt": "2026-10-13T11:48:32.304Z",
+    "finishedAt": "2026-10-13T11:48:53.654Z",
+    "exitCode": 0
+  },
+  {
+    "name": "client",
+    "command": "node scripts/clients.mjs check",
+    "startedAt": "2026-10-13T11:48:53.654Z",
+    "finishedAt": "2026-10-13T11:49:04.144Z",
+    "exitCode": 0
+  },
+  {
+    "name": "database",
+    "command": "node scripts/tasks.mjs database:check --config infra/config/database-test.json",
+    "startedAt": "2026-10-13T11:49:04.144Z",
+    "finishedAt": "2026-10-13T11:49:47.246Z",
+    "exitCode": 0
+  },
+  {
+    "name": "migration",
+    "command": "node scripts/tasks.mjs migration:check --config infra/config/database-test.json",
+    "startedAt": "2026-10-13T11:49:47.246Z",
+    "finishedAt": "2026-10-13T11:49:51.839Z",
+    "exitCode": 0
+  },
+  {
+    "name": "infra",
+    "command": "node scripts/tasks.mjs infra:check",
+    "startedAt": "2026-10-13T11:49:51.839Z",
+    "finishedAt": "2026-10-13T11:49:53.598Z",
+    "exitCode": 0
+  },
+  {
+    "name": "build",
+    "command": "node scripts/tasks.mjs build --config infra/config/development.json --profile development",
+    "startedAt": "2026-10-13T11:49:53.598Z",
+    "finishedAt": "2026-10-13T11:50:12.754Z",
+    "exitCode": 0
+  }
+]

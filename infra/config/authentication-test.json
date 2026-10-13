@@ -1,0 +1,20 @@
+{
+  "version": "synthetic-auth-v1",
+  "owner": "workspace-admin",
+  "startup_ttl_seconds": 300,
+  "session_ttl_seconds": 3600,
+  "attempt_window_seconds": 60,
+  "account_attempt_limit": 5,
+  "global_attempt_limit": 100,
+  "session_limit": 3,
+  "staff_limit": 100,
+  "page_size": 25,
+  "password_min_characters": 15,
+  "password_max_characters": 128,
+  "argon_memory_kib": 65536,
+  "argon_time_cost": 3,
+  "argon_parallelism": 4,
+  "hash_concurrency": 2,
+  "hash_wait_seconds": 5,
+  "request_max_bytes": 32768
+}

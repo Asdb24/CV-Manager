@@ -1,0 +1,15 @@
+# Phase 04 status
+
+Date: 2026-10-14. Work began 2026-10-13 after Phase 03 exact `Gate decision: PASS`; all113 predecessor manifest hashes matched before edits. Current head: `0021_auth_hash_admission`.
+
+Main implementation and current checks are complete: all10 canonical checkpoint commands passed, including73 Python tests,94 PostgreSQL regression tests and27 real API/PostgreSQL authentication tests. Strict typing covers48 files. Generated clients, actual migration lifecycle, infrastructure validation and desktop/web builds passed. All59 cv tables have forced RLS with migration-owner ownership. Final affected lint/format/typing logs cover the last added positive Vietnamese-password test.
+
+The sole reviewer Einstein (`01a13643-d742-7f91-9778-0f443a2eb895`) returned STOP at0020 with R1 High/R2 Medium/R3 Medium. Main reproduced all three with seven failing tests, then repaired them using forward0021 and input validation. The current27-auth suite includes denial-before-Argon2, retained dummy checks for admitted unknown accounts, current staff access after global throttling, startup expiry during genuine hashing, invalid Unicode errors and valid Vietnamese passwords. The same reviewer must close the findings; no second reviewer exists and no follow-up approval is claimed yet.
+
+Skills read/applied: project-spec-no-slop, no-ai-slop/eval and create-specification. Argon2-cffi and transitive dependencies were inventoried, pinned and their licenses recorded. No reboot needed. No personal data, paid deployment, external publication or provider calls.
+
+Native first-launch/device Credential Manager 15, deployed HTTPS 17, public browse/intake 06/08 and subsequent domain/AI/release work remain UNVERIFIED. No visible UI, production recovery or legal/security certification claimed.
+
+Next permitted complete prompt only after PASS: `PHASE_05_DESIGN_SYSTEM_AND_DESKTOP_UX.md`. It has not run.
+
+Gate decision: STOP

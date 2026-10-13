@@ -1,0 +1,52 @@
+{
+  "observed_at": "2026-10-13T17:13:53.470132+00:00",
+  "packages": [
+    {
+      "name": "argon2-cffi",
+      "version": "25.1.0",
+      "license": "MIT",
+      "license_classifiers": [],
+      "upstream": "https://pypi.org/project/argon2-cffi/25.1.0/",
+      "bundled_licenses": [
+        "argon2_cffi-25.1.0.dist-info/licenses/LICENSE"
+      ],
+      "requires_python": ">=3.8"
+    },
+    {
+      "name": "argon2-cffi-bindings",
+      "version": "26.1.0",
+      "license": "MIT",
+      "license_classifiers": [],
+      "upstream": "https://pypi.org/project/argon2-cffi-bindings/26.1.0/",
+      "bundled_licenses": [
+        "argon2_cffi_bindings-26.1.0.dist-info/licenses/LICENSE"
+      ],
+      "requires_python": ">=3.10"
+    },
+    {
+      "name": "cffi",
+      "version": "2.1.1",
+      "license": "MIT-0",
+      "license_classifiers": [],
+      "upstream": "https://pypi.org/project/cffi/2.1.1/",
+      "bundled_licenses": [
+        "cffi-2.1.1.dist-info/licenses/LICENSE"
+      ],
+      "requires_python": ">=3.10"
+    },
+    {
+      "name": "pycparser",
+      "version": "3.11",
+      "license": "BSD-3-Clause",
+      "license_classifiers": [],
+      "upstream": "https://pypi.org/project/pycparser/3.11/",
+      "bundled_licenses": [
+        "pycparser-3.11.dist-info/licenses/LICENSE"
+      ],
+      "requires_python": ">=3.10"
+    }
+  ],
+  "pyproject_sha256": "92dc6c98a742e46603a8c9f75ca957e433031c8b3ac538148cac0a2a89807005",
+  "uv_lock_sha256": "94861952a930532894b0e84c5194bd65e7e4cc51a255487ca85cca1077c81c25",
+  "reboot_required": false
+}

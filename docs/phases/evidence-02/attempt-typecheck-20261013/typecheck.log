@@ -1,0 +1,2 @@
+apps/web/.next/dev/types/routes.d.ts(53,8): error TS2300: Duplicate identifier 'LayoutProps'.
+apps/web/.next/types/routes.d.ts(53,8): error TS2300: Duplicate identifier 'LayoutProps'.

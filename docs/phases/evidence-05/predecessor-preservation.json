@@ -1,0 +1,13 @@
+{
+  "phase04_manifest_files": 185,
+  "unchanged": 180,
+  "phase05_authorized_changes": [
+    "AGENTS.md",
+    "docs/DECISIONS.md",
+    "docs/STATUS.md",
+    "package-lock.json",
+    "scripts/tasks.mjs"
+  ],
+  "frozen_migration_files_unchanged": 56,
+  "backend_auth_data_source_changes": 0
+}

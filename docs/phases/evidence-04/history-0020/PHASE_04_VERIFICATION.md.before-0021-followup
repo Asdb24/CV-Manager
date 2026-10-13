@@ -1,0 +1,23 @@
+# Phase 04 verification
+
+Date: 2026-10-14. Work began 2026-10-13 after exact Phase 03 PASS with all 113 recorded hashes verified. Current implementation head is `0020_auth_finalization`. Main checks and the single independent review must finish before gate approval.
+
+Evidence already obtained: 94 real PostgreSQL regression tests pass; 17 authentication/API tests pass, including separate local/server databases, persistent attempt bounds, real operator SQL, real Uvicorn HTTP socket, bootstrap races, safe errors, admin/staff checks, expiry/revocation and final rollback. Fifty-nine inherited Python tests passed before the new configuration tests were added. The completed ten-command checkpoint is recorded in evidence-04/commands.json. Final affected verification after the last source changes is 90 tests (17 auth + 73 Python), 47 strict-mypy files, lint and format; see final-affected-tests.log and final-typing/lint/format.log. Independent review is still pending.
+
+`policy-finalization-before-repair.log` records a genuine failing expiry-before-commit test at 0019. Forward 0020 retains transaction-local obligations through early constraint checks and replays. The formerly failing test now passes. Migration lifecycle at 0020 passes empty up/down/up, populated 0004→head preservation and populated downgrade refusal. The preservation fixture covers the recorded populated tables, not production backup/recovery.
+
+Sources and acceptance mapping are in PHASE_04_ACCEPTANCE_LEDGER and docs/architecture/AUTHENTICATION.md. New schema uses forced RLS with cv_migrator ownership and nonlogin cv_guard function ownership. Runtime/public remain distinct. All checks use synthetic data in the project-owned native PostgreSQL 18.6 cluster. No real personal data, paid deployment, external publication or provider call was used. Main-agent tests are not independent review.
+
+UNVERIFIED future scope: public browse 06; public files/intake 08; parser 09; actual scoring/local AI 10; domain UI 05–12; E2E 13; private runtimes 14; native bootstrap/device Credential Manager/dual-mode transport 15; backup/artifacts/deployment 16; clean Windows and approved HTTPS staging 17; full security/100-CV qualification 18. No new visible UI was implemented or inspected here.
+
+Gate decision: STOP
+
+## Main completion audit
+
+The main audit inspected each AUTH04 row, actual current sources, migration hashes and command logs. All main-owned implementation/checks are supported; mandatory independent review remains pending. See evidence-04/main-audit.json and review-start.json. The separate real HTTP test opens a Uvicorn socket; HTTPS security branch tests use ASGI scope and do not claim deployed certificate qualification. Operator terminal prompting is substituted in its test, while its transactions and subsequent network login are real.
+
+## Review repair at0021
+
+The sole reviewer found R1–R3 at0020; main confirmed all with seven actual API/PostgreSQL tests and recorded review-repairs-before.log. Forward0021 separates denied reservation from admitted unknown identity; only admitted attempts run Argon2. Bootstrap verifies startup authority before hashing under the same locked transaction and retains final proof/state/expiry checks. Password DTOs/hash/verify and relevant free-text inputs reject invalid Unicode. Seven targeted cases passed in review-repairs-after.log. Spy wrappers call the actual Argon2 methods for admitted inputs; they do not fabricate credentials or database responses. The current ten-command checkpoint and additional tests must complete before follow-up.
+
+Gate decision: STOP

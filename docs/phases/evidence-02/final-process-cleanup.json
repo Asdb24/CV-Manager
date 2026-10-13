@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-12T18:13:56.1228575Z",
+  "configured_development_test_ports": [
+    8127,
+    8137,
+    8147,
+    1427,
+    3027,
+    8237,
+    8247,
+    8257,
+    1527,
+    3127
+  ],
+  "remaining_listeners": [],
+  "result": "PASS"
+}

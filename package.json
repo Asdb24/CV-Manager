@@ -1,0 +1,52 @@
+{
+  "name": "agency-cv-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/desktop",
+    "apps/web",
+    "packages/api-client",
+    "packages/ui"
+  ],
+  "engines": {
+    "node": "26.8.2",
+    "npm": "12.0.2"
+  },
+  "scripts": {
+    "install:frozen": "node scripts/tasks.mjs install:frozen",
+    "format": "node scripts/tasks.mjs format",
+    "format:check": "node scripts/tasks.mjs format:check",
+    "lint": "node scripts/tasks.mjs lint",
+    "typecheck": "node scripts/tasks.mjs typecheck",
+    "test": "node scripts/tasks.mjs test",
+    "client:generate": "node scripts/clients.mjs generate",
+    "client:check": "node scripts/clients.mjs check",
+    "migration:check": "node scripts/tasks.mjs migration:check",
+    "infra:check": "node scripts/tasks.mjs infra:check",
+    "build": "node scripts/tasks.mjs build",
+    "dev:desktop": "node scripts/tasks.mjs dev:desktop",
+    "dev:web": "node scripts/tasks.mjs dev:web",
+    "verify:ui": "node scripts/tasks.mjs verify:ui",
+    "verify:ui:dev": "node scripts/tasks.mjs verify:ui:dev",
+    "verify:audit": "node scripts/tasks.mjs verify:audit",
+    "model:fetch": "node scripts/fetch_model.mjs",
+    "model:check": "node scripts/tasks.mjs model:check",
+    "licenses:record": "node scripts/tasks.mjs licenses:record",
+    "verify:checkpoint": "node scripts/checkpoint.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.0",
+    "@tauri-apps/cli": "2.12.2",
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "10.12.0",
+    "lighthouse": "13.5.0",
+    "openapi-typescript": "7.13.0",
+    "prettier": "3.9.10",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.71.1",
+    "yaml": "2.9.1"
+  }
+}

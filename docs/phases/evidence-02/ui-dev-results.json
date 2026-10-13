@@ -1,0 +1,501 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\DHTT\\Downloads\\Download\\do an cn\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "-c",
+      "tests/ui/playwright.dev.config.ts"
+    ],
+    "configFile": "C:\\Users\\DHTT\\Downloads\\Download\\do an cn\\tests\\ui\\playwright.dev.config.ts",
+    "rootDir": "C:/Users/DHTT/Downloads/Download/do an cn/tests/ui",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/DHTT/Downloads/Download/do an cn/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "C:/Users/DHTT/Downloads/Download/do an cn/tests/ui",
+        "testIgnore": [],
+        "testMatch": [
+          "shell.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\DHTT\\Downloads\\Download\\do an cn\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "C:\\Users\\DHTT\\Downloads\\Download\\do an cn\\tests\\ui",
+        "snapshotDir": "C:\\Users\\DHTT\\Downloads\\Download\\do an cn\\tests\\ui",
+        "testIgnore": [],
+        "testMatch": "shell.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "browserName": "chromium",
+          "headless": true,
+          "deviceScaleFactor": 1
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "C:\\Users\\DHTT\\Downloads\\Download\\do an cn\\.local\\ui-dev-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "shell.spec.ts",
+      "file": "shell.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "desktop 1280x800 light: actual shell and connection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 644,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T18:05:03.494Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "computed-enabled-button-contrast",
+                      "contentType": "application/json",
+                      "body": "W3sibGFiZWwiOiJU4buVbmcgcXVhbiIsInJhdGlvIjo1LjM4NDM5MzAxMzM3MzU3Mn0seyJsYWJlbCI6Ikvhur90IG7hu5FpIiwicmF0aW8iOjkuNjI4MzU2NTQyNTIzODF9LHsibGFiZWwiOiJLaeG7g20gdHJhIGvhur90IG7hu5FpIiwicmF0aW8iOjUuMzg0MzkzMDEzMzczNTcyfV0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3420664513cb0bae123e-f10a37418dcd6e71a4af",
+          "file": "shell.spec.ts",
+          "line": 30,
+          "column": 7
+        },
+        {
+          "title": "desktop 1024x768 light: actual shell and connection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 487,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T18:05:04.317Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "computed-enabled-button-contrast",
+                      "contentType": "application/json",
+                      "body": "W3sibGFiZWwiOiJU4buVbmcgcXVhbiIsInJhdGlvIjo1LjM4NDM5MzAxMzM3MzU3Mn0seyJsYWJlbCI6Ikvhur90IG7hu5FpIiwicmF0aW8iOjkuNjI4MzU2NTQyNTIzODF9LHsibGFiZWwiOiJLaeG7g20gdHJhIGvhur90IG7hu5FpIiwicmF0aW8iOjUuMzg0MzkzMDEzMzczNTcyfV0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3420664513cb0bae123e-2cb8a324819e20df587b",
+          "file": "shell.spec.ts",
+          "line": 30,
+          "column": 7
+        },
+        {
+          "title": "public 390x844 light: actual shell and connection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2811,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T18:05:04.821Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "computed-enabled-button-contrast",
+                      "contentType": "application/json",
+                      "body": "W3sibGFiZWwiOiJLaeG7g20gdHJhIGvhur90IG7hu5FpIiwicmF0aW8iOjUuMzg0MzkzMDEzMzczNTcyfV0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3420664513cb0bae123e-7fae82757ab6702e1e85",
+          "file": "shell.spec.ts",
+          "line": 30,
+          "column": 7
+        },
+        {
+          "title": "public 360x800 light: actual shell and connection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1617,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T18:05:07.648Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "computed-enabled-button-contrast",
+                      "contentType": "application/json",
+                      "body": "W3sibGFiZWwiOiJLaeG7g20gdHJhIGvhur90IG7hu5FpIiwicmF0aW8iOjUuMzg0MzkzMDEzMzczNTcyfV0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3420664513cb0bae123e-3db555c77b3944eab446",
+          "file": "shell.spec.ts",
+          "line": 30,
+          "column": 7
+        },
+        {
+          "title": "desktop 1280x800 dark: actual shell and connection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 544,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T18:05:09.294Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "computed-enabled-button-contrast",
+                      "contentType": "application/json",
+                      "body": "W3sibGFiZWwiOiJU4buVbmcgcXVhbiIsInJhdGlvIjo2LjY1ODY2NzEzMjA4Njk1NH0seyJsYWJlbCI6Ikvhur90IG7hu5FpIiwicmF0aW8iOjExLjM0MDk2NTk4NDEzMjM2Nn0seyJsYWJlbCI6Iktp4buDbSB0cmEga+G6v3QgbuG7kWkiLCJyYXRpbyI6Ni42NTg2NjcxMzIwODY5NTR9XQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3420664513cb0bae123e-a08a94be3483f0025846",
+          "file": "shell.spec.ts",
+          "line": 30,
+          "column": 7
+        },
+        {
+          "title": "desktop 1024x768 dark: actual shell and connection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 594,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T18:05:09.857Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "computed-enabled-button-contrast",
+                      "contentType": "application/json",
+                      "body": "W3sibGFiZWwiOiJU4buVbmcgcXVhbiIsInJhdGlvIjo2LjY1ODY2NzEzMjA4Njk1NH0seyJsYWJlbCI6Ikvhur90IG7hu5FpIiwicmF0aW8iOjExLjM0MDk2NTk4NDEzMjM2Nn0seyJsYWJlbCI6Iktp4buDbSB0cmEga+G6v3QgbuG7kWkiLCJyYXRpbyI6Ni42NTg2NjcxMzIwODY5NTR9XQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3420664513cb0bae123e-3cb45bce63e9fd51aca2",
+          "file": "shell.spec.ts",
+          "line": 30,
+          "column": 7
+        },
+        {
+          "title": "public 390x844 dark: actual shell and connection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1519,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T18:05:10.469Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "computed-enabled-button-contrast",
+                      "contentType": "application/json",
+                      "body": "W3sibGFiZWwiOiJLaeG7g20gdHJhIGvhur90IG7hu5FpIiwicmF0aW8iOjYuNjU4NjY3MTMyMDg2OTU0fV0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3420664513cb0bae123e-7d1aa30ec3c9a6010d8a",
+          "file": "shell.spec.ts",
+          "line": 30,
+          "column": 7
+        },
+        {
+          "title": "public 360x800 dark: actual shell and connection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1527,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T18:05:12.008Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "computed-enabled-button-contrast",
+                      "contentType": "application/json",
+                      "body": "W3sibGFiZWwiOiJLaeG7g20gdHJhIGvhur90IG7hu5FpIiwicmF0aW8iOjYuNjU4NjY3MTMyMDg2OTU0fV0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3420664513cb0bae123e-4cebab5149bc058d8c48",
+          "file": "shell.spec.ts",
+          "line": 30,
+          "column": 7
+        },
+        {
+          "title": "desktop discard an old reply after changing selection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 430,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T18:05:13.575Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3420664513cb0bae123e-29e5126c8cbaf2ad955d",
+          "file": "shell.spec.ts",
+          "line": 147,
+          "column": 1
+        },
+        {
+          "title": "public connection loss is actionable and exposes no data",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1335,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T18:05:14.025Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3420664513cb0bae123e-0e6b17ef41a18d1cf1a1",
+          "file": "shell.spec.ts",
+          "line": 199,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-12T18:04:47.117Z",
+    "duration": 28972.828999999998,
+    "expected": 10,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

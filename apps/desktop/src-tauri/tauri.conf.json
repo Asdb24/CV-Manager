@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Agency CV Shell",
+  "version": "0.1.0",
+  "identifier": "org.coursework.agencycv",
+  "build": { "frontendDist": "../dist" },
+  "app": {
+    "windows": [
+      {
+        "title": "Quản lý hồ sơ tuyển dụng",
+        "width": 1280,
+        "height": 800,
+        "minWidth": 640,
+        "minHeight": 480
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; base-uri 'self'"
+    }
+  },
+  "bundle": { "active": false }
+}

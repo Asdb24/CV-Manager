@@ -1,0 +1,50 @@
+packages/api-client/src/session.ts:11:  timeoutMs: number;
+packages/api-client/src/session.ts:27:    const loopback = ["127.0.0.1", "[::1]"].includes(parsed.hostname);
+packages/api-client/src/session.ts:31:      parsed.password ||
+packages/api-client/src/session.ts:34:      !Number.isInteger(context.timeoutMs) ||
+packages/api-client/src/session.ts:35:      context.timeoutMs <= 0 ||
+packages/api-client/src/session.ts:36:      context.timeoutMs > 120_000 ||
+packages/api-client/src/session.ts:108:            AbortSignal.timeout(this.context.timeoutMs),
+packages/foundation/src/cv_foundation/auth_contracts.py:18:    account_attempt_limit: int = Field(gt=0, le=100, strict=True)
+packages/foundation/src/cv_foundation/auth_contracts.py:19:    global_attempt_limit: int = Field(gt=0, le=10000, strict=True)
+packages/foundation/src/cv_foundation/auth_contracts.py:20:    session_limit: int = Field(gt=0, le=20, strict=True)
+packages/foundation/src/cv_foundation/auth_contracts.py:23:    password_min_characters: int = Field(ge=15, le=64, strict=True)
+packages/foundation/src/cv_foundation/auth_contracts.py:24:    password_max_characters: int = Field(ge=64, le=1024, strict=True)
+packages/foundation/src/cv_foundation/auth_contracts.py:34:        if self.account_attempt_limit > self.global_attempt_limit:
+packages/foundation/src/cv_foundation/auth_contracts.py:36:        if self.password_min_characters > self.password_max_characters:
+packages/foundation/src/cv_foundation/auth_contracts.py:44:    password: SecretStr
+packages/foundation/src/cv_foundation/auth_contracts.py:46:    @field_validator("password")
+packages/foundation/src/cv_foundation/auth_contracts.py:49:        # Absolute parser ceiling; active policy applies the narrower password range.
+packages/foundation/src/cv_foundation/auth_contracts.py:93:    password: SecretStr
+apps/api/src/cv_api\authentication.py:57:        self.dummy = self.hash(secrets.token_urlsafe(32))
+apps/api/src/cv_api\authentication.py:61:        if not self.slots.acquire(timeout=self.policy.hash_wait_seconds):
+apps/api/src/cv_api\authentication.py:70:            not self.policy.password_min_characters
+apps/api/src/cv_api\authentication.py:72:            <= self.policy.password_max_characters
+apps/api/src/cv_api\authentication.py:101:        self.passwords = Passwords(self.policy)
+apps/api/src/cv_api\authentication.py:107:        # Service owns completion. Failed-password counters commit before HTTP denial.
+apps/api/src/cv_api\authentication.py:143:        self.passwords.validate(body.password.get_secret_value())
+apps/api/src/cv_api\authentication.py:144:        credential = self.passwords.hash(body.password.get_secret_value())
+apps/api/src/cv_api\authentication.py:156:        proof = secrets.token_urlsafe(32)
+apps/api/src/cv_api\authentication.py:166:            valid = self.passwords.verify(
+apps/api/src/cv_api\authentication.py:168:                body.password.get_secret_value(),
+apps/api/src/cv_api\authentication.py:236:            # A keyed digest makes password-containing retry payloads non-dictionary-searchable.
+apps/api/src/cv_api\authentication.py:240:                value = body.password.get_secret_value()
+apps/api/src/cv_api\authentication.py:241:                self.passwords.validate(value)
+apps/api/src/cv_api\authentication.py:242:                payload["password"] = value
+apps/api/src/cv_api\authentication.py:253:                payload.pop("password")
+apps/api/src/cv_api\authentication.py:254:                payload["credential_hash"] = self.passwords.hash(value)
+apps/api/src/cv_api\auth_boundary.py:58:                asyncio.get_running_loop().time() + self.settings.network.request_timeout_ms / 1000
+apps/api/src/cv_api\operator.py:36:        # Reuse every transport/timeout validation; the operator login is fixed below.
+apps/api/src/cv_api\operator.py:38:        if settings.realm == "local" and endpoint.host not in {"127.0.0.1", "::1"}:
+apps/api/src/cv_api\operator.py:45:        password = getpass.getpass("New administrator password: ")
+apps/api/src/cv_api\operator.py:46:        if password != getpass.getpass("Repeat administrator password: "):
+apps/api/src/cv_api\operator.py:48:        passwords = Passwords(policy)
+apps/api/src/cv_api\operator.py:49:        passwords.validate(password)
+apps/api/src/cv_api\operator.py:50:        encoded = passwords.hash(password)
+apps/api/src/cv_api\operator.py:51:        startup = secrets.token_urlsafe(32)
+apps/api/src/cv_api\operator.py:57:            password=endpoint.password.get_secret_value(),
+apps/api/src/cv_api\operator.py:60:            connect_timeout=endpoint.connect_timeout_seconds,
+apps/api/src/cv_api\operator.py:61:            options=f"-c statement_timeout={endpoint.statement_timeout_ms} "
+apps/api/src/cv_api\operator.py:62:            f"-c lock_timeout={endpoint.lock_timeout_ms}",
+apps/api/src/cv_api\operator.py:71:                    secrets.token_urlsafe(32),
+apps/api/src/cv_api\operator.py:79:                password=SecretStr(password),

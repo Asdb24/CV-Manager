@@ -1,0 +1,9 @@
+{
+  "observed_at": "2026-10-13T17:41:27.687561+00:00",
+  "source_packet": "review-start-0021.json",
+  "reason": "Post-dispatch reviewer RUNNING metadata and review progress note only; implementation/checkpoint untouched.",
+  "post_dispatch_doc_hashes": {
+    "docs/phases/evidence-04/reviewer.json": "52f0e795885d8f06ca079c385b1c0edd2e8f2a7b355641207471621585dd78f7",
+    "docs/phases/PHASE_04_REVIEW.md": "8cddb21f2c38f7838c761d95319c005e0e27dd4a0972f49e0f78860a0e34cf6d"
+  }
+}

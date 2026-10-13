@@ -1,0 +1,51 @@
+FF                                                                       [100%]
+================================== FAILURES ===================================
+__ test_profile_evidence_cannot_change_after_evaluation_consumes_early_check __
+
+owner = <psycopg.Connection [INTRANS] (host=127.0.0.1 port=5447 user=cv_cluster_admin database=cv_phase03_synthetic) at 0x1af49492490>
+
+    def test_profile_evidence_cannot_change_after_evaluation_consumes_early_check(
+        owner: psycopg.Connection[Any],
+    ) -> None:
+        bind(owner)
+        profile = clone_profile(owner)
+        copy_sources(owner, profile, "synthetic_fact.current")
+        evaluation(owner, profile)
+        owner.execute("SET CONSTRAINTS ALL IMMEDIATE")
+>       with pytest.raises(psycopg.errors.CheckViolation, match="PROFILE_SOURCE_ALREADY_USED"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE CheckViolation
+
+tests\database\test_source_identity.py:222: Failed
+_______ test_rubric_cannot_change_after_evaluation_consumes_early_check _______
+
+owner = <psycopg.Connection [INTRANS] (host=127.0.0.1 port=5447 user=cv_cluster_admin database=cv_phase03_synthetic) at 0x1af4940dba0>
+
+    def test_rubric_cannot_change_after_evaluation_consumes_early_check(
+        owner: psycopg.Connection[Any],
+    ) -> None:
+        bind(owner)
+        rubric = uuid4()
+        owner.execute(
+            "INSERT INTO cv.rubric_version(tenant_id,id,position_id,jd_id,engine_id,version,"
+            "reference_date,definition,definition_digest,author_id) "
+            "SELECT tenant_id,%s,position_id,jd_id,engine_id,version+1,reference_date,definition,"
+            "definition_digest,author_id FROM cv.rubric_version WHERE id=%s",
+            (rubric, identity("a/rubric")),
+        )
+        owner.execute(
+            "INSERT INTO cv.rubric_criterion SELECT tenant_id,%s,criterion_key,ordinal,weight,"
+            "adapter,mandatory_definition FROM cv.rubric_criterion WHERE rubric_id=%s",
+            (rubric, identity("a/rubric")),
+        )
+        claim(owner, calculation(owner, rubric))
+        owner.execute("SET CONSTRAINTS ALL IMMEDIATE")
+>       with pytest.raises(psycopg.errors.CheckViolation, match="PUBLISHED_RUBRIC_IMMUTABLE"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE CheckViolation
+
+tests\database\test_source_identity.py:249: Failed
+=========================== short test summary info ===========================
+FAILED tests/database/test_source_identity.py::test_profile_evidence_cannot_change_after_evaluation_consumes_early_check
+FAILED tests/database/test_source_identity.py::test_rubric_cannot_change_after_evaluation_consumes_early_check
+2 failed, 9 deselected in 0.30s

@@ -1,0 +1,12 @@
+DROP TRIGGER occurrence_binding ON cv.evaluation_occurrence;
+DROP TRIGGER question_chain ON cv.question_revision;
+DROP TRIGGER sealed_children ON cv.question_set;
+DROP TRIGGER sealed_children ON cv.advisory_finding_evidence;
+DROP TRIGGER sealed_children ON cv.advisory_finding;
+DROP TRIGGER sealed_children ON cv.advisory_evidence;
+DROP TRIGGER sealed_children ON cv.advisory_manifest_evidence;
+DROP FUNCTION cv.occurrence_binding_check();
+DROP FUNCTION cv.question_chain_check();
+DROP FUNCTION cv.advisory_child_check();
+ALTER TABLE cv.advisory_run DROP COLUMN construction_xid;
+ALTER TABLE cv.advisory_manifest DROP COLUMN construction_xid;

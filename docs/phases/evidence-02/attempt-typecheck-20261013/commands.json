@@ -1,0 +1,30 @@
+[
+  {
+    "name": "install-frozen",
+    "command": "node scripts/tasks.mjs install:frozen",
+    "startedAt": "2026-10-12T17:34:43.096Z",
+    "finishedAt": "2026-10-12T17:36:46.390Z",
+    "exitCode": 0
+  },
+  {
+    "name": "format",
+    "command": "node scripts/tasks.mjs format:check",
+    "startedAt": "2026-10-12T17:36:46.393Z",
+    "finishedAt": "2026-10-12T17:36:47.808Z",
+    "exitCode": 0
+  },
+  {
+    "name": "lint",
+    "command": "node scripts/tasks.mjs lint",
+    "startedAt": "2026-10-12T17:36:47.808Z",
+    "finishedAt": "2026-10-12T17:36:58.012Z",
+    "exitCode": 0
+  },
+  {
+    "name": "typecheck",
+    "command": "node scripts/tasks.mjs typecheck",
+    "startedAt": "2026-10-12T17:36:58.013Z",
+    "finishedAt": "2026-10-12T17:37:12.066Z",
+    "exitCode": 2
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-10-13T18:42:03.832524+00:00",
+  "selected_workspace": "C:\\Users\\DHTT\\Downloads\\Download\\do an cn",
+  "predecessor": "04",
+  "gate": "PASS",
+  "matched_files": 185,
+  "schema_head": "0021_auth_hash_admission",
+  "git_initial": "Not a Git repository; no staged/unstaged Git changes or local history",
+  "remote": "https://github.com/Asdb24/CV-Manager.git",
+  "remote_base_sha": "0d8ce319b6e462785d0b1e8b4a87f3dac85f6041",
+  "remote_files": [
+    "README.md"
+  ],
+  "viewer": "Asdb24",
+  "permission": "ADMIN",
+  "actions_enabled": true,
+  "visibility": "public (preserve)",
+  "user_roadmap_answer": "Lập roadmap theo các mốc đã chốt",
+  "review_policy": "Main agent implements/checks; no subagent or independent review."
+}

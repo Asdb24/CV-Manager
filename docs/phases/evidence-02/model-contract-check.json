@@ -1,0 +1,62 @@
+{
+  "kind": "pinned artifact and Windows CPU kernel compatibility smoke; no product advice service",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "onnxruntime": "1.31.0",
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "inputs": [
+    {
+      "name": "input_ids",
+      "type": "tensor(int64)",
+      "shape": [
+        "batch_size",
+        "sequence_length"
+      ]
+    },
+    {
+      "name": "attention_mask",
+      "type": "tensor(int64)",
+      "shape": [
+        "batch_size",
+        "sequence_length"
+      ]
+    },
+    {
+      "name": "token_type_ids",
+      "type": "tensor(int64)",
+      "shape": [
+        "batch_size",
+        "sequence_length"
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "name": "last_hidden_state",
+      "type": "tensor(float)",
+      "shape": [
+        "batch_size",
+        "sequence_length",
+        384
+      ]
+    }
+  ],
+  "model_manifest_sha256": "5a57c7b8d5e968667fa60d3c2b6c86657692031a4727f3d7876448ca961dc164",
+  "assets_verified": 6,
+  "license_sha256": "904dc4d8749877f1dba1cda48200d2462dccbeb7c134d5e4ef6fa75e0198c8fe",
+  "cpu_smoke": {
+    "synthetic_strings": 2,
+    "raw_hidden_state_shape": [
+      2,
+      12,
+      384
+    ],
+    "finite": true,
+    "provider": "CPUExecutionProvider",
+    "peak_process_working_set_bytes": 484048896,
+    "configured_budget_bytes": 1610612736
+  },
+  "product_inference": "UNVERIFIED owner 10",
+  "working_set_and_100_cv": "UNVERIFIED owner 18"
+}

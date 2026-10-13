@@ -1,0 +1,309 @@
+{
+  "observed_at": "2026-10-13T11:49:46.653567+00:00",
+  "postgresql": [
+    "PostgreSQL 18.6 on x86_64-windows, compiled by msvc-19.44.35228, 64-bit"
+  ],
+  "revision": [
+    "0017_used_definition_seals"
+  ],
+  "role": "cv_runtime",
+  "scope": "synthetic agency b",
+  "counts": {
+    "company": [
+      2001
+    ],
+    "candidate": [
+      3002
+    ],
+    "privacy_scope": [
+      3002
+    ],
+    "application": [
+      3002
+    ]
+  },
+  "page_size": 50,
+  "config_sha256": "a771d70529a40a1c86c1655df153cd286755d237cdbedf6cc56a558c83ecf18b",
+  "queries": {
+    "company_page": {
+      "query": "SELECT id,name,revision FROM cv.company WHERE tenant_id=%s AND removed_at IS NULL ORDER BY id LIMIT %s",
+      "plan": [
+        {
+          "Plan": {
+            "Node Type": "Limit",
+            "Parallel Aware": false,
+            "Async Capable": false,
+            "Startup Cost": 0.28,
+            "Total Cost": 51.25,
+            "Plan Rows": 50,
+            "Plan Width": 50,
+            "Actual Startup Time": 8.558,
+            "Actual Total Time": 14.771,
+            "Actual Rows": 50.0,
+            "Actual Loops": 1,
+            "Disabled": false,
+            "Shared Hit Blocks": 2572,
+            "Shared Read Blocks": 0,
+            "Shared Dirtied Blocks": 4,
+            "Shared Written Blocks": 2,
+            "Local Hit Blocks": 103,
+            "Local Read Blocks": 1,
+            "Local Dirtied Blocks": 3,
+            "Local Written Blocks": 2,
+            "Temp Read Blocks": 0,
+            "Temp Written Blocks": 0,
+            "Plans": [
+              {
+                "Node Type": "Index Scan",
+                "Parent Relationship": "Outer",
+                "Parallel Aware": false,
+                "Async Capable": false,
+                "Scan Direction": "Forward",
+                "Index Name": "company_pkey",
+                "Relation Name": "company",
+                "Alias": "company",
+                "Startup Cost": 0.28,
+                "Total Cost": 680.24,
+                "Plan Rows": 667,
+                "Plan Width": 50,
+                "Actual Startup Time": 8.556,
+                "Actual Total Time": 14.764,
+                "Actual Rows": 50.0,
+                "Actual Loops": 1,
+                "Disabled": false,
+                "Index Cond": "(tenant_id = '2f856684-85fd-5995-be43-648d668319d8'::uuid)",
+                "Rows Removed by Index Recheck": 0,
+                "Filter": "((removed_at IS NULL) AND cv.tenant_allowed(tenant_id))",
+                "Rows Removed by Filter": 0,
+                "Index Searches": 1,
+                "Shared Hit Blocks": 2572,
+                "Shared Read Blocks": 0,
+                "Shared Dirtied Blocks": 4,
+                "Shared Written Blocks": 2,
+                "Local Hit Blocks": 103,
+                "Local Read Blocks": 1,
+                "Local Dirtied Blocks": 3,
+                "Local Written Blocks": 2,
+                "Temp Read Blocks": 0,
+                "Temp Written Blocks": 0
+              }
+            ]
+          },
+          "Planning": {
+            "Shared Hit Blocks": 62,
+            "Shared Read Blocks": 0,
+            "Shared Dirtied Blocks": 0,
+            "Shared Written Blocks": 0,
+            "Local Hit Blocks": 0,
+            "Local Read Blocks": 0,
+            "Local Dirtied Blocks": 0,
+            "Local Written Blocks": 0,
+            "Temp Read Blocks": 0,
+            "Temp Written Blocks": 0
+          },
+          "Planning Time": 0.356,
+          "Triggers": [],
+          "Execution Time": 14.787
+        }
+      ]
+    },
+    "pipeline_page": {
+      "query": "SELECT id,candidate_id,scope_id,stage,revision FROM cv.application WHERE tenant_id=%s AND position_id=%s AND stage='received' AND removed_at IS NULL ORDER BY id LIMIT %s",
+      "plan": [
+        {
+          "Plan": {
+            "Node Type": "Limit",
+            "Parallel Aware": false,
+            "Async Capable": false,
+            "Startup Cost": 0.28,
+            "Total Cost": 283.59,
+            "Plan Rows": 50,
+            "Plan Width": 61,
+            "Actual Startup Time": 1.487,
+            "Actual Total Time": 15.32,
+            "Actual Rows": 50.0,
+            "Actual Loops": 1,
+            "Disabled": false,
+            "Shared Hit Blocks": 3108,
+            "Shared Read Blocks": 13,
+            "Shared Dirtied Blocks": 0,
+            "Shared Written Blocks": 0,
+            "Local Hit Blocks": 300,
+            "Local Read Blocks": 0,
+            "Local Dirtied Blocks": 0,
+            "Local Written Blocks": 0,
+            "Temp Read Blocks": 0,
+            "Temp Written Blocks": 0,
+            "Plans": [
+              {
+                "Node Type": "Index Scan",
+                "Parent Relationship": "Outer",
+                "Parallel Aware": false,
+                "Async Capable": false,
+                "Scan Direction": "Forward",
+                "Index Name": "application_pipeline",
+                "Relation Name": "application",
+                "Alias": "application",
+                "Startup Cost": 0.28,
+                "Total Cost": 1802.11,
+                "Plan Rows": 318,
+                "Plan Width": 61,
+                "Actual Startup Time": 1.486,
+                "Actual Total Time": 15.311,
+                "Actual Rows": 50.0,
+                "Actual Loops": 1,
+                "Disabled": false,
+                "Index Cond": "((tenant_id = '2f856684-85fd-5995-be43-648d668319d8'::uuid) AND (position_id = '33bc0391-a74d-52a9-bb3c-4b72bd1d2204'::uuid) AND ((stage)::text = 'received'::text))",
+                "Rows Removed by Index Recheck": 0,
+                "Filter": "(cv.tenant_allowed(tenant_id) AND ((scope_id IS NULL) OR cv.scope_allowed(tenant_id, scope_id)))",
+                "Rows Removed by Filter": 0,
+                "Index Searches": 1,
+                "Shared Hit Blocks": 3108,
+                "Shared Read Blocks": 13,
+                "Shared Dirtied Blocks": 0,
+                "Shared Written Blocks": 0,
+                "Local Hit Blocks": 300,
+                "Local Read Blocks": 0,
+                "Local Dirtied Blocks": 0,
+                "Local Written Blocks": 0,
+                "Temp Read Blocks": 0,
+                "Temp Written Blocks": 0
+              }
+            ]
+          },
+          "Planning": {
+            "Shared Hit Blocks": 139,
+            "Shared Read Blocks": 0,
+            "Shared Dirtied Blocks": 0,
+            "Shared Written Blocks": 0,
+            "Local Hit Blocks": 0,
+            "Local Read Blocks": 0,
+            "Local Dirtied Blocks": 0,
+            "Local Written Blocks": 0,
+            "Temp Read Blocks": 0,
+            "Temp Written Blocks": 0
+          },
+          "Planning Time": 0.539,
+          "Triggers": [],
+          "Execution Time": 15.336
+        }
+      ]
+    },
+    "person_applications": {
+      "query": "SELECT id,position_id,stage FROM cv.application WHERE tenant_id=%s AND candidate_id=%s ORDER BY id LIMIT %s",
+      "plan": [
+        {
+          "Plan": {
+            "Node Type": "Limit",
+            "Parallel Aware": false,
+            "Async Capable": false,
+            "Startup Cost": 8.81,
+            "Total Cost": 8.81,
+            "Plan Rows": 1,
+            "Plan Width": 41,
+            "Actual Startup Time": 0.41,
+            "Actual Total Time": 0.41,
+            "Actual Rows": 1.0,
+            "Actual Loops": 1,
+            "Disabled": false,
+            "Shared Hit Blocks": 59,
+            "Shared Read Blocks": 1,
+            "Shared Dirtied Blocks": 0,
+            "Shared Written Blocks": 0,
+            "Local Hit Blocks": 6,
+            "Local Read Blocks": 0,
+            "Local Dirtied Blocks": 0,
+            "Local Written Blocks": 0,
+            "Temp Read Blocks": 0,
+            "Temp Written Blocks": 0,
+            "Plans": [
+              {
+                "Node Type": "Sort",
+                "Parent Relationship": "Outer",
+                "Parallel Aware": false,
+                "Async Capable": false,
+                "Startup Cost": 8.81,
+                "Total Cost": 8.81,
+                "Plan Rows": 1,
+                "Plan Width": 41,
+                "Actual Startup Time": 0.41,
+                "Actual Total Time": 0.41,
+                "Actual Rows": 1.0,
+                "Actual Loops": 1,
+                "Disabled": false,
+                "Sort Key": [
+                  "id"
+                ],
+                "Sort Method": "quicksort",
+                "Sort Space Used": 25,
+                "Sort Space Type": "Memory",
+                "Shared Hit Blocks": 59,
+                "Shared Read Blocks": 1,
+                "Shared Dirtied Blocks": 0,
+                "Shared Written Blocks": 0,
+                "Local Hit Blocks": 6,
+                "Local Read Blocks": 0,
+                "Local Dirtied Blocks": 0,
+                "Local Written Blocks": 0,
+                "Temp Read Blocks": 0,
+                "Temp Written Blocks": 0,
+                "Plans": [
+                  {
+                    "Node Type": "Index Scan",
+                    "Parent Relationship": "Outer",
+                    "Parallel Aware": false,
+                    "Async Capable": false,
+                    "Scan Direction": "Forward",
+                    "Index Name": "application_tenant_id_candidate_id_position_id_scope_id_key",
+                    "Relation Name": "application",
+                    "Alias": "application",
+                    "Startup Cost": 0.28,
+                    "Total Cost": 8.8,
+                    "Plan Rows": 1,
+                    "Plan Width": 41,
+                    "Actual Startup Time": 0.406,
+                    "Actual Total Time": 0.407,
+                    "Actual Rows": 1.0,
+                    "Actual Loops": 1,
+                    "Disabled": false,
+                    "Index Cond": "((tenant_id = '2f856684-85fd-5995-be43-648d668319d8'::uuid) AND (candidate_id = '8433af7e-092c-5dc8-b2ce-f67508b24cae'::uuid))",
+                    "Rows Removed by Index Recheck": 0,
+                    "Filter": "(cv.tenant_allowed(tenant_id) AND ((scope_id IS NULL) OR cv.scope_allowed(tenant_id, scope_id)))",
+                    "Rows Removed by Filter": 0,
+                    "Index Searches": 1,
+                    "Shared Hit Blocks": 59,
+                    "Shared Read Blocks": 1,
+                    "Shared Dirtied Blocks": 0,
+                    "Shared Written Blocks": 0,
+                    "Local Hit Blocks": 6,
+                    "Local Read Blocks": 0,
+                    "Local Dirtied Blocks": 0,
+                    "Local Written Blocks": 0,
+                    "Temp Read Blocks": 0,
+                    "Temp Written Blocks": 0
+                  }
+                ]
+              }
+            ]
+          },
+          "Planning": {
+            "Shared Hit Blocks": 0,
+            "Shared Read Blocks": 0,
+            "Shared Dirtied Blocks": 0,
+            "Shared Written Blocks": 0,
+            "Local Hit Blocks": 0,
+            "Local Read Blocks": 0,
+            "Local Dirtied Blocks": 0,
+            "Local Written Blocks": 0,
+            "Temp Read Blocks": 0,
+            "Temp Written Blocks": 0
+          },
+          "Planning Time": 0.101,
+          "Triggers": [],
+          "Execution Time": 0.42
+        }
+      ]
+    }
+  },
+  "limits": "Single local synthetic sample. No production latency or throughput claim."
+}

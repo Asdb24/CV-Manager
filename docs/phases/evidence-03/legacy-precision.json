@@ -1,0 +1,10 @@
+{
+  "observed_at": "2026-10-13T11:49:51.689848+00:00",
+  "attempted_head": "0017_used_definition_seals",
+  "legacy_precision_upgrade_denied": "PASS",
+  "old_revision_preserved": "PASS",
+  "legacy_total_preserved": "12.5",
+  "legacy_final_integer_preserved": 13,
+  "legacy_components_preserved": "PASS",
+  "data": "isolated synthetic only"
+}

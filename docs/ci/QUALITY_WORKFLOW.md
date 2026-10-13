@@ -1,0 +1,35 @@
+# Quality workflow and repository delivery
+
+Date: 2026-10-14. Approved repository: [Asdb24/CV-Manager](https://github.com/Asdb24/CV-Manager), remote `https://github.com/Asdb24/CV-Manager.git`. This is delivery metadata, never an application origin. Workflow: `.github/workflows/quality.yml`. Central delivery/tool/resource contract: `contracts/quality-ci.json`.
+
+## Scope and security
+
+Phase 05 adds a manual quality workflow on GitHub-hosted `windows-2025`, with `contents: read`, full commit SHA action pins, persisted checkout credentials disabled and no Actions caches. It accepts one required full reviewed `source_sha`, compares it to `github.sha`, permits only `codex/<purpose>` work branches and rejects a foreign repository. Input expressions enter environment variables rather than generated shell text. There are no PR/push triggers, environment secrets, write permissions, installer builds, Releases or deployment steps.
+
+Node/npm/Python/uv/Rust versions are centrally pinned to the existing selected toolchain. `npm ci`, `uv sync --frozen --group dev` and `cargo fetch --locked` preserve lockfiles. Model-contract dependencies, model/runtime payloads, databases and private workstation fixtures are not uploaded or downloaded. Rust Clippy compiles development code as part of lint; that is not release packaging. The existing format/lint/type/test tasks run unchanged. `node scripts/quality-ci.mjs validate --manifest contracts/quality-ci.json` parses YAML and validates the constrained workflow, action pins, permissions, inputs, steps, tool pins and cache policy. `node tests/quality-ci.mjs` covers two valid resource configurations and missing/unsafe values. Actual GitHub discovery/dispatch and job execution remain required evidence beyond static validation.
+
+Action pins were resolved from their official repositories, including dereferencing the annotated setup-uv tag. Pins and their SHA source URLs/licenses are recorded in Phase 05 evidence. The YAML parser is the officially published `yaml` package, version 2.9.1, ISC license, locked in npm. It was absent from the inventoried workspace before this phase.
+
+GitHub documents that manual dispatch requires the workflow on the default branch. The repository preflight found `main` contains a single README commit, with no other project source, and the authenticated account has ADMIN permission. The selected new workspace was not a Git repository; all 185 Phase 04 source/evidence hashes matched before phase edits. Git was initialized only in that verified folder, the approved remote fetched, and the work branch attached to that preserved history without overwriting local source. The original local README remains the new project's README.
+
+The permitted registration route is a narrowly reviewed workflow-only commit on the unprotected default branch, followed by the reviewed complete new-project commit on `codex/phase-05-quality-ci`. Registration alone is not a quality run. Manual dispatch uses the pushed work ref and explicit full SHA, then compares the resolved run SHA before accepting conclusions. No PR merge, branch protection bypass, forced push or repository visibility change is authorized or needed.
+
+The repository is public and the standard hosted runner is used. [GitHub billing documentation](https://docs.github.com/en/billing/concepts/product-billing/github-actions) identifies standard public-repository hosted usage as free. This checkpoint does not authorize paid/larger runners. [Manual dispatch documentation](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/manually-run-a-workflow) and [workflow security guidance](https://docs.github.com/en/actions/reference/security/secure-use) support registration, least permissions, full SHA pinning and untrusted-input handling. They do not establish an actual project run; the verification report records that separately.
+
+## Explicit delivery inventory
+
+Before each commit, review the actual root, remote, branch/history, cached diff, ordinary diff and selected file list. Stage only the file list in Phase 05 delivery evidence. Include required code, tests, locks, workflow, contracts and safe documentation. Preserve unrelated staged work if any; this newly initialized index had none. `.gitattributes` preserves existing raw byte hashes across Git checkout; it does not weaken formatter/lint rules.
+
+Excluded: `.local`, `.venv`, node_modules, PGDATA/databases/backups, session/token stores, .env, model/runtime payloads, target/dist/.next/artifacts, generated executable/DLL/PDB/object files and personal CV/contact data. Static synthetic settings and tests are labeled and required; they do not create release accounts. Source UI icons and synthetic shell-inspection images are reviewed source/evidence assets rather than application runtime binaries. Secret values are scanned in memory and never printed. Historical predecessor files retain their dates and gate scope; current ownership amendments do not turn those gates into later runtime success.
+
+## Database integration is separate
+
+The quality workflow runs the existing Python unit/contract tests, JS session/CI contract checks, API/worker development lifecycle checks and real generated-client checks. It does not call database:check/auth:check/migration lifecycle, upload the workstation's protected credentials or infer database behavior from mocks.
+
+Run database integration on a suitable isolated test machine using a new project-owned synthetic PostgreSQL cluster, fresh generated roles/secrets in ignored protected storage and an explicitly validated database-test configuration. Then run `node scripts/tasks.mjs database:check --config <owned-test-config>` and `node scripts/tasks.mjs auth:check --config <owned-test-config>`. Keep existing user accounts/workspaces out of this disposable test path. Source-matched Phase 03/04 real PostgreSQL evidence remains valid; changed backend/schema owners must re-run affected integration. A future separate hosted integration workflow must provision a fresh database and generate its own masked transient credentials. Missing actual integration evidence cannot be replaced by this unit CI success.
+
+## Release owners and result recording
+
+Phase 34 owns pinned payload recipes; Phase 40 owns actual GitHub-hosted installer/portable builds and artifact upload/download/checksums; Phase 41 owns clean offline Windows; Phase 42 owns approved HTTPS. No installer is built in Phase 05. CI records repository/ref/source SHA, workflow/run URL/ID/attempt, job/step conclusions and sanitized logs. No quality artifact upload is needed here; release artifact inventories/digests remain UNVERIFIED under Phase 40.
+
+Run state starts UNVERIFIED. The current Phase 05 STATUS/VERIFICATION must contain the actual local exit codes, registration commit, source commit and run outcome before PASS. A source change after a run invalidates the affected evidence and needs a new reviewed SHA/run when executable workflow/source changed. Evidence-only follow-up commits must link the previously verified implementation SHA and make their scope explicit.

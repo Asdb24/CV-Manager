@@ -1,0 +1,38 @@
+{
+  "actions": [
+    {
+      "repository": "actions/checkout",
+      "commit": "3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "url": "https://github.com/actions/checkout/commit/3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "license": "MIT",
+      "license_url": "https://github.com/actions/checkout/blob/3d3c42e5aac5ba805825da76410c181273ba90b1/LICENSE"
+    },
+    {
+      "repository": "actions/setup-node",
+      "commit": "949feb2413d6458794dcd2491c4babbbce0c15c1",
+      "url": "https://github.com/actions/setup-node/commit/949feb2413d6458794dcd2491c4babbbce0c15c1",
+      "license": "MIT",
+      "license_url": "https://github.com/actions/setup-node/blob/949feb2413d6458794dcd2491c4babbbce0c15c1/LICENSE"
+    },
+    {
+      "repository": "actions/setup-python",
+      "commit": "5fda3b95a4ea91299a34e894583c3862153e4b97",
+      "url": "https://github.com/actions/setup-python/commit/5fda3b95a4ea91299a34e894583c3862153e4b97",
+      "license": "MIT",
+      "license_url": "https://github.com/actions/setup-python/blob/5fda3b95a4ea91299a34e894583c3862153e4b97/LICENSE"
+    },
+    {
+      "repository": "astral-sh/setup-uv",
+      "commit": "37802adc94f370d6bfd71619e3f0bf239e1f3b78",
+      "url": "https://github.com/astral-sh/setup-uv/commit/37802adc94f370d6bfd71619e3f0bf239e1f3b78",
+      "license": "MIT",
+      "license_url": "https://github.com/astral-sh/setup-uv/blob/37802adc94f370d6bfd71619e3f0bf239e1f3b78/LICENSE"
+    }
+  ],
+  "yaml": {
+    "version": "2.9.1",
+    "license": "ISC",
+    "official_package": "https://www.npmjs.com/package/yaml",
+    "upstream": "https://github.com/eemeli/yaml"
+  }
+}

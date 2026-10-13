@@ -1,0 +1,16 @@
+F                                                                        [100%]
+================================== FAILURES ===================================
+________________ test_policy_expiring_before_commit_rolls_back ________________
+tests\auth\test_policy_finalization.py:21: in test_policy_expiring_before_commit_rolls_back
+    with pytest.raises(PersistenceError, match="ACCESS_DENIED"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: DID NOT RAISE PersistenceError
+============================== warnings summary ===============================
+tests/auth/test_policy_finalization.py::test_policy_expiring_before_commit_rolls_back
+  C:\Users\DHTT\Downloads\Download\do an cn\.venv\Lib\site-packages\alembic\config.py:604: DeprecationWarning: No path_separator found in configuration; falling back to legacy splitting on spaces, commas, and colons for prepend_sys_path.  Consider adding path_separator=os to Alembic config.
+    util.warn_deprecated(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/auth/test_policy_finalization.py::test_policy_expiring_before_commit_rolls_back
+1 failed, 1 warning in 1.67s

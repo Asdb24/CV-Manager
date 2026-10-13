@@ -1,0 +1,62 @@
+{
+  "drift": [],
+  "scratchRegeneration": "PASS",
+  "negative": [
+    {
+      "kind": "public",
+      "artifact": "types",
+      "deliberately_stale_result": "REJECTED",
+      "exitCode": 1,
+      "checker": "actual child-process scratch regeneration"
+    },
+    {
+      "kind": "public",
+      "artifact": "schema",
+      "deliberately_stale_result": "REJECTED",
+      "exitCode": 1,
+      "checker": "actual child-process scratch regeneration"
+    },
+    {
+      "kind": "staff",
+      "artifact": "types",
+      "deliberately_stale_result": "REJECTED",
+      "exitCode": 1,
+      "checker": "actual child-process scratch regeneration"
+    },
+    {
+      "kind": "staff",
+      "artifact": "schema",
+      "deliberately_stale_result": "REJECTED",
+      "exitCode": 1,
+      "checker": "actual child-process scratch regeneration"
+    },
+    {
+      "kind": "local-ai",
+      "artifact": "types",
+      "deliberately_stale_result": "REJECTED",
+      "exitCode": 1,
+      "checker": "actual child-process scratch regeneration"
+    },
+    {
+      "kind": "local-ai",
+      "artifact": "schema",
+      "deliberately_stale_result": "REJECTED",
+      "exitCode": 1,
+      "checker": "actual child-process scratch regeneration"
+    },
+    {
+      "kind": "configuration",
+      "artifact": "types",
+      "deliberately_stale_result": "REJECTED",
+      "exitCode": 1,
+      "checker": "actual child-process scratch regeneration"
+    },
+    {
+      "kind": "configuration",
+      "artifact": "schema",
+      "deliberately_stale_result": "REJECTED",
+      "exitCode": 1,
+      "checker": "actual child-process scratch regeneration"
+    }
+  ]
+}

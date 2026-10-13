@@ -1,0 +1,50 @@
+{
+  "recorded_at": "2026-10-13T06:29:13.355130+00:00",
+  "head": "0014_policy_parameters",
+  "gate": "STOP",
+  "observed_commands": [
+    {
+      "command": "node scripts/tasks.mjs database:check --config infra/config/database-test.json",
+      "exit_code": 0,
+      "database_tests_passed": 80,
+      "pytest_seconds": 40.93,
+      "query_plans": "regenerated",
+      "catalog_head": "0014_policy_parameters"
+    },
+    {
+      "command": "node scripts/tasks.mjs migration:check --config infra/config/database-test.json",
+      "exit_code": 0,
+      "empty_up_down_up": "PASS",
+      "populated_forward_preservation": "PASS",
+      "legacy_precision_rejection": "PASS"
+    },
+    {
+      "command": "node scripts/tasks.mjs format:check",
+      "exit_code": 0
+    },
+    {
+      "command": "node scripts/tasks.mjs lint",
+      "exit_code": 0
+    },
+    {
+      "command": "node scripts/tasks.mjs typecheck",
+      "exit_code": 0,
+      "mypy_files": 35
+    }
+  ],
+  "scope": "Affected repair checks; not a full current-source nine-command phase checkpoint or independent closure.",
+  "open": [
+    "R2 read-path coverage audit and independent follow-up",
+    "R4 full extraction/semantic evidence identity",
+    "final requirement audit/current checkpoint/reviewer closure"
+  ],
+  "files_sha256": {
+    "packages/foundation/src/cv_foundation/database.py": "b6d29306f4138b4c0b735db2c173ed799a4ccedb71eb8d636cfc195fe3160e5d",
+    "tests/database/test_finalization.py": "33506ca62fe995f014576d5b3a84d9ce8b5063813d1af68023608510c7ee1c91",
+    "tests/database/test_adapter.py": "4a4eae3574c2a13ff2af6137468b49fc508bf2c9d903388ef8b0887ab3194e21",
+    "tests/database/test_core.py": "e60c1340443c71ee7b374de868b2069f5ee3e395465961ebb838c54fde05e9dc",
+    "tests/database/test_integrity.py": "cddb7cc8e67818b64bf3160c14026752a569a4a9ebad116a2f723e9f7a632562",
+    "contracts/migration-state.json": "ed2d9111979117707b07219a2498914205ab10e7afcf7635ffd20763dea16737",
+    "pyproject.toml": "c0acb983678deb9ae0ce14faf8f65e777c1fbd5107ca34c8700720b6d1e5ae3d"
+  }
+}

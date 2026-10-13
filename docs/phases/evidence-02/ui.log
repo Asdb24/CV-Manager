@@ -1,0 +1,21 @@
+
+Running 10 tests using 1 worker
+
+  ok  1 tests\ui\shell.spec.ts:30:7 › desktop 1280x800 light: actual shell and connection (777ms)
+  ok  2 tests\ui\shell.spec.ts:30:7 › desktop 1024x768 light: actual shell and connection (506ms)
+  ok  3 tests\ui\shell.spec.ts:30:7 › public 390x844 light: actual shell and connection (512ms)
+  ok  4 tests\ui\shell.spec.ts:30:7 › public 360x800 light: actual shell and connection (505ms)
+  ok  5 tests\ui\shell.spec.ts:30:7 › desktop 1280x800 dark: actual shell and connection (552ms)
+  ok  6 tests\ui\shell.spec.ts:30:7 › desktop 1024x768 dark: actual shell and connection (478ms)
+  ok  7 tests\ui\shell.spec.ts:30:7 › public 390x844 dark: actual shell and connection (451ms)
+  ok  8 tests\ui\shell.spec.ts:30:7 › public 360x800 dark: actual shell and connection (523ms)
+  ok  9 tests\ui\shell.spec.ts:147:1 › desktop discard an old reply after changing selection (466ms)
+  ok 10 tests\ui\shell.spec.ts:199:1 › public connection loss is actionable and exposes no data (354ms)
+
+  10 passed (16.7s)
+[WebServer] (node:19324) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:2444) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+(node:6604) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

@@ -1,0 +1,15 @@
+node_modules
+.venv
+.local
+artifacts
+dist
+.next
+target
+package-lock.json
+uv.lock
+docs/product
+docs/phases/PHASE_01*
+docs/architecture/TOOLCHAIN_SOURCES.json
+packages/api-client/src/generated
+contracts/generated
+**/src-tauri/gen/

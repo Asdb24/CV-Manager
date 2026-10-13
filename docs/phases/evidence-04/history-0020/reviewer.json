@@ -1,0 +1,14 @@
+{
+  "reviewer_id": "01a13643-d742-7f91-9778-0f443a2eb895",
+  "nickname": "Einstein",
+  "phase": "04",
+  "dispatched_at": "2026-10-13T17:16:44.312415+00:00",
+  "main_packet": "review-start.json",
+  "state": "RESUMED_SAME_REVIEWER",
+  "scope": "Read-only source and saved evidence. No tests/DB mutation, edits or delegation.",
+  "interruption": {
+    "state": "ERRORED_USAGE_LIMIT",
+    "report": "Reviewer stopped before final findings/decision; no review PASS."
+  },
+  "resumed_at": "2026-10-13T17:25:42.301367+00:00"
+}

@@ -1,0 +1,29 @@
+{
+  "checks": [
+    {
+      "profile": "development",
+      "secret_supplied": false,
+      "exit_code": 2,
+      "expected_exit_code": 2
+    },
+    {
+      "profile": "development",
+      "secret_supplied": true,
+      "exit_code": 0,
+      "expected_exit_code": 0
+    },
+    {
+      "profile": "test",
+      "secret_supplied": false,
+      "exit_code": 2,
+      "expected_exit_code": 2
+    },
+    {
+      "profile": "test",
+      "secret_supplied": true,
+      "exit_code": 0,
+      "expected_exit_code": 0
+    }
+  ],
+  "database_runtime": "UNVERIFIED owner 03"
+}

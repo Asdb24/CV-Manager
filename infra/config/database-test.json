@@ -1,0 +1,16 @@
+{
+  "profile": "test",
+  "cluster_directory": ".local/phase03/postgres",
+  "credential_file": ".local/phase03/credentials.json",
+  "host": "127.0.0.1",
+  "port": 5447,
+  "database": "cv_phase03_synthetic",
+  "connect_timeout_seconds": 5,
+  "statement_timeout_ms": 10000,
+  "lock_timeout_ms": 3000,
+  "startup_timeout_seconds": 30,
+  "seed_validity_seconds": 86400,
+  "synthetic_company_count": 2000,
+  "synthetic_person_count": 3000,
+  "query_page_size": 50
+}

@@ -1,0 +1,878 @@
+{
+  "method": "rg candidate scan plus main-agent source/call-path review",
+  "count": 109,
+  "candidates": [
+    {
+      "file": "infra/compose.yaml",
+      "line": 9,
+      "candidate": "      POSTGRES_PASSWORD: ${CV_POSTGRES_PASSWORD:?Development secret required}",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/postgresql-image.lock.json",
+      "line": 6,
+      "candidate": "  \"source\": \"https://hub.docker.com/_/postgres\",",
+      "classification": "authorized artifact/source/license provenance",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "scripts/clients.mjs",
+      "line": 110,
+      "candidate": "        /AdvisoryAttachment|StaffCapabilities|ApprovedInputManifest|database_secret_env/,",
+      "classification": "negative private-schema leak assertion",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "scripts/infra_check.py",
+      "line": 1,
+      "candidate": "\"\"\"Real Compose config checks without starting a database or exposing secrets.\"\"\"",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "scripts/infra_check.py",
+      "line": 5,
+      "candidate": "import secrets",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "scripts/infra_check.py",
+      "line": 22,
+      "candidate": "            env[config.password_environment] = secrets.token_urlsafe(32)",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "scripts/infra_check.py",
+      "line": 31,
+      "candidate": "            timeout=settings.network.request_timeout_ms * 6 / 1000,",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "scripts/infra_check.py",
+      "line": 41,
+      "candidate": "                \"secret_supplied\": supplied,",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "tests/runtime.mjs",
+      "line": 43,
+      "candidate": "          await delay(settings.network.request_timeout_ms / 100);",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "contracts/model-manifest.json",
+      "line": 5,
+      "candidate": "  \"metadata_source\": \"https://huggingface.co/api/models/intfloat/multilingual-e5-small?blobs=true\",",
+      "classification": "authorized artifact/source/license provenance",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "contracts/model-manifest.json",
+      "line": 9,
+      "candidate": "    \"upstream_repository_license_source\": \"https://raw.githubusercontent.com/microsoft/unilm/master/LICENSE\",",
+      "classification": "authorized artifact/source/license provenance",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "contracts/model-manifest.json",
+      "line": 46,
+      "candidate": "      \"source\": \"https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/onnx/model_qint8_avx512_vnni.onnx\",",
+      "classification": "authorized artifact/source/license provenance",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "contracts/model-manifest.json",
+      "line": 53,
+      "candidate": "      \"source\": \"https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/tokenizer.json\",",
+      "classification": "authorized artifact/source/license provenance",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "contracts/model-manifest.json",
+      "line": 60,
+      "candidate": "      \"source\": \"https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/tokenizer_config.json\",",
+      "classification": "authorized artifact/source/license provenance",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "contracts/model-manifest.json",
+      "line": 67,
+      "candidate": "      \"source\": \"https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/special_tokens_map.json\",",
+      "classification": "authorized artifact/source/license provenance",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "contracts/model-manifest.json",
+      "line": 74,
+      "candidate": "      \"source\": \"https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/sentencepiece.bpe.model\",",
+      "classification": "authorized artifact/source/license provenance",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "contracts/model-manifest.json",
+      "line": 81,
+      "candidate": "      \"source\": \"https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/config.json\",",
+      "classification": "authorized artifact/source/license provenance",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "scripts/licenses.py",
+      "line": 53,
+      "candidate": "            \"source\": f\"https://pypi.org/project/{meta['Name']}/{distribution.version}/\",",
+      "classification": "authorized artifact/source/license provenance",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "tests/ui/audit.spec.ts",
+      "line": 12,
+      "candidate": "    test.setTimeout(client.request_timeout_ms * 12);",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "tests/ui/audit.spec.ts",
+      "line": 27,
+      "candidate": "        timeout: client.request_timeout_ms * 12,",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "tests/python/test_foundation.py",
+      "line": 68,
+      "candidate": "        raw[\"network\"][\"api_origin\"] = \"http://0.0.0.0:8237\"",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "tests/python/test_foundation.py",
+      "line": 78,
+      "candidate": "        raw[\"resources\"][\"public_page_size\"] = 0",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "tests/python/test_foundation.py",
+      "line": 104,
+      "candidate": "        raw[\"network\"][\"api_origin\"] = \"https://synthetic-api.example.invalid\"",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "tests/python/test_foundation.py",
+      "line": 106,
+      "candidate": "        raw[\"network\"][\"web_origin\"] = \"https://synthetic-jobs.example.invalid\"",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "tests/python/test_foundation.py",
+      "line": 112,
+      "candidate": "        # Environment-variable name only; this fixture contains no credential.",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "tests/python/test_foundation.py",
+      "line": 113,
+      "candidate": "        raw[\"dependencies\"][\"database_secret_env\"] = \"SYNTHETIC_DATABASE_URL\"  # noqa: S105",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "tests/python/test_foundation.py",
+      "line": 174,
+      "candidate": "        \"invalid-secret-name\",",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "tests/python/test_foundation.py",
+      "line": 181,
+      "candidate": "        raw[\"network\"][\"api_origin\"] = \"http://127.0.0.1:0\"",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "tests/python/test_foundation.py",
+      "line": 186,
+      "candidate": "    elif case == \"invalid-secret-name\":",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "tests/python/test_foundation.py",
+      "line": 187,
+      "candidate": "        # Deliberately invalid environment-variable name, never an operational secret.",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "tests/python/test_foundation.py",
+      "line": 188,
+      "candidate": "        raw[\"dependencies\"][\"database_secret_env\"] = \"ENV-NAME-INVALID\"  # noqa: S105",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "tests/python/test_foundation.py",
+      "line": 195,
+      "candidate": "def test_projection_has_no_secret_or_private_runtime_value() -> None:",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "tests/python/test_foundation.py",
+      "line": 203,
+      "candidate": "            \"database_secret_env\",",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "tests/python/test_foundation.py",
+      "line": 265,
+      "candidate": "            \"/live\", headers={\"Origin\": \"https://synthetic-foreign.example.invalid\"}",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "tests/python/test_foundation.py",
+      "line": 278,
+      "candidate": "    assert origin_parts(\"http://127.0.0.1\") == (\"http\", \"127.0.0.1\", 80)",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "tests/python/test_foundation.py",
+      "line": 279,
+      "candidate": "    assert origin_parts(\"http://[::1]:8127\") == (\"http\", \"::1\", 8127)",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "tests/python/test_foundation.py",
+      "line": 281,
+      "candidate": "        \"HTTP://127.0.0.1:8127\",",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "tests/python/test_foundation.py",
+      "line": 282,
+      "candidate": "        \"http://127.0.0.1:08127\",",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "tests/python/test_foundation.py",
+      "line": 283,
+      "candidate": "        \"https://SYNTHETIC.example.invalid\",",
+      "classification": "isolated synthetic/negative or inspection fixture",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/compose.json",
+      "line": 5,
+      "candidate": "    \"bind_host\": \"127.0.0.1\",",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/compose.json",
+      "line": 18,
+      "candidate": "    \"bind_host\": \"127.0.0.1\",",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "apps/worker/src/cv_worker/interfaces.py",
+      "line": 22,
+      "candidate": "        self.timeout_seconds = timeout_ms / 1000",
+      "classification": "validated bind/lifecycle and unit conversion",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/test.json",
+      "line": 9,
+      "candidate": "      \"http://127.0.0.1:1527\",",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/test.json",
+      "line": 10,
+      "candidate": "      \"http://127.0.0.1:3127\",",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/test.json",
+      "line": 11,
+      "candidate": "      \"http://tauri.localhost\"",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/test.json",
+      "line": 13,
+      "candidate": "    \"request_timeout_ms\": 10000,",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/test.json",
+      "line": 14,
+      "candidate": "    \"shutdown_timeout_ms\": 5000,",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/test.json",
+      "line": 20,
+      "candidate": "    \"api_origin\": \"http://127.0.0.1:8237\",",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/test.json",
+      "line": 21,
+      "candidate": "    \"desktop_origin\": \"http://127.0.0.1:1527\",",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/test.json",
+      "line": 22,
+      "candidate": "    \"native_desktop_origin\": \"http://tauri.localhost\",",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/test.json",
+      "line": 23,
+      "candidate": "    \"web_origin\": \"http://127.0.0.1:3127\",",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/test.json",
+      "line": 24,
+      "candidate": "    \"worker_origin\": \"http://127.0.0.1:8247\",",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/test.json",
+      "line": 25,
+      "candidate": "    \"ai_origin\": \"http://127.0.0.1:8257\",",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/test.json",
+      "line": 27,
+      "candidate": "      \"host\": \"127.0.0.1\",",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/test.json",
+      "line": 31,
+      "candidate": "      \"host\": \"127.0.0.1\",",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/test.json",
+      "line": 41,
+      "candidate": "    \"ai_timeout_ms\": 60000,",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/test.json",
+      "line": 49,
+      "candidate": "    \"worker_task_timeout_ms\": 60000,",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/test.json",
+      "line": 52,
+      "candidate": "    \"public_page_size\": 20,",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/test.json",
+      "line": 56,
+      "candidate": "    \"database_secret_env\": null,",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/development.json",
+      "line": 9,
+      "candidate": "      \"http://127.0.0.1:1427\",",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/development.json",
+      "line": 10,
+      "candidate": "      \"http://127.0.0.1:3027\",",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/development.json",
+      "line": 11,
+      "candidate": "      \"http://tauri.localhost\"",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/development.json",
+      "line": 13,
+      "candidate": "    \"request_timeout_ms\": 10000,",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/development.json",
+      "line": 14,
+      "candidate": "    \"shutdown_timeout_ms\": 5000,",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/development.json",
+      "line": 20,
+      "candidate": "    \"api_origin\": \"http://127.0.0.1:8127\",",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/development.json",
+      "line": 21,
+      "candidate": "    \"desktop_origin\": \"http://127.0.0.1:1427\",",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/development.json",
+      "line": 22,
+      "candidate": "    \"native_desktop_origin\": \"http://tauri.localhost\",",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/development.json",
+      "line": 23,
+      "candidate": "    \"web_origin\": \"http://127.0.0.1:3027\",",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/development.json",
+      "line": 24,
+      "candidate": "    \"worker_origin\": \"http://127.0.0.1:8137\",",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/development.json",
+      "line": 25,
+      "candidate": "    \"ai_origin\": \"http://127.0.0.1:8147\",",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/development.json",
+      "line": 27,
+      "candidate": "      \"host\": \"127.0.0.1\",",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/development.json",
+      "line": 31,
+      "candidate": "      \"host\": \"127.0.0.1\",",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/development.json",
+      "line": 41,
+      "candidate": "    \"ai_timeout_ms\": 60000,",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/development.json",
+      "line": 49,
+      "candidate": "    \"worker_task_timeout_ms\": 60000,",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/development.json",
+      "line": 52,
+      "candidate": "    \"public_page_size\": 20,",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "infra/config/development.json",
+      "line": 56,
+      "candidate": "    \"database_secret_env\": null,",
+      "classification": "central typed synthetic settings and required environment references",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "apps/web/app/page.tsx",
+      "line": 35,
+      "candidate": "        credentials: \"omit\",",
+      "classification": "fixed transport/security or schema-only contract; effective values from validated owner",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/foundation/src/cv_foundation/ai_contract.py",
+      "line": 16,
+      "candidate": "    credentials: Annotated[HTTPAuthorizationCredentials | None, Depends(startup_bearer)],",
+      "classification": "fixed transport/security or schema-only contract; effective values from validated owner",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/foundation/src/cv_foundation/ai_harness.py",
+      "line": 8,
+      "candidate": "import secrets",
+      "classification": "generated private startup context/handle format and configured lifecycle",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/foundation/src/cv_foundation/ai_harness.py",
+      "line": 52,
+      "candidate": "        startup_authority=secrets.token_urlsafe(32),",
+      "classification": "generated private startup context/handle format and configured lifecycle",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/foundation/src/cv_foundation/ai_harness.py",
+      "line": 112,
+      "candidate": "            handle = secrets.token_hex(32)",
+      "classification": "generated private startup context/handle format and configured lifecycle",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "apps/web/next-env.d.ts",
+      "line": 7,
+      "candidate": "// see https://nextjs.org/docs/app/api-reference/config/typescript for more information.",
+      "classification": "framework/security/build definitions",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/foundation/src/cv_foundation/ai_launcher.py",
+      "line": 5,
+      "candidate": "import secrets",
+      "classification": "generated private startup context/handle format and configured lifecycle",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/foundation/src/cv_foundation/ai_launcher.py",
+      "line": 37,
+      "candidate": "    family = socket.AF_INET6 if host == \"::1\" else socket.AF_INET",
+      "classification": "generated private startup context/handle format and configured lifecycle",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/foundation/src/cv_foundation/ai_launcher.py",
+      "line": 59,
+      "candidate": "            if not secrets.compare_digest(",
+      "classification": "generated private startup context/handle format and configured lifecycle",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/foundation/src/cv_foundation/ai_launcher.py",
+      "line": 77,
+      "candidate": "                timeout_graceful_shutdown=settings.network.shutdown_timeout_ms // 1000,",
+      "classification": "generated private startup context/handle format and configured lifecycle",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "apps/web/proxy.ts",
+      "line": 6,
+      "candidate": "  // https://nextjs.org/docs/app/guides/content-security-policy",
+      "classification": "framework/security/build definitions",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/foundation/src/cv_foundation/server.py",
+      "line": 21,
+      "candidate": "    family = socket.AF_INET6 if binding.host == \"::1\" else socket.AF_INET",
+      "classification": "validated bind/lifecycle and unit conversion",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/foundation/src/cv_foundation/server.py",
+      "line": 34,
+      "candidate": "                timeout_graceful_shutdown=settings.network.shutdown_timeout_ms // 1000,",
+      "classification": "validated bind/lifecycle and unit conversion",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/foundation/src/cv_foundation/settings.py",
+      "line": 22,
+      "candidate": "    bind_host: Literal[\"127.0.0.1\"]",
+      "classification": "central validator and sourced network/security/model/budget guards",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/foundation/src/cv_foundation/settings.py",
+      "line": 28,
+      "candidate": "    health_timeout_seconds: int = Field(gt=0, le=120, strict=True)",
+      "classification": "central validator and sourced network/security/model/budget guards",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/foundation/src/cv_foundation/settings.py",
+      "line": 57,
+      "candidate": "    native_desktop_origin: Literal[\"http://tauri.localhost\"]",
+      "classification": "central validator and sourced network/security/model/budget guards",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/foundation/src/cv_foundation/settings.py",
+      "line": 65,
+      "candidate": "    request_timeout_ms: int = Field(gt=0, le=120000, strict=True)",
+      "classification": "central validator and sourced network/security/model/budget guards",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/foundation/src/cv_foundation/settings.py",
+      "line": 66,
+      "candidate": "    shutdown_timeout_ms: int = Field(gt=0, le=120000, multiple_of=1000, strict=True)",
+      "classification": "central validator and sourced network/security/model/budget guards",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/foundation/src/cv_foundation/settings.py",
+      "line": 80,
+      "candidate": "    ai_timeout_ms: int = Field(gt=0, le=120000, strict=True)",
+      "classification": "central validator and sourced network/security/model/budget guards",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/foundation/src/cv_foundation/settings.py",
+      "line": 88,
+      "candidate": "    worker_task_timeout_ms: int = Field(gt=0, le=120000, strict=True)",
+      "classification": "central validator and sourced network/security/model/budget guards",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/foundation/src/cv_foundation/settings.py",
+      "line": 91,
+      "candidate": "    public_page_size: int = Field(gt=0, le=200, strict=True)",
+      "classification": "central validator and sourced network/security/model/budget guards",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/foundation/src/cv_foundation/settings.py",
+      "line": 96,
+      "candidate": "    database_secret_env: str | None = Field(pattern=r\"^[A-Z][A-Z0-9_]*$\")",
+      "classification": "central validator and sourced network/security/model/budget guards",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/foundation/src/cv_foundation/settings.py",
+      "line": 191,
+      "candidate": "            if scheme != \"http\" or host not in {\"127.0.0.1\", \"::1\"}:",
+      "classification": "central validator and sourced network/security/model/budget guards",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/foundation/src/cv_foundation/settings.py",
+      "line": 198,
+      "candidate": "                    scheme != \"http\" or host not in {\"127.0.0.1\", \"::1\"}",
+      "classification": "central validator and sourced network/security/model/budget guards",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/foundation/src/cv_foundation/settings.py",
+      "line": 228,
+      "candidate": "            elif origin_parts(self.network.api_origin)[1] not in {\"127.0.0.1\", \"::1\"}:",
+      "classification": "central validator and sourced network/security/model/budget guards",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/foundation/src/cv_foundation/settings.py",
+      "line": 231,
+      "candidate": "            not self.dependencies.database_secret_env or not self.dependencies.document_root",
+      "classification": "central validator and sourced network/security/model/budget guards",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/foundation/src/cv_foundation/settings.py",
+      "line": 248,
+      "candidate": "            if binding.host not in {\"127.0.0.1\", \"::1\"}:",
+      "classification": "central validator and sourced network/security/model/budget guards",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "apps/api/src/cv_api/app.py",
+      "line": 29,
+      "candidate": "    credentials: Annotated[HTTPAuthorizationCredentials | None, Depends(bearer)],",
+      "classification": "fixed transport/security or schema-only contract; effective values from validated owner",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "apps/api/src/cv_api/app.py",
+      "line": 44,
+      "candidate": "        allow_credentials=False,",
+      "classification": "fixed transport/security or schema-only contract; effective values from validated owner",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/api-client/src/public.ts",
+      "line": 9,
+      "candidate": "        credentials: \"omit\",",
+      "classification": "fixed transport/security or schema-only contract; effective values from validated owner",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/api-client/src/local-ai.ts",
+      "line": 11,
+      "candidate": "    ![\"127.0.0.1\", \"[::1]\"].includes(parsed.hostname) ||",
+      "classification": "fixed transport/security or schema-only contract; effective values from validated owner",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "packages/api-client/src/local-ai.ts",
+      "line": 21,
+      "candidate": "        credentials: \"omit\",",
+      "classification": "fixed transport/security or schema-only contract; effective values from validated owner",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    },
+    {
+      "file": "apps/desktop/src-tauri/tauri.conf.json",
+      "line": 2,
+      "candidate": "  \"$schema\": \"https://schema.tauri.app/config/2\",",
+      "classification": "framework/security/build definitions",
+      "disposition": "retained after manual call-path review",
+      "owner": "02; later runtime owners in review"
+    }
+  ]
+}

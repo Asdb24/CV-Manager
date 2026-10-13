@@ -1,0 +1,21 @@
+# Phase 04 status
+
+Date: 2026-10-14. Work began 2026-10-13 after Phase 03 exact `Gate decision: PASS`; all 113 predecessor manifest hashes matched before edits. Current head: `0020_auth_finalization`.
+
+Main implementation and checks are complete. Ten canonical checkpoint commands passed. Final affected verification after the last bounded-request/operator changes passed 90 tests (17 real PostgreSQL/API auth + 73 Python); strict typing covers 47 files. The inherited real PostgreSQL suite passed 94 tests. Generated clients, migration lifecycle, infrastructure and desktop/web builds passed. All 59 cv tables have forced RLS and migration-owner ownership.
+
+Exactly one Phase 04 independent read-only reviewer is now required; review has not completed. No Phase 03 review is reused as Phase 04 approval. Main agent owns repair and affected re-verification.
+
+Skills read/applied: project-spec-no-slop, no-ai-slop/eval, create-specification. Argon2-cffi was inventoried, added from its official distribution and pinned with transitive dependencies/licenses. No reboot needed. No external provider/publication/personal data.
+
+Native first-launch/device Credential Manager 15, deployed HTTPS 17, public browse/intake 06/08 and subsequent domain/AI/release work remain UNVERIFIED. No visible UI, production recovery or legal/security certification claimed.
+
+Next permitted prompt only after this gate PASS: `PHASE_05_DESIGN_SYSTEM_AND_DESKTOP_UX.md`. It has not run.
+
+Gate decision: STOP
+
+## Independent review and repair
+
+The same reviewer returned STOP at0020 with R1 High/R2 Medium/R3 Medium. Main confirmed all three with seven failing regression cases. Forward0021 and input validation repair them; seven initial targeted cases now pass. Additional current-session/late-bootstrap-expiry/valid-Vietnamese cases and the full current checkpoint are running. The sole reviewer Einstein remains the follow-up owner. The earlier main-check summary above records the pre-review state and does not imply review approval.
+
+Gate decision: STOP

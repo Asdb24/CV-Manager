@@ -1,0 +1,106 @@
+
+Running 2 tests using 1 worker
+
+
+  x  1 tests\ui\audit.spec.ts:11:3 › desktop actual Lighthouse audit (2.4s)
+
+  x  2 tests\ui\audit.spec.ts:11:3 › public actual Lighthouse audit (2.2s)
+
+
+  1) tests\ui\audit.spec.ts:11:3 › desktop actual Lighthouse audit ─────────────────────────────────
+
+    Error: (node:16508) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+    (Use `node --trace-warnings ...` to show where the warning was created)
+    node:internal/child_process:457
+        throw new ErrnoException(err, 'spawn');
+              ^
+
+    Error: spawn UNKNOWN
+        at ChildProcess.spawn (node:internal/child_process:457:11)
+        at Launcher.spawn (node:child_process:813:9)
+
+      29 |     );
+      30 |     console.log(result.stdout);
+    > 31 |     expect(result.status, result.stderr).toBe(0);
+         |                                          ^
+      32 |   });
+      33 | }
+      34 |
+        at file:///C:/Users/DHTT/Downloads/Download/do%20an%20cn/node_modules/chrome-launcher/dist/chrome-launcher.js:231:39
+        at Launcher.spawnProcess (file:///C:/Users/DHTT/Downloads/Download/do%20an%20cn/node_modules/chrome-launcher/dist/chrome-launcher.js:252:11)
+        at Launcher.launch (file:///C:/Users/DHTT/Downloads/Download/do%20an%20cn/node_modules/chrome-launcher/dist/chrome-launcher.js:216:31)
+        at launch (file:///C:/Users/DHTT/Downloads/Download/do%20an%20cn/node_modules/chrome-launcher/dist/chrome-launcher.js:32:20)
+        at file:///C:/Users/DHTT/Downloads/Download/do%20an%20cn/scripts/lighthouse.mjs:19:22
+        at ModuleJob.run (node:internal/modules/esm/module_job:569:25)
+        at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+        at async node:internal/modules/esm/loader:650:26 {
+      errno: -4094,
+      code: 'UNKNOWN',
+      syscall: 'spawn'
+    }
+
+    Node.js v26.8.2
+
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+        at C:\Users\DHTT\Downloads\Download\do an cn\tests\ui\audit.spec.ts:31:42
+
+    Error Context: test-results\audit-desktop-actual-Lighthouse-audit\error-context.md
+
+  2) tests\ui\audit.spec.ts:11:3 › public actual Lighthouse audit ──────────────────────────────────
+
+    Error: (node:12728) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+    (Use `node --trace-warnings ...` to show where the warning was created)
+    node:internal/child_process:457
+        throw new ErrnoException(err, 'spawn');
+              ^
+
+    Error: spawn UNKNOWN
+        at ChildProcess.spawn (node:internal/child_process:457:11)
+        at Launcher.spawn (node:child_process:813:9)
+
+      29 |     );
+      30 |     console.log(result.stdout);
+    > 31 |     expect(result.status, result.stderr).toBe(0);
+         |                                          ^
+      32 |   });
+      33 | }
+      34 |
+        at file:///C:/Users/DHTT/Downloads/Download/do%20an%20cn/node_modules/chrome-launcher/dist/chrome-launcher.js:231:39
+        at Launcher.spawnProcess (file:///C:/Users/DHTT/Downloads/Download/do%20an%20cn/node_modules/chrome-launcher/dist/chrome-launcher.js:252:11)
+        at Launcher.launch (file:///C:/Users/DHTT/Downloads/Download/do%20an%20cn/node_modules/chrome-launcher/dist/chrome-launcher.js:216:31)
+        at launch (file:///C:/Users/DHTT/Downloads/Download/do%20an%20cn/node_modules/chrome-launcher/dist/chrome-launcher.js:32:20)
+        at file:///C:/Users/DHTT/Downloads/Download/do%20an%20cn/scripts/lighthouse.mjs:19:22
+        at ModuleJob.run (node:internal/modules/esm/module_job:569:25)
+        at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+        at async node:internal/modules/esm/loader:650:26 {
+      errno: -4094,
+      code: 'UNKNOWN',
+      syscall: 'spawn'
+    }
+
+    Node.js v26.8.2
+
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+        at C:\Users\DHTT\Downloads\Download\do an cn\tests\ui\audit.spec.ts:31:42
+
+    Error Context: test-results\audit-public-actual-Lighthouse-audit\error-context.md
+
+  2 failed
+    tests\ui\audit.spec.ts:11:3 › desktop actual Lighthouse audit ──────────────────────────────────
+    tests\ui\audit.spec.ts:11:3 › public actual Lighthouse audit ───────────────────────────────────
+[WebServer] (node:24284) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:18588) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+(node:20428) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:22708) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

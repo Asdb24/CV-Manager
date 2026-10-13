@@ -1,0 +1,36 @@
+# Phase 04 acceptance ledger
+
+Main verification completed before independent review. VERIFIED below means the owned implementation/contract was checked by the main agent; the gate stays STOP until AUTH04-19 passes. All tests refer to current tests/auth or tests/python and saved evidence-04 logs.
+
+| ID | Requirement/source | Required evidence | State |
+| --- | --- | --- | --- |
+| AUTH04-01 | Predecessor exact PASS/current source | Direct status/verification reads and final manifest hashes | VERIFIED: evidence-04/predecessor-and-start.json, 113 matches |
+| AUTH04-02 | Bootstrap only new empty workspace, atomic one agency/admin | Real PostgreSQL/API race, retry, damaged/previously initialized refusal | MAIN VERIFIED: test_bootstrap_race_and_no_reentry; test_instance_mixup_and_damaged_bootstrap; migration-lifecycle.json |
+| AUTH04-03 | User-chosen credentials, Argon2id, generated transient startup authority | Hash inspection, no default account, expired/forged/reused startup denial | MAIN VERIFIED: test_bootstrap_login_logout_and_argon2; test_bootstrap_invalid_authority_cannot_create_account |
+| AUTH04-04 | Development operator path and native contract | Actual CLI/API accounts, secret handling, matching future interface | MAIN VERIFIED: test_real_operator_entrypoint_and_http_socket; AUTHENTICATION.md development/native contracts |
+| AUTH04-05 | Identity before tenant/membership (SEC-001) | Forged/expired/revoked/inactive/foreign tests and context inspection | MAIN VERIFIED: test_wrong_absent_forged_and_attempt_limits; test_expiry_revocation_and_public_isolation; auth_bind/current SQL |
+| AUTH04-06 | Admin/recruiter action/record matrix (SEC-004) | Exact matrix, escalation/self-demotion/last-admin and foreign denial | MAIN VERIFIED: test_staff_administration_and_idempotency; test_self_escalation_foreign_scope_and_public_database_grants; exact matrix |
+| AUTH04-07 | Persistent attempt and session bounds | Concurrent failure/success/restart, bounds and safe errors | MAIN VERIFIED: test_attempts_are_shared_across_instances_and_restart; test_session_cap_and_same_connection_context_isolation |
+| AUTH04-08 | Real current/logout/revocation | API/PostgreSQL sessions and rollback/finalization tests | MAIN VERIFIED: test_bootstrap_login_logout_and_argon2; test_expiry_revocation_and_public_isolation; real HTTP socket test |
+| AUTH04-09 | Staff writes/revision/idempotency/audit atomic | Replays, changed payload, concurrent/stale and failed transaction | MAIN VERIFIED: test_staff_administration_and_idempotency; test_final_expiry_rolls_back_staff_write |
+| AUTH04-10 | Current purpose/consent and policy activation (SEC-002/DAT-005) | Admin-only activation/grant/revoke; current-scope/final-commit tests | MAIN VERIFIED: test_policy_activation_revocation_and_purpose_grants; test_policy_expiring_before_commit_rolls_back; 94 PostgreSQL regression cases |
+| AUTH04-11 | Local and server identity separation | Cross-instance proofs/credentials and local-bootstrap-to-server denial | MAIN VERIFIED: test_separate_server_and_workspace_reject_credentials_and_proofs |
+| AUTH04-12 | Operator-only central provisioning | No server HTTP bootstrap, genuine operator transaction | MAIN VERIFIED: test_server_operator_tls_and_origin_boundary; test_real_operator_entrypoint_and_http_socket |
+| AUTH04-13 | Anonymous public permission boundary (SEC-003) | Public routes cannot bind staff; private actions deny without session; no private route or DTO | MAIN VERIFIED: test_public_schema_has_no_authentication_graph; public/private route and DB-role isolation cases |
+| AUTH04-14 | Typed transport/HTTPS/origin/cache/CSRF | Server rejects HTTP/origin tricks; separated CORS; token-only/no cookies; generated contracts | MAIN VERIFIED: test_server_operator_tls_and_origin_boundary; request limits/errors tests; generated typed session client; staging 17 UNVERIFIED |
+| AUTH04-15 | No stale pooled context | Same connection/new transaction/rollback/foreign proof isolation | MAIN VERIFIED: test_session_cap_and_same_connection_context_isolation; transaction adapter source; no pool used in production |
+| AUTH04-16 | Client state/device/recovery contracts | In-memory realm-scoped interface; no saved secret transfer; no reset backdoor | MAIN VERIFIED: tests/session-state.mjs; AUTHENTICATION.md native interface and recovery limits; device runtime 15 UNVERIFIED |
+| AUTH04-17 | Central settings/hardcode/errors | Negative settings checks, manual active-path classification and secret/log inspection | MAIN VERIFIED: 14 auth configuration/schema/error tests; PHASE_04_HARDCODE_REVIEW; source/evidence secret scan |
+| AUTH04-18 | Forward migration only/current checkpoint | Frozen predecessor bytes, real migration preservation, affected/full checks | MAIN VERIFIED: 10-command checkpoint, final affected logs; frozen bytes; migration lifecycle/catalog |
+| AUTH04-19 | Exactly one independent reviewer | Main checkpoint then reviewer identity/findings/repairs/recheck | VERIFIED: same Einstein closed R1–R3 at 0021; independent-review-0021.json |
+| AUTH04-20 | Required artifacts and truthful handoff | STATUS/VERIFICATION/HARDCODE_REVIEW, decisions, current status, owner limits | MAIN VERIFIED: Required 04 artifacts, complete AUTHENTICATION.md, append-only ADR050–054; final handoff pending review |
+
+## Review-repair evidence
+
+R1–R3 were confirmed by seven failures at0020, repaired at0021, and covered by the current27-auth suite. AUTH04-03/07/17 now include tests/auth/test_review_repairs.py with genuine Argon2 spy wrappers and actual PostgreSQL/API results. AUTH04-18 uses the current ten-command checkpoint plus affected final lint/format/typing; prior94DB tests remain green. AUTH04-19 is now VERIFIED: the same reviewer closed all findings at 0021.
+
+## Final current evidence
+
+All twenty owned conditions are complete. AUTH04-01 uses the exact predecessor PASS/hash record; AUTH04-02–18 use current implementation/contracts and saved tests/checkpoint/source audit; AUTH04-19 uses the sole same-reviewer PASS; AUTH04-20 uses the required final artifacts/status/decisions and truthful handoff. Full current mapping and limits are in final-audit-0021.json. Native/device and deployed/public/domain/AI/release scenarios remain UNVERIFIED under their explicit owners and are not claimed by this gate.
+
+Gate decision: PASS

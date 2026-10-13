@@ -1,0 +1,22 @@
+{
+  "server": "PostgreSQL 18.6 on x86_64-windows, compiled by msvc-19.44.35228, 64-bit",
+  "host": "127.0.0.1",
+  "port": 5447,
+  "database": "cv_phase03_synthetic",
+  "authentication": "scram-sha-256",
+  "isolated_project_cluster": true,
+  "binaries": {
+    "initdb": {
+      "path": "C:\\Program Files\\PostgreSQL\\18\\bin\\initdb.exe",
+      "sha256": "e2b30e9d223f05ca0dc1219798d805bbdb8ab4bd29ab59c70956bf7f41219e57"
+    },
+    "pg_ctl": {
+      "path": "C:\\Program Files\\PostgreSQL\\18\\bin\\pg_ctl.exe",
+      "sha256": "3cdb444b7067d824d8c6b2626aaf8688163ef0b001734c1a8a6502cdccde23bb"
+    },
+    "postgres": {
+      "path": "C:\\Program Files\\PostgreSQL\\18\\bin\\postgres.exe",
+      "sha256": "14817df435104dcfe05ad8343fda200930abf778553ab60154bd285aea6833e1"
+    }
+  }
+}

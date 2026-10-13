@@ -1,0 +1,42 @@
+{
+  "actualProcesses": [
+    {
+      "profile": "development",
+      "component": "api",
+      "pid": 26568,
+      "liveness": "PASS",
+      "readiness": "503_UNAVAILABLE",
+      "strictPort": "PASS",
+      "shutdown": "PASS"
+    },
+    {
+      "profile": "development",
+      "component": "worker",
+      "pid": 20004,
+      "liveness": "PASS",
+      "readiness": "503_UNAVAILABLE",
+      "strictPort": "PASS",
+      "shutdown": "PASS"
+    },
+    {
+      "profile": "test",
+      "component": "api",
+      "pid": 1704,
+      "liveness": "PASS",
+      "readiness": "503_UNAVAILABLE",
+      "strictPort": "PASS",
+      "shutdown": "PASS"
+    },
+    {
+      "profile": "test",
+      "component": "worker",
+      "pid": 25232,
+      "liveness": "PASS",
+      "readiness": "503_UNAVAILABLE",
+      "strictPort": "PASS",
+      "shutdown": "PASS"
+    }
+  ],
+  "databaseImplementation": "UNVERIFIED owner 03",
+  "documentAndAI": "UNAVAILABLE, no fake processing"
+}

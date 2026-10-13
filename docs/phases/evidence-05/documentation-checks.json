@@ -1,0 +1,10 @@
+{
+  "phase_order": 45,
+  "existing_ids": 86,
+  "amendments": 7,
+  "links_broken": [],
+  "protected_values_checked": 5,
+  "secret_hits": [],
+  "main_self_check": "PASS",
+  "independent_review": "NOT INVOKED; prohibited in this phase"
+}

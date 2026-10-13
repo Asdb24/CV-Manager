@@ -1,0 +1,86 @@
+{
+  "manifest_version": "e5-small-int8-cpu-v1",
+  "model": "intfloat/multilingual-e5-small",
+  "upstream_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "metadata_source": "https://huggingface.co/api/models/intfloat/multilingual-e5-small?blobs=true",
+  "license": {
+    "model_metadata": "MIT",
+    "model_metadata_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "upstream_repository_license_source": "https://raw.githubusercontent.com/microsoft/unilm/master/LICENSE",
+    "copied_license_sha256": "904dc4d8749877f1dba1cda48200d2462dccbeb7c134d5e4ef6fa75e0198c8fe"
+  },
+  "execution": {
+    "location": "employee-windows",
+    "modes": [
+      "standalone",
+      "connected"
+    ],
+    "provider": "CPUExecutionProvider",
+    "onnxruntime_version": "1.31.0",
+    "on_demand": true,
+    "runtime_downloads": false,
+    "external_providers": false
+  },
+  "adapter": {
+    "version": "e5-retrieval-v1",
+    "jd_prefix": "query: ",
+    "cv_prefix": "passage: ",
+    "pooling": "attention-mask-average",
+    "normalization": "L2",
+    "embedding_dimensions": 384,
+    "token_ceiling": 512,
+    "chunking_version": "page-span-384-token-64-overlap-v1",
+    "chunk_tokens": 384,
+    "overlap_tokens": 64,
+    "omitted_chunks": "report-incomplete",
+    "ranking_version": "cosine-six-decimal-semantic-locator-v1",
+    "precision": "float32 internal; six-decimal advisory rank key",
+    "tie_break": "page/start/end/content-digest/criterion-key ascending",
+    "canonical_score_effect": "none"
+  },
+  "assets": [
+    {
+      "path": "onnx/model_qint8_avx512_vnni.onnx",
+      "sha256": "dd476dd0c2514e9b9be83aeb3853fac0763e0bdf4a71645407587d77c48a2d88",
+      "bytes": 118346824,
+      "source": "https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/onnx/model_qint8_avx512_vnni.onnx",
+      "upstream_lfs_sha256": "dd476dd0c2514e9b9be83aeb3853fac0763e0bdf4a71645407587d77c48a2d88"
+    },
+    {
+      "path": "tokenizer.json",
+      "sha256": "0b44a9d7b51c3c62626640cda0e2c2f70fdacdc25bbbd68038369d14ebdf4c39",
+      "bytes": 17082730,
+      "source": "https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/tokenizer.json",
+      "upstream_lfs_sha256": "0b44a9d7b51c3c62626640cda0e2c2f70fdacdc25bbbd68038369d14ebdf4c39"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "sha256": "a1d6bc8734a6f635dc158508bef000f8e2e5a759c7d92f984b2c86e5ff53425b",
+      "bytes": 443,
+      "source": "https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/tokenizer_config.json",
+      "upstream_lfs_sha256": null
+    },
+    {
+      "path": "special_tokens_map.json",
+      "sha256": "d05497f1da52c5e09554c0cd874037a083e1dc1b9cfd48034d1c717f1afc07a7",
+      "bytes": 167,
+      "source": "https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/special_tokens_map.json",
+      "upstream_lfs_sha256": null
+    },
+    {
+      "path": "sentencepiece.bpe.model",
+      "sha256": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+      "bytes": 5069051,
+      "source": "https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/sentencepiece.bpe.model",
+      "upstream_lfs_sha256": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865"
+    },
+    {
+      "path": "config.json",
+      "sha256": "69137736cab8b8903a07fe8afaafdda25aac55415a12a55d1bffa9f581abf959",
+      "bytes": 655,
+      "source": "https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/config.json",
+      "upstream_lfs_sha256": null
+    }
+  ],
+  "cpu_compatibility": "Requires actual Windows CPU graph-load inspection; inference quality/runtime owners 10/15/17/18 remain UNVERIFIED"
+}

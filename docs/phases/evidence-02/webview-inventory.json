@@ -1,0 +1,5 @@
+{
+  "name": "Microsoft Edge WebView2 Runtime",
+  "version": "154.0.4258.62",
+  "scope": "HKLM:/SOFTWARE/WOW6432Node/Microsoft/EdgeUpdate/Clients"
+}

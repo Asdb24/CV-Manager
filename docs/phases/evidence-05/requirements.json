@@ -1,0 +1,777 @@
+{
+  "existing_ids": [
+    {
+      "id": "GOV-001",
+      "original_owner": 1,
+      "current_owner": 1,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "GOV-002",
+      "original_owner": 1,
+      "current_owner": 1,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "GOV-003",
+      "original_owner": 1,
+      "current_owner": 1,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "GOV-004",
+      "original_owner": 18,
+      "current_owner": 45,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "DOM-001",
+      "original_owner": 6,
+      "current_owner": 8,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "DOM-002",
+      "original_owner": 6,
+      "current_owner": 9,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "DOM-003",
+      "original_owner": 7,
+      "current_owner": 11,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "DOM-004",
+      "original_owner": 8,
+      "current_owner": 14,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "DOM-005",
+      "original_owner": 9,
+      "current_owner": 16,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "DOM-006",
+      "original_owner": 11,
+      "current_owner": 20,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "DOM-007",
+      "original_owner": 13,
+      "current_owner": 33,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "STG-001",
+      "original_owner": 7,
+      "current_owner": 12,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "STG-002",
+      "original_owner": 7,
+      "current_owner": 12,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "STG-003",
+      "original_owner": 11,
+      "current_owner": 20,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "SCR-001",
+      "original_owner": 6,
+      "current_owner": 10,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "SCR-002",
+      "original_owner": 10,
+      "current_owner": 17,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "SCR-003",
+      "original_owner": 10,
+      "current_owner": 17,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "SCR-004",
+      "original_owner": 10,
+      "current_owner": 18,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "SCR-005",
+      "original_owner": 10,
+      "current_owner": 17,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "SCR-006",
+      "original_owner": 10,
+      "current_owner": 19,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "SCR-007",
+      "original_owner": 9,
+      "current_owner": 16,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "SCR-008",
+      "original_owner": 10,
+      "current_owner": 18,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "PUB-001",
+      "original_owner": 6,
+      "current_owner": 26,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "PUB-002",
+      "original_owner": 6,
+      "current_owner": 27,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "PUB-003",
+      "original_owner": 8,
+      "current_owner": 28,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "PUB-004",
+      "original_owner": 8,
+      "current_owner": 28,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "PUB-005",
+      "original_owner": 8,
+      "current_owner": 28,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "PUB-006",
+      "original_owner": 7,
+      "current_owner": 29,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "PUB-007",
+      "original_owner": 8,
+      "current_owner": 29,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "PUB-008",
+      "original_owner": 17,
+      "current_owner": 42,
+      "source": "PRODUCT_SPEC.md"
+    },
+    {
+      "id": "SEC-001",
+      "original_owner": 4,
+      "current_owner": 4,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "SEC-002",
+      "original_owner": 4,
+      "current_owner": 4,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "SEC-003",
+      "original_owner": 4,
+      "current_owner": 4,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "SEC-004",
+      "original_owner": 4,
+      "current_owner": 4,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "SEC-005",
+      "original_owner": 13,
+      "current_owner": 33,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "SEC-006",
+      "original_owner": 17,
+      "current_owner": 42,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "SEC-007",
+      "original_owner": 8,
+      "current_owner": 28,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "SEC-008",
+      "original_owner": 18,
+      "current_owner": 43,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "DAT-001",
+      "original_owner": 3,
+      "current_owner": 3,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "DAT-002",
+      "original_owner": 3,
+      "current_owner": 3,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "DAT-003",
+      "original_owner": 8,
+      "current_owner": 13,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "DAT-004",
+      "original_owner": 7,
+      "current_owner": 12,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "DAT-005",
+      "original_owner": 3,
+      "current_owner": 3,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "DAT-006",
+      "original_owner": 18,
+      "current_owner": 43,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "DAT-007",
+      "original_owner": 16,
+      "current_owner": 38,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "DAT-008",
+      "original_owner": 9,
+      "current_owner": 15,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "CFG-001",
+      "original_owner": 2,
+      "current_owner": 2,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "CFG-002",
+      "original_owner": 2,
+      "current_owner": 2,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "CFG-003",
+      "original_owner": 2,
+      "current_owner": 2,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "CFG-004",
+      "original_owner": 2,
+      "current_owner": 2,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "CFG-005",
+      "original_owner": 18,
+      "current_owner": 43,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "CFG-006",
+      "original_owner": 2,
+      "current_owner": 2,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "UX-001",
+      "original_owner": 5,
+      "current_owner": 6,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "UX-002",
+      "original_owner": 5,
+      "current_owner": 6,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "UX-003",
+      "original_owner": 11,
+      "current_owner": 20,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "UX-004",
+      "original_owner": 8,
+      "current_owner": 28,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "UX-005",
+      "original_owner": 10,
+      "current_owner": 21,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "REP-001",
+      "original_owner": 12,
+      "current_owner": 30,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "REP-002",
+      "original_owner": 12,
+      "current_owner": 31,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "REP-003",
+      "original_owner": 12,
+      "current_owner": 32,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "QAL-001",
+      "original_owner": 13,
+      "current_owner": 33,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "QAL-002",
+      "original_owner": 18,
+      "current_owner": 45,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "QAL-003",
+      "original_owner": 18,
+      "current_owner": 45,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "QAL-004",
+      "original_owner": 1,
+      "current_owner": 1,
+      "source": "QUALITY_ACCEPTANCE.md"
+    },
+    {
+      "id": "REL-001",
+      "original_owner": 2,
+      "current_owner": 2,
+      "source": "RELEASE_CONTRACT.md"
+    },
+    {
+      "id": "REL-002",
+      "original_owner": 14,
+      "current_owner": 35,
+      "source": "RELEASE_CONTRACT.md"
+    },
+    {
+      "id": "REL-003",
+      "original_owner": 15,
+      "current_owner": 36,
+      "source": "RELEASE_CONTRACT.md"
+    },
+    {
+      "id": "REL-004",
+      "original_owner": 16,
+      "current_owner": 40,
+      "source": "RELEASE_CONTRACT.md"
+    },
+    {
+      "id": "REL-005",
+      "original_owner": 16,
+      "current_owner": 39,
+      "source": "RELEASE_CONTRACT.md"
+    },
+    {
+      "id": "REL-006",
+      "original_owner": 17,
+      "current_owner": 41,
+      "source": "RELEASE_CONTRACT.md"
+    },
+    {
+      "id": "REL-007",
+      "original_owner": 15,
+      "current_owner": 37,
+      "source": "RELEASE_CONTRACT.md"
+    },
+    {
+      "id": "REL-008",
+      "original_owner": 16,
+      "current_owner": 39,
+      "source": "RELEASE_CONTRACT.md"
+    },
+    {
+      "id": "REL-009",
+      "original_owner": 17,
+      "current_owner": 42,
+      "source": "RELEASE_CONTRACT.md"
+    },
+    {
+      "id": "REL-010",
+      "original_owner": 18,
+      "current_owner": 45,
+      "source": "RELEASE_CONTRACT.md"
+    },
+    {
+      "id": "AI-001",
+      "original_owner": 2,
+      "current_owner": 2,
+      "source": "LOCAL_AI_CONTRACT.md"
+    },
+    {
+      "id": "AI-002",
+      "original_owner": 10,
+      "current_owner": 21,
+      "source": "LOCAL_AI_CONTRACT.md"
+    },
+    {
+      "id": "AI-003",
+      "original_owner": 10,
+      "current_owner": 22,
+      "source": "LOCAL_AI_CONTRACT.md"
+    },
+    {
+      "id": "AI-004",
+      "original_owner": 10,
+      "current_owner": 23,
+      "source": "LOCAL_AI_CONTRACT.md"
+    },
+    {
+      "id": "AI-005",
+      "original_owner": 10,
+      "current_owner": 24,
+      "source": "LOCAL_AI_CONTRACT.md"
+    },
+    {
+      "id": "AI-006",
+      "original_owner": 9,
+      "current_owner": 16,
+      "source": "LOCAL_AI_CONTRACT.md"
+    },
+    {
+      "id": "AI-007",
+      "original_owner": 3,
+      "current_owner": 3,
+      "source": "LOCAL_AI_CONTRACT.md"
+    },
+    {
+      "id": "AI-008",
+      "original_owner": 15,
+      "current_owner": 37,
+      "source": "LOCAL_AI_CONTRACT.md"
+    },
+    {
+      "id": "AI-009",
+      "original_owner": 15,
+      "current_owner": 25,
+      "source": "LOCAL_AI_CONTRACT.md"
+    },
+    {
+      "id": "AI-010",
+      "original_owner": 18,
+      "current_owner": 44,
+      "source": "LOCAL_AI_CONTRACT.md"
+    },
+    {
+      "id": "AI-011",
+      "original_owner": 18,
+      "current_owner": 44,
+      "source": "LOCAL_AI_CONTRACT.md"
+    },
+    {
+      "id": "AI-012",
+      "original_owner": 14,
+      "current_owner": 35,
+      "source": "LOCAL_AI_CONTRACT.md"
+    }
+  ],
+  "amendments": [
+    {
+      "id": "CI-001",
+      "owner": 5
+    },
+    {
+      "id": "CI-002",
+      "owner": 5
+    },
+    {
+      "id": "CI-003",
+      "owner": 34
+    },
+    {
+      "id": "CI-004",
+      "owner": 40
+    },
+    {
+      "id": "REL-011",
+      "owner": 40
+    },
+    {
+      "id": "REL-012",
+      "owner": 40
+    },
+    {
+      "id": "QAL-005",
+      "owner": 45
+    }
+  ],
+  "phases": [
+    {
+      "phase": "01",
+      "prompt": "PHASE_01_PRODUCT_SCOPE_AND_ACCEPTANCE.md",
+      "scope": "Existing product/quality/release/AI definitions"
+    },
+    {
+      "phase": "02",
+      "prompt": "PHASE_02_ARCHITECTURE_AND_TOOLCHAIN.md",
+      "scope": "Existing stack, locked tools, generated contracts and model pins"
+    },
+    {
+      "phase": "03",
+      "prompt": "PHASE_03_POSTGRESQL_SCHEMA_AND_MIGRATIONS.md",
+      "scope": "Existing persistence, immutable history and isolation"
+    },
+    {
+      "phase": "04",
+      "prompt": "PHASE_04_LOCAL_AUTH_AND_BOOTSTRAP.md",
+      "scope": "Existing staff/local/server/public identity boundary"
+    },
+    {
+      "phase": "05",
+      "prompt": "PHASE_05_CONTINUATION_AND_QUALITY_CI.md",
+      "scope": "Source-matched predecessor,45-phase roadmap,quality workflow and real dispatch"
+    },
+    {
+      "phase": "06",
+      "prompt": "PHASE_06_SHARED_DESIGN_SYSTEM.md",
+      "scope": "Shared Vietnamese tokens/components,keyboard/focus and required viewport design checks"
+    },
+    {
+      "phase": "07",
+      "prompt": "PHASE_07_DESKTOP_NAVIGATION_AND_SESSION_UX.md",
+      "scope": "Real04login/session/navigation,expiry/revocation and stale reply states"
+    },
+    {
+      "phase": "08",
+      "prompt": "PHASE_08_COMPANY_VERTICAL_SLICE.md",
+      "scope": "Company API/desktop CRUD,revision/removal/restore"
+    },
+    {
+      "phase": "09",
+      "prompt": "PHASE_09_POSITION_AND_JD_VERSIONS.md",
+      "scope": "Positions and immutable attributed JD revisions"
+    },
+    {
+      "phase": "10",
+      "prompt": "PHASE_10_RUBRIC_AND_RATING_DEFINITIONS.md",
+      "scope": "Exactweights100,complete job adapters/mandatory predicates and pinned references"
+    },
+    {
+      "phase": "11",
+      "prompt": "PHASE_11_CANDIDATE_SOURCE_AND_CONSENT.md",
+      "scope": "Candidates/contact/profile source,purpose/consent/privacy epoch"
+    },
+    {
+      "phase": "12",
+      "prompt": "PHASE_12_APPLICATION_AND_STAGE_VERTICAL_SLICE.md",
+      "scope": "Applications and complete manual five-stage permissions/reasons"
+    },
+    {
+      "phase": "13",
+      "prompt": "PHASE_13_PROTECTED_DOCUMENT_STORAGE.md",
+      "scope": "Local/server durable intents,file finalization,recovery,access and erasure hooks"
+    },
+    {
+      "phase": "14",
+      "prompt": "PHASE_14_PDF_UPLOAD_AND_PREVIEW.md",
+      "scope": "Bounded text-PDF upload/private preview and failure states"
+    },
+    {
+      "phase": "15",
+      "prompt": "PHASE_15_PDF_PARSING_AND_EVIDENCE.md",
+      "scope": "Versioned text parsing/normalization and approved semantic spans"
+    },
+    {
+      "phase": "16",
+      "prompt": "PHASE_16_FACT_REVIEW_AND_AI_INPUT.md",
+      "scope": "Immutable reviewed facts/protected-trait exclusion and authorized AI snapshot manifests"
+    },
+    {
+      "phase": "17",
+      "prompt": "PHASE_17_EXACT_SCORING_ENGINE.md",
+      "scope": "Actual exact canonical math,Unknown/mandatory rules and69/70/71goldens"
+    },
+    {
+      "phase": "18",
+      "prompt": "PHASE_18_EVALUATION_API_AND_REUSE.md",
+      "scope": "Guarded canonical claims,full calculation/evidence identity,retry/restart/reupload and erasure-safe reuse"
+    },
+    {
+      "phase": "19",
+      "prompt": "PHASE_19_VIETNAMESE_EXPLANATIONS.md",
+      "scope": "Vietnamese projections from persisted components/evidence;no frontend recalculation"
+    },
+    {
+      "phase": "20",
+      "prompt": "PHASE_20_EVALUATION_AND_PIPELINE_UI.md",
+      "scope": "Official evaluation/evidence and manual stage UI,all async/error states"
+    },
+    {
+      "phase": "21",
+      "prompt": "PHASE_21_WINDOWS_LOCAL_AI_PROCESS.md",
+      "scope": "Pinned actual ONNX INT8 CPU process,bounded resources,on-demand loading,offline developer inference in both modes"
+    },
+    {
+      "phase": "22",
+      "prompt": "PHASE_22_AI_SEMANTIC_EVIDENCE_RETRIEVAL.md",
+      "scope": "Approved CV\u2013JD rankings,precision/ties,locators and bounded omissions"
+    },
+    {
+      "phase": "23",
+      "prompt": "PHASE_23_AI_INFORMATION_TO_VERIFY.md",
+      "scope": "Conservative rule-plus-AI findings with neutral evidence/provenance and no score/stage effect"
+    },
+    {
+      "phase": "24",
+      "prompt": "PHASE_24_VIETNAMESE_INTERVIEW_QUESTIONS.md",
+      "scope": "Versioned grounded/editable Vietnamese templates;no free-form generation"
+    },
+    {
+      "phase": "25",
+      "prompt": "PHASE_25_ADVISORY_ATTACHMENT_AND_REVIEW.md",
+      "scope": "Current server authorization/manifest checks,claimed execution provenance and separate staff advice review"
+    },
+    {
+      "phase": "26",
+      "prompt": "PHASE_26_CONNECTED_JOB_PUBLICATION.md",
+      "scope": "Connected Windows approval/publish/unpublish with pinned public projection"
+    },
+    {
+      "phase": "27",
+      "prompt": "PHASE_27_PUBLIC_JOB_SEARCH_AND_DETAIL.md",
+      "scope": "Next.js approved browse/search/filter/detail,mobile UX and restricted generated client"
+    },
+    {
+      "phase": "28",
+      "prompt": "PHASE_28_PUBLIC_PDF_APPLICATION_AND_RECEIPT.md",
+      "scope": "Anonymous contact/text-PDF/explicit consent,durable pending intake,quota/expiry/idempotency/abuse"
+    },
+    {
+      "phase": "29",
+      "prompt": "PHASE_29_CONNECTED_INBOX_AND_INTAKE_REVIEW.md",
+      "scope": "Private inbox/preview,explicit reviewed candidate linking,never automatic person merge"
+    },
+    {
+      "phase": "30",
+      "prompt": "PHASE_30_REPORTS_AND_STATISTICS.md",
+      "scope": "Authorized snapshot/filter counts and explicit denominators"
+    },
+    {
+      "phase": "31",
+      "prompt": "PHASE_31_CSV_AND_PDF_EXPORTS.md",
+      "scope": "Protected durable Vietnamese CSV/PDF,formula safety and revoked-access rejection"
+    },
+    {
+      "phase": "32",
+      "prompt": "PHASE_32_SYNTHETIC_IMPORT_AND_BATCH.md",
+      "scope": "Generated corpus validation,bounded per-item batch progress/failure/retry"
+    },
+    {
+      "phase": "33",
+      "prompt": "PHASE_33_DEVELOPMENT_END_TO_END_ACCEPTANCE.md",
+      "scope": "Current real DB/API/files/public/connected/developer Windows AI E2E;release and native qualification stay later"
+    },
+    {
+      "phase": "34",
+      "prompt": "PHASE_34_HOSTED_PAYLOAD_RECIPES.md",
+      "scope": "Pinned official licensed runtime/model/FixedWebView payload acquisition recipes for GitHub-hosted Windows"
+    },
+    {
+      "phase": "35",
+      "prompt": "PHASE_35_PRIVATE_RUNTIME_PROCESS_SUPERVISION.md",
+      "scope": "Rust-owned runtime integrity,loopback startup/readiness/shutdown and recovery"
+    },
+    {
+      "phase": "36",
+      "prompt": "PHASE_36_NATIVE_LOCAL_BOOTSTRAP_AND_HTTP_BRIDGE.md",
+      "scope": "Native local bootstrap/owned services/guided real identity with no technical setup"
+    },
+    {
+      "phase": "37",
+      "prompt": "PHASE_37_CONNECTED_NATIVE_SESSIONS_AND_LOCAL_AI.md",
+      "scope": "Native HTTPS transport/device Credential Manager,realm isolation,approved temporary inputs and local advice in both modes"
+    },
+    {
+      "phase": "38",
+      "prompt": "PHASE_38_BACKUP_RESTORE_AND_ERASURE_RECONCILIATION.md",
+      "scope": "Coherent protected DB/files backups,restore/reapply erasure and recovery evidence"
+    },
+    {
+      "phase": "39",
+      "prompt": "PHASE_39_UPGRADE_AND_SERVER_DEPLOYMENT_CONFIGURATION.md",
+      "scope": "Ordered forward upgrade/recovery plus independently validated approved server/web deployment config"
+    },
+    {
+      "phase": "40",
+      "prompt": "PHASE_40_HOSTED_INSTALLER_AND_PORTABLE_BUILD.md",
+      "scope": "Real GitHub-hosted Windows x64 Actions NSIS/per-user and single-EXE portable builds/upload;no local release build"
+    },
+    {
+      "phase": "41",
+      "prompt": "PHASE_41_CLEAN_OFFLINE_WINDOWS_QUALIFICATION.md",
+      "scope": "Downloaded hash-verified artifacts on clean offline Windows,both distributions/core/AI and zero recipient setup"
+    },
+    {
+      "phase": "42",
+      "prompt": "PHASE_42_APPROVED_HTTPS_CONNECTED_QUALIFICATION.md",
+      "scope": "Authorized synthetic HTTPS public/connected flows,TLS/origin/cache/abuse/CSRF and own-server transmission"
+    },
+    {
+      "phase": "43",
+      "prompt": "PHASE_43_SECURITY_PRIVACY_AND_ERASURE_QUALIFICATION.md",
+      "scope": "Actual permission/log/device/file/erasure/backup footprint/security limits"
+    },
+    {
+      "phase": "44",
+      "prompt": "PHASE_44_RESOURCE_AND_AI_QUALITY_MEASUREMENTS.md",
+      "scope": "100synthetic CV offline rows,actual Windows peak1.5GiB bound,failures/relevance/findings/questions and approved thresholds"
+    },
+    {
+      "phase": "45",
+      "prompt": "PHASE_45_FINAL_ACCEPTANCE_AND_HANDOFF.md",
+      "scope": "Complete requirement/evidence/manifest/license/user/operator/recovery handoff;no fabricated certification"
+    }
+  ]
+}

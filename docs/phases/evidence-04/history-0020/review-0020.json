@@ -1,0 +1,46 @@
+{
+  "reviewer_id": "01a13643-d742-7f91-9778-0f443a2eb895",
+  "nickname": "Einstein",
+  "head": "0020_auth_finalization",
+  "gate": "STOP",
+  "received_at": "2026-10-13T17:34:06.131810+00:00",
+  "report_kind": "Faithful structured transcription of the returned review",
+  "findings": [
+    {
+      "id": "R1",
+      "severity": "P1/High",
+      "file": "apps/api/src/cv_api/authentication.py",
+      "line": 165,
+      "finding": "Every login calls Argon2 even after admission rejects the configured allowance; NULL conflates rejected reservation and admitted unknown identity while installation lock is held.",
+      "required_repair": "Distinct admission result; expensive dummy verification only for admitted attempts."
+    },
+    {
+      "id": "R2",
+      "severity": "P2/Medium",
+      "file": "apps/api/src/cv_api/authentication.py",
+      "line": 143,
+      "finding": "Bootstrap hashes before checking instance/state/startup proof/expiry.",
+      "required_repair": "Verify startup authority before expensive hashing and retain atomic final check."
+    },
+    {
+      "id": "R3",
+      "severity": "P2/Medium",
+      "file": "packages/foundation/src/cv_foundation/auth_contracts.py",
+      "line": 48,
+      "finding": "Escaped lone surrogate in password is accepted and raises uncaught UnicodeEncodeError; reviewer nonpersisting ASGI probe got500 text/plain.",
+      "required_repair": "Reject invalid Unicode before hash; safe input error tests."
+    }
+  ],
+  "evidence_verified": {
+    "review_packet_hashes": 123,
+    "current_migration_files": 53,
+    "predecessor_migration_files": 44,
+    "generated_in_memory_schemas": [
+      "full",
+      "staff",
+      "public"
+    ]
+  },
+  "reviewer_mutations": "None; no DB/file changes or delegation.",
+  "follow_up": "Same reviewer only."
+}

@@ -1,0 +1,18 @@
+{
+  "observed_at": "2026-10-13T11:43:18.557734+00:00",
+  "head": "0016_read_finalization",
+  "checkpoint_commands": 9,
+  "all_exit_zero": true,
+  "observed_cv_tables": 53,
+  "all_cv_tables_forced_rls": true,
+  "all_cv_table_owners": "cv_migrator",
+  "review_packet_hashes_unchanged": 70,
+  "local_document_links_checked": 40,
+  "broken_local_links": [],
+  "remaining_gate_conditions": [
+    "same independent reviewer repair follow-up",
+    "resolve any confirmed findings and affected re-verification",
+    "final evidence/status handoff audit"
+  ],
+  "scope_limit": "Metadata/link/hash audit supplements actual tests and manual requirement ledger; it is not an independent review or gate PASS."
+}

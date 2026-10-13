@@ -1,0 +1,42 @@
+scripts/database_query_evidence.py:34:            password=credentials[role],
+scripts/database_query_evidence.py:35:            connect_timeout=config.connect_timeout_seconds,
+scripts/database_query_evidence.py:36:            options=f"-c statement_timeout={config.statement_timeout_ms} "
+scripts/database_query_evidence.py:37:            f"-c lock_timeout={config.lock_timeout_ms}",
+scripts/database_query_evidence.py:116:            (tenant, config.query_page_size),
+scripts/database_query_evidence.py:122:            (tenant, identity("b/position"), config.query_page_size),
+scripts/database_query_evidence.py:127:            (tenant, identity("b/query/person/0"), config.query_page_size),
+scripts/database_query_evidence.py:145:        "page_size": config.query_page_size,
+scripts/database_migration_check.py:22:    passwords = json.loads(Path(settings.credential_file).read_text())
+scripts/database_migration_check.py:34:        password=passwords["cv_cluster_admin"],
+scripts/database_migration_check.py:35:        connect_timeout=settings.connect_timeout_seconds,
+scripts/database_migration_check.py:64:            password=passwords["cv_cluster_admin"],
+scripts/database_migration_check.py:65:            connect_timeout=settings.connect_timeout_seconds,
+scripts/database_migration_check.py:85:            password=passwords["cv_cluster_admin"],
+scripts/database_migration_check.py:86:            connect_timeout=settings.connect_timeout_seconds,
+packages/foundation/src/cv_foundation/database.py:31:        if not self._slots.acquire(timeout=self.settings.connect_timeout_seconds):
+packages/foundation/src/cv_foundation/database.py:39:                password=self.settings.password.get_secret_value(),
+packages/foundation/src/cv_foundation/database.py:42:                connect_timeout=self.settings.connect_timeout_seconds,
+packages/foundation/src/cv_foundation/database.py:43:                options=f"-c statement_timeout={self.settings.statement_timeout_ms} "
+packages/foundation/src/cv_foundation/database.py:44:                f"-c lock_timeout={self.settings.lock_timeout_ms} -c timezone=UTC",
+packages/foundation/src/cv_foundation/database.py:102:    if settings.realm == "local" and connection_settings.host not in {"127.0.0.1", "::1"}:
+scripts/database_catalog.py:57:        password=credentials["cv_migrator"],
+scripts/database_catalog.py:58:        connect_timeout=config.connect_timeout_seconds,
+scripts/database_catalog.py:59:        options=f"-c statement_timeout={config.statement_timeout_ms} "
+scripts/database_catalog.py:60:        f"-c lock_timeout={config.lock_timeout_ms}",
+scripts/database_migrate.py:21:            password=secrets["cv_migrator"],
+scripts/database_migrate.py:28:            "connect_timeout": settings.connect_timeout_seconds,
+scripts/database_migrate.py:29:            "options": f"-c statement_timeout={settings.statement_timeout_ms} "
+scripts/database_migrate.py:30:            f"-c lock_timeout={settings.lock_timeout_ms}",
+scripts/database_cluster.py:49:                timeout=settings.startup_timeout_seconds,
+scripts/database_cluster.py:79:        passwords = {
+scripts/database_cluster.py:83:        credential_file.write_text(json.dumps(passwords), encoding="utf-8")
+scripts/database_cluster.py:85:        passwords = json.loads(credential_file.read_text())
+scripts/database_cluster.py:90:        password_file = owner / "init-password"
+scripts/database_cluster.py:91:        password_file.write_text(passwords["cv_cluster_admin"], encoding="utf-8")
+scripts/database_cluster.py:101:                    str(password_file),
+scripts/database_cluster.py:112:            password_file.unlink(missing_ok=True)
+scripts/database_cluster.py:117:                "password_encryption = 'scram-sha-256'\n"
+scripts/database_cluster.py:130:                str(settings.startup_timeout_seconds),
+scripts/database_cluster.py:140:        password=passwords["cv_cluster_admin"],
+scripts/database_cluster.py:141:        connect_timeout=settings.connect_timeout_seconds,
+scripts/database_cluster.py:155:                values.append(sql.Literal(passwords[name]))

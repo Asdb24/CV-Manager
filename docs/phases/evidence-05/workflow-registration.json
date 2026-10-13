@@ -1,0 +1,11 @@
+{
+  "registration_commit": "5f800de04cda9f4809efa85a73f88f482194ce3d",
+  "url": "https://github.com/Asdb24/CV-Manager/commit/5f800de04cda9f4809efa85a73f88f482194ce3d",
+  "previous_main": "0d8ce319b6e462785d0b1e8b4a87f3dac85f6041",
+  "branch": "main",
+  "scope": [
+    ".github/workflows/quality.yml"
+  ],
+  "method": "reviewed Contents API ordinary commit; no history overwrite",
+  "workflow_blob": "185e98b7e7ac91aa4f488d20c572384f7f81330b"
+}

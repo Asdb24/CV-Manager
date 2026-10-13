@@ -1,0 +1,40 @@
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 557 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.41 kB │ gzip:  0.30 kB
+dist/assets/index-DXn37Ez9.css    2.87 kB │ gzip:  0.98 kB
+dist/assets/index-C5GQmM80.js   339.83 kB │ gzip: 98.10 kB
+
+✓ built in 226ms
+▲ Next.js 16.4.0 (webpack)
+✓ Running next.config.mjs took 262ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 2.1s
+  Running TypeScript ...
+  Finished TypeScript in 1009ms ...
+  Collecting page data using 5 workers ...
+  Generating static pages using 5 workers (0/4) ...
+  Generating static pages using 5 workers (1/4) 
+  Generating static pages using 5 workers (2/4) 
+  Generating static pages using 5 workers (3/4) 
+✓ Generating static pages using 5 workers (4/4) in 511ms
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+┌ ƒ /
+├ ƒ /_not-found
+└ ƒ /api/status
+
+
+ƒ Proxy (Middleware)
+
+ƒ  (Dynamic)  server-rendered on demand
+
+        Info Looking up installed tauri packages to check mismatched versions...
+   Compiling agency-cv-shell v0.1.0 (C:\Users\DHTT\Downloads\Download\do an cn\apps\desktop\src-tauri)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 4.07s
+       Built application at: C:\Users\DHTT\Downloads\Download\do an cn\apps\desktop\src-tauri\target\debug\agency-cv-shell.exe

@@ -1,0 +1,1133 @@
+EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE [ 76%]
+EEEEEEEEEEEEEEEEEEEEEE                                                   [100%]
+=================================== ERRORS ====================================
+_______ ERROR at setup of test_adapter_actual_database_and_safe_failure _______
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+____________ ERROR at setup of test_api_actual_database_readiness _____________
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_________ ERROR at setup of test_declared_missing_configuration_fails _________
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+___ ERROR at setup of test_advisory_is_private_and_claim_is_not_attestation ___
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_______ ERROR at setup of test_advisory_question_edits_preserve_history _______
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_____ ERROR at setup of test_advisory_foreign_person_evidence_is_rejected _____
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_committed_advisory_sets_cannot_grow[advisory_manifest_evidence] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_committed_advisory_sets_cannot_grow[advisory_evidence] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_committed_advisory_sets_cannot_grow[advisory_finding] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+__________ ERROR at setup of test_question_edit_cannot_skip_revision __________
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_occurrence_must_match_evaluation_job_and_facts[job] __
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_occurrence_must_match_evaluation_job_and_facts[facts] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_occurrence_must_match_evaluation_job_and_facts[document] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+___ ERROR at setup of test_advisory_graph_is_removed_by_authorized_erasure ____
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_____ ERROR at setup of test_canonical_json_numeric_and_key_normalization _____
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_____ ERROR at setup of test_atomic_evaluation_claims_use_actual_content ______
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_transient_inputs_cannot_redefine_calculation[extra0] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_transient_inputs_cannot_redefine_calculation[extra1] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+__ ERROR at setup of test_published_rubric_cannot_gain_zero_weight_criterion __
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_exact_components_unknown_and_final_half_up[ratings0-exact0-13-pass-complete] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_exact_components_unknown_and_final_half_up[ratings1-exact1-75-fail-complete] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_exact_components_unknown_and_final_half_up[ratings2-None-None-unknown-incomplete] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+________ ERROR at setup of test_sealed_extraction_cannot_gain_evidence ________
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+____________ ERROR at setup of test_service_has_no_staff_authority ____________
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_________________ ERROR at setup of test_real_role_properties _________________
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+________ ERROR at setup of test_session_tenant_and_no_transaction_leak ________
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+________________ ERROR at setup of test_foreign_parent_denied _________________
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+________________ ERROR at setup of test_foreign_person_denied _________________
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+________________ ERROR at setup of test_immutable_definitions _________________
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+______________ ERROR at setup of test_company_atomic_idempotency ______________
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_________________ ERROR at setup of test_stage_guard_history __________________
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+____________________ ERROR at setup of test_invalid_proof _____________________
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+___________________ ERROR at setup of test_concurrent_claim ___________________
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_adapter_does_not_expose_transaction_control[COMMIT] __
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_adapter_does_not_expose_transaction_control[ROLLBACK] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_adapter_does_not_expose_transaction_control[SET ROLE cv_guard] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_adapter_does_not_expose_transaction_control[DELETE FROM cv.company] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+___ ERROR at setup of test_prepared_select_cannot_commit_a_partial_command ____
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_finalization_rejects_expired_session_after_early_validation _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_replay_obligation_survives_early_validation_and_rolls_back_other_writes _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+____ ERROR at setup of test_every_scope_is_validated_not_only_last_command ____
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+____ ERROR at setup of test_public_finalization_after_early_checks[False] _____
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_____ ERROR at setup of test_public_finalization_after_early_checks[True] _____
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+______ ERROR at setup of test_erasure_obligation_survives_scope_deletion ______
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_successful_adapter_erasure_does_not_require_revoked_recruitment_consent _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_caller_cannot_read_or_replace_private_obligations[SELECT * FROM pg_temp.cv_authority_obligations] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_caller_cannot_read_or_replace_private_obligations[SELECT cv.register_obligation('purpose',NULL,NULL,NULL)] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_finalization_clock_is_sampled_after_blocking_policy_lock _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_private_read_must_revalidate_scope_even_without_mutation _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_company_read_must_revalidate_selected_purpose_without_mutation _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_extraction_definition_cannot_disagree_with_claim[parser] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_extraction_definition_cannot_disagree_with_claim[normalization] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_extraction_definition_cannot_disagree_with_claim[upload_id] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+___ ERROR at setup of test_invalid_policy_scope_cannot_be_created[missing] ____
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+__ ERROR at setup of test_invalid_policy_scope_cannot_be_created[wrong-kind] __
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+__ ERROR at setup of test_invalid_policy_scope_cannot_be_created[real-data] ___
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_expired_policy_does_not_prevent_irreversible_revocation _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_staff_expiry_at_commit_rolls_back_mutation_and_audit _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_intake_cannot_link_foreign_person_or_tenant[a/admin/proof-b/person1] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_intake_cannot_link_foreign_person_or_tenant[b/admin/proof-b/person1] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_expired_erasing_session_cannot_commit_scope_deletion _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_exact_command_purpose_expiry_cannot_use_another_active_purpose _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_____ ERROR at setup of test_explicit_existing_person_link_is_idempotent ______
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_____ ERROR at setup of test_changed_payload_and_stale_revision_rollback ______
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+____ ERROR at setup of test_current_membership_revocation_hides_staff_rows ____
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+__________ ERROR at setup of test_revoked_policy_denies_scope_reuse ___________
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+______ ERROR at setup of test_erasure_cascades_intake_contact_and_hashes ______
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+________________ ERROR at setup of test_recruiter_cannot_erase ________________
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_________ ERROR at setup of test_scope_revocation_hides_private_data __________
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_________ ERROR at setup of test_public_projection_and_direct_denial __________
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_________ ERROR at setup of test_closed_publication_denied[withdrawn] _________
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+__________ ERROR at setup of test_closed_publication_denied[expired] __________
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_______ ERROR at setup of test_intake_concurrency_and_explicit_identity _______
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+__ ERROR at setup of test_review_requires_finalized_file_then_is_idempotent ___
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+___ ERROR at setup of test_expiry_between_acceptance_and_commit_rolls_back ____
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+________ ERROR at setup of test_foreign_position_snapshot_is_rejected _________
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+___________ ERROR at setup of test_intake_source_cannot_be_rebound ____________
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_long_decimal_weights_do_not_round_before_final_total _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+___________ ERROR at setup of test_missing_stage_revision_is_denied ___________
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+__________ ERROR at setup of test_missing_review_revision_is_denied ___________
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_missing_displayed_public_version_is_denied[publication] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_missing_displayed_public_version_is_denied[snapshot] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_missing_displayed_public_version_is_denied[consent] __
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_changed_source_definition_cannot_reuse_old_canonical_result[bytes] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_changed_source_definition_cannot_reuse_old_canonical_result[parser] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_changed_source_definition_cannot_reuse_old_canonical_result[normalization] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_changed_source_definition_cannot_reuse_old_canonical_result[reviewed_evidence] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_new_profile_upload_ids_and_times_preserve_semantic_reuse _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_published_profile_cannot_gain_source_or_evidence[profile_source] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_published_profile_cannot_gain_source_or_evidence[profile_evidence] _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_legacy_evaluation_claim_cannot_bypass_source_binding _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_____ ERROR at setup of test_source_snapshot_cannot_expose_foreign_person _____
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_profile_evidence_cannot_change_after_evaluation_consumes_early_check _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+_ ERROR at setup of test_rubric_cannot_change_after_evaluation_consumes_early_check _
+tests\database\conftest.py:77: in seed
+    seed_synthetic(db_config, passwords)
+tests\database\conftest.py:135: in seed_synthetic
+    with connect(db_config, passwords, "cv_cluster_admin") as c:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\database\conftest.py:63: in connect
+    return psycopg.connect(
+.venv\Lib\site-packages\psycopg\connection.py:126: in connect
+    raise last_ex.with_traceback(None)
+E   psycopg.errors.ConnectionTimeout: connection timeout expired
+=========================== short test summary info ===========================
+ERROR tests/database/test_adapter.py::test_adapter_actual_database_and_safe_failure
+ERROR tests/database/test_adapter.py::test_api_actual_database_readiness - ps...
+ERROR tests/database/test_adapter.py::test_declared_missing_configuration_fails
+ERROR tests/database/test_advisory.py::test_advisory_is_private_and_claim_is_not_attestation
+ERROR tests/database/test_advisory.py::test_advisory_question_edits_preserve_history
+ERROR tests/database/test_advisory.py::test_advisory_foreign_person_evidence_is_rejected
+ERROR tests/database/test_advisory.py::test_committed_advisory_sets_cannot_grow[advisory_manifest_evidence]
+ERROR tests/database/test_advisory.py::test_committed_advisory_sets_cannot_grow[advisory_evidence]
+ERROR tests/database/test_advisory.py::test_committed_advisory_sets_cannot_grow[advisory_finding]
+ERROR tests/database/test_advisory.py::test_question_edit_cannot_skip_revision
+ERROR tests/database/test_advisory.py::test_occurrence_must_match_evaluation_job_and_facts[job]
+ERROR tests/database/test_advisory.py::test_occurrence_must_match_evaluation_job_and_facts[facts]
+ERROR tests/database/test_advisory.py::test_occurrence_must_match_evaluation_job_and_facts[document]
+ERROR tests/database/test_advisory.py::test_advisory_graph_is_removed_by_authorized_erasure
+ERROR tests/database/test_calculation.py::test_canonical_json_numeric_and_key_normalization
+ERROR tests/database/test_calculation.py::test_atomic_evaluation_claims_use_actual_content
+ERROR tests/database/test_calculation.py::test_transient_inputs_cannot_redefine_calculation[extra0]
+ERROR tests/database/test_calculation.py::test_transient_inputs_cannot_redefine_calculation[extra1]
+ERROR tests/database/test_calculation.py::test_published_rubric_cannot_gain_zero_weight_criterion
+ERROR tests/database/test_calculation.py::test_exact_components_unknown_and_final_half_up[ratings0-exact0-13-pass-complete]
+ERROR tests/database/test_calculation.py::test_exact_components_unknown_and_final_half_up[ratings1-exact1-75-fail-complete]
+ERROR tests/database/test_calculation.py::test_exact_components_unknown_and_final_half_up[ratings2-None-None-unknown-incomplete]
+ERROR tests/database/test_calculation.py::test_sealed_extraction_cannot_gain_evidence
+ERROR tests/database/test_core.py::test_service_has_no_staff_authority - psyc...
+ERROR tests/database/test_core.py::test_real_role_properties - psycopg.errors...
+ERROR tests/database/test_core.py::test_session_tenant_and_no_transaction_leak
+ERROR tests/database/test_core.py::test_foreign_parent_denied - psycopg.error...
+ERROR tests/database/test_core.py::test_foreign_person_denied - psycopg.error...
+ERROR tests/database/test_core.py::test_immutable_definitions - psycopg.error...
+ERROR tests/database/test_core.py::test_company_atomic_idempotency - psycopg....
+ERROR tests/database/test_core.py::test_stage_guard_history - psycopg.errors....
+ERROR tests/database/test_core.py::test_invalid_proof - psycopg.errors.Connec...
+ERROR tests/database/test_core.py::test_concurrent_claim - psycopg.errors.Con...
+ERROR tests/database/test_finalization.py::test_adapter_does_not_expose_transaction_control[COMMIT]
+ERROR tests/database/test_finalization.py::test_adapter_does_not_expose_transaction_control[ROLLBACK]
+ERROR tests/database/test_finalization.py::test_adapter_does_not_expose_transaction_control[SET ROLE cv_guard]
+ERROR tests/database/test_finalization.py::test_adapter_does_not_expose_transaction_control[DELETE FROM cv.company]
+ERROR tests/database/test_finalization.py::test_prepared_select_cannot_commit_a_partial_command
+ERROR tests/database/test_finalization.py::test_finalization_rejects_expired_session_after_early_validation
+ERROR tests/database/test_finalization.py::test_replay_obligation_survives_early_validation_and_rolls_back_other_writes
+ERROR tests/database/test_finalization.py::test_every_scope_is_validated_not_only_last_command
+ERROR tests/database/test_finalization.py::test_public_finalization_after_early_checks[False]
+ERROR tests/database/test_finalization.py::test_public_finalization_after_early_checks[True]
+ERROR tests/database/test_finalization.py::test_erasure_obligation_survives_scope_deletion
+ERROR tests/database/test_finalization.py::test_successful_adapter_erasure_does_not_require_revoked_recruitment_consent
+ERROR tests/database/test_finalization.py::test_caller_cannot_read_or_replace_private_obligations[SELECT * FROM pg_temp.cv_authority_obligations]
+ERROR tests/database/test_finalization.py::test_caller_cannot_read_or_replace_private_obligations[SELECT cv.register_obligation('purpose',NULL,NULL,NULL)]
+ERROR tests/database/test_finalization.py::test_finalization_clock_is_sampled_after_blocking_policy_lock
+ERROR tests/database/test_finalization.py::test_private_read_must_revalidate_scope_even_without_mutation
+ERROR tests/database/test_finalization.py::test_company_read_must_revalidate_selected_purpose_without_mutation
+ERROR tests/database/test_integrity.py::test_extraction_definition_cannot_disagree_with_claim[parser]
+ERROR tests/database/test_integrity.py::test_extraction_definition_cannot_disagree_with_claim[normalization]
+ERROR tests/database/test_integrity.py::test_extraction_definition_cannot_disagree_with_claim[upload_id]
+ERROR tests/database/test_integrity.py::test_invalid_policy_scope_cannot_be_created[missing]
+ERROR tests/database/test_integrity.py::test_invalid_policy_scope_cannot_be_created[wrong-kind]
+ERROR tests/database/test_integrity.py::test_invalid_policy_scope_cannot_be_created[real-data]
+ERROR tests/database/test_integrity.py::test_expired_policy_does_not_prevent_irreversible_revocation
+ERROR tests/database/test_integrity.py::test_staff_expiry_at_commit_rolls_back_mutation_and_audit
+ERROR tests/database/test_integrity.py::test_intake_cannot_link_foreign_person_or_tenant[a/admin/proof-b/person1]
+ERROR tests/database/test_integrity.py::test_intake_cannot_link_foreign_person_or_tenant[b/admin/proof-b/person1]
+ERROR tests/database/test_integrity.py::test_expired_erasing_session_cannot_commit_scope_deletion
+ERROR tests/database/test_integrity.py::test_exact_command_purpose_expiry_cannot_use_another_active_purpose
+ERROR tests/database/test_integrity.py::test_explicit_existing_person_link_is_idempotent
+ERROR tests/database/test_integrity.py::test_changed_payload_and_stale_revision_rollback
+ERROR tests/database/test_integrity.py::test_current_membership_revocation_hides_staff_rows
+ERROR tests/database/test_integrity.py::test_revoked_policy_denies_scope_reuse
+ERROR tests/database/test_privacy.py::test_erasure_cascades_intake_contact_and_hashes
+ERROR tests/database/test_privacy.py::test_recruiter_cannot_erase - psycopg.e...
+ERROR tests/database/test_privacy.py::test_scope_revocation_hides_private_data
+ERROR tests/database/test_public.py::test_public_projection_and_direct_denial
+ERROR tests/database/test_public.py::test_closed_publication_denied[withdrawn]
+ERROR tests/database/test_public.py::test_closed_publication_denied[expired]
+ERROR tests/database/test_public.py::test_intake_concurrency_and_explicit_identity
+ERROR tests/database/test_public.py::test_review_requires_finalized_file_then_is_idempotent
+ERROR tests/database/test_public.py::test_expiry_between_acceptance_and_commit_rolls_back
+ERROR tests/database/test_public.py::test_foreign_position_snapshot_is_rejected
+ERROR tests/database/test_public.py::test_intake_source_cannot_be_rebound - p...
+ERROR tests/database/test_review_repairs.py::test_long_decimal_weights_do_not_round_before_final_total
+ERROR tests/database/test_review_repairs.py::test_missing_stage_revision_is_denied
+ERROR tests/database/test_review_repairs.py::test_missing_review_revision_is_denied
+ERROR tests/database/test_review_repairs.py::test_missing_displayed_public_version_is_denied[publication]
+ERROR tests/database/test_review_repairs.py::test_missing_displayed_public_version_is_denied[snapshot]
+ERROR tests/database/test_review_repairs.py::test_missing_displayed_public_version_is_denied[consent]
+ERROR tests/database/test_source_identity.py::test_changed_source_definition_cannot_reuse_old_canonical_result[bytes]
+ERROR tests/database/test_source_identity.py::test_changed_source_definition_cannot_reuse_old_canonical_result[parser]
+ERROR tests/database/test_source_identity.py::test_changed_source_definition_cannot_reuse_old_canonical_result[normalization]
+ERROR tests/database/test_source_identity.py::test_changed_source_definition_cannot_reuse_old_canonical_result[reviewed_evidence]
+ERROR tests/database/test_source_identity.py::test_new_profile_upload_ids_and_times_preserve_semantic_reuse
+ERROR tests/database/test_source_identity.py::test_published_profile_cannot_gain_source_or_evidence[profile_source]
+ERROR tests/database/test_source_identity.py::test_published_profile_cannot_gain_source_or_evidence[profile_evidence]
+ERROR tests/database/test_source_identity.py::test_legacy_evaluation_claim_cannot_bypass_source_binding
+ERROR tests/database/test_source_identity.py::test_source_snapshot_cannot_expose_foreign_person
+ERROR tests/database/test_source_identity.py::test_profile_evidence_cannot_change_after_evaluation_consumes_early_check
+ERROR tests/database/test_source_identity.py::test_rubric_cannot_change_after_evaluation_consumes_early_check
+94 errors in 8.45s

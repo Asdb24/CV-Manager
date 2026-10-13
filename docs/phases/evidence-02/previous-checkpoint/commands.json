@@ -1,0 +1,79 @@
+[
+  {
+    "name": "install-frozen",
+    "command": "node scripts/tasks.mjs install:frozen",
+    "startedAt": "2026-10-12T16:44:43.492Z",
+    "finishedAt": "2026-10-12T16:45:48.148Z",
+    "exitCode": 0
+  },
+  {
+    "name": "format",
+    "command": "node scripts/tasks.mjs format:check",
+    "startedAt": "2026-10-12T16:45:48.149Z",
+    "finishedAt": "2026-10-12T16:45:48.932Z",
+    "exitCode": 0
+  },
+  {
+    "name": "lint",
+    "command": "node scripts/tasks.mjs lint",
+    "startedAt": "2026-10-12T16:45:48.933Z",
+    "finishedAt": "2026-10-12T16:45:54.928Z",
+    "exitCode": 0
+  },
+  {
+    "name": "typecheck",
+    "command": "node scripts/tasks.mjs typecheck",
+    "startedAt": "2026-10-12T16:45:54.928Z",
+    "finishedAt": "2026-10-12T16:46:06.400Z",
+    "exitCode": 0
+  },
+  {
+    "name": "test",
+    "command": "node scripts/tasks.mjs test",
+    "startedAt": "2026-10-12T16:46:06.401Z",
+    "finishedAt": "2026-10-12T16:46:27.622Z",
+    "exitCode": 0
+  },
+  {
+    "name": "client",
+    "command": "node scripts/clients.mjs check",
+    "startedAt": "2026-10-12T16:46:27.623Z",
+    "finishedAt": "2026-10-12T16:46:36.230Z",
+    "exitCode": 0
+  },
+  {
+    "name": "migration",
+    "command": "node scripts/tasks.mjs migration:check",
+    "startedAt": "2026-10-12T16:46:36.230Z",
+    "finishedAt": "2026-10-12T16:46:37.525Z",
+    "exitCode": 0
+  },
+  {
+    "name": "build",
+    "command": "node scripts/tasks.mjs build --config infra/config/development.json --profile development",
+    "startedAt": "2026-10-12T16:46:37.525Z",
+    "finishedAt": "2026-10-12T16:46:56.231Z",
+    "exitCode": 0
+  },
+  {
+    "name": "ui",
+    "command": "node scripts/tasks.mjs verify:ui --config infra/config/development.json --profile development",
+    "startedAt": "2026-10-12T16:46:56.231Z",
+    "finishedAt": "2026-10-12T16:47:06.997Z",
+    "exitCode": 0
+  },
+  {
+    "name": "model",
+    "command": "node scripts/tasks.mjs model:check",
+    "startedAt": "2026-10-12T16:47:06.997Z",
+    "finishedAt": "2026-10-12T16:47:08.128Z",
+    "exitCode": 0
+  },
+  {
+    "name": "licenses",
+    "command": "node scripts/tasks.mjs licenses:record",
+    "startedAt": "2026-10-12T16:47:08.128Z",
+    "finishedAt": "2026-10-12T16:47:09.277Z",
+    "exitCode": 0
+  }
+]

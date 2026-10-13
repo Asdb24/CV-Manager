@@ -1,0 +1,93 @@
+from pathlib import Path
+import csv,hashlib,json,re,os
+from datetime import datetime,timezone
+root=Path.cwd().resolve(); evidence=root/'docs/phases/evidence-02'; issues=[]
+def digest(path):
+    with path.open('rb') as stream: return hashlib.file_digest(stream,'sha256').hexdigest()
+def read_json(path): return json.loads(path.read_text(encoding='utf-8-sig'))
+commands=read_json(evidence/'commands.json')
+expected=['install-frozen','format','lint','typecheck','test','client','migration','infra','build','ui-dev','ui','audit','model','model-fetch','licenses']
+if [row['name'] for row in commands]!=expected or any(row['exitCode']!=0 for row in commands): issues.append('CURRENT_CHECKPOINT_INCOMPLETE')
+old=read_json(root/'docs/phases/PHASE_01_CHECKS.json'); preserved={}
+for name,sha in old['source_hashes_sha256'].items():
+    if name in ['docs/STATUS.md','docs/DECISIONS.md']: continue
+    actual=digest(root/name); preserved[name]=actual==sha
+    if actual!=sha: issues.append('PREDECESSOR_IMMUTABLE_CHANGED:'+name)
+for original,archive in [('docs/STATUS.md','prior-status-20261012.md'),('docs/DECISIONS.md','prior-decisions-20261012.md')]:
+    preserved[original+' archived']=digest(evidence/archive)==old['source_hashes_sha256'][original]
+    if not preserved[original+' archived']: issues.append('PRIOR_AUTHORITY_ARCHIVE_CHANGED:'+original)
+phase02=root/'docs/phases/PHASE_02_ARCHITECTURE_AND_TOOLCHAIN.md'
+attachment=Path(r'C:\Users\DHTT\.codex\attachments\137afe7e-cc6e-4b59-b711-5bc83eb4e084\goal-objective.md')
+if digest(phase02)!=digest(attachment): issues.append('SUPPLIED_PROMPT_CHANGED')
+rows=list(csv.DictReader((root/'docs/phases/PHASE_01_REQUIREMENT_TRACE.csv').open(encoding='utf-8-sig',newline='')))
+if len(rows)!=86: issues.append('REQUIREMENT_COUNT_CHANGED')
+owned={ 'AI-001':'contracts/model-manifest.json; scripts/model_check.py; evidence-02/model-contract-check.json', 'CFG-001':'settings.py; tests/python/test_foundation.py; tests/runtime.mjs', 'CFG-002':'settings.py; ReleaseManifest; 25-case component/profile checks', 'CFG-003':'settings.py; ai_harness.py; tests/ui/shell.spec.ts; ADR-024', 'CFG-004':'settings.py; ai_harness.py; test_owned_inputs.py; temporary-input-acl.json', 'CFG-006':'locks; DEPENDENCY_LICENSES.json; environment.json; command logs', 'REL-001':'architecture four documents; Compose; actual Vite/Next/Tauri builds' }
+trace=[]
+for row in rows:
+    item=dict(row); key=item['id']; item['phase02_acceptance']='PASS foundation scope' if key in owned else 'NOT_DUE'
+    item['phase02_evidence']=owned.get(key,'UNVERIFIED owner '+item['owner_phase'])
+    item['runtime_status']='VERIFIED Phase 02 foundation' if key in owned else ('SPECIFICATION VERIFIED Phase 01; future runtime UNVERIFIED' if item['owner_phase']=='01' else 'UNVERIFIED owner '+item['owner_phase'])
+    if key=='CFG-003': item['runtime_status']='UNVERIFIED native mode/outage owner 15; Phase 02 contract/stale developer view verified'
+    if key=='AI-001': item['runtime_status']='VERIFIED pinned artifacts/this Windows CPU; product inference UNVERIFIED owner 10'
+    item['data_security_limits']='Synthetic only; no DB/domain/auth/intake/scoring/product advice/release or legal qualification beyond recorded owner scope'
+    trace.append(item)
+trace_file=root/'docs/phases/PHASE_02_REQUIREMENT_TRACE.csv'
+with trace_file.open('w',encoding='utf-8',newline='') as stream:
+    writer=csv.DictWriter(stream,fieldnames=list(trace[0]));writer.writeheader();writer.writerows(trace)
+links=[]
+for md in [root/'AGENTS.md',root/'README.md',*sorted((root/'docs').rglob('*.md'))]:
+    if 'evidence-02' in md.parts: continue
+    content=md.read_text(encoding='utf-8-sig')
+    if len(re.findall(r'^```',content,re.M))%2: issues.append('UNBALANCED_FENCE:'+str(md.relative_to(root)))
+    for label,target in re.findall(r'(?<!!)\[([^\]]+)\]\(([^\n)]+)\)',content):
+        target=target.strip('<>')
+        if re.match(r'^(?:https?://|mailto:|#)',target): continue
+        resolved=(md.parent/target.split('#')[0]).resolve(); exists=resolved.exists()
+        links.append({'source':str(md.relative_to(root)).replace('\\','/'),'target':target,'exists':exists})
+        if not exists or not resolved.is_relative_to(root): issues.append('LOCAL_LINK_INVALID:'+str(md.relative_to(root))+':'+target)
+# Current public source and actual browser chunks: inspect concrete private/native markers.
+private_pattern=re.compile(r'@tauri-apps|@cv/api-client/(?:staff|local-ai)|AdvisoryAttachment|ApprovedInputManifest|database_secret_env|startup_authority|/staff/advisory')
+public_sources=[*(root/'apps/web/app').rglob('*.ts'),*(root/'apps/web/app').rglob('*.tsx'),root/'apps/web/proxy.ts']
+chunks=list((root/'apps/web/.next/static/chunks').rglob('*.js'))
+if not chunks: issues.append('PUBLIC_BUILD_CHUNKS_MISSING')
+leaks=[]
+for path in public_sources+chunks:
+    if private_pattern.search(path.read_text(encoding='utf-8')): leaks.append(str(path.relative_to(root)).replace('\\','/'))
+if leaks: issues.append('PUBLIC_PRIVATE_NATIVE_MARKERS:'+','.join(leaks))
+# Preserve exact structured reports/screenshots; temporary directories and model assets stay ignored.
+reports=['runtime-check-results.json','client-check-results.json','ui-results.json','ui-dev-results.json','audit-results.json','model-contract-check.json','compose-check-results.json']
+for name in reports:
+    source=root/'.local'/name
+    if not source.exists(): issues.append('EVIDENCE_MISSING:'+name)
+    else: (evidence/name).write_bytes(source.read_bytes())
+for kind in ['desktop','public']:
+    for suffix in ['.json','-summary.json']:
+        source=root/'.local/lighthouse'/(kind+suffix)
+        if not source.exists(): issues.append('LIGHTHOUSE_REPORT_MISSING')
+        else:
+            (evidence/'lighthouse').mkdir(exist_ok=True);(evidence/'lighthouse'/source.name).write_bytes(source.read_bytes())
+for kind,sizes in [('desktop',[(1280,800),(1024,768)]),('public',[(390,844),(360,800)])]:
+    for width,height in sizes:
+        for theme in ['light','dark']:
+            source=root/'.local/screenshots'/f'{kind}-{width}x{height}-{theme}.png'
+            if not source.exists(): issues.append('BROWSER_SCREENSHOT_MISSING:'+source.name)
+            else:(evidence/'screenshots'/source.name).write_bytes(source.read_bytes())
+exe=root/'apps/desktop/src-tauri/target/debug/agency-cv-shell.exe'; binary_sha=digest(exe)
+native=[]
+for width,height in [(1280,800),(1024,768)]:
+    result=read_json(evidence/f'native-geometry-{width}.json');native.append(result)
+    if result['client_logical_pixels']!=[float(width),float(height)] or result['binary_sha256']!=binary_sha: issues.append('NATIVE_INSPECTED_ARTIFACT_MISMATCH')
+    for purpose in ['service','focus']:
+        if not (evidence/'screenshots'/f'native-{width}x{height}-{purpose}.jpg').exists(): issues.append('NATIVE_SCREENSHOT_MISSING')
+excluded={'node_modules','.venv','.local','artifacts','target','dist','.next','__pycache__','.pytest_cache','.mypy_cache','.ruff_cache','test-results','playwright-report','gen','.git'}
+hashes={}
+for directory,dirs,files in os.walk(root):
+    dirs[:]=[name for name in dirs if name not in excluded]
+    for name in files:
+        path=Path(directory)/name;rel=str(path.relative_to(root)).replace('\\','/')
+        if rel=='docs/phases/PHASE_02_CHECKS.json' or name.endswith('.tsbuildinfo'): continue
+        hashes[rel]=digest(path)
+result={'phase':'02','verified_at_utc':datetime.now(timezone.utc).isoformat(),'timezone':'Asia/Saigon','predecessor':'01 exact Gate decision: PASS, 2026-10-12','preserved_predecessor_hashes':preserved,'review':'main-agent self-review; no sub-agent or independent review','prompt_sha256':digest(phase02),'commands':commands,'counts':{'canonical_requirements':len(trace),'phase02_primary_rows':len(owned),'local_links':len(links),'public_source_files':len(public_sources),'actual_public_chunks':len(chunks)},'requirements':trace,'local_links':links,'public_boundary_markers':{'leaks':leaks,'limit':'concrete source/compiled marker inspection; not complete release security proof'},'native_inspections':native,'artifact_sha256':{'unbundled_debug_windows_exe':binary_sha},'source_and_evidence_sha256':hashes,'issues':issues,'document_checks_result':'PASS' if not issues else 'STOP','gate_decision':'PASS' if not issues else 'STOP','limits':['synthetic developer foundation only','Docker/DB runtime UNVERIFIED owner 03','product advice 10; native both modes 15; offline/HTTPS 17; quality/security/100 CV 18 UNVERIFIED','no real policy/legal approval/production release claim']}
+(root/'docs/phases/PHASE_02_CHECKS.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+print(json.dumps({'issues':issues,'counts':result['counts'],'commands':len(commands),'binary_sha256':binary_sha}))
+if issues: raise SystemExit(1)

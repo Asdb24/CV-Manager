@@ -1,0 +1,43 @@
+{
+  "reviewer_id": "01a13643-d742-7f91-9778-0f443a2eb895",
+  "nickname": "Einstein",
+  "head": "0021_auth_hash_admission",
+  "received_at": "2026-10-13T17:45:06.735228+00:00",
+  "gate": "PASS",
+  "report_kind": "Faithful structured transcription of the returned same-reviewer follow-up",
+  "findings": [
+    {
+      "id": "R1",
+      "severity": "P1/High",
+      "status": "CLOSED",
+      "evidence": "Password verification only for admitted reservations; saved real API/PostgreSQL tests prove zero Argon2 for rejected account/global attempts,5 genuine dummy verifications for admitted unknown and continued current-session access after global rejection."
+    },
+    {
+      "id": "R2",
+      "severity": "P2/Medium",
+      "status": "CLOSED",
+      "evidence": "Startup authority locked and checked before hashing; final bootstrap checks retained. Zero hashes for forged/expired/foreign/closed requests and rollback on expiry during genuine hash."
+    },
+    {
+      "id": "R3",
+      "severity": "P2/Medium",
+      "status": "CLOSED",
+      "evidence": "Shared Unicode validation; independent nonpersisting ASGI checks return422 INPUT_INVALID for malformed surrogates on bootstrap/login/staffcreate; saved Vietnamese/emoji success."
+    }
+  ],
+  "new_material_findings": [],
+  "checkpoint_verified": {
+    "commands": 10,
+    "authentication_tests": 27,
+    "python_tests": 73,
+    "database_regression_tests": 94,
+    "typing_files": 48
+  },
+  "frozen_predecessor": "0001–0020 bytes unchanged; current hash/graph and generated schemas match.",
+  "packet_metadata": "Only2 documented dispatch metadata differences; matching hashes.",
+  "limits": [
+    "Native/device storage UNVERIFIED15",
+    "Approved deployed HTTPS UNVERIFIED17"
+  ],
+  "reviewer_mutations": "No files or DB changes; no delegation."
+}

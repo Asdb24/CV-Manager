@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agency-cv-foundation"
+version = "0.1.0"
+requires-python = "==3.13.*"
+dependencies = [
+  "fastapi==0.143.0",
+  "uvicorn==0.54.0",
+  "pydantic==2.14.1",
+  "alembic==1.20.0",
+  "sqlalchemy==2.1.4",
+  "psycopg[binary]==3.3.6",
+  "argon2-cffi==25.1.0",
+]
+
+[dependency-groups]
+dev = ["httpx==0.28.1", "pytest==9.1.1", "ruff==0.17.0", "mypy==2.4.0"]
+model-contract = ["onnxruntime==1.31.0", "tokenizers==0.23.3"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["packages/foundation/src/cv_foundation", "apps/api/src/cv_api", "apps/worker/src/cv_worker"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests/python"]
+addopts = "-ra --strict-markers"
+
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "ASYNC", "S"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["S101"]
+"apps/api/migrations/versions/0003_constraint_repair.py" = ["E501"]
+
+[tool.ruff.format]
+# Applied bytes are frozen and checked by the migration hash ledger.
+exclude = ["apps/api/migrations/versions/0005_public_advisory.py", "apps/api/migrations/versions/0013_transaction_finalization.py"]
+
+[tool.mypy]
+python_version = "3.13"
+strict = true
+files = ["packages/foundation/src", "apps/api/src", "apps/worker/src", "tests/python", "tests/database", "tests/auth", "scripts/database_cluster.py", "scripts/database_migrate.py", "scripts/database_migration_check.py", "scripts/database_query_evidence.py", "scripts/database_catalog.py", "scripts/database_legacy_precision_check.py"]

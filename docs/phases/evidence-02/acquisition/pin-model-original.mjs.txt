@@ -1,0 +1,108 @@
+// Explicit development/build acquisition only. No application runtime imports this script.
+import { mkdir, writeFile, readFile } from "node:fs/promises";
+import path from "node:path";
+import { createHash } from "node:crypto";
+import { root } from "./config.mjs";
+
+const repository = "intfloat/multilingual-e5-small";
+const metadataSource = `https://huggingface.co/api/models/${repository}?blobs=true`;
+async function get(url) {
+  const response = await fetch(url, { signal: AbortSignal.timeout(120000) });
+  if (!response.ok)
+    throw new Error(`OFFICIAL_ARTIFACT_UNAVAILABLE: ${response.status}`);
+  return response;
+}
+const metadata = await (await get(metadataSource)).json();
+if (
+  !/^[a-f0-9]{40}$/.test(metadata.sha) ||
+  metadata.cardData?.license !== "mit"
+)
+  throw new Error("MODEL_REVISION_LICENSE_INVALID");
+const selected = [
+  "onnx/model_qint8_avx512_vnni.onnx",
+  "tokenizer.json",
+  "tokenizer_config.json",
+  "special_tokens_map.json",
+  "sentencepiece.bpe.model",
+  "config.json",
+];
+const assets = [];
+for (const relative of selected) {
+  const source = `https://huggingface.co/${repository}/resolve/${metadata.sha}/${relative}`;
+  const bytes = Buffer.from(await (await get(source)).arrayBuffer());
+  const digest = createHash("sha256").update(bytes).digest("hex");
+  const upstream = metadata.siblings.find((x) => x.rfilename === relative);
+  if (upstream?.lfs?.sha256 && upstream.lfs.sha256 !== digest)
+    throw new Error("UPSTREAM_ASSET_DIGEST_MISMATCH");
+  const file = path.join(root, "artifacts/models", relative);
+  await mkdir(path.dirname(file), { recursive: true });
+  await writeFile(file, bytes);
+  assets.push({
+    path: relative,
+    sha256: digest,
+    bytes: bytes.length,
+    source,
+    upstream_lfs_sha256: upstream?.lfs?.sha256 ?? null,
+  });
+  console.log(`PINNED ${relative} ${digest}`);
+}
+const licenseSource =
+  "https://raw.githubusercontent.com/microsoft/unilm/master/LICENSE";
+const license = await (await get(licenseSource)).text();
+await mkdir(path.join(root, "contracts/licenses"), { recursive: true });
+await writeFile(
+  path.join(root, "contracts/licenses/upstream-unilm-MIT.txt"),
+  license,
+);
+const licenseDigest = createHash("sha256").update(license).digest("hex");
+const manifest = {
+  manifest_version: "e5-small-int8-cpu-v1",
+  model: repository,
+  upstream_revision: metadata.sha,
+  metadata_source: metadataSource,
+  license: {
+    model_metadata: "MIT",
+    model_metadata_revision: metadata.sha,
+    upstream_repository_license_source: licenseSource,
+    copied_license_sha256: licenseDigest,
+  },
+  execution: {
+    location: "employee-windows",
+    modes: ["standalone", "connected"],
+    provider: "CPUExecutionProvider",
+    onnxruntime_version: "1.31.0",
+    on_demand: true,
+    runtime_downloads: false,
+    external_providers: false,
+  },
+  adapter: {
+    version: "e5-retrieval-v1",
+    jd_prefix: "query: ",
+    cv_prefix: "passage: ",
+    pooling: "attention-mask-average",
+    normalization: "L2",
+    embedding_dimensions: 384,
+    token_ceiling: 512,
+    chunking_version: "page-span-384-token-64-overlap-v1",
+    chunk_tokens: 384,
+    overlap_tokens: 64,
+    omitted_chunks: "report-incomplete",
+    ranking_version: "cosine-six-decimal-semantic-locator-v1",
+    precision: "float32 internal; six-decimal advisory rank key",
+    tie_break: "page/start/end/content-digest/criterion-key ascending",
+    canonical_score_effect: "none",
+  },
+  assets,
+  cpu_compatibility:
+    "Requires actual Windows CPU graph-load inspection; inference quality/runtime owners 10/15/17/18 remain UNVERIFIED",
+};
+await mkdir(path.join(root, "contracts"), { recursive: true });
+await writeFile(
+  path.join(root, "contracts/model-manifest.json"),
+  JSON.stringify(manifest, null, 2) + "\n",
+);
+const raw = await readFile(path.join(root, "contracts/model-manifest.json"));
+await writeFile(
+  path.join(root, "contracts/model-manifest.sha256"),
+  createHash("sha256").update(raw).digest("hex") + "\n",
+);

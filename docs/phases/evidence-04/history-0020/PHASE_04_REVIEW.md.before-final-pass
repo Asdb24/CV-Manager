@@ -1,0 +1,21 @@
+# Phase 04 independent review
+
+The main agent completed implementation, ten canonical checks and final affected verification before dispatch. Exactly one reviewer, Einstein (`01a13643-d742-7f91-9778-0f443a2eb895`), received the bounded source/evidence packet at 0020. Read-only: no edits, database changes, mutation tests or delegation. This same reviewer will handle any follow-up.
+
+The initial review was interrupted by a reported usage limit before findings/decision. The same reviewer was resumed; no second reviewer was created. Review remains incomplete. Main self-checks do not replace it.
+
+Gate decision: STOP
+
+## Initial 0020 result
+
+The resumed same reviewer returned STOP with R1 High (throttled requests still hash), R2 Medium (bootstrap hashes before startup authority) and R3 Medium (invalid Unicode password can cause500). It verified123 packet/53 current migration/44 predecessor hashes and generated schemas. Its structured report is evidence-04/review-0020.json.
+
+Main reproduced all three: seven new tests failed at0020, saved in review-repairs-before.log. Forward0021 distinguishes login admission and checks bootstrap authority before hashing under the same locked transaction. Password DTOs and hash/verify also reject unencodable Unicode. Seven targeted tests passed after repair; extra admission/expiry checks and full current checkpoint/follow-up remain required. No prior migration bytes were changed.
+
+Gate decision: STOP
+
+##0021 follow-up dispatched
+
+After the repaired full ten-command checkpoint and final affected checks, the same reviewer received149 current source/evidence hashes and the R1–R3 repair packet. Current counts:27 auth,73 Python,94 DB,48 typing. Review closure is pending; no second reviewer was created.
+
+Gate decision: STOP

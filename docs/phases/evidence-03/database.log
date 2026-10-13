@@ -1,0 +1,8 @@
+MIGRATION_GRAPH_AND_FROZEN_BYTES_VERIFIED: real lifecycle is a separate required check
+OWNED_POSTGRESQL_RUNNING: roles ready; this command does not apply migrations
+MIGRATION_COMMITTED
+........................................................................ [ 76%]
+......................                                                   [100%]
+94 passed in 39.32s
+{"counts": {"company": [2001], "candidate": [3002], "privacy_scope": [3002], "application": [3002]}, "measured_queries": ["company_page", "pipeline_page", "person_applications"]}
+SCHEMA_METADATA_EXPORTED: {'version_num': '0017_used_definition_seals'}

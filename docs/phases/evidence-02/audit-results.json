@@ -1,0 +1,189 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\DHTT\\Downloads\\Download\\do an cn\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "-c",
+      "tests/ui/playwright.audit.config.ts"
+    ],
+    "configFile": "C:\\Users\\DHTT\\Downloads\\Download\\do an cn\\tests\\ui\\playwright.audit.config.ts",
+    "rootDir": "C:/Users/DHTT/Downloads/Download/do an cn/tests/ui",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/DHTT/Downloads/Download/do an cn/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/DHTT/Downloads/Download/do an cn/tests/ui",
+        "testIgnore": [],
+        "testMatch": [
+          "audit.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\DHTT\\Downloads\\Download\\do an cn\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "C:\\Users\\DHTT\\Downloads\\Download\\do an cn\\tests\\ui",
+        "snapshotDir": "C:\\Users\\DHTT\\Downloads\\Download\\do an cn\\tests\\ui",
+        "testIgnore": [],
+        "testMatch": "audit.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "browserName": "chromium",
+          "headless": true,
+          "deviceScaleFactor": 1
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "C:\\Users\\DHTT\\Downloads\\Download\\do an cn\\.local\\audit-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "audit.spec.ts",
+      "file": "audit.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "desktop actual Lighthouse audit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 24468,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"kind\":\"desktop\",\"at\":\"2026-10-12T18:05:53.585Z\",\"lighthouseVersion\":\"13.5.0\",\"browser\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36\",\"scores\":{\"performance\":1,\"accessibility\":1,\"best-practices\":1,\"seo\":0.82},\"failedAccessibility\":[],\"limits\":\"Developer shell and this host only; not product performance or complete accessibility qualification\"}\n\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T18:05:47.764Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "45efdff6a4d2e1f7e786-25c12ac7fd95edbff87b",
+          "file": "audit.spec.ts",
+          "line": 11,
+          "column": 3
+        },
+        {
+          "title": "public actual Lighthouse audit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 22686,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"kind\":\"public\",\"at\":\"2026-10-12T18:06:17.732Z\",\"lighthouseVersion\":\"13.5.0\",\"browser\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36\",\"scores\":{\"performance\":1,\"accessibility\":1,\"best-practices\":1,\"seo\":1},\"failedAccessibility\":[],\"limits\":\"Developer shell and this host only; not product performance or complete accessibility qualification\"}\n\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T18:06:12.285Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "45efdff6a4d2e1f7e786-9a4b84107d5d206dde20",
+          "file": "audit.spec.ts",
+          "line": 11,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-12T18:05:38.385Z",
+    "duration": 57466.51,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
