@@ -1,11 +1,42 @@
 {
   "repository": "Asdb24/CV-Manager",
   "ref": "codex/phase-05-quality-ci",
-  "source_sha": "6fee8bea8ccdd2509dce60145d5c774f0744713c",
-  "source_url": "https://github.com/Asdb24/CV-Manager/commit/6fee8bea8ccdd2509dce60145d5c774f0744713c",
+  "source_sha": "e5905a5e603cd9055b5025e77966db9c1dca0997",
+  "source_url": "https://github.com/Asdb24/CV-Manager/commit/e5905a5e603cd9055b5025e77966db9c1dca0997",
   "registration_sha": "5f800de04cda9f4809efa85a73f88f482194ce3d",
   "commit_scope": "new independent project baseline preserved through Phase04 plus Phase05 owned changes; explicit reviewed inventory; no private/runtime/generated payload",
   "staged_files": 527,
   "push": "ordinary non-forced work branch push",
-  "workflow_id": 383558033
+  "workflow_id": 383558033,
+  "followup_scope": [
+    ".github/workflows/quality.yml",
+    "contracts/quality-ci.json",
+    "docs/DECISIONS.md",
+    "docs/ci/QUALITY_WORKFLOW.md",
+    "docs/phases/PHASE_05_HARDCODE_REVIEW.md",
+    "docs/phases/evidence-05/hardcode-candidates.json",
+    "docs/phases/evidence-05/lint.log",
+    "docs/phases/evidence-05/local-commands.json",
+    "docs/phases/evidence-05/source-delivery.json",
+    "docs/phases/evidence-05/test.log",
+    "scripts/quality-checkpoint.mjs",
+    "scripts/quality-ci.mjs",
+    "tests/quality-ci.mjs"
+  ],
+  "initial_source_sha": "6fee8bea8ccdd2509dce60145d5c774f0744713c",
+  "profile_repair_scope": [
+    "docs/DECISIONS.md",
+    "docs/ci/QUALITY_WORKFLOW.md",
+    "docs/phases/evidence-05/ci-profile-repair.json",
+    "docs/phases/evidence-05/clean-dev-commands.json",
+    "docs/phases/evidence-05/clean-dev-typing.log",
+    "docs/phases/evidence-05/clean-dev-unit.log",
+    "docs/phases/evidence-05/development-testclient-licenses.json",
+    "docs/phases/evidence-05/lint.log",
+    "docs/phases/evidence-05/local-commands.json",
+    "docs/phases/evidence-05/predecessor-preservation.json",
+    "docs/phases/evidence-05/test.log",
+    "pyproject.toml",
+    "uv.lock"
+  ]
 }

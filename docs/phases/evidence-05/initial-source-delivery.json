@@ -1,0 +1,11 @@
+{
+  "repository": "Asdb24/CV-Manager",
+  "ref": "codex/phase-05-quality-ci",
+  "source_sha": "6fee8bea8ccdd2509dce60145d5c774f0744713c",
+  "source_url": "https://github.com/Asdb24/CV-Manager/commit/6fee8bea8ccdd2509dce60145d5c774f0744713c",
+  "registration_sha": "5f800de04cda9f4809efa85a73f88f482194ce3d",
+  "commit_scope": "new independent project baseline preserved through Phase04 plus Phase05 owned changes; explicit reviewed inventory; no private/runtime/generated payload",
+  "staged_files": 527,
+  "push": "ordinary non-forced work branch push",
+  "workflow_id": 383558033
+}

@@ -2,6 +2,8 @@
   "phase_order": 45,
   "existing_ids": 86,
   "amendments": 7,
+  "machine_ledger_matches": true,
+  "future_prompt_files_created": 0,
   "links_broken": [],
   "protected_values_checked": 5,
   "secret_hits": [],

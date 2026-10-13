@@ -164,3 +164,7 @@ These append to the earlier implementation assessment; they do not retroactively
 | ID | Status / owner | Decision and evidence |
 | --- | --- | --- |
 | ADR-061 | REPAIRED, CI PENDING / 05 | The deliberately reduced CI dev profile omitted httpx2, while Starlette 1.7.0 imports it for TYPE_CHECKING. Its runtime httpx fallback explains the isolated unit success and type failure. Pin the already locked httpx2 2.13.1 directly in dev; no package version, auth/test source or assertion changes. Fresh dev-only mypy without cache and 73 tests pass; actual hosted re-verification remains required. |
+
+| ID | Status / owner | Decision and evidence |
+| --- | --- | --- |
+| ADR-062 | VERIFIED / 05 | Actual manual run 38453840035, attempt 1, succeeded at reviewed `e5905a5e603cd9055b5025e77966db9c1dca0997` on the approved codex work branch. Existing main history/default-branch registration, explicit staging/exclusions, local/fresh dev-profile checks and main self-review pass. Two earlier failed runs are preserved. Release/runtime qualification stays UNVERIFIED at owners 34/40/41/42 and the ledger; only separately supplied Phase 06 may follow. |

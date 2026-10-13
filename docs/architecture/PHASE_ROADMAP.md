@@ -10,7 +10,7 @@ Each row is a planned ownership boundary, not a generated execution prompt or au
 | 02 | `PHASE_02_ARCHITECTURE_AND_TOOLCHAIN.md` | Existing stack, locked tools, generated contracts and model pins | PASS in original owned scope; dated evidence preserved |
 | 03 | `PHASE_03_POSTGRESQL_SCHEMA_AND_MIGRATIONS.md` | Existing persistence, immutable history and isolation | PASS in original owned scope; dated evidence preserved |
 | 04 | `PHASE_04_LOCAL_AUTH_AND_BOOTSTRAP.md` | Existing staff/local/server/public identity boundary | PASS in original owned scope; dated evidence preserved |
-| 05 | `PHASE_05_CONTINUATION_AND_QUALITY_CI.md` | Source-matched predecessor, 45-phase roadmap, quality workflow and real dispatch | IN PROGRESS |
+| 05 | `PHASE_05_CONTINUATION_AND_QUALITY_CI.md` | Source-matched predecessor, 45-phase roadmap, quality workflow and real dispatch | PASS in owned Phase 05 scope; run 38453840035 |
 | 06 | `PHASE_06_SHARED_DESIGN_SYSTEM.md` | Shared Vietnamese tokens/components, keyboard/focus and required viewport design checks | UNVERIFIED |
 | 07 | `PHASE_07_DESKTOP_NAVIGATION_AND_SESSION_UX.md` | Real Phase 04 login/session/navigation, expiry/revocation and stale reply states | UNVERIFIED |
 | 08 | `PHASE_08_COMPANY_VERTICAL_SLICE.md` | Company API/desktop CRUD, revision/removal/restore | UNVERIFIED |
@@ -45,7 +45,7 @@ Each row is a planned ownership boundary, not a generated execution prompt or au
 | 37 | `PHASE_37_CONNECTED_NATIVE_SESSIONS_AND_LOCAL_AI.md` | Native HTTPS transport/device Credential Manager, realm isolation, approved temporary inputs and local advice in both modes | UNVERIFIED |
 | 38 | `PHASE_38_BACKUP_RESTORE_AND_ERASURE_RECONCILIATION.md` | Coherent protected DB/files backups, restore/reapply erasure and recovery evidence | UNVERIFIED |
 | 39 | `PHASE_39_UPGRADE_AND_SERVER_DEPLOYMENT_CONFIGURATION.md` | Ordered forward upgrade/recovery plus independently validated approved server/web deployment config | UNVERIFIED |
-| 40 | `PHASE_40_HOSTED_INSTALLER_AND_PORTABLE_BUILD.md` | Real GitHub-hosted Windows x 64 Actions NSIS/per-user and single-EXE portable builds/upload; no local release build | UNVERIFIED |
+| 40 | `PHASE_40_HOSTED_INSTALLER_AND_PORTABLE_BUILD.md` | Real GitHub-hosted Windows x64 Actions NSIS/per-user and single-EXE portable builds/upload; no local release build | UNVERIFIED |
 | 41 | `PHASE_41_CLEAN_OFFLINE_WINDOWS_QUALIFICATION.md` | Downloaded hash-verified artifacts on clean offline Windows, both distributions/core/AI and zero recipient setup | UNVERIFIED |
 | 42 | `PHASE_42_APPROVED_HTTPS_CONNECTED_QUALIFICATION.md` | Authorized synthetic HTTPS public/connected flows, TLS/origin/cache/abuse/CSRF and own-server transmission | UNVERIFIED |
 | 43 | `PHASE_43_SECURITY_PRIVACY_AND_ERASURE_QUALIFICATION.md` | Actual permission/log/device/file/erasure/backup footprint/security limits | UNVERIFIED |
@@ -54,11 +54,11 @@ Each row is a planned ownership boundary, not a generated execution prompt or au
 
 ## Release and qualification amendment
 
-Release packaging runs exclusively on GitHub-hosted Windows x 64 Actions in Asdb 24/CV-Manager. Phase 34 pins recipes/checksums/licenses; 40 remotely builds/uploads and verifies installer/portable; 41 verifies downloaded binaries on clean offline Windows; 42 verifies approved HTTPS. Standard public GitHub-hosted runners are used for this quality checkpoint; no paid signup, paid run, automatic Release or deployment is authorized. Local development/build checks and inference tests remain allowed and cannot replace remote release packaging.
+Release packaging runs exclusively on GitHub-hosted Windows x64 Actions in Asdb24/CV-Manager. Phase 34 pins recipes/checksums/licenses; 40 remotely builds/uploads and verifies installer/portable; 41 verifies downloaded binaries on clean offline Windows; 42 verifies approved HTTPS. Standard public GitHub-hosted runners are used for this quality checkpoint; no paid signup, paid run, automatic Release or deployment is authorized. Local development/build checks and inference tests remain allowed and cannot replace remote release packaging.
 
 Installer: per-user NSIS, private runtimes/model/Fixed Version WebView2, LocalAppData mutable application data retained on ordinary uninstall. Portable: one self-extracting EXE and writable local NTFS sibling workspace; close and move the EXE plus whole workspace to relocate. Mode is a separate explicit standalone/connected axis. No recipient runtime download/manual service setup. All actual distribution behavior stays UNVERIFIED 40–42.
 
-Native runtime completion in 35–37 follows developerE2E 33. Development tests may use explicitly configured own services/operator accounts; they never qualify release zero-setup/device security/approved network staging. No sync, cross-realm session/cache or outage fallback is introduced.
+Native runtime completion in 35–37 follows developer E2E 33. Development tests may use explicitly configured own services/operator accounts; they never qualify release zero-setup/device security/approved network staging. No sync, cross-realm session/cache or outage fallback is introduced.
 
 ## Historical ownership reconciliation
 

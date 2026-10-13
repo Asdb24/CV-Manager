@@ -1,3 +1,5 @@
+> Current authority (2026-10-14): the supplied Phase 05 continuation prompt supersedes remaining 18-phase numbering. Use [PHASE_ROADMAP](../architecture/PHASE_ROADMAP.md) and [ACCEPTANCE_LEDGER](../product/ACCEPTANCE_LEDGER.md). The 01–04 history below is retained. Next after Phase 05 PASS: `PHASE_06_SHARED_DESIGN_SYSTEM.md`.
+
 # Phase order
 
 Baseline: 2026-10-12, new project with public site, dual modes and Windows-local AI included from inception. Predecessor for Phase 01: NONE (new project). All phases are sequential. The table names the exact future prompt; it does not create that prompt. User-supplied complete prompts govern future implementation and reviewer requirements.
@@ -27,4 +29,4 @@ At each checkpoint record the reviewer identity/type, scope, date and result act
 
 ## Superseded remaining order (2026-10-14)
 
-The18-phase table above is preserved historical planning. The user-supplied Phase 05 and explicit roadmap choice replace remaining order with [PHASE_ROADMAP](../architecture/PHASE_ROADMAP.md) and [ACCEPTANCE_LEDGER](../product/ACCEPTANCE_LEDGER.md). Completed01–04 retain dated gates; current05 is continuation/qualityCI, not the historical designphase. Next is exactlyPHASE_06_SHARED_DESIGN_SYSTEM.md.
+The 18-phase table above is preserved historical planning. The user-supplied Phase 05 and explicit roadmap choice replace remaining order with [PHASE_ROADMAP](../architecture/PHASE_ROADMAP.md) and [ACCEPTANCE_LEDGER](../product/ACCEPTANCE_LEDGER.md). Completed 01–04 retain dated gates; current 05 is continuation and quality CI. Next is exactly `PHASE_06_SHARED_DESIGN_SYSTEM.md`.

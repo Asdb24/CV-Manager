@@ -1,0 +1,159 @@
+{
+  "attempt": 1,
+  "conclusion": "failure",
+  "databaseId": 38451060914,
+  "event": "workflow_dispatch",
+  "headBranch": "codex/phase-05-quality-ci",
+  "headSha": "6fee8bea8ccdd2509dce60145d5c774f0744713c",
+  "jobs": [
+    {
+      "completedAt": "2026-10-13T19:02:59Z",
+      "conclusion": "failure",
+      "databaseId": 115481817654,
+      "name": "quality",
+      "startedAt": "2026-10-13T18:58:18Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-10-13T18:58:21Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-10-13T18:58:19Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T18:58:23Z",
+          "conclusion": "success",
+          "name": "Validate explicit source",
+          "number": 2,
+          "startedAt": "2026-10-13T18:58:21Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T18:58:32Z",
+          "conclusion": "success",
+          "name": "Checkout reviewed commit",
+          "number": 3,
+          "startedAt": "2026-10-13T18:58:23Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T18:58:40Z",
+          "conclusion": "success",
+          "name": "Locked Node",
+          "number": 4,
+          "startedAt": "2026-10-13T18:58:32Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T18:58:40Z",
+          "conclusion": "success",
+          "name": "Locked Python",
+          "number": 5,
+          "startedAt": "2026-10-13T18:58:40Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T18:58:43Z",
+          "conclusion": "success",
+          "name": "Locked uv",
+          "number": 6,
+          "startedAt": "2026-10-13T18:58:40Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:01:00Z",
+          "conclusion": "success",
+          "name": "Install frozen development tools",
+          "number": 7,
+          "startedAt": "2026-10-13T18:58:43Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:01:00Z",
+          "conclusion": "success",
+          "name": "Validate quality contract and workflow",
+          "number": 8,
+          "startedAt": "2026-10-13T19:01:00Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:01:04Z",
+          "conclusion": "success",
+          "name": "Format",
+          "number": 9,
+          "startedAt": "2026-10-13T19:01:00Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:02:56Z",
+          "conclusion": "failure",
+          "name": "Lint",
+          "number": 10,
+          "startedAt": "2026-10-13T19:01:04Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:02:56Z",
+          "conclusion": "skipped",
+          "name": "Types",
+          "number": 11,
+          "startedAt": "2026-10-13T19:02:56Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:02:56Z",
+          "conclusion": "skipped",
+          "name": "Unit and development contract checks",
+          "number": 12,
+          "startedAt": "2026-10-13T19:02:56Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:02:56Z",
+          "conclusion": "skipped",
+          "name": "Post Locked uv",
+          "number": 21,
+          "startedAt": "2026-10-13T19:02:56Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:02:56Z",
+          "conclusion": "skipped",
+          "name": "Post Locked Python",
+          "number": 22,
+          "startedAt": "2026-10-13T19:02:56Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:02:56Z",
+          "conclusion": "skipped",
+          "name": "Post Locked Node",
+          "number": 23,
+          "startedAt": "2026-10-13T19:02:56Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:02:58Z",
+          "conclusion": "success",
+          "name": "Post Checkout reviewed commit",
+          "number": 24,
+          "startedAt": "2026-10-13T19:02:56Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:02:58Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 25,
+          "startedAt": "2026-10-13T19:02:58Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/Asdb24/CV-Manager/actions/runs/38451060914/job/115481817654"
+    }
+  ],
+  "status": "completed",
+  "url": "https://github.com/Asdb24/CV-Manager/actions/runs/38451060914"
+}

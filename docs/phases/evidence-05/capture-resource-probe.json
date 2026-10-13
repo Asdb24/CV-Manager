@@ -1,0 +1,12 @@
+{
+  "kind": "actual local recorder/native child output-capacity failure",
+  "configured_capture_bytes": 1,
+  "parent_exit_code": 1,
+  "commands_started": 1,
+  "first_command": "node scripts/tasks.mjs format:check",
+  "child_exit_code": null,
+  "result": "PASS: overflow prevents checkpoint success and stops subsequent tasks",
+  "stdout": "format:check: exit=null\n",
+  "configuration_restored": true,
+  "prior_current_pass_evidence_restored": true
+}

@@ -1,0 +1,191 @@
+{
+  "attempt": 1,
+  "conclusion": "success",
+  "createdAt": "2026-10-13T19:18:49Z",
+  "databaseId": 38453840035,
+  "event": "workflow_dispatch",
+  "headBranch": "codex/phase-05-quality-ci",
+  "headSha": "e5905a5e603cd9055b5025e77966db9c1dca0997",
+  "jobs": [
+    {
+      "completedAt": "2026-10-13T19:25:46Z",
+      "conclusion": "success",
+      "databaseId": 115491334528,
+      "name": "quality",
+      "startedAt": "2026-10-13T19:18:54Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-10-13T19:18:57Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-10-13T19:18:54Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:18:57Z",
+          "conclusion": "success",
+          "name": "Validate explicit source",
+          "number": 2,
+          "startedAt": "2026-10-13T19:18:57Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:19:05Z",
+          "conclusion": "success",
+          "name": "Checkout reviewed commit",
+          "number": 3,
+          "startedAt": "2026-10-13T19:18:57Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:19:18Z",
+          "conclusion": "success",
+          "name": "Locked Node",
+          "number": 4,
+          "startedAt": "2026-10-13T19:19:05Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:19:18Z",
+          "conclusion": "success",
+          "name": "Locked Python",
+          "number": 5,
+          "startedAt": "2026-10-13T19:19:18Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:19:21Z",
+          "conclusion": "success",
+          "name": "Locked uv",
+          "number": 6,
+          "startedAt": "2026-10-13T19:19:18Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:22:41Z",
+          "conclusion": "success",
+          "name": "Install frozen development tools",
+          "number": 7,
+          "startedAt": "2026-10-13T19:19:21Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:22:42Z",
+          "conclusion": "success",
+          "name": "Validate quality contract and workflow",
+          "number": 8,
+          "startedAt": "2026-10-13T19:22:41Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:22:44Z",
+          "conclusion": "success",
+          "name": "Format",
+          "number": 9,
+          "startedAt": "2026-10-13T19:22:42Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:22:46Z",
+          "conclusion": "success",
+          "name": "Prepare existing desktop assets for Rust checks",
+          "number": 10,
+          "startedAt": "2026-10-13T19:22:44Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:24:38Z",
+          "conclusion": "success",
+          "name": "Lint",
+          "number": 11,
+          "startedAt": "2026-10-13T19:22:46Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:25:07Z",
+          "conclusion": "success",
+          "name": "Types",
+          "number": 12,
+          "startedAt": "2026-10-13T19:24:38Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:25:39Z",
+          "conclusion": "success",
+          "name": "Unit and development contract checks",
+          "number": 13,
+          "startedAt": "2026-10-13T19:25:07Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:25:39Z",
+          "conclusion": "success",
+          "name": "Post Locked uv",
+          "number": 23,
+          "startedAt": "2026-10-13T19:25:39Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:25:40Z",
+          "conclusion": "success",
+          "name": "Post Locked Python",
+          "number": 24,
+          "startedAt": "2026-10-13T19:25:39Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:25:40Z",
+          "conclusion": "success",
+          "name": "Post Locked Node",
+          "number": 25,
+          "startedAt": "2026-10-13T19:25:40Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:25:42Z",
+          "conclusion": "success",
+          "name": "Post Checkout reviewed commit",
+          "number": 26,
+          "startedAt": "2026-10-13T19:25:40Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-13T19:25:42Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 27,
+          "startedAt": "2026-10-13T19:25:42Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/Asdb24/CV-Manager/actions/runs/38453840035/job/115491334528"
+    }
+  ],
+  "status": "completed",
+  "updatedAt": "2026-10-13T19:25:47Z",
+  "url": "https://github.com/Asdb24/CV-Manager/actions/runs/38453840035",
+  "repository": "Asdb24/CV-Manager",
+  "workflow_path": ".github/workflows/quality.yml",
+  "required_steps": [
+    "Validate explicit source",
+    "Checkout reviewed commit",
+    "Locked Node",
+    "Locked Python",
+    "Locked uv",
+    "Install frozen development tools",
+    "Validate quality contract and workflow",
+    "Format",
+    "Prepare existing desktop assets for Rust checks",
+    "Lint",
+    "Types",
+    "Unit and development contract checks"
+  ],
+  "runner_labels": [
+    "windows-2025"
+  ],
+  "runner_name": "GitHub Actions 1000000059",
+  "sanitized_log_sha256": "5d82ebaaabfb8f587ea8441d18dc20bcb09ff2dc2846e4314dc7b54cc67f8ed6",
+  "secret_scan": "protected credentials and token/private-key patterns zero matches; GitHub masked logs retained"
+}

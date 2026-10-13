@@ -1,0 +1,1011 @@
+{
+  "reviewed_implementation_sha": "e5905a5e603cd9055b5025e77966db9c1dca0997",
+  "implementation_files_checked": 251,
+  "source_drift": [],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "b32ad57e087c364f6f3e210086306e5d5ec1b36c7738e5ddd898cd960095d5f0"
+    },
+    {
+      "path": ".github/workflows/quality.yml",
+      "sha256": "602c73c97dc7629082e4289c921bd36609a8c4c84a797c1e037b1c253e17e58b"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "8a39b176f7a708f413a80b17bbec5344ade9fa83f7768f5bd9953393782c6cab"
+    },
+    {
+      "path": ".npmrc",
+      "sha256": "c429c8321bafcb3f69b357c9d312c8f09846c4a7d6ab2027eaf5062d784774fb"
+    },
+    {
+      "path": ".prettierignore",
+      "sha256": "206f8d2d45c71814952cc4a6bcbd70c7d5f622ab2b0196be6e742235c21f77ac"
+    },
+    {
+      "path": ".python-version",
+      "sha256": "861b3dd8083d28f336ef70f6755bc399538ddad627b1d095820ca34cb953cf14"
+    },
+    {
+      "path": "apps/api/alembic.ini",
+      "sha256": "babe6c3892d454b2dffe8b9eb0701b9802da49e4b72faefbaccaf62ee4211de4"
+    },
+    {
+      "path": "apps/api/migrations/env.py",
+      "sha256": "292a543aa8666f492673dd1887b6123183d55f160150d4eb0fb7ab4048a6ef3b"
+    },
+    {
+      "path": "apps/api/migrations/script.py.mako",
+      "sha256": "f6482944610700ed5cc29151650d5338228311299bdf58c34b3115bd2298901b"
+    },
+    {
+      "path": "apps/api/migrations/versions/0001_core.py",
+      "sha256": "61722f0c56c33242604a83dff95e3a46a722d1021f724265db3820ca73137911"
+    },
+    {
+      "path": "apps/api/migrations/versions/0001_core.sql",
+      "sha256": "651092eba1095fed68bcd1d3060a25cfffc242d631ad57b1c78ecd08e05655fa"
+    },
+    {
+      "path": "apps/api/migrations/versions/0002_commands.py",
+      "sha256": "beaf3a0440eb013e11ba43a0c437724b7c5b97b8f55b244616f70e466968d4de"
+    },
+    {
+      "path": "apps/api/migrations/versions/0002_commands.sql",
+      "sha256": "58bc3b683aae154eb0aa3c030b13956bd873089499c37dfe6ac5d982c3f367dc"
+    },
+    {
+      "path": "apps/api/migrations/versions/0002_commands_down.sql",
+      "sha256": "c001ea012f89c1518ba46785adfe02eb556811768f0d167fd64198722c5f6b88"
+    },
+    {
+      "path": "apps/api/migrations/versions/0003_constraint_repair.py",
+      "sha256": "051ecb4481641db4f7aa130f3bcf2ac5768de92ba14c6d82156554258de967f6"
+    },
+    {
+      "path": "apps/api/migrations/versions/0004_command_parameters.py",
+      "sha256": "08bb19efad78ecbb320b99164ab08c2da32e437492a6afc3e3166a04a11b6cf0"
+    },
+    {
+      "path": "apps/api/migrations/versions/0004_command_parameters.sql",
+      "sha256": "a46df0c9cd17c9bcc5e9deb1da9fbbe54cded532e96d027a92bdc9fd1744df45"
+    },
+    {
+      "path": "apps/api/migrations/versions/0005_public_advisory.py",
+      "sha256": "d790fca8cb5734bd7beb4e6ada4b55f998cfa2f1f8dd1405dda003a784e749ba"
+    },
+    {
+      "path": "apps/api/migrations/versions/0005_public_advisory.sql",
+      "sha256": "cbc25baff9ea5485c69b90e1d9427825932312da8fdb24c9e6558de199fbbd61"
+    },
+    {
+      "path": "apps/api/migrations/versions/0005_public_advisory_down.sql",
+      "sha256": "3c77fc74bf5903e7718b2623c0685e96af8dd6850af5b23cc7c6a3dd9357e53c"
+    },
+    {
+      "path": "apps/api/migrations/versions/0006_erasure_authority.py",
+      "sha256": "bc61c9e24b8308603429d5bfc6a923a2f0b48471dc46b19dbafc13d7c966c925"
+    },
+    {
+      "path": "apps/api/migrations/versions/0007_intake_commit.py",
+      "sha256": "0ed1684797bf902aa4e93098cd452500ba95760fe369245364cf316a7b2b462b"
+    },
+    {
+      "path": "apps/api/migrations/versions/0007_intake_commit.sql",
+      "sha256": "5be1562483e1bae9e07b8d51223a323ff6c5f7f8e5f906e6bb392311ea24acc7"
+    },
+    {
+      "path": "apps/api/migrations/versions/0008_calculation_binding.py",
+      "sha256": "699d79849b263bc4019f258183073797ccb76b4c23cba0ef46eb95a0ca9fd205"
+    },
+    {
+      "path": "apps/api/migrations/versions/0008_calculation_binding.sql",
+      "sha256": "20dc2bfa0568776f6358d9a5e5cd6da19aa838681446080ff8b931ecce66cc7f"
+    },
+    {
+      "path": "apps/api/migrations/versions/0008_calculation_binding_down.sql",
+      "sha256": "f3a84e2659cd7ee7374b627f535c7425452c9b7a2876ceb492ca9a54b5fd6d3e"
+    },
+    {
+      "path": "apps/api/migrations/versions/0009_extraction_policy.py",
+      "sha256": "3dc887fe84c84876ce8d0ac6f1a2029b8269cbe170b4d4e2240d4823de6d7b2d"
+    },
+    {
+      "path": "apps/api/migrations/versions/0009_extraction_policy.sql",
+      "sha256": "c017cff1a996ec425b7b1a6eb5e5dad98911acd2c9d02f8cb4d010f89036d391"
+    },
+    {
+      "path": "apps/api/migrations/versions/0009_extraction_policy_down.sql",
+      "sha256": "0bcfcf5078e82c2f0634e2245ccdc17c292907eb58098c9a98a87f3d6fb1fd31"
+    },
+    {
+      "path": "apps/api/migrations/versions/0010_final_command_authority.py",
+      "sha256": "c4a5ef5070c8c354a0e7383b9910227bb940fa111d4a8ea32bc839bcdbc0f272"
+    },
+    {
+      "path": "apps/api/migrations/versions/0010_final_command_authority.sql",
+      "sha256": "b5193f771b92f92d009e0adfcd4144dac2b295db1e6cdf7c6eff4b9723540974"
+    },
+    {
+      "path": "apps/api/migrations/versions/0010_final_command_authority_down.sql",
+      "sha256": "0820407e2761eafcf6bb3a8208f32b3e7cfc493a11a44ef0a722073627cbcbd8"
+    },
+    {
+      "path": "apps/api/migrations/versions/0011_exact_and_required_inputs.py",
+      "sha256": "a9a5a8216048455063094223354b4fb7191ca4fcddd6b61b049f375e4304f6c6"
+    },
+    {
+      "path": "apps/api/migrations/versions/0011_exact_and_required_inputs.sql",
+      "sha256": "ecfcfb18eb6663a55833af51d625adf0f8810f240550bfb160c0018fef05085d"
+    },
+    {
+      "path": "apps/api/migrations/versions/0011_exact_and_required_inputs_down.sql",
+      "sha256": "474d840b8e5d48803dc90d093eb81b1af45601b83260462ac4da721f81a8cd2f"
+    },
+    {
+      "path": "apps/api/migrations/versions/0012_history_bindings.py",
+      "sha256": "113e172e1bcc46a1dfdcbd0a604481f60a7cbe053a7eb348d178034ff9bb1ac8"
+    },
+    {
+      "path": "apps/api/migrations/versions/0012_history_bindings.sql",
+      "sha256": "ee9b8bff81d106be5ff9e9fa82189340b2ae6b090217a1f38af2eab5a8ed3702"
+    },
+    {
+      "path": "apps/api/migrations/versions/0012_history_bindings_down.sql",
+      "sha256": "3b7c1da53378cb9ead78dd8e282a0fdf7a433e1365b0304fcda2b3726a44e95f"
+    },
+    {
+      "path": "apps/api/migrations/versions/0013_transaction_finalization.py",
+      "sha256": "83e158b384097a97946ea1f5894e282574c0ebe2180284112cb51b3229722fb2"
+    },
+    {
+      "path": "apps/api/migrations/versions/0013_transaction_finalization.sql",
+      "sha256": "d31bf432aba4665a4ba0363543e98aec80ae0830229263c8d30875ab4688aff7"
+    },
+    {
+      "path": "apps/api/migrations/versions/0013_transaction_finalization_down.sql",
+      "sha256": "ec83398c1ade5f0373a7d97120231801d7031fd20f991f86f0fe74d8d45b7a46"
+    },
+    {
+      "path": "apps/api/migrations/versions/0014_policy_parameters.py",
+      "sha256": "db24789b51fa524f60e71e50fd4dd424f8a6ce988972195247dcbdb5002556eb"
+    },
+    {
+      "path": "apps/api/migrations/versions/0014_policy_parameters.sql",
+      "sha256": "1678502a9dde8e02d80b47bb5fa460254d832825184df90f1a48f78445461861"
+    },
+    {
+      "path": "apps/api/migrations/versions/0014_policy_parameters_down.sql",
+      "sha256": "06839ffa44a5b825f177d49401bb95a373169c4e9810f8468f2a3e568c630565"
+    },
+    {
+      "path": "apps/api/migrations/versions/0015_source_identity.py",
+      "sha256": "5d4e7adcec2f1f7326cd04f882d79a34173bb77e7b17c2d4468dbd88bc8defbc"
+    },
+    {
+      "path": "apps/api/migrations/versions/0015_source_identity.sql",
+      "sha256": "8b56168de2f9a853693c597993e1201bc1c359ae6d0362944aa804670b4b6e20"
+    },
+    {
+      "path": "apps/api/migrations/versions/0015_source_identity_down.sql",
+      "sha256": "c24a742a32ab5a839987697e275bca7b4b4cdd84ec4f0e18578819013dc87974"
+    },
+    {
+      "path": "apps/api/migrations/versions/0016_read_finalization.py",
+      "sha256": "af7db3702d74843644b1ea0d01bb54aea44a0605db1fab65ba688d4747de1c39"
+    },
+    {
+      "path": "apps/api/migrations/versions/0016_read_finalization.sql",
+      "sha256": "4cb8b0a459b3a309f8709660e7a63b924a00549dd77e42f864bccdd2d8a92f82"
+    },
+    {
+      "path": "apps/api/migrations/versions/0016_read_finalization_down.sql",
+      "sha256": "c66211bc64aa57f4bb3a488d18b8be0f1d2940df55c5bb015136cb2ec9c565ea"
+    },
+    {
+      "path": "apps/api/migrations/versions/0017_used_definition_seals.py",
+      "sha256": "f0268b06f3869a483f40f23468d0b89c8171db8b893eb3b43c363af9b5bfc0e4"
+    },
+    {
+      "path": "apps/api/migrations/versions/0017_used_definition_seals.sql",
+      "sha256": "5f12cf45620ab781869962e2e9e2486b4dde0309bb5cb544a50fc07b9ce8fd70"
+    },
+    {
+      "path": "apps/api/migrations/versions/0017_used_definition_seals_down.sql",
+      "sha256": "74bf5b1fad233b3ef70ac7906cc272a15092e08259f7fa42505a03c3a565fa66"
+    },
+    {
+      "path": "apps/api/migrations/versions/0018_staff_authentication.py",
+      "sha256": "ced824ff3f6e02d4917d41d1e1dd3920c3382a2fe682f69dc620967b7dc3a577"
+    },
+    {
+      "path": "apps/api/migrations/versions/0018_staff_authentication.sql",
+      "sha256": "ac6ae9f08ba896d45ba49c0fec82b9ba0fd1d8f31a23e8a9b4f5214f2fe3c134"
+    },
+    {
+      "path": "apps/api/migrations/versions/0018_staff_authentication_down.sql",
+      "sha256": "c069a572679c06e70adf272b4994a41223b8c26089634f02382177dfa6f5086d"
+    },
+    {
+      "path": "apps/api/migrations/versions/0019_identity_policy_authority.py",
+      "sha256": "40e9c03fbddfd13a888a494f95f3f6a438202fc00f723722d7ad0baa756b51a2"
+    },
+    {
+      "path": "apps/api/migrations/versions/0019_identity_policy_authority.sql",
+      "sha256": "8b9c3a183579317f687196e6a216d73f7a669d827645e4b318923ef958d9c7bd"
+    },
+    {
+      "path": "apps/api/migrations/versions/0019_identity_policy_authority_down.sql",
+      "sha256": "f7913b45fbe926a1aba69283e3f8166f065ca285bdeacd03f9207e19d8f54c62"
+    },
+    {
+      "path": "apps/api/migrations/versions/0020_auth_finalization.py",
+      "sha256": "9831b942c11617dbd572027c9b20fa82cc3885e51685233c927671999970b424"
+    },
+    {
+      "path": "apps/api/migrations/versions/0020_auth_finalization.sql",
+      "sha256": "a352efd91e0404c7e5f7353110165caeba7208a008bbadc603dd4c915655e3dd"
+    },
+    {
+      "path": "apps/api/migrations/versions/0020_auth_finalization_down.sql",
+      "sha256": "7c1d2bbcd3ffe6cdeeff774da49f20a39f66187f05603f57a3c608222a534729"
+    },
+    {
+      "path": "apps/api/migrations/versions/0021_auth_hash_admission.py",
+      "sha256": "c4b51da5aab65c1ab61640a9e37e5da60825b6eb33418d3e2406d374376f2cbd"
+    },
+    {
+      "path": "apps/api/migrations/versions/0021_auth_hash_admission.sql",
+      "sha256": "6257af8c41a9a6ac8729eb108ecdbe7cc365e02692b9ed70c0eba0cd183c808e"
+    },
+    {
+      "path": "apps/api/migrations/versions/0021_auth_hash_admission_down.sql",
+      "sha256": "38a5ae0f360778536db8becb95528949da708dc3754d3bc48669c24c695f2416"
+    },
+    {
+      "path": "apps/api/migrations/versions/README.md",
+      "sha256": "7d52f8f342633249d658b4073170fc8ac64471fc731ced5fa3881794406cc419"
+    },
+    {
+      "path": "apps/api/src/cv_api/__init__.py",
+      "sha256": "0a80151f858176c59b28d203ff7c0a59dbd26cbf4792d626cde8193d6b563c8e"
+    },
+    {
+      "path": "apps/api/src/cv_api/__main__.py",
+      "sha256": "c2a2226dea9ea08af3ffd621e3ebd2dddd7372ea3335129ae8188ab70fc3c429"
+    },
+    {
+      "path": "apps/api/src/cv_api/app.py",
+      "sha256": "7ebe5a4ec52476f23a0864f02204854299db5144f0a302eb783bb27878f31f96"
+    },
+    {
+      "path": "apps/api/src/cv_api/auth_boundary.py",
+      "sha256": "7f43d1e86460aea99a16a37884dc407c36fc65fb3fd2a916756ca871f6b5ef6a"
+    },
+    {
+      "path": "apps/api/src/cv_api/auth_routes.py",
+      "sha256": "a11a29f6ab9457c2d24a815d23b3f4e642d82551d315a83bb98b1718f3f6a3cc"
+    },
+    {
+      "path": "apps/api/src/cv_api/authentication.py",
+      "sha256": "1e93970650b3aa52494e5c74f9682f14fa366ebfdfede2b62bf77f2e6322ae66"
+    },
+    {
+      "path": "apps/api/src/cv_api/operator.py",
+      "sha256": "37204cef513246321baa07bb17cd696e36e8a9321a5b13fdf9eef93a5e5bc320"
+    },
+    {
+      "path": "apps/desktop/app-icon.svg",
+      "sha256": "da0b6a2ab0f307c1cb057e2acefa726f1021312191fd375aede1992ad68553dc"
+    },
+    {
+      "path": "apps/desktop/index.html",
+      "sha256": "2b14eb6084d2211a8cd9f722abf9c91129fb102d53af9bbff8d8005382349311"
+    },
+    {
+      "path": "apps/desktop/package.json",
+      "sha256": "7ad25a65e9f76d3d5cacd1687818838bac4823c81d8f442b441b496e7be89255"
+    },
+    {
+      "path": "apps/desktop/src-tauri/Cargo.lock",
+      "sha256": "4ab6351ad3cf02047f5496fde9c19afa01ccbb9bb4c9043bf144c017489dd2d7"
+    },
+    {
+      "path": "apps/desktop/src-tauri/Cargo.toml",
+      "sha256": "d49576e0944428f4e46208ce5bd6772be6f5536e986f6834c9185edfb9b65913"
+    },
+    {
+      "path": "apps/desktop/src-tauri/build.rs",
+      "sha256": "487059eaf8a947b80f20a9aacac038a5047b2ad69d2401b827376c67d6fe847f"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/128x128.png",
+      "sha256": "38527df99785e9a6d8d30fd669be61ebc8a27094d49b9a5db877ff24be0de7cf"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/128x128@2x.png",
+      "sha256": "f0bbd1d7817f95806f98423326dfc681e5b02ed2fe2b4331cefad7e6f9afd47b"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/32x32.png",
+      "sha256": "d359f43fa3416ca281b44e960ffb049254404aa790dc54ddaa9060da76ab8dc5"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/64x64.png",
+      "sha256": "96b3e89615614d4b58bafad248c6cd9e388658bc4717f1ef8d52ad68523f8c70"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/Square107x107Logo.png",
+      "sha256": "41396307f1844925ac121f5dd75af9a44e77517dcd41f699329b2044d6c542f6"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/Square142x142Logo.png",
+      "sha256": "8beed91fe0d45d9094907aa31084ebf1d4f7e1e03432454d6cec30dbab20a58f"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/Square150x150Logo.png",
+      "sha256": "35775fa3b347840b5ff1a7dc4a63ba8de1c04b78e42d4bdcdbf4983ba19e6067"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/Square284x284Logo.png",
+      "sha256": "2bf7defe0f39dfd135b19861180ff4d106c7233efab11e6b1fe8092e4f65129e"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/Square30x30Logo.png",
+      "sha256": "eda1dedcb683505809719be1260999afbc8442266cd0426bbfa825580cfeb98f"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/Square310x310Logo.png",
+      "sha256": "9917a1f46e915aab2617c097fdfb09148a7ca46fb655710c7f151e64109c3324"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/Square44x44Logo.png",
+      "sha256": "b2d42423d790a4e2219335484bc0e13e62e22cc9498514e099ad363f0d3931b5"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/Square71x71Logo.png",
+      "sha256": "29b11f1e88ccd5f61046e73ce0256f3a55cf87fb48e494452209daa79ec4d209"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/Square89x89Logo.png",
+      "sha256": "934ef74c352b50302600559bb2a86f0ec98512aacb8af4e8e0d3dcd7b77c0d3b"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/StoreLogo.png",
+      "sha256": "6d0596ecc4a8632d28d3cd8df247295fe7e22e41011016f9c718d0bf3ad80812"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/android/mipmap-anydpi-v26/ic_launcher.xml",
+      "sha256": "760d4b8a06bf7163dd010c33ad2cac9e4a75fa0177afaba042f83e311eef0c3e"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/android/mipmap-hdpi/ic_launcher.png",
+      "sha256": "0a15d64d0838213a271b4c7d07dba281c34566514b9633d5ad9e0800c2361a36"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/android/mipmap-hdpi/ic_launcher_foreground.png",
+      "sha256": "5fdbb641dd9b3a33ac3d1b23b1040036ae6a7e5b8c1af555fca147365cd891a9"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/android/mipmap-hdpi/ic_launcher_round.png",
+      "sha256": "0340ffa57aa9bda0f63cfd589a07c245b9e4222f686964dbfc6aeee0c89deb81"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/android/mipmap-mdpi/ic_launcher.png",
+      "sha256": "d1d5e4ba76155dfa682e2f4f0c407f8293d29b6d24e5cc928fd0cbe96d2e9692"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/android/mipmap-mdpi/ic_launcher_foreground.png",
+      "sha256": "4d55b71031f4258d1c4d8110349666d125f8e2d95e6022a4b166e47b246d4884"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/android/mipmap-mdpi/ic_launcher_round.png",
+      "sha256": "420df19211463e28c5828fc9f9c6df1560d73275718b1ea2d288b0bb61e1e364"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/android/mipmap-xhdpi/ic_launcher.png",
+      "sha256": "0e288b7f13142556686d6d4276d6117b91d8e660f8d8134e05e87d80e85b212b"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/android/mipmap-xhdpi/ic_launcher_foreground.png",
+      "sha256": "cbd6df3b7d5792487017932222697b355396b56e3d38da27e89eba7e284b73f4"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/android/mipmap-xhdpi/ic_launcher_round.png",
+      "sha256": "c9c5a4af6ccc45fdfce0b22d04715fd269fc64b1dd361efd432f38c60bd6a66e"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/android/mipmap-xxhdpi/ic_launcher.png",
+      "sha256": "fd859e9220ac1b6f49a44883c246d95675a88ee8d101860b72d59fca2c8fd3cc"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/android/mipmap-xxhdpi/ic_launcher_foreground.png",
+      "sha256": "7a5ffe40e2eb7cd354212cc562b357fb71cf073cf167f7c05753f20944422f0a"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/android/mipmap-xxhdpi/ic_launcher_round.png",
+      "sha256": "8a3f5bbd27c22f1aea2de3b342e3d83f3f0ae4c6ab5991eec1010614899db813"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher.png",
+      "sha256": "05a9470253176425c15f743ea6c3557a590b2d38ea86502e4fc940678731e44b"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher_foreground.png",
+      "sha256": "0a079bef0405fa3ce9989fdd3b206f6e381c9e1db953c8223352d06e27bdb4f6"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher_round.png",
+      "sha256": "2556b68a2371a40d55d2cb87ad6e5d806fb922913fc9a37b9ad26a02ddc64cd9"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/android/values/ic_launcher_background.xml",
+      "sha256": "b1c42868a1777ed1cf61108b506ffc91d0a826318d8516e36cf8f76fab8c4ced"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/icon.icns",
+      "sha256": "14324017dd6b53cb1327bdbf4213682fd1248a399b391fd8416a6dd0f010dc51"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/icon.ico",
+      "sha256": "aec32c50950a87d078a079eaae53e4bd88b5b9a29f9ff4e8861cd240908d855a"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/icon.png",
+      "sha256": "4e58d1ccb3a09b9fca62b6da6d4ee31a8dcd26029002029c73694897b166b06e"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/ios/AppIcon-20x20@1x.png",
+      "sha256": "3c5b262e30c10aa2250282343c81f0705c1597b8791e553852813cfb2f81b92b"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/ios/AppIcon-20x20@2x-1.png",
+      "sha256": "05f22f188381f0e42f8a1b0410e090c7ee0023f5cfa5dee2d364bcbbe4915675"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/ios/AppIcon-20x20@2x.png",
+      "sha256": "05f22f188381f0e42f8a1b0410e090c7ee0023f5cfa5dee2d364bcbbe4915675"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/ios/AppIcon-20x20@3x.png",
+      "sha256": "bbd7ecbcc90efe777d1aa6258022ae034f63be2afbd2c624d75548428ed49806"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/ios/AppIcon-29x29@1x.png",
+      "sha256": "33dca378a987e96fc28240f2fb6d6d88f3016a5c1419c42132238ccd31dc2798"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/ios/AppIcon-29x29@2x-1.png",
+      "sha256": "a47618e3d6e5c085b57812528c388be89aa1be31ec5deff4fd97658d23be6f84"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/ios/AppIcon-29x29@2x.png",
+      "sha256": "a47618e3d6e5c085b57812528c388be89aa1be31ec5deff4fd97658d23be6f84"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/ios/AppIcon-29x29@3x.png",
+      "sha256": "ed5fb094f904b7bfe57bc62db65798acdf65df26646d5df8a4b2afb0146e3dc8"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/ios/AppIcon-40x40@1x.png",
+      "sha256": "05f22f188381f0e42f8a1b0410e090c7ee0023f5cfa5dee2d364bcbbe4915675"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/ios/AppIcon-40x40@2x-1.png",
+      "sha256": "12667286ecacdbdc31740064b9a6e036d5f4bdafa5bba2f0b61526c7fd8687d6"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/ios/AppIcon-40x40@2x.png",
+      "sha256": "12667286ecacdbdc31740064b9a6e036d5f4bdafa5bba2f0b61526c7fd8687d6"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/ios/AppIcon-40x40@3x.png",
+      "sha256": "fc0a2dc82cc07db90acdaef67781b153f829e83cf13b4e9a9fddd2c833d3e92a"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/ios/AppIcon-512@2x.png",
+      "sha256": "7f8dc2bb08579bee5a51508afec62853f4cf781c3182074020ef49250296def2"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/ios/AppIcon-60x60@2x.png",
+      "sha256": "fc0a2dc82cc07db90acdaef67781b153f829e83cf13b4e9a9fddd2c833d3e92a"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/ios/AppIcon-60x60@3x.png",
+      "sha256": "c70cdd627952d6d7c7c2d3cff60874e121855a52046434d9874e0b9bf89c8a68"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/ios/AppIcon-76x76@1x.png",
+      "sha256": "b75928a4a781c9b5df8efc6d2932dda949bbf055d1eefa73dd55963669842372"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/ios/AppIcon-76x76@2x.png",
+      "sha256": "0e0cc763d28301c610e13c73998dba2337f9d2105efdcad8860be001cbef285d"
+    },
+    {
+      "path": "apps/desktop/src-tauri/icons/ios/AppIcon-83.5x83.5@2x.png",
+      "sha256": "558abac7b7ecdb252977fa919e34874be5e2efed6a1e254cd5361093920bb12e"
+    },
+    {
+      "path": "apps/desktop/src-tauri/src/main.rs",
+      "sha256": "f5e08a984ed07ff590edf2e9f9c711153de14188813edf89e13db628fee5c9e0"
+    },
+    {
+      "path": "apps/desktop/src-tauri/tauri.conf.json",
+      "sha256": "69b5c9de3dfa53d3836cb5d0310cf81fb8cb800c99f434ed95d178cd47d207d8"
+    },
+    {
+      "path": "apps/desktop/src/env.d.ts",
+      "sha256": "22266f76a007db450b1387acb3ad4d6a12f62a428fb00ccdf0bfa2415035817a"
+    },
+    {
+      "path": "apps/desktop/src/main.tsx",
+      "sha256": "c676aeb0fa806d135e68ee657969a5748e95477db9b5b4db15411f55b3ebca35"
+    },
+    {
+      "path": "apps/desktop/tsconfig.json",
+      "sha256": "9dccedfebf73b62725af6a76041af88464fcb66ffe284c9e7379f64b291d7650"
+    },
+    {
+      "path": "apps/desktop/vite.config.ts",
+      "sha256": "6f535e678207c5b7098bbc9f6150b12542896908ca39500f8d46414791ddca93"
+    },
+    {
+      "path": "apps/web/app/api/status/route.ts",
+      "sha256": "5a19353e234998dad438a7c84cb1163f99bcf63a2608b03a570b720f884ed011"
+    },
+    {
+      "path": "apps/web/app/layout.tsx",
+      "sha256": "db97bb038390d2f536c323d3b4e83160e8f4a9764eed64f21a44d77b2a22c0c8"
+    },
+    {
+      "path": "apps/web/app/page.tsx",
+      "sha256": "75d7ec771499b9a3314d1a847e2673ef2bfcf24c10d57646274ec3ef89061b7b"
+    },
+    {
+      "path": "apps/web/next-env.d.ts",
+      "sha256": "1862ac4bbbc5192d4bf562161df66ea547ed3e67173100656ab606ae9797db2b"
+    },
+    {
+      "path": "apps/web/next.config.mjs",
+      "sha256": "d554971b37cfc696205141b38c6115fb2ca1d85f6e68deab3a785efed6791c9b"
+    },
+    {
+      "path": "apps/web/package.json",
+      "sha256": "ada2ae3ed542c5e03f3831dc27470b3495c08037c240b74508a348bc89e2e211"
+    },
+    {
+      "path": "apps/web/proxy.ts",
+      "sha256": "e68d72327fc7128863fd4fdaf942da30e5b290ce7c4f326dd9f0fe57f8528337"
+    },
+    {
+      "path": "apps/web/tsconfig.json",
+      "sha256": "15ee84a9dca678e47ba40c3ab6066c29e581119c65fa3c0d09fdbd68c3ef9f68"
+    },
+    {
+      "path": "apps/web/urlpattern-compat.d.ts",
+      "sha256": "b7fd508291885063315e0565e9b285aa78d3e4e1765eb84277ff8e6c8178c36a"
+    },
+    {
+      "path": "apps/worker/src/cv_worker/__init__.py",
+      "sha256": "dc3482742228b86f8f1980078dac61d134a7e3f87370507541b68aecca7d9447"
+    },
+    {
+      "path": "apps/worker/src/cv_worker/__main__.py",
+      "sha256": "3a78fee60498b195e4b881d3533c01971c887baeef1d43ae96c1813099eaecb3"
+    },
+    {
+      "path": "apps/worker/src/cv_worker/app.py",
+      "sha256": "d3227926b4c31099706a81d0ee697b9a69aa689f6a208220f7f1ecf68eea4f36"
+    },
+    {
+      "path": "apps/worker/src/cv_worker/interfaces.py",
+      "sha256": "d265cc55fc46b9cbf25c7f4e54c95c9846074ed9ee93b47cb6a4760af287f92f"
+    },
+    {
+      "path": "contracts/generated/configuration.openapi.json",
+      "sha256": "900da9e560b0b5e721c830bef93db6435d18685c728636fcc12ec81124e69b0e"
+    },
+    {
+      "path": "contracts/generated/full.openapi.json",
+      "sha256": "74256dcf8a9e1b5bd2736132e6ab81cdec3ab785da11fb1a4a498716bc7582da"
+    },
+    {
+      "path": "contracts/generated/local-ai.openapi.json",
+      "sha256": "e877b92d74753340b40fd60d4002b0e0d09e519a5d62f72f597f5cc5619a9106"
+    },
+    {
+      "path": "contracts/generated/public.openapi.json",
+      "sha256": "7efda208b1aa85afc80fba6f4685cafe674b5990e15ded77617a4ec878b83249"
+    },
+    {
+      "path": "contracts/generated/staff.openapi.json",
+      "sha256": "b790fb1019e42ebbe2daccb2b4ce547b69780f5dc0ca4802431c5d3e4e50ac42"
+    },
+    {
+      "path": "contracts/licenses/upstream-unilm-MIT.txt",
+      "sha256": "904dc4d8749877f1dba1cda48200d2462dccbeb7c134d5e4ef6fa75e0198c8fe"
+    },
+    {
+      "path": "contracts/migration-state.json",
+      "sha256": "9018b3bd2e22dd2c0ab10da134d958baec9786a864145d2051e891c8a18e52a3"
+    },
+    {
+      "path": "contracts/model-manifest.json",
+      "sha256": "5a57c7b8d5e968667fa60d3c2b6c86657692031a4727f3d7876448ca961dc164"
+    },
+    {
+      "path": "contracts/model-manifest.sha256",
+      "sha256": "1442b358f2d39c2f9bf2526df0bdf412319eb8ae057ca33416eed9f76dba9f6b"
+    },
+    {
+      "path": "contracts/quality-ci.json",
+      "sha256": "baca4d9987dbe3fdb5f11e580c91879e752841a01d180c5c450f63706f47fc52"
+    },
+    {
+      "path": "eslint.config.mjs",
+      "sha256": "d971360083d5f1a7f4232ec072737e8110a0da506c9fd2dab01195a4e1966ef9"
+    },
+    {
+      "path": "infra/compose.yaml",
+      "sha256": "ab3e17aadd4f846ac4a26283dffa65c1506545c581a83dc1f7b2a7c7bdb40a21"
+    },
+    {
+      "path": "infra/config/authentication-test.json",
+      "sha256": "e3798e19cdec694056d8663318044809e4076938e7a3cc198f08a295f11e0279"
+    },
+    {
+      "path": "infra/config/compose.json",
+      "sha256": "0f6fa1d89ca9d56436490567bfd58f0eabe9d69d703ecc3a3635831ed04ab694"
+    },
+    {
+      "path": "infra/config/database-test.json",
+      "sha256": "a771d70529a40a1c86c1655df153cd286755d237cdbedf6cc56a558c83ecf18b"
+    },
+    {
+      "path": "infra/config/development.json",
+      "sha256": "82b05ccd364df5d5a3e6aa8163138c887717bda87271a56fd537ec9f367a7684"
+    },
+    {
+      "path": "infra/config/test.json",
+      "sha256": "a85f1269d1a6a9f6d00a8e2cf088ea8158e710eb261f5742c90b065f8a0f7563"
+    },
+    {
+      "path": "infra/postgresql-image.lock.json",
+      "sha256": "b440ac8579189ad693a964ff75c8a445747bd8208fc54d8474236552810a429d"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "c0d0bd0c0a406f62112959678b7ac7411b53106d06c76d51670cf7b1fb345ef0"
+    },
+    {
+      "path": "package.json",
+      "sha256": "c568f36ff376c8243e40d0e2497edab7800dd302a09d691ad51c450e531cfcdb"
+    },
+    {
+      "path": "packages/api-client/package.json",
+      "sha256": "9d5a8b3a92ab6fafc26f52716d1b75ef4056e59fef778e63dce6953e21fd8367"
+    },
+    {
+      "path": "packages/api-client/src/configuration.ts",
+      "sha256": "4e9f24727425a7b95eb1ec89a61298baab65677d81b53b156edd526628ff3c62"
+    },
+    {
+      "path": "packages/api-client/src/generated/configuration.ts",
+      "sha256": "dbb3d27118349a587bb543bd6a7c873fa609d3ec27d51bdccb5ef5ee884f7853"
+    },
+    {
+      "path": "packages/api-client/src/generated/local-ai.ts",
+      "sha256": "90e02b42b5c07c66a8ebfab9a5cbcff967afd4946d9a35bf5e373e6b4527724e"
+    },
+    {
+      "path": "packages/api-client/src/generated/public.ts",
+      "sha256": "7fbdd16c20adfaea4945772b82a9882225cb4023ca39f28e4e7279f4397ebcbe"
+    },
+    {
+      "path": "packages/api-client/src/generated/staff.ts",
+      "sha256": "b7a1d7855637b36db79a8c2b53dcb9bff1f700b98f5568032549c89ea6632785"
+    },
+    {
+      "path": "packages/api-client/src/local-ai.ts",
+      "sha256": "b06235eb8ab0c7ddc9c7c2140c307340f28829ddde2f03ba5d8ba7a4f1b6d8f9"
+    },
+    {
+      "path": "packages/api-client/src/public.ts",
+      "sha256": "34eea2c351452424c6fec9933deb072048cd0ae801b5e722d81ea2eef3ad4f8b"
+    },
+    {
+      "path": "packages/api-client/src/session.ts",
+      "sha256": "1294b63670934eac6979ecf1ae99e579183be542c85d4b8cfefeabaa12cda31b"
+    },
+    {
+      "path": "packages/api-client/src/staff.ts",
+      "sha256": "a750228fdbfd3fb15bea18b281320f1687d48fb59a50f4cdbe58f433c5f74ef1"
+    },
+    {
+      "path": "packages/api-client/tsconfig.json",
+      "sha256": "2fbd292cd1864b7f17b399f49e9e8ef465c26ce3117baf06e423921c33296aea"
+    },
+    {
+      "path": "packages/foundation/src/cv_foundation/__init__.py",
+      "sha256": "b6cd154493e186990d794abe9fc8902a57da1dc503d09e40d9b5ff6f1fdb1825"
+    },
+    {
+      "path": "packages/foundation/src/cv_foundation/ai_contract.py",
+      "sha256": "864533e9f88643bf7cebafafb6059f71ce1a1d5c5b42f5c6d70e132b638d2a64"
+    },
+    {
+      "path": "packages/foundation/src/cv_foundation/ai_harness.py",
+      "sha256": "a8518658999303c016b53261323892ea1809250b19ee40f32eade529566528b1"
+    },
+    {
+      "path": "packages/foundation/src/cv_foundation/ai_launcher.py",
+      "sha256": "91750724c2db3230e7820ebf69bed4c5ad1a5a1b0eeaa2347f7a4ac247b4f6b8"
+    },
+    {
+      "path": "packages/foundation/src/cv_foundation/auth_contracts.py",
+      "sha256": "ae5d7a05467bbd69a22e1cfa9b1b4efed8119760070f3d74d0409c742d2e4226"
+    },
+    {
+      "path": "packages/foundation/src/cv_foundation/contracts.py",
+      "sha256": "f8a3411cc58eb5cc7c139e23f112c6f586eaeb693e954a5d6244d5323294e76e"
+    },
+    {
+      "path": "packages/foundation/src/cv_foundation/database.py",
+      "sha256": "b9e8fef2d7f17938b9d293dd6b333ea21c3150e88f75a219fbbe1a84e650bb2e"
+    },
+    {
+      "path": "packages/foundation/src/cv_foundation/server.py",
+      "sha256": "7bf060f58f2aa766a91f1724b927c239f32b171a6b27d6ad5191efb65253e2fc"
+    },
+    {
+      "path": "packages/foundation/src/cv_foundation/settings.py",
+      "sha256": "721f4e8e38114013e76b0548ecb75a248950986c181120d259bd9dc3c3521cfd"
+    },
+    {
+      "path": "packages/foundation/src/cv_foundation/windows_privacy.py",
+      "sha256": "07805014f2078a40bfaa168182063349ff882b405777c72ec84e8e61cae7f932"
+    },
+    {
+      "path": "packages/ui/package.json",
+      "sha256": "91f954c2b6083428c605f95f5799e39550bf7694fd41a9347977bdaa765ebb79"
+    },
+    {
+      "path": "packages/ui/src/index.tsx",
+      "sha256": "9a0e6138ca60d55edddaf64a5ba77249c054b86dd6857c67897c211bd1afd1ef"
+    },
+    {
+      "path": "packages/ui/src/styles.css",
+      "sha256": "1904adc7b40f6ba91d364e0f89c47ea572b901f74dd3199879e8c1dc7750008e"
+    },
+    {
+      "path": "packages/ui/tsconfig.json",
+      "sha256": "3abb9f49fe9be64270d799f0d09537c26012325b3bb3257901080c4eceeda63c"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "eeab34d06051cf367ce0a9a4b668791b1800e2dbfe19305e455ba3f49b0577a6"
+    },
+    {
+      "path": "scripts/checkpoint.mjs",
+      "sha256": "12d6e7f6c7fe41164f27b42f2edb42939b57c483d46a15c29e1f816582fda2da"
+    },
+    {
+      "path": "scripts/clients.mjs",
+      "sha256": "e000bca95eb035c92f81ab4d0e08812a42e0b3254d66e8975e112bc4b45ff731"
+    },
+    {
+      "path": "scripts/compose.py",
+      "sha256": "9b3ee9d3306c1d49e0850471e9ae2256de0e3f4e658317cae8129735f902db52"
+    },
+    {
+      "path": "scripts/config.d.mts",
+      "sha256": "c7919477c33cadb83a60c6aa655dc7809a0c1000a0c1c269b8ba4307db956cf0"
+    },
+    {
+      "path": "scripts/config.mjs",
+      "sha256": "7694777be754b3dbefed7fa5b34ca5894af3908f0c4b7078bdf97f80c6f52dbb"
+    },
+    {
+      "path": "scripts/database_catalog.py",
+      "sha256": "e9efd2ea887f314a1ac4d67b6edec527a5a0d9c3f4171cfd88904d2edd541e98"
+    },
+    {
+      "path": "scripts/database_cluster.py",
+      "sha256": "d67f635fdbc2b477aba37471c797de5ffc59b55b4de2a8d6984c45033bd45ab9"
+    },
+    {
+      "path": "scripts/database_legacy_precision_check.py",
+      "sha256": "2f7a5d1b48d51fec5c2967ec3b7da8c7e3538fd819130815fafe76240116b1a9"
+    },
+    {
+      "path": "scripts/database_migrate.py",
+      "sha256": "7ce8aa6b0b7ea345046b06b39cc6e62acb33b92ef9ae41d8a7aec06d7eaaf2d9"
+    },
+    {
+      "path": "scripts/database_migration_check.py",
+      "sha256": "a92c78344cf8aff87551d1a08637c89df219c8fccc522f0d983140c081a2ed19"
+    },
+    {
+      "path": "scripts/database_query_evidence.py",
+      "sha256": "e7af301cd0167ffadef7b2479108cd2eabad3431b2b621444aefc57a3b3d76e5"
+    },
+    {
+      "path": "scripts/export_schema.py",
+      "sha256": "45a8fc28bb48bbf5adbd5fb700edd1a47a73267e46bf8a588b3152a087705050"
+    },
+    {
+      "path": "scripts/fetch_model.mjs",
+      "sha256": "4f9a6c652f254f72ba38316a939c3f7a6c090f98feda6fbfb2f66fd321f5e928"
+    },
+    {
+      "path": "scripts/infra_check.py",
+      "sha256": "13c1e28bfd6ddc6a22ec207eaa463c1feea1c5105023a6d32dc800d83b072c2e"
+    },
+    {
+      "path": "scripts/inspect_native_geometry.py",
+      "sha256": "0c89d1797efd7501b97f8723246c9cf6cbbb8481dee0e0890598a724974fb383"
+    },
+    {
+      "path": "scripts/licenses.py",
+      "sha256": "3b03604e97b8a4a9b61e6ce19212eb7385654fe35b56e8909dca59686b5bc78a"
+    },
+    {
+      "path": "scripts/lighthouse.mjs",
+      "sha256": "00d212d258d74a10a50b73b8be2375f2105dbf88dd67a7c31866767f53bac507"
+    },
+    {
+      "path": "scripts/migration_check.py",
+      "sha256": "b87366cb6abe1e4452a9791c07e3dcab7b377a67b69c235c10fc48ba34d25803"
+    },
+    {
+      "path": "scripts/model_check.py",
+      "sha256": "5f16697563201c668d80227ca71a83751a9ba5eb46d14354793db97b47eda58a"
+    },
+    {
+      "path": "scripts/quality-checkpoint.mjs",
+      "sha256": "3cdd9e05b2cf0b5c5f5061130ef1cab54ec7a4fa709d11513f833e75544268b1"
+    },
+    {
+      "path": "scripts/quality-ci.mjs",
+      "sha256": "c0fd3b820ec11b8d30b71a14c58ee8950f455eb1e5d6401cdd987f54eabea858"
+    },
+    {
+      "path": "scripts/start_web.mjs",
+      "sha256": "c5042fcecc682bb05c13bb012fb2ea960559403ba1c428f8d2b6c1504cf6446d"
+    },
+    {
+      "path": "scripts/tasks.mjs",
+      "sha256": "ee6aa4a9ea7fd23d41995df83850ce58ba307409fe523e74efe0cf25061d8212"
+    },
+    {
+      "path": "tests/auth/conftest.py",
+      "sha256": "555883fbe538071ccf18c51da4e158f78c289614ba855abd47461792cc830bc8"
+    },
+    {
+      "path": "tests/auth/test_acceptance.py",
+      "sha256": "5a643a4547e03d0dd7f3942bcd83af4efb79275beaf5f4938fb4738ff18388d9"
+    },
+    {
+      "path": "tests/auth/test_boundaries.py",
+      "sha256": "79c842dd0f89cbc78f930732d2aece557153955040798c56b2876edbbee8b98c"
+    },
+    {
+      "path": "tests/auth/test_identity.py",
+      "sha256": "0faf46406366ae4c6e9b3fb4e5130cd359bd56d51b5138ae5ca109e6777d555a"
+    },
+    {
+      "path": "tests/auth/test_policy_finalization.py",
+      "sha256": "634cdd9bcd0064b24081c2bf8ac982ae758cbfc74a37bf4d247816d92df66a2a"
+    },
+    {
+      "path": "tests/auth/test_review_repairs.py",
+      "sha256": "e3f888c89a9644f4bacd13a4866eb4e0491b01d5df96ed54bc73deb8ce9d6974"
+    },
+    {
+      "path": "tests/database/__init__.py",
+      "sha256": "b0314946fdbc54f370e37404d1f9a06715383622a58ffbaf2862031acc388d31"
+    },
+    {
+      "path": "tests/database/conftest.py",
+      "sha256": "efbcd6b2833467cc6aae3751cf4b0e030b94c623ccce2cdf16818cc8d5171da8"
+    },
+    {
+      "path": "tests/database/test_adapter.py",
+      "sha256": "4a4eae3574c2a13ff2af6137468b49fc508bf2c9d903388ef8b0887ab3194e21"
+    },
+    {
+      "path": "tests/database/test_advisory.py",
+      "sha256": "acebf9a1317f114f54325fad6e840e410adda93fef5b8643261f60e98d3bf3e2"
+    },
+    {
+      "path": "tests/database/test_calculation.py",
+      "sha256": "292557567726697df864cabf3d3060b35f7be0649127783885fa45bfa79ae510"
+    },
+    {
+      "path": "tests/database/test_core.py",
+      "sha256": "e60c1340443c71ee7b374de868b2069f5ee3e395465961ebb838c54fde05e9dc"
+    },
+    {
+      "path": "tests/database/test_finalization.py",
+      "sha256": "3768fcb4ac36b0171764fb9fee171914ec4307e966fa0e6b1925ed3ee18053a9"
+    },
+    {
+      "path": "tests/database/test_integrity.py",
+      "sha256": "cddb7cc8e67818b64bf3160c14026752a569a4a9ebad116a2f723e9f7a632562"
+    },
+    {
+      "path": "tests/database/test_privacy.py",
+      "sha256": "0517f3c9001132b7b7180b671b9e76972e4719a2af99881da5ebc8a0f9af7f33"
+    },
+    {
+      "path": "tests/database/test_public.py",
+      "sha256": "fd775085b82dedbd2b92548ef30a161e1609e9024fd381eed991d11ba551504f"
+    },
+    {
+      "path": "tests/database/test_review_repairs.py",
+      "sha256": "6b5a51e9835650219ac55a92a20bf32e270479d22093353b82bf5171232a2358"
+    },
+    {
+      "path": "tests/database/test_source_identity.py",
+      "sha256": "44f122479d7c84b31146770be642b0687c6701d0979d0a4d0a85ad3d9ed616e7"
+    },
+    {
+      "path": "tests/python/test_auth_configuration.py",
+      "sha256": "e4129d814d45e8948cd71b7728e762032385a019302f71c94e85bfd8b14ebec0"
+    },
+    {
+      "path": "tests/python/test_foundation.py",
+      "sha256": "459194fb24a6a4233538888f8c3103ba485e5ae023494629bb096b1b87d5bec1"
+    },
+    {
+      "path": "tests/python/test_owned_inputs.py",
+      "sha256": "4294ce88d6cee156c7bc092fb96c4c6fe45b9a5c070b7ab18e10306d93dc91ab"
+    },
+    {
+      "path": "tests/quality-ci.mjs",
+      "sha256": "84b3d4d4c0bdec1e6efbc01f2238221ec1141f3f0dd07367101f2ff9e58fc1b8"
+    },
+    {
+      "path": "tests/runtime.mjs",
+      "sha256": "b57909b7c03cc269c9df7d0f4a1c6ba847b0617a2df1a6a69c44f84fcd4dae7d"
+    },
+    {
+      "path": "tests/session-state.mjs",
+      "sha256": "15729206c37da0c1df0a67fe993e7703652a5c82d7837de89600474cce534f58"
+    },
+    {
+      "path": "tests/ui/audit.spec.ts",
+      "sha256": "3921959e8a682684e7fc0e1d24ce84cc596e86f822906769163f2d6790dbfe73"
+    },
+    {
+      "path": "tests/ui/playwright.audit.config.ts",
+      "sha256": "f21c94d2a16195382955fcd4434f12567cd4f9a710f2ca2b67848aeb37a516ee"
+    },
+    {
+      "path": "tests/ui/playwright.config.ts",
+      "sha256": "9e18e1877a396ee6ea633a7f98275e7098cbec2ee300c1f90a996605ee2197ab"
+    },
+    {
+      "path": "tests/ui/playwright.dev.config.ts",
+      "sha256": "7537b748eec4a3ec94a02879296ac3ff3ba6d87f8d53b9b551d2f719c632656e"
+    },
+    {
+      "path": "tests/ui/shell.spec.ts",
+      "sha256": "1d0d567376dccec2779548f59300a1534b5f0c8767c3e745dd669cd7fb456211"
+    },
+    {
+      "path": "tests/ui/tsconfig.json",
+      "sha256": "584e592857f18c5c18fc12347e5766417370cd4923b9a5ce3bf2be3b60c43149"
+    },
+    {
+      "path": "tsconfig.base.json",
+      "sha256": "ca7ef323c7d73d946b1d30e1050b85dc9f9ff6ba031f004bae2b16d323a04faa"
+    },
+    {
+      "path": "uv.lock",
+      "sha256": "baeb75f086137eec34775d38380dacb4d2c1a750a594b222f4a05730831c523f"
+    }
+  ]
+}

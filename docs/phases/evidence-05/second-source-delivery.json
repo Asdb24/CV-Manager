@@ -1,0 +1,27 @@
+{
+  "repository": "Asdb24/CV-Manager",
+  "ref": "codex/phase-05-quality-ci",
+  "source_sha": "8849345b8843d75316d8531fadbaf06c224bfedb",
+  "source_url": "https://github.com/Asdb24/CV-Manager/commit/8849345b8843d75316d8531fadbaf06c224bfedb",
+  "registration_sha": "5f800de04cda9f4809efa85a73f88f482194ce3d",
+  "commit_scope": "new independent project baseline preserved through Phase04 plus Phase05 owned changes; explicit reviewed inventory; no private/runtime/generated payload",
+  "staged_files": 527,
+  "push": "ordinary non-forced work branch push",
+  "workflow_id": 383558033,
+  "followup_scope": [
+    ".github/workflows/quality.yml",
+    "contracts/quality-ci.json",
+    "docs/DECISIONS.md",
+    "docs/ci/QUALITY_WORKFLOW.md",
+    "docs/phases/PHASE_05_HARDCODE_REVIEW.md",
+    "docs/phases/evidence-05/hardcode-candidates.json",
+    "docs/phases/evidence-05/lint.log",
+    "docs/phases/evidence-05/local-commands.json",
+    "docs/phases/evidence-05/source-delivery.json",
+    "docs/phases/evidence-05/test.log",
+    "scripts/quality-checkpoint.mjs",
+    "scripts/quality-ci.mjs",
+    "tests/quality-ci.mjs"
+  ],
+  "initial_source_sha": "6fee8bea8ccdd2509dce60145d5c774f0744713c"
+}

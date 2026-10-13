@@ -1,9 +1,53 @@
-# PHASE 05 VERIFICATION
+# Phase 05 verification
 
-Date:2026-10-14. Predecessor:current source-matched Phase04 PASS;185 hashes verified before edits.
+Date: 2026-10-14. Main agent implements, verifies and self-reviews this phase. The complete supplied prompt prohibits subagents; no independent review is required, invoked or claimed. Skills read completely: project-spec-no-slop and no-ai-slop, including the specification dependency read during phase preparation. No visible UI is implemented here.
 
-Phase05 owns45-phase continuation/ledger and real qualityCI. Main agent implements/checks;no subagent or independent review is required or invoked. Local checks,reviewed delivery,default-branch registration and actual manually dispatched run must complete.
+## Predecessor and current ownership
 
-No UI,installer,model/runtime payloads,database/account/schema changes,paid service or deployment. Future behavior remains UNVERIFIED under the45-phase roadmap.
+Main read Phase 01–04 status/verification, Phase 04 review, current product/quality/release/deferred/local-AI authorities, architecture/API/schema source, decisions and status directly. All 185 final Phase 04 manifest entries matched before Phase 05 edits. Source head is `0021_auth_hash_admission`; Einstein's preceding review closed R1–R3. These are new-project records from this selected folder, not inherited predecessor-project PASS.
 
-Gate decision: STOP
+After phase-owned changes, 178/185 entries remain byte-identical; the seven differences are AGENTS, DECISIONS, current STATUS, npm lock, Python dev declaration/lock and task wiring. All 56 frozen migration files and backend authentication/data source bytes remain unchanged. Phase 05 does not access/replace application accounts, migrate a cluster or alter stored data. [Preservation evidence](evidence-05/predecessor-preservation.json) and [initial preflight](evidence-05/predecessor-and-preflight.json) support this boundary.
+
+The user explicitly chose a main-defined roadmap around fixed 06/34/40/41/42 milestones. [Roadmap](../architecture/PHASE_ROADMAP.md) has exactly 45 ordered filename references, with no generated future prompt files. [Ledger](../product/ACCEPTANCE_LEDGER.md) retains all 86 existing IDs, their original authorities and acceptance, and adds seven explicit amendments. Main read both new authorities completely after creation. [Documentation checks](evidence-05/documentation-checks.json) verify order, coverage, uniqueness and links; later functionality stays UNVERIFIED with its owner.
+
+## Local checkpoint and configurable CI
+
+[Current command receipt](evidence-05/local-commands.json) records commands, UTC start/end and exit codes. Format, lint, typing and tests each exit 0 on the current implementation. The validator parses YAML, admits only workflow_dispatch/read permissions/hosted Windows/full action SHA/locked tools/no caches, validates required source input and prevents shell-expression interpolation. It checks the real Vite preparation step's explicit synthetic configuration. Job timeout/local capture settings are centrally validated.
+
+| Check | Result / real scope |
+| --- | --- |
+| `node scripts/quality-ci.mjs validate --manifest contracts/quality-ci.json` | PASS; workflow/manifest/tools consistent |
+| `node tests/quality-ci.mjs` | PASS; valid 30-minute/32-MiB and 20-minute/16-MiB configurations; every missing field, zero/over-limit bounds, foreign repo, unsafe runner/cache/permissions/triggers, moving tag and malformed YAML rejected |
+| Explicit test-profile Vite build | PASS; actual existing shell assets prepared for Rust code generation |
+| `node scripts/tasks.mjs format:check` | PASS; existing Prettier/Ruff/Rust formatting remains enabled |
+| `node scripts/tasks.mjs lint` | PASS; ESLint/Ruff/locked Clippy with warnings denied |
+| `node scripts/tasks.mjs typecheck` | PASS; framework route generation, five TS projects and 48 strict-mypy files |
+| `node scripts/tasks.mjs test` | PASS; 73 Python tests, JS realm/expiry/stale-session tests, CI contract, actual owned API/worker lifecycle/strict-port failures and real generated-client stale probes |
+
+Local development tools are Node 26.8.2/npm 12.0.2/Python 3.13.15/uv 0.12.19/Rust 1.98.1 on Windows. The new YAML parser was inventoried absent, then installed at official yaml 2.9.1 (ISC), exactly locked; npm reported zero vulnerabilities. The CI dev group now explicitly pins the already locked httpx2 2.13.1 (BSD-3-Clause), after an isolated inventory/reproduction identified its TestClient typing use. All other locked versions remain unchanged. Four official full action commits and MIT licenses are in [pin evidence](evidence-05/action-pins-and-licenses.json). No unrelated dependency/model payload or reboot was needed.
+
+New application identity, transactions, file/intake authority and scoring are not implemented here. Their real DB/auth checks remain predecessor-owned or future-owned. This checkpoint's applicable real dependencies are Git/GitHub workflow registration, source admission, locked installation and actual Windows development checks. Missing DB integration cannot be inferred from unit CI; [CI documentation](../ci/QUALITY_WORKFLOW.md) describes fresh owned synthetic PostgreSQL integration separately without uploading workstation credentials. There is no claim of release Windows 11 qualification, native keyring, model inference, runtime accessibility or approved HTTPS.
+
+## Reviewed Git delivery and actual Actions
+
+Actual root: `C:\Users\DHTT\Downloads\Download\do an cn`. Before this phase it had no Git repository or staged work. Approved origin: `https://github.com/Asdb24/CV-Manager.git`. Authenticated Asdb24 had ADMIN and Actions/workflow access. The public repository contained only README at `0d8ce319b6e462785d0b1e8b4a87f3dac85f6041`; main was unprotected and all history is preserved. Main initialized/fetched only this verified new-project root and used `codex/phase-05-quality-ci`.
+
+Default-branch registration was a narrow workflow-only ordinary commit `5f800de04cda9f4809efa85a73f88f482194ce3d`. GitHub discovery returned active Quality workflow ID 383558033. [Registration](evidence-05/workflow-registration.json), [explicit inventory](evidence-05/delivery-inventory-proposed.json), [staged review](evidence-05/staged-review.json) and [continuation review](evidence-05/continuation-staged-review.json) record exact selected paths. Index content was compared with reviewed working bytes. The first project commit contains 527 staged files; it preserves the complete new project's code/migrations/evidence through Phase 04 plus bounded Phase 05 changes.
+
+Private credentials/databases/PGDATA/backups/session stores/.env/dependency/model/runtime payloads/generated binaries were excluded. Required synthetic fixtures, source icons and synthetic inspection evidence were reviewed. Five actual protected credential values and token/private-key patterns had zero matches in the initial upload; patch paths were checked again. No values are printed in evidence. `.gitattributes` preserves raw historical bytes across Windows checkouts. General historical whitespace diagnostics concern retained prompt/evidence text; Phase 05 owned diff check passes. No reset, clean, force push, visibility change, branch-protection bypass, PR merge, public Release, paid runner or deployment occurred.
+
+First implementation SHA: `6fee8bea8ccdd2509dce60145d5c774f0744713c`. [Run 38451060914](https://github.com/Asdb24/CV-Manager/actions/runs/38451060914), attempt 1, actual workflow_dispatch, resolved that exact SHA and FAILED Clippy because the fresh checkout had no configured frontendDist. Required checks were not skipped/weakened to repair it. The reviewed continuation adds real Vite assets and central capture settings. Its ordinary pushed SHA is `8849345b8843d75316d8531fadbaf06c224bfedb`.
+
+[Run 38451813525](https://github.com/Asdb24/CV-Manager/actions/runs/38451813525), attempt 1, resolves exactly `8849345b8843d75316d8531fadbaf06c224bfedb`. It FAILED Types: the deliberately reduced CI dev group lacked httpx2 required by Starlette's TYPE_CHECKING import. A fresh isolated frozen dev environment reproduced the error. The full selected predecessor environment included that package through the model group and passed even without mypy cache, so this is the newly selected CI profile dependency defect. Pinning the existing httpx2 2.13.1 directly in dev changes no locked package version or auth/test code. Fresh dev-only strict mypy and 73 tests now pass. The current reviewed hosted run below provides the required re-verification. Both failed run receipts/logs and [profile repair evidence](evidence-05/ci-profile-repair.json), [fresh dev commands](evidence-05/clean-dev-commands.json) and [licenses](evidence-05/development-testclient-licenses.json) are retained in evidence-05. No release artifact is built or uploaded here; artifact inventories/checksums remain owner 40.
+
+Current reviewed implementation: `e5905a5e603cd9055b5025e77966db9c1dca0997`. [Run 38453840035](https://github.com/Asdb24/CV-Manager/actions/runs/38453840035), attempt 1, was actually manually dispatched at that exact pushed work ref/SHA and completed with conclusion SUCCESS. Every required workflow step, the single quality job and post-job completion succeeded on GitHub-hosted Windows Server 2025 (`windows-2025-vs2026`, x64 toolchains). The log records contents read permission, Node 26.8.2, Rust 1.98.1 and Python 3.13.15. Actual hosted output confirms 48 strict-mypy files, 73 Python tests, CI configuration tests, real API/worker ownership/strict-port checks and all generated-client stale probes. These are development checks, not clean Windows 11 release qualification. [Run metadata](evidence-05/run-38453840035.json) and [sanitized log](evidence-05/run-38453840035.log) record the resolved SHA, attempt, steps, environment, log digest and conclusion. [Implementation source comparison](evidence-05/implementation-source-check.json) checks all 251 non-document implementation files against that commit. No executable drift follows the run. The final follow-up is limited to authority/status/evidence documents and preserves all 251 implementation files.
+
+The [actual capture-resource probe](evidence-05/capture-resource-probe.json) sets a valid one-byte capture capacity for the real local recorder. Output overflow returns parent exit 1 after only the first format command; subsequent checks do not run and cannot report PASS. The original manifest and current passing command/log evidence are restored byte-for-byte. This tests native resource failure without adding a mock or changing the verified source.
+
+[Final audit](evidence-05/final-audit.json) checks all 93 IDs/45 ordered phases, current owned criteria, links, future UNVERIFIED boundaries, predecessor/source preservation and safe delivery. [Final source/evidence manifest](evidence-05/final-source-evidence-manifest.json) pins current files. No review subagent was created; this is main self-review only.
+
+## Bounded gate
+
+CI-001 and CI-002 are VERIFIED_OWNED_SCOPE by actual current hosted SUCCESS, reviewed delivery and local PASS. Roadmap/ledger/append-only owner amendments are implemented and checked. Main self-review and current final evidence audit are complete with PASS for this bounded scope. Recipe 34, installer/portable build 40, clean offline 41 and approved HTTPS 42 are UNVERIFIED. Exact next permitted separately supplied prompt is `PHASE_06_SHARED_DESIGN_SYSTEM.md`; it is not executed.
+
+Gate decision: PASS

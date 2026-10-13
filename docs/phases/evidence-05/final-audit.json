@@ -1,0 +1,56 @@
+{
+  "created_at": "2026-10-13T19:31:47.232609+00:00",
+  "gate": "PASS",
+  "reviewed_implementation_sha": "e5905a5e603cd9055b5025e77966db9c1dca0997",
+  "repository": "Asdb24/CV-Manager",
+  "ref": "codex/phase-05-quality-ci",
+  "actual_successful_run": 38453840035,
+  "run_attempt": 1,
+  "requirements": {
+    "existing": 86,
+    "amendments": 7,
+    "total": 93
+  },
+  "ordered_phases": 45,
+  "future_prompt_files_created": 0,
+  "future_runtime_gate_claims": 0,
+  "local_quality_commands_pass": 4,
+  "fresh_dev_commands_pass": 2,
+  "actual_capture_failure_probe": "PASS: exit 1 stops after first task",
+  "phase04_preedit_matched_files": 185,
+  "phase04_current_unchanged_files": 178,
+  "phase04_authorized_changed_paths": [
+    "AGENTS.md",
+    "docs/DECISIONS.md",
+    "docs/STATUS.md",
+    "package-lock.json",
+    "pyproject.toml",
+    "scripts/tasks.mjs",
+    "uv.lock"
+  ],
+  "frozen_migration_files_unchanged": 56,
+  "successful_source_implementation_files_unchanged": 251,
+  "independent_review": "NOT INVOKED; prohibited in this phase",
+  "main_self_review": "PASS",
+  "skills": [
+    "project-spec-no-slop",
+    "no-ai-slop"
+  ],
+  "owned_criteria": {
+    "predecessor_source_evidence": "PASS",
+    "45_phase_order_and_ledger": "PASS",
+    "central_quality_config_and_negative_cases": "PASS",
+    "locked_local_quality": "PASS",
+    "safe_repo_registration_commit_push": "PASS",
+    "actual_manually_dispatched_quality": "PASS",
+    "active_hardcode_classification": "PASS",
+    "evidence_and_handoff": "PASS"
+  },
+  "limits": [
+    "No installer/model payload/real personal dataset/deployment",
+    "No AI/clean-Windows/HTTPS/backup/security qualification claimed",
+    "No independent review in Phase05",
+    "Phase06 separately supplied; not executed"
+  ],
+  "errors": []
+}

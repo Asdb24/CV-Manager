@@ -1,3 +1,5 @@
+> Current authority (2026-10-14): the supplied Phase 05 continuation prompt supersedes remaining 18-phase numbering. Use [PHASE_ROADMAP](docs/architecture/PHASE_ROADMAP.md) and [ACCEPTANCE_LEDGER](docs/product/ACCEPTANCE_LEDGER.md). The 01–04 history below is retained. Next after Phase 05 PASS: `PHASE_06_SHARED_DESIGN_SYSTEM.md`.
+
 # Project instructions
 
 This is a new independent CV management project for one recruitment agency. Its authoritative baseline is Phase 01, dated 2026-10-12. Read the complete supplied phase prompt and the current authorities before editing. The project has no inherited implementation or predecessor PASS. Phase 01 is the first phase; its predecessor is NONE (new project), not a claimed earlier PASS.

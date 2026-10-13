@@ -1,0 +1,1072 @@
+quality	Set up job	﻿2026-10-13T19:03:44.1509507Z Current runner version: '2.337.0'
+quality	Set up job	2026-10-13T19:03:44.1564279Z ##[group]Runner Image Provisioner
+quality	Set up job	2026-10-13T19:03:44.1565440Z Hosted Compute Agent
+quality	Set up job	2026-10-13T19:03:44.1566087Z Version: 20260901.588
+quality	Set up job	2026-10-13T19:03:44.1566800Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+quality	Set up job	2026-10-13T19:03:44.1567523Z Build Date: 2026-09-01T19:56:44Z
+quality	Set up job	2026-10-13T19:03:44.1568184Z Worker ID: {2de4778d-1b43-48fb-a31f-6e20ce75baaf}
+quality	Set up job	2026-10-13T19:03:44.1569117Z Azure Region: eastus
+quality	Set up job	2026-10-13T19:03:44.1569682Z ##[endgroup]
+quality	Set up job	2026-10-13T19:03:44.1571102Z ##[group]Operating System
+quality	Set up job	2026-10-13T19:03:44.1571773Z Microsoft Windows Server 2025
+quality	Set up job	2026-10-13T19:03:44.1572360Z 10.0.26100
+quality	Set up job	2026-10-13T19:03:44.1572876Z Datacenter
+quality	Set up job	2026-10-13T19:03:44.1573373Z ##[endgroup]
+quality	Set up job	2026-10-13T19:03:44.1573871Z ##[group]Runner Image
+quality	Set up job	2026-10-13T19:03:44.1574491Z Image: windows-2025-vs2026
+quality	Set up job	2026-10-13T19:03:44.1575086Z Version: 20260925.250.1
+quality	Set up job	2026-10-13T19:03:44.1576176Z Included Software: https://github.com/actions/runner-images/blob/win25-vs2026/20260925.250/images/windows/Windows2025-VS2026-Readme.md
+quality	Set up job	2026-10-13T19:03:44.1578283Z Image Release: https://github.com/actions/runner-images/releases/tag/win25-vs2026%2F20260925.250
+quality	Set up job	2026-10-13T19:03:44.1579229Z ##[endgroup]
+quality	Set up job	2026-10-13T19:03:44.1580470Z ##[group]GITHUB_TOKEN Permissions
+quality	Set up job	2026-10-13T19:03:44.1582685Z Contents: read
+quality	Set up job	2026-10-13T19:03:44.1583358Z Metadata: read
+quality	Set up job	2026-10-13T19:03:44.1583884Z ##[endgroup]
+quality	Set up job	2026-10-13T19:03:44.1586475Z Secret source: Actions
+quality	Set up job	2026-10-13T19:03:44.1587807Z Cache mode: write
+quality	Set up job	2026-10-13T19:03:44.1588502Z Prepare workflow directory
+quality	Set up job	2026-10-13T19:03:44.1989050Z Prepare all required actions
+quality	Set up job	2026-10-13T19:03:44.2051998Z Getting action download info
+quality	Set up job	2026-10-13T19:03:44.3591116Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+quality	Set up job	2026-10-13T19:03:44.4997768Z Download action repository 'actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+quality	Set up job	2026-10-13T19:03:44.7609828Z Download action repository 'actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97' (SHA:5fda3b95a4ea91299a34e894583c3862153e4b97)
+quality	Set up job	2026-10-13T19:03:44.9120598Z Download action repository 'astral-sh/setup-uv@37802adc94f370d6bfd71619e3f0bf239e1f3b78' (SHA:37802adc94f370d6bfd71619e3f0bf239e1f3b78)
+quality	Set up job	2026-10-13T19:03:45.3015794Z Complete job name: quality
+quality	Validate explicit source	﻿2026-10-13T19:03:45.4485425Z ##[group]Run if ($env:REPOSITORY -cne 'Asdb24/CV-Manager') { throw 'REPOSITORY_MISMATCH' }
+quality	Validate explicit source	2026-10-13T19:03:45.4486752Z ^[[36;1mif ($env:REPOSITORY -cne 'Asdb24/CV-Manager') { throw 'REPOSITORY_MISMATCH' }^[[0m
+quality	Validate explicit source	2026-10-13T19:03:45.4487907Z ^[[36;1mif ($env:SOURCE_REF -cnotmatch '^refs/heads/codex/[a-z0-9-]+$') { throw 'REVIEWED_WORK_BRANCH_REQUIRED' }^[[0m
+quality	Validate explicit source	2026-10-13T19:03:45.4489326Z ^[[36;1mif ($env:REQUESTED_SHA -cnotmatch '^[0-9a-f]{40}$' -or $env:REQUESTED_SHA -cne $env:RESOLVED_SHA) { throw 'SOURCE_SHA_MISMATCH' }^[[0m
+quality	Validate explicit source	2026-10-13T19:03:45.5047792Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+quality	Validate explicit source	2026-10-13T19:03:45.5049063Z env:
+quality	Validate explicit source	2026-10-13T19:03:45.5049670Z   REQUESTED_SHA: 8849345b8843d75316d8531fadbaf06c224bfedb
+quality	Validate explicit source	2026-10-13T19:03:45.5050522Z   RESOLVED_SHA: 8849345b8843d75316d8531fadbaf06c224bfedb
+quality	Validate explicit source	2026-10-13T19:03:45.5051340Z   SOURCE_REF: refs/heads/codex/phase-05-quality-ci
+quality	Validate explicit source	2026-10-13T19:03:45.5052071Z   REPOSITORY: Asdb24/CV-Manager
+quality	Validate explicit source	2026-10-13T19:03:45.5052655Z ##[endgroup]
+quality	Checkout reviewed commit	﻿2026-10-13T19:03:46.0347645Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+quality	Checkout reviewed commit	2026-10-13T19:03:46.0349329Z with:
+quality	Checkout reviewed commit	2026-10-13T19:03:46.0350275Z   ref: 8849345b8843d75316d8531fadbaf06c224bfedb
+quality	Checkout reviewed commit	2026-10-13T19:03:46.0351517Z   persist-credentials: false
+quality	Checkout reviewed commit	2026-10-13T19:03:46.0352601Z   repository: Asdb24/CV-Manager
+quality	Checkout reviewed commit	2026-10-13T19:03:46.0362328Z   token: ***
+quality	Checkout reviewed commit	2026-10-13T19:03:46.0363174Z   ssh-strict: true
+quality	Checkout reviewed commit	2026-10-13T19:03:46.0364047Z   ssh-user: git
+quality	Checkout reviewed commit	2026-10-13T19:03:46.0364895Z   clean: true
+quality	Checkout reviewed commit	2026-10-13T19:03:46.0365780Z   sparse-checkout-cone-mode: true
+quality	Checkout reviewed commit	2026-10-13T19:03:46.0368972Z   fetch-depth: 1
+quality	Checkout reviewed commit	2026-10-13T19:03:46.0369859Z   fetch-tags: false
+quality	Checkout reviewed commit	2026-10-13T19:03:46.0370753Z   show-progress: true
+quality	Checkout reviewed commit	2026-10-13T19:03:46.0371644Z   lfs: false
+quality	Checkout reviewed commit	2026-10-13T19:03:46.0372471Z   submodules: false
+quality	Checkout reviewed commit	2026-10-13T19:03:46.0373370Z   set-safe-directory: true
+quality	Checkout reviewed commit	2026-10-13T19:03:46.0374416Z   allow-unsafe-pr-checkout: false
+quality	Checkout reviewed commit	2026-10-13T19:03:46.0375493Z ##[endgroup]
+quality	Checkout reviewed commit	2026-10-13T19:03:46.2053289Z Syncing repository: Asdb24/CV-Manager
+quality	Checkout reviewed commit	2026-10-13T19:03:46.2057313Z ##[group]Getting Git version info
+quality	Checkout reviewed commit	2026-10-13T19:03:46.2059693Z Working directory is 'D:\a\CV-Manager\CV-Manager'
+quality	Checkout reviewed commit	2026-10-13T19:03:46.3126997Z [command]"C:\Program Files\Git\bin\git.exe" version
+quality	Checkout reviewed commit	2026-10-13T19:03:46.6469869Z git version 2.55.0.windows.5
+quality	Checkout reviewed commit	2026-10-13T19:03:46.6522838Z ##[endgroup]
+quality	Checkout reviewed commit	2026-10-13T19:03:46.6539077Z Temporarily overriding HOME='D:\a\_temp\198afe6c-1899-4771-a4fe-4d1a9ff3c433' before making global git config changes
+quality	Checkout reviewed commit	2026-10-13T19:03:46.6541708Z Adding repository directory to the temporary git global config as a safe directory
+quality	Checkout reviewed commit	2026-10-13T19:03:46.6549688Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\CV-Manager\CV-Manager
+quality	Checkout reviewed commit	2026-10-13T19:03:46.7213327Z Deleting the contents of 'D:\a\CV-Manager\CV-Manager'
+quality	Checkout reviewed commit	2026-10-13T19:03:46.7219011Z ##[group]Determining repository object format
+quality	Checkout reviewed commit	2026-10-13T19:03:46.7221679Z ##[endgroup]
+quality	Checkout reviewed commit	2026-10-13T19:03:46.7223781Z ##[group]Initializing the repository
+quality	Checkout reviewed commit	2026-10-13T19:03:46.7229767Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\CV-Manager\CV-Manager
+quality	Checkout reviewed commit	2026-10-13T19:03:46.8030921Z Initialized empty Git repository in D:/a/CV-Manager/CV-Manager/.git/
+quality	Checkout reviewed commit	2026-10-13T19:03:46.8078198Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/Asdb24/CV-Manager
+quality	Checkout reviewed commit	2026-10-13T19:03:46.8699908Z ##[endgroup]
+quality	Checkout reviewed commit	2026-10-13T19:03:46.8702313Z ##[group]Disabling automatic garbage collection
+quality	Checkout reviewed commit	2026-10-13T19:03:46.8709001Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+quality	Checkout reviewed commit	2026-10-13T19:03:46.9037846Z ##[endgroup]
+quality	Checkout reviewed commit	2026-10-13T19:03:46.9040485Z ##[group]Setting up auth
+quality	Checkout reviewed commit	2026-10-13T19:03:46.9042116Z Removing SSH command configuration
+quality	Checkout reviewed commit	2026-10-13T19:03:46.9051735Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+quality	Checkout reviewed commit	2026-10-13T19:03:46.9356661Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+quality	Checkout reviewed commit	2026-10-13T19:03:48.4422727Z Removing HTTP extra header
+quality	Checkout reviewed commit	2026-10-13T19:03:48.4432275Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+quality	Checkout reviewed commit	2026-10-13T19:03:48.4722758Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+quality	Checkout reviewed commit	2026-10-13T19:03:49.0173863Z Removing includeIf entries pointing to credentials config files
+quality	Checkout reviewed commit	2026-10-13T19:03:49.0184474Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+quality	Checkout reviewed commit	2026-10-13T19:03:49.0476966Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+quality	Checkout reviewed commit	2026-10-13T19:03:49.6094347Z [command]"C:\Program Files\Git\bin\git.exe" config --file D:\a\_temp\git-credentials-a5bc1026-ff2d-407d-9640-408cbb71f8a5.config http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+quality	Checkout reviewed commit	2026-10-13T19:03:49.6400320Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:D:/a/CV-Manager/CV-Manager/.git.path D:\a\_temp\git-credentials-a5bc1026-ff2d-407d-9640-408cbb71f8a5.config
+quality	Checkout reviewed commit	2026-10-13T19:03:49.6703622Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:D:/a/CV-Manager/CV-Manager/.git/worktrees/*.path D:\a\_temp\git-credentials-a5bc1026-ff2d-407d-9640-408cbb71f8a5.config
+quality	Checkout reviewed commit	2026-10-13T19:03:49.7047751Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-a5bc1026-ff2d-407d-9640-408cbb71f8a5.config
+quality	Checkout reviewed commit	2026-10-13T19:03:49.7349651Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-a5bc1026-ff2d-407d-9640-408cbb71f8a5.config
+quality	Checkout reviewed commit	2026-10-13T19:03:49.7663075Z ##[endgroup]
+quality	Checkout reviewed commit	2026-10-13T19:03:49.7663713Z ##[group]Fetching the repository
+quality	Checkout reviewed commit	2026-10-13T19:03:49.7677138Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin 8849345b8843d75316d8531fadbaf06c224bfedb
+quality	Checkout reviewed commit	2026-10-13T19:03:50.7338443Z From https://github.com/Asdb24/CV-Manager
+quality	Checkout reviewed commit	2026-10-13T19:03:50.7340596Z  * branch            8849345b8843d75316d8531fadbaf06c224bfedb -> FETCH_HEAD
+quality	Checkout reviewed commit	2026-10-13T19:03:50.7394286Z [command]"C:\Program Files\Git\bin\git.exe" rev-parse --verify --quiet 8849345b8843d75316d8531fadbaf06c224bfedb^{object}
+quality	Checkout reviewed commit	2026-10-13T19:03:50.7679771Z 8849345b8843d75316d8531fadbaf06c224bfedb
+quality	Checkout reviewed commit	2026-10-13T19:03:50.7724139Z ##[endgroup]
+quality	Checkout reviewed commit	2026-10-13T19:03:50.7724794Z ##[group]Determining the checkout info
+quality	Checkout reviewed commit	2026-10-13T19:03:50.7725380Z ##[endgroup]
+quality	Checkout reviewed commit	2026-10-13T19:03:50.7733749Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+quality	Checkout reviewed commit	2026-10-13T19:03:50.8181614Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+quality	Checkout reviewed commit	2026-10-13T19:03:50.8487002Z ##[group]Checking out the ref
+quality	Checkout reviewed commit	2026-10-13T19:03:50.8496135Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force 8849345b8843d75316d8531fadbaf06c224bfedb
+quality	Checkout reviewed commit	2026-10-13T19:03:51.0508979Z Note: switching to '8849345b8843d75316d8531fadbaf06c224bfedb'.
+quality	Checkout reviewed commit	2026-10-13T19:03:51.0509575Z 
+quality	Checkout reviewed commit	2026-10-13T19:03:51.0509935Z You are in 'detached HEAD' state. You can look around, make experimental
+quality	Checkout reviewed commit	2026-10-13T19:03:51.0510724Z changes and commit them, and you can discard any commits you make in this
+quality	Checkout reviewed commit	2026-10-13T19:03:51.0511597Z state without impacting any branches by switching back to a branch.
+quality	Checkout reviewed commit	2026-10-13T19:03:51.0512069Z 
+quality	Checkout reviewed commit	2026-10-13T19:03:51.0512348Z If you want to create a new branch to retain commits you create, you may
+quality	Checkout reviewed commit	2026-10-13T19:03:51.0513995Z do so (now or later) by using -c with the switch command. Example:
+quality	Checkout reviewed commit	2026-10-13T19:03:51.0514326Z 
+quality	Checkout reviewed commit	2026-10-13T19:03:51.0514453Z   git switch -c <new-branch-name>
+quality	Checkout reviewed commit	2026-10-13T19:03:51.0514676Z 
+quality	Checkout reviewed commit	2026-10-13T19:03:51.0514778Z Or undo this operation with:
+quality	Checkout reviewed commit	2026-10-13T19:03:51.0514950Z 
+quality	Checkout reviewed commit	2026-10-13T19:03:51.0515043Z   git switch -
+quality	Checkout reviewed commit	2026-10-13T19:03:51.0515171Z 
+quality	Checkout reviewed commit	2026-10-13T19:03:51.0515402Z Turn off this advice by setting config variable advice.detachedHead to false
+quality	Checkout reviewed commit	2026-10-13T19:03:51.0515745Z 
+quality	Checkout reviewed commit	2026-10-13T19:03:51.0515992Z HEAD is now at 8849345 Prepare real frontend assets for clean hosted Rust checks
+quality	Checkout reviewed commit	2026-10-13T19:03:51.0619028Z ##[endgroup]
+quality	Checkout reviewed commit	2026-10-13T19:03:51.1058232Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+quality	Checkout reviewed commit	2026-10-13T19:03:51.1339496Z 8849345b8843d75316d8531fadbaf06c224bfedb
+quality	Checkout reviewed commit	2026-10-13T19:03:51.1379264Z ##[group]Removing auth
+quality	Checkout reviewed commit	2026-10-13T19:03:51.1379539Z Removing SSH command configuration
+quality	Checkout reviewed commit	2026-10-13T19:03:51.1388018Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+quality	Checkout reviewed commit	2026-10-13T19:03:51.1684909Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+quality	Checkout reviewed commit	2026-10-13T19:03:51.7141416Z Removing HTTP extra header
+quality	Checkout reviewed commit	2026-10-13T19:03:51.7151001Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+quality	Checkout reviewed commit	2026-10-13T19:03:51.7521760Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+quality	Checkout reviewed commit	2026-10-13T19:03:52.3876629Z Removing includeIf entries pointing to credentials config files
+quality	Checkout reviewed commit	2026-10-13T19:03:52.3895109Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+quality	Checkout reviewed commit	2026-10-13T19:03:52.4173974Z includeif.gitdir:D:/a/CV-Manager/CV-Manager/.git.path
+quality	Checkout reviewed commit	2026-10-13T19:03:52.4174760Z includeif.gitdir:D:/a/CV-Manager/CV-Manager/.git/worktrees/*.path
+quality	Checkout reviewed commit	2026-10-13T19:03:52.4175421Z includeif.gitdir:/github/workspace/.git.path
+quality	Checkout reviewed commit	2026-10-13T19:03:52.4175964Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+quality	Checkout reviewed commit	2026-10-13T19:03:52.4221691Z [command]"C:\Program Files\Git\bin\git.exe" config --local --get-all includeif.gitdir:D:/a/CV-Manager/CV-Manager/.git.path
+quality	Checkout reviewed commit	2026-10-13T19:03:52.4485804Z D:\a\_temp\git-credentials-a5bc1026-ff2d-407d-9640-408cbb71f8a5.config
+quality	Checkout reviewed commit	2026-10-13T19:03:52.4528156Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset includeif.gitdir:D:/a/CV-Manager/CV-Manager/.git.path D\:\\a\\_temp\\git\-credentials\-a5bc1026\-ff2d\-407d\-9640\-408cbb71f8a5\.config
+quality	Checkout reviewed commit	2026-10-13T19:03:52.4852189Z [command]"C:\Program Files\Git\bin\git.exe" config --local --get-all includeif.gitdir:D:/a/CV-Manager/CV-Manager/.git/worktrees/*.path
+quality	Checkout reviewed commit	2026-10-13T19:03:52.5141860Z D:\a\_temp\git-credentials-a5bc1026-ff2d-407d-9640-408cbb71f8a5.config
+quality	Checkout reviewed commit	2026-10-13T19:03:52.5191935Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset includeif.gitdir:D:/a/CV-Manager/CV-Manager/.git/worktrees/*.path D\:\\a\\_temp\\git\-credentials\-a5bc1026\-ff2d\-407d\-9640\-408cbb71f8a5\.config
+quality	Checkout reviewed commit	2026-10-13T19:03:52.5513182Z [command]"C:\Program Files\Git\bin\git.exe" config --local --get-all includeif.gitdir:/github/workspace/.git.path
+quality	Checkout reviewed commit	2026-10-13T19:03:52.5784990Z /github/runner_temp/git-credentials-a5bc1026-ff2d-407d-9640-408cbb71f8a5.config
+quality	Checkout reviewed commit	2026-10-13T19:03:52.5826059Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-a5bc1026\-ff2d\-407d\-9640\-408cbb71f8a5\.config
+quality	Checkout reviewed commit	2026-10-13T19:03:52.6158082Z [command]"C:\Program Files\Git\bin\git.exe" config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+quality	Checkout reviewed commit	2026-10-13T19:03:52.6427878Z /github/runner_temp/git-credentials-a5bc1026-ff2d-407d-9640-408cbb71f8a5.config
+quality	Checkout reviewed commit	2026-10-13T19:03:52.6475254Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-a5bc1026\-ff2d\-407d\-9640\-408cbb71f8a5\.config
+quality	Checkout reviewed commit	2026-10-13T19:03:52.6837532Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+quality	Checkout reviewed commit	2026-10-13T19:03:53.3622691Z Removing credentials config 'D:\a\_temp\git-credentials-a5bc1026-ff2d-407d-9640-408cbb71f8a5.config'
+quality	Checkout reviewed commit	2026-10-13T19:03:53.3636217Z ##[endgroup]
+quality	Locked Node	﻿2026-10-13T19:03:53.4021292Z ##[group]Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+quality	Locked Node	2026-10-13T19:03:53.4021845Z with:
+quality	Locked Node	2026-10-13T19:03:53.4022027Z   node-version: 26.8.2
+quality	Locked Node	2026-10-13T19:03:53.4022250Z   check-latest: false
+quality	Locked Node	2026-10-13T19:03:53.4024857Z   token: ***
+quality	Locked Node	2026-10-13T19:03:53.4025055Z   package-manager-cache: true
+quality	Locked Node	2026-10-13T19:03:53.4025282Z ##[endgroup]
+quality	Locked Node	2026-10-13T19:03:53.5613577Z Attempting to download 26.8.2...
+quality	Locked Node	2026-10-13T19:03:54.3379951Z Acquiring 26.8.2 - x64 from https://github.com/actions/node-versions/releases/download/26.8.2-34429851330/node-26.8.2-win32-x64.7z
+quality	Locked Node	2026-10-13T19:03:54.6577881Z Extracting ...
+quality	Locked Node	2026-10-13T19:03:58.3441981Z Adding to the cache ...
+quality	Locked Node	2026-10-13T19:04:02.9594161Z ##[group]Environment details
+quality	Locked Node	2026-10-13T19:04:03.7404348Z node: v26.8.2
+quality	Locked Node	2026-10-13T19:04:03.7404616Z npm: 11.19.1
+quality	Locked Node	2026-10-13T19:04:03.7404864Z yarn: 1.22.22
+quality	Locked Node	2026-10-13T19:04:03.7406475Z ##[endgroup]
+quality	Locked Python	﻿2026-10-13T19:04:03.7724210Z ##[group]Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+quality	Locked Python	2026-10-13T19:04:03.7724667Z with:
+quality	Locked Python	2026-10-13T19:04:03.7724847Z   python-version: 3.13.15
+quality	Locked Python	2026-10-13T19:04:03.7725264Z   check-latest: false
+quality	Locked Python	2026-10-13T19:04:03.7727850Z   token: ***
+quality	Locked Python	2026-10-13T19:04:03.7728042Z   update-environment: true
+quality	Locked Python	2026-10-13T19:04:03.7728267Z   allow-prereleases: false
+quality	Locked Python	2026-10-13T19:04:03.7728482Z   freethreaded: false
+quality	Locked Python	2026-10-13T19:04:03.7728670Z ##[endgroup]
+quality	Locked Python	2026-10-13T19:04:03.9326775Z ##[group]Installed versions
+quality	Locked Python	2026-10-13T19:04:03.9425467Z Successfully set up CPython (3.13.15)
+quality	Locked Python	2026-10-13T19:04:03.9425991Z ##[endgroup]
+quality	Locked uv	﻿2026-10-13T19:04:03.9763208Z ##[group]Run astral-sh/setup-uv@37802adc94f370d6bfd71619e3f0bf239e1f3b78
+quality	Locked uv	2026-10-13T19:04:03.9763870Z with:
+quality	Locked uv	2026-10-13T19:04:03.9764048Z   version: 0.12.19
+quality	Locked uv	2026-10-13T19:04:03.9764233Z   enable-cache: false
+quality	Locked uv	2026-10-13T19:04:03.9764436Z   activate-environment: false
+quality	Locked uv	2026-10-13T19:04:03.9764690Z   working-directory: D:\a\CV-Manager\CV-Manager
+quality	Locked uv	2026-10-13T19:04:03.9767378Z   github-token: ***
+quality	Locked uv	2026-10-13T19:04:03.9767936Z   cache-dependency-glob: **/*requirements*.txt
+quality	Locked uv	**/*requirements*.in
+quality	Locked uv	**/*constraints*.txt
+quality	Locked uv	**/*constraints*.in
+quality	Locked uv	**/pyproject.toml
+quality	Locked uv	**/uv.lock
+quality	Locked uv	**/*.py.lock
+quality	Locked uv	
+quality	Locked uv	2026-10-13T19:04:03.9768562Z   restore-cache: true
+quality	Locked uv	2026-10-13T19:04:03.9768755Z   save-cache: true
+quality	Locked uv	2026-10-13T19:04:03.9768936Z   prune-cache: true
+quality	Locked uv	2026-10-13T19:04:03.9769117Z   cache-python: false
+quality	Locked uv	2026-10-13T19:04:03.9769320Z   ignore-nothing-to-cache: false
+quality	Locked uv	2026-10-13T19:04:03.9769562Z   ignore-empty-workdir: false
+quality	Locked uv	2026-10-13T19:04:03.9769794Z   add-problem-matchers: true
+quality	Locked uv	2026-10-13T19:04:03.9770018Z   resolution-strategy: highest
+quality	Locked uv	2026-10-13T19:04:03.9770260Z env:
+quality	Locked uv	2026-10-13T19:04:03.9770501Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Locked uv	2026-10-13T19:04:03.9770965Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.13.15\x64/lib/pkgconfig
+quality	Locked uv	2026-10-13T19:04:03.9771409Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Locked uv	2026-10-13T19:04:03.9771796Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Locked uv	2026-10-13T19:04:03.9772181Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Locked uv	2026-10-13T19:04:03.9772489Z ##[endgroup]
+quality	Locked uv	2026-10-13T19:04:04.1791105Z Fetching version data from https://raw.githubusercontent.com/astral-sh/versions/main/v1/uv.ndjson ...
+quality	Locked uv	2026-10-13T19:04:04.2457537Z Downloading uv from "https://releases.astral.sh/github/uv/releases/download/0.12.19/uv-x86_64-pc-windows-msvc.zip" ...
+quality	Locked uv	2026-10-13T19:04:04.9481113Z [command]C:\Windows\system32\tar.exe x -C D:\a\_temp\e48ee661-20fa-486f-8cd4-33e80ae7c5ad -f D:\a\_temp\ff5bfd81-6211-4958-81dd-1dbd0d680fef
+quality	Locked uv	2026-10-13T19:04:05.1158770Z Set UV_TOOL_BIN_DIR to D:\a\_temp\uv-tool-bin-dir
+quality	Locked uv	2026-10-13T19:04:05.1162389Z Added D:\a\_temp\uv-tool-bin-dir to the path
+quality	Locked uv	2026-10-13T19:04:05.1172941Z Added C:\hostedtoolcache\windows\uv\0.12.19\x86_64 to the path
+quality	Locked uv	2026-10-13T19:04:05.1176036Z Set UV_TOOL_DIR to D:\a\_temp\uv-tool-dir
+quality	Locked uv	2026-10-13T19:04:05.1179264Z Set UV_PYTHON_INSTALL_DIR to D:\a\_temp\uv-python-dir
+quality	Locked uv	2026-10-13T19:04:05.1183349Z Added D:\a\_temp\uv-python-dir to the path
+quality	Locked uv	2026-10-13T19:04:05.1192892Z Successfully installed uv version 0.12.19
+quality	Install frozen development tools	﻿2026-10-13T19:04:08.3116131Z ##[group]Run npm.cmd install --global npm@12.0.2 --ignore-scripts
+quality	Install frozen development tools	2026-10-13T19:04:08.3116744Z ^[[36;1mnpm.cmd install --global npm@12.0.2 --ignore-scripts^[[0m
+quality	Install frozen development tools	2026-10-13T19:04:08.3117132Z ^[[36;1mif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }^[[0m
+quality	Install frozen development tools	2026-10-13T19:04:08.3117723Z ^[[36;1mrustup toolchain install 1.98.1-x86_64-pc-windows-msvc --profile minimal --component rustfmt --component clippy^[[0m
+quality	Install frozen development tools	2026-10-13T19:04:08.3118315Z ^[[36;1mif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }^[[0m
+quality	Install frozen development tools	2026-10-13T19:04:08.3118661Z ^[[36;1mrustup default 1.98.1-x86_64-pc-windows-msvc^[[0m
+quality	Install frozen development tools	2026-10-13T19:04:08.3118996Z ^[[36;1mif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }^[[0m
+quality	Install frozen development tools	2026-10-13T19:04:08.3119288Z ^[[36;1mnpm.cmd ci^[[0m
+quality	Install frozen development tools	2026-10-13T19:04:08.3119531Z ^[[36;1mif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }^[[0m
+quality	Install frozen development tools	2026-10-13T19:04:08.3119871Z ^[[36;1muv sync --frozen --group dev --python 3.13.15^[[0m
+quality	Install frozen development tools	2026-10-13T19:04:08.3120221Z ^[[36;1mif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }^[[0m
+quality	Install frozen development tools	2026-10-13T19:04:08.3121442Z ^[[36;1mcargo fetch --locked --manifest-path apps/desktop/src-tauri/Cargo.toml^[[0m
+quality	Install frozen development tools	2026-10-13T19:04:08.3121917Z ^[[36;1mif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }^[[0m
+quality	Install frozen development tools	2026-10-13T19:04:08.3195856Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+quality	Install frozen development tools	2026-10-13T19:04:08.3196196Z env:
+quality	Install frozen development tools	2026-10-13T19:04:08.3196460Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Install frozen development tools	2026-10-13T19:04:08.3196911Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.13.15\x64/lib/pkgconfig
+quality	Install frozen development tools	2026-10-13T19:04:08.3197376Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Install frozen development tools	2026-10-13T19:04:08.3197776Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Install frozen development tools	2026-10-13T19:04:08.3198168Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Install frozen development tools	2026-10-13T19:04:08.3198530Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+quality	Install frozen development tools	2026-10-13T19:04:08.3198807Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+quality	Install frozen development tools	2026-10-13T19:04:08.3199336Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+quality	Install frozen development tools	2026-10-13T19:04:08.3199631Z ##[endgroup]
+quality	Install frozen development tools	2026-10-13T19:04:27.4966962Z 
+quality	Install frozen development tools	2026-10-13T19:04:27.4968242Z added 1 package in 19s
+quality	Install frozen development tools	2026-10-13T19:04:27.4968625Z 
+quality	Install frozen development tools	2026-10-13T19:04:27.4969264Z 15 packages are looking for funding
+quality	Install frozen development tools	2026-10-13T19:04:27.4971071Z   run `npm fund` for details
+quality	Install frozen development tools	2026-10-13T19:04:29.7666748Z info: syncing channel updates for 1.98.1-x86_64-pc-windows-msvc
+quality	Install frozen development tools	2026-10-13T19:04:30.2903084Z info: latest update on 2026-09-03 for version 1.98.1 (48a229cea 2026-09-01)
+quality	Install frozen development tools	2026-10-13T19:04:30.2997613Z info: downloading 5 components
+quality	Install frozen development tools	2026-10-13T19:04:38.8838548Z 
+quality	Install frozen development tools	2026-10-13T19:04:38.9169597Z   1.98.1-x86_64-pc-windows-msvc installed - rustc 1.98.1 (48a229cea 2026-09-01)
+quality	Install frozen development tools	2026-10-13T19:04:38.9170232Z 
+quality	Install frozen development tools	2026-10-13T19:04:38.9451651Z info: using existing install for 1.98.1-x86_64-pc-windows-msvc
+quality	Install frozen development tools	2026-10-13T19:04:39.0006845Z info: default toolchain set to 1.98.1-x86_64-pc-windows-msvc
+quality	Install frozen development tools	2026-10-13T19:04:39.0007387Z 
+quality	Install frozen development tools	2026-10-13T19:04:39.0195897Z   1.98.1-x86_64-pc-windows-msvc unchanged - rustc 1.98.1 (48a229cea 2026-09-01)
+quality	Install frozen development tools	2026-10-13T19:04:39.0196328Z 
+quality	Install frozen development tools	2026-10-13T19:05:54.4245945Z 
+quality	Install frozen development tools	2026-10-13T19:05:54.4246595Z added 298 packages, and audited 303 packages in 1m
+quality	Install frozen development tools	2026-10-13T19:05:54.4257130Z 
+quality	Install frozen development tools	2026-10-13T19:05:54.4257658Z found 0 vulnerabilities
+quality	Install frozen development tools	2026-10-13T19:05:56.0071443Z Using CPython 3.13.15 interpreter at: C:\hostedtoolcache\windows\Python\3.13.15\x64\python3.exe
+quality	Install frozen development tools	2026-10-13T19:05:56.0072314Z Creating virtual environment at: .venv
+quality	Install frozen development tools	2026-10-13T19:05:56.1664467Z    Building agency-cv-foundation @ file:///D:/a/CV-Manager/CV-Manager
+quality	Install frozen development tools	2026-10-13T19:05:56.2708910Z Downloading pygments (1.2MiB)
+quality	Install frozen development tools	2026-10-13T19:05:56.2857990Z Downloading mypy (10.9MiB)
+quality	Install frozen development tools	2026-10-13T19:05:56.2888745Z Downloading ruff (9.6MiB)
+quality	Install frozen development tools	2026-10-13T19:05:56.2979428Z Downloading ast-serialize (1.1MiB)
+quality	Install frozen development tools	2026-10-13T19:05:56.2989078Z Downloading psycopg-binary (3.5MiB)
+quality	Install frozen development tools	2026-10-13T19:05:56.2990754Z Downloading sqlalchemy (2.3MiB)
+quality	Install frozen development tools	2026-10-13T19:05:56.3018578Z Downloading pydantic-core (2.1MiB)
+quality	Install frozen development tools	2026-10-13T19:05:56.9952041Z  Downloaded ast-serialize
+quality	Install frozen development tools	2026-10-13T19:05:57.0628563Z  Downloaded pydantic-core
+quality	Install frozen development tools	2026-10-13T19:05:57.1083574Z  Downloaded psycopg-binary
+quality	Install frozen development tools	2026-10-13T19:05:57.2037944Z  Downloaded ruff
+quality	Install frozen development tools	2026-10-13T19:05:57.2830213Z  Downloaded sqlalchemy
+quality	Install frozen development tools	2026-10-13T19:05:57.3126425Z  Downloaded pygments
+quality	Install frozen development tools	2026-10-13T19:06:00.0300857Z  Downloaded mypy
+quality	Install frozen development tools	2026-10-13T19:06:01.2563801Z       Built agency-cv-foundation @ file:///D:/a/CV-Manager/CV-Manager
+quality	Install frozen development tools	2026-10-13T19:06:01.2636588Z Prepared 41 packages in 5.12s
+quality	Install frozen development tools	2026-10-13T19:06:01.2661550Z warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+quality	Install frozen development tools	2026-10-13T19:06:01.2672831Z          If the cache and target directories are on different filesystems, hardlinking may not be supported.
+quality	Install frozen development tools	2026-10-13T19:06:01.2674366Z          If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+quality	Install frozen development tools	2026-10-13T19:06:02.9639213Z Installed 41 packages in 1.69s
+quality	Install frozen development tools	2026-10-13T19:06:02.9641439Z  + agency-cv-foundation==0.1.0 (from file:///D:/a/CV-Manager/CV-Manager)
+quality	Install frozen development tools	2026-10-13T19:06:02.9642151Z  + alembic==1.20.0
+quality	Install frozen development tools	2026-10-13T19:06:02.9643861Z  + annotated-doc==0.0.5
+quality	Install frozen development tools	2026-10-13T19:06:02.9645167Z  + annotated-types==0.8.0
+quality	Install frozen development tools	2026-10-13T19:06:02.9646454Z  + anyio==4.15.1
+quality	Install frozen development tools	2026-10-13T19:06:02.9647664Z  + argon2-cffi==25.1.0
+quality	Install frozen development tools	2026-10-13T19:06:02.9649382Z  + argon2-cffi-bindings==26.1.0
+quality	Install frozen development tools	2026-10-13T19:06:02.9650484Z  + ast-serialize==0.12.1
+quality	Install frozen development tools	2026-10-13T19:06:02.9652048Z  + certifi==2026.7.22
+quality	Install frozen development tools	2026-10-13T19:06:02.9653338Z  + cffi==2.1.1
+quality	Install frozen development tools	2026-10-13T19:06:02.9654940Z  + click==8.5.0
+quality	Install frozen development tools	2026-10-13T19:06:02.9656035Z  + colorama==0.4.6
+quality	Install frozen development tools	2026-10-13T19:06:02.9657584Z  + fastapi==0.143.0
+quality	Install frozen development tools	2026-10-13T19:06:02.9658726Z  + h11==0.16.0
+quality	Install frozen development tools	2026-10-13T19:06:02.9660337Z  + httpcore==1.0.9
+quality	Install frozen development tools	2026-10-13T19:06:02.9660990Z  + httpx==0.28.1
+quality	Install frozen development tools	2026-10-13T19:06:02.9663202Z  + idna==3.20
+quality	Install frozen development tools	2026-10-13T19:06:02.9663556Z  + iniconfig==2.3.1
+quality	Install frozen development tools	2026-10-13T19:06:02.9665611Z  + librt==0.16.0
+quality	Install frozen development tools	2026-10-13T19:06:02.9667729Z  + mako==1.4.3
+quality	Install frozen development tools	2026-10-13T19:06:02.9669915Z  + markupsafe==3.0.4
+quality	Install frozen development tools	2026-10-13T19:06:02.9673388Z  + mypy==2.4.0
+quality	Install frozen development tools	2026-10-13T19:06:02.9676207Z  + mypy-extensions==1.1.0
+quality	Install frozen development tools	2026-10-13T19:06:02.9677012Z  + opentelemetry-api==1.45.1
+quality	Install frozen development tools	2026-10-13T19:06:02.9677600Z  + packaging==26.3
+quality	Install frozen development tools	2026-10-13T19:06:02.9679182Z  + pathspec==1.1.1
+quality	Install frozen development tools	2026-10-13T19:06:02.9680800Z  + pluggy==1.6.0
+quality	Install frozen development tools	2026-10-13T19:06:02.9682369Z  + psycopg==3.3.6
+quality	Install frozen development tools	2026-10-13T19:06:02.9683924Z  + psycopg-binary==3.3.6
+quality	Install frozen development tools	2026-10-13T19:06:02.9685243Z  + pycparser==3.11
+quality	Install frozen development tools	2026-10-13T19:06:02.9686982Z  + pydantic==2.14.1
+quality	Install frozen development tools	2026-10-13T19:06:02.9688801Z  + pydantic-core==2.50.1
+quality	Install frozen development tools	2026-10-13T19:06:02.9689989Z  + pygments==2.21.0
+quality	Install frozen development tools	2026-10-13T19:06:02.9692374Z  + pytest==9.1.1
+quality	Install frozen development tools	2026-10-13T19:06:02.9693333Z  + ruff==0.17.0
+quality	Install frozen development tools	2026-10-13T19:06:02.9695861Z  + sqlalchemy==2.1.4
+quality	Install frozen development tools	2026-10-13T19:06:02.9697689Z  + starlette==1.7.0
+quality	Install frozen development tools	2026-10-13T19:06:02.9699448Z  + typing-extensions==4.16.0
+quality	Install frozen development tools	2026-10-13T19:06:02.9701099Z  + typing-inspection==0.4.4
+quality	Install frozen development tools	2026-10-13T19:06:02.9702548Z  + tzdata==2026.5
+quality	Install frozen development tools	2026-10-13T19:06:02.9704108Z  + uvicorn==0.54.0
+quality	Install frozen development tools	2026-10-13T19:06:03.6660660Z     Updating crates.io index
+quality	Install frozen development tools	2026-10-13T19:06:05.5844602Z  Downloading crates ...
+quality	Install frozen development tools	2026-10-13T19:06:05.8362685Z   Downloaded precomputed-hash v0.1.1
+quality	Install frozen development tools	2026-10-13T19:06:05.8466093Z   Downloaded windows-core v0.62.2
+quality	Install frozen development tools	2026-10-13T19:06:05.8913524Z   Downloaded windows-future v0.3.2
+quality	Install frozen development tools	2026-10-13T19:06:05.9112835Z   Downloaded tauri-build v2.7.2
+quality	Install frozen development tools	2026-10-13T19:06:05.9278569Z   Downloaded web-time v1.1.0
+quality	Install frozen development tools	2026-10-13T19:06:05.9467908Z   Downloaded brotli-decompressor v6.0.1
+quality	Install frozen development tools	2026-10-13T19:06:05.9965731Z   Downloaded serde-untagged v0.1.9
+quality	Install frozen development tools	2026-10-13T19:06:06.0112402Z   Downloaded hashbrown v0.12.3
+quality	Install frozen development tools	2026-10-13T19:06:06.0438331Z   Downloaded jni-sys v0.4.1
+quality	Install frozen development tools	2026-10-13T19:06:06.0572836Z   Downloaded combine v4.6.8
+quality	Install frozen development tools	2026-10-13T19:06:06.0882020Z   Downloaded byteorder v1.5.0
+quality	Install frozen development tools	2026-10-13T19:06:06.1000911Z   Downloaded serialize-to-javascript-impl v0.1.2
+quality	Install frozen development tools	2026-10-13T19:06:06.1070892Z   Downloaded embed_plist v1.2.2
+quality	Install frozen development tools	2026-10-13T19:06:06.1166609Z   Downloaded jni-sys-macros v0.4.1
+quality	Install frozen development tools	2026-10-13T19:06:06.1229144Z   Downloaded jni v0.21.1
+quality	Install frozen development tools	2026-10-13T19:06:06.3946170Z   Downloaded tracing-core v0.1.36
+quality	Install frozen development tools	2026-10-13T19:06:06.4180591Z   Downloaded tauri-codegen v2.7.2
+quality	Install frozen development tools	2026-10-13T19:06:06.4305027Z   Downloaded tower-service v0.3.3
+quality	Install frozen development tools	2026-10-13T19:06:06.4388016Z   Downloaded rustc-hash v2.1.3
+quality	Install frozen development tools	2026-10-13T19:06:06.4501096Z   Downloaded base64 v0.22.1
+quality	Install frozen development tools	2026-10-13T19:06:06.4818516Z   Downloaded windows-result v0.4.1
+quality	Install frozen development tools	2026-10-13T19:06:06.4954831Z   Downloaded window-vibrancy v0.8.1
+quality	Install frozen development tools	2026-10-13T19:06:06.5364689Z   Downloaded gdkwayland-sys v0.18.2
+quality	Install frozen development tools	2026-10-13T19:06:06.5430198Z   Downloaded r-efi v5.3.0
+quality	Install frozen development tools	2026-10-13T19:06:06.5937325Z   Downloaded glob v0.3.4
+quality	Install frozen development tools	2026-10-13T19:06:06.6066762Z   Downloaded tendril v0.5.1
+quality	Install frozen development tools	2026-10-13T19:06:06.6218468Z   Downloaded quote v1.0.47
+quality	Install frozen development tools	2026-10-13T19:06:06.6474396Z   Downloaded try-lock v0.2.5
+quality	Install frozen development tools	2026-10-13T19:06:06.6578226Z   Downloaded mime v0.3.17
+quality	Install frozen development tools	2026-10-13T19:06:06.6687206Z   Downloaded winnow v0.5.40
+quality	Install frozen development tools	2026-10-13T19:06:06.7491365Z   Downloaded httparse v1.10.1
+quality	Install frozen development tools	2026-10-13T19:06:06.7691706Z   Downloaded chrono v0.4.45
+quality	Install frozen development tools	2026-10-13T19:06:06.8132553Z   Downloaded iana-time-zone-haiku v0.1.2
+quality	Install frozen development tools	2026-10-13T19:06:06.8226186Z   Downloaded unicode-segmentation v1.13.3
+quality	Install frozen development tools	2026-10-13T19:06:06.8413187Z   Downloaded gdkx11-sys v0.18.2
+quality	Install frozen development tools	2026-10-13T19:06:06.8495763Z   Downloaded serde_repr v0.1.21
+quality	Install frozen development tools	2026-10-13T19:06:06.8709534Z   Downloaded objc2-app-kit v0.3.2
+quality	Install frozen development tools	2026-10-13T19:06:07.0851132Z   Downloaded thiserror v1.0.69
+quality	Install frozen development tools	2026-10-13T19:06:07.1486962Z   Downloaded windows-implement v0.60.2
+quality	Install frozen development tools	2026-10-13T19:06:07.1571197Z   Downloaded bs58 v0.5.1
+quality	Install frozen development tools	2026-10-13T19:06:07.1763072Z   Downloaded softbuffer v0.4.8
+quality	Install frozen development tools	2026-10-13T19:06:07.2143630Z   Downloaded tower-layer v0.3.3
+quality	Install frozen development tools	2026-10-13T19:06:07.2230571Z   Downloaded derive_more v2.1.1
+quality	Install frozen development tools	2026-10-13T19:06:07.3637007Z   Downloaded tauri-winres v0.3.6
+quality	Install frozen development tools	2026-10-13T19:06:07.3827852Z   Downloaded dom_query v0.28.0
+quality	Install frozen development tools	2026-10-13T19:06:07.4322618Z   Downloaded bytemuck v1.25.2
+quality	Install frozen development tools	2026-10-13T19:06:07.4616171Z   Downloaded siphasher v1.0.4
+quality	Install frozen development tools	2026-10-13T19:06:07.4755154Z   Downloaded foreign-types-shared v0.3.1
+quality	Install frozen development tools	2026-10-13T19:06:07.4819969Z   Downloaded toml_datetime v1.1.2+spec-1.1.0
+quality	Install frozen development tools	2026-10-13T19:06:07.4912419Z   Downloaded num-traits v0.2.19
+quality	Install frozen development tools	2026-10-13T19:06:07.5150235Z   Downloaded cssparser v0.37.0
+quality	Install frozen development tools	2026-10-13T19:06:07.9937544Z   Downloaded string_cache v0.9.0
+quality	Install frozen development tools	2026-10-13T19:06:08.0104160Z   Downloaded proc-macro2 v1.0.107
+quality	Install frozen development tools	2026-10-13T19:06:08.0365653Z   Downloaded num_enum_derive v0.7.6
+quality	Install frozen development tools	2026-10-13T19:06:08.0480018Z   Downloaded windows-strings v0.5.1
+quality	Install frozen development tools	2026-10-13T19:06:08.0634807Z   Downloaded selectors v0.38.0
+quality	Install frozen development tools	2026-10-13T19:06:08.0817072Z   Downloaded tauri-macros v2.7.2
+quality	Install frozen development tools	2026-10-13T19:06:08.0932147Z   Downloaded toml_writer v1.1.3+spec-1.1.0
+quality	Install frozen development tools	2026-10-13T19:06:08.1033324Z   Downloaded uuid v1.28.0
+quality	Install frozen development tools	2026-10-13T19:06:08.1277154Z   Downloaded dtoa v1.0.11
+quality	Install frozen development tools	2026-10-13T19:06:08.1404777Z   Downloaded cssparser-macros v0.7.1
+quality	Install frozen development tools	2026-10-13T19:06:08.1468295Z   Downloaded string_cache_codegen v0.6.1
+quality	Install frozen development tools	2026-10-13T19:06:08.1547389Z   Downloaded dirs v7.0.0
+quality	Install frozen development tools	2026-10-13T19:06:08.1670662Z   Downloaded libredox v0.1.25
+quality	Install frozen development tools	2026-10-13T19:06:08.1782932Z   Downloaded schemars v0.8.22
+quality	Install frozen development tools	2026-10-13T19:06:08.3239304Z   Downloaded fnv v1.0.7
+quality	Install frozen development tools	2026-10-13T19:06:08.3333038Z   Downloaded windows-version v0.1.7
+quality	Install frozen development tools	2026-10-13T19:06:08.3449025Z   Downloaded dispatch2 v0.3.1
+quality	Install frozen development tools	2026-10-13T19:06:08.3649582Z   Downloaded ndk-context v0.1.1
+quality	Install frozen development tools	2026-10-13T19:06:08.3711247Z   Downloaded ipnet v2.12.2
+quality	Install frozen development tools	2026-10-13T19:06:08.3857755Z   Downloaded want v0.3.2
+quality	Install frozen development tools	2026-10-13T19:06:08.3939865Z   Downloaded futures-sink v0.3.34
+quality	Install frozen development tools	2026-10-13T19:06:08.4014734Z   Downloaded windows-numerics v0.3.1
+quality	Install frozen development tools	2026-10-13T19:06:08.4195063Z   Downloaded windows_i686_msvc v0.42.2
+quality	Install frozen development tools	2026-10-13T19:06:08.4376289Z   Downloaded winnow v1.0.4
+quality	Install frozen development tools	2026-10-13T19:06:08.5267514Z   Downloaded dlopen2 v0.8.2
+quality	Install frozen development tools	2026-10-13T19:06:08.5599727Z   Downloaded darling_macro v0.24.1
+quality	Install frozen development tools	2026-10-13T19:06:08.5662901Z   Downloaded hex v0.4.3
+quality	Install frozen development tools	2026-10-13T19:06:08.5792342Z   Downloaded fastrand v2.5.0
+quality	Install frozen development tools	2026-10-13T19:06:08.5900825Z   Downloaded core-graphics-types v0.2.0
+quality	Install frozen development tools	2026-10-13T19:06:08.5974447Z   Downloaded foreign-types-macros v0.2.4
+quality	Install frozen development tools	2026-10-13T19:06:08.6052178Z   Downloaded windows-link v0.2.1
+quality	Install frozen development tools	2026-10-13T19:06:08.6141368Z   Downloaded iana-time-zone v0.1.65
+quality	Install frozen development tools	2026-10-13T19:06:08.6388069Z   Downloaded core-foundation-sys v0.8.7
+quality	Install frozen development tools	2026-10-13T19:06:08.6870143Z   Downloaded android_system_properties v0.1.6
+quality	Install frozen development tools	2026-10-13T19:06:08.6954736Z   Downloaded new_debug_unreachable v1.0.6
+quality	Install frozen development tools	2026-10-13T19:06:08.7079633Z   Downloaded phf_codegen v0.13.1
+quality	Install frozen development tools	2026-10-13T19:06:08.7174146Z   Downloaded scopeguard v1.2.0
+quality	Install frozen development tools	2026-10-13T19:06:08.7277517Z   Downloaded dlopen2_derive v0.4.3
+quality	Install frozen development tools	2026-10-13T19:06:08.7454199Z   Downloaded serde_derive v1.0.229
+quality	Install frozen development tools	2026-10-13T19:06:08.7755237Z   Downloaded tinyvec v1.13.3
+quality	Install frozen development tools	2026-10-13T19:06:08.8039837Z   Downloaded serde_derive_internals v0.29.1
+quality	Install frozen development tools	2026-10-13T19:06:08.8168046Z   Downloaded phf v0.13.1
+quality	Install frozen development tools	2026-10-13T19:06:08.8298303Z   Downloaded phf_macros v0.13.1
+quality	Install frozen development tools	2026-10-13T19:06:08.8379185Z   Downloaded http v1.5.0
+quality	Install frozen development tools	2026-10-13T19:06:08.8671538Z   Downloaded bytes v1.12.1
+quality	Install frozen development tools	2026-10-13T19:06:08.9018585Z   Downloaded servo_arc v0.4.3
+quality	Install frozen development tools	2026-10-13T19:06:08.9085878Z   Downloaded derive_more-impl v2.1.1
+quality	Install frozen development tools	2026-10-13T19:06:09.2251785Z   Downloaded html5ever v0.39.0
+quality	Install frozen development tools	2026-10-13T19:06:09.2546053Z   Downloaded redox_syscall v0.5.18
+quality	Install frozen development tools	2026-10-13T19:06:09.2791834Z   Downloaded camino v1.2.6
+quality	Install frozen development tools	2026-10-13T19:06:09.2909680Z   Downloaded anyhow v1.0.104
+quality	Install frozen development tools	2026-10-13T19:06:09.3373073Z   Downloaded raw-window-handle v0.6.2
+quality	Install frozen development tools	2026-10-13T19:06:09.3545158Z   Downloaded wasm-bindgen-futures v0.4.79
+quality	Install frozen development tools	2026-10-13T19:06:09.3627400Z   Downloaded walkdir v2.5.0
+quality	Install frozen development tools	2026-10-13T19:06:09.3795760Z   Downloaded redox_users v0.5.3
+quality	Install frozen development tools	2026-10-13T19:06:09.3897856Z   Downloaded ctor v1.0.13
+quality	Install frozen development tools	2026-10-13T19:06:09.4128248Z   Downloaded dirs-sys v0.5.0
+quality	Install frozen development tools	2026-10-13T19:06:09.4221611Z   Downloaded windows-collections v0.3.2
+quality	Install frozen development tools	2026-10-13T19:06:09.4343518Z   Downloaded generic-array v0.14.7
+quality	Install frozen development tools	2026-10-13T19:06:09.4491800Z   Downloaded winapi-util v0.1.11
+quality	Install frozen development tools	2026-10-13T19:06:09.4617122Z   Downloaded equivalent v1.0.2
+quality	Install frozen development tools	2026-10-13T19:06:09.4708446Z   Downloaded windows-interface v0.59.3
+quality	Install frozen development tools	2026-10-13T19:06:09.4796968Z   Downloaded base64 v0.23.1
+quality	Install frozen development tools	2026-10-13T19:06:09.5146721Z   Downloaded jsonptr v0.7.1
+quality	Install frozen development tools	2026-10-13T19:06:09.5458399Z   Downloaded parking_lot_core v0.9.12
+quality	Install frozen development tools	2026-10-13T19:06:09.5679319Z   Downloaded heck v0.5.0
+quality	Install frozen development tools	2026-10-13T19:06:09.5837512Z   Downloaded objc2-quartz-core v0.3.2
+quality	Install frozen development tools	2026-10-13T19:06:09.6144248Z   Downloaded system-deps v6.2.2
+quality	Install frozen development tools	2026-10-13T19:06:09.6328260Z   Downloaded block-buffer v0.10.4
+quality	Install frozen development tools	2026-10-13T19:06:09.6416956Z   Downloaded tauri-runtime v2.12.1
+quality	Install frozen development tools	2026-10-13T19:06:09.6561183Z   Downloaded core-graphics v0.25.0
+quality	Install frozen development tools	2026-10-13T19:06:09.6769736Z   Downloaded ico v0.5.0
+quality	Install frozen development tools	2026-10-13T19:06:09.7046364Z   Downloaded getrandom v0.3.4
+quality	Install frozen development tools	2026-10-13T19:06:09.7399497Z   Downloaded icu_normalizer_data v2.3.0
+quality	Install frozen development tools	2026-10-13T19:06:09.7544990Z   Downloaded typeid v1.0.3
+quality	Install frozen development tools	2026-10-13T19:06:09.7655425Z   Downloaded quick-xml v0.42.0
+quality	Install frozen development tools	2026-10-13T19:06:09.8053430Z   Downloaded alloc-no-stdlib v3.0.0
+quality	Install frozen development tools	2026-10-13T19:06:09.8215750Z   Downloaded winreg v0.56.0
+quality	Install frozen development tools	2026-10-13T19:06:09.8551890Z   Downloaded zerovec-derive v0.11.6
+quality	Install frozen development tools	2026-10-13T19:06:09.8716604Z   Downloaded phf_generator v0.13.1
+quality	Install frozen development tools	2026-10-13T19:06:09.8840600Z   Downloaded wasip2 v1.0.4+wasi-0.2.12
+quality	Install frozen development tools	2026-10-13T19:06:09.9079889Z   Downloaded json-patch v4.2.0
+quality	Install frozen development tools	2026-10-13T19:06:09.9159469Z   Downloaded field-offset v0.3.6
+quality	Install frozen development tools	2026-10-13T19:06:09.9255064Z   Downloaded bit-set v0.8.0
+quality	Install frozen development tools	2026-10-13T19:06:09.9362391Z   Downloaded option-ext v0.2.0
+quality	Install frozen development tools	2026-10-13T19:06:09.9451368Z   Downloaded toml_datetime v0.6.3
+quality	Install frozen development tools	2026-10-13T19:06:09.9527181Z   Downloaded tower v0.5.3
+quality	Install frozen development tools	2026-10-13T19:06:10.0460488Z   Downloaded unicode-ident v1.0.27
+quality	Install frozen development tools	2026-10-13T19:06:10.0688495Z   Downloaded plist v1.10.1
+quality	Install frozen development tools	2026-10-13T19:06:10.1129316Z   Downloaded infer v0.22.0
+quality	Install frozen development tools	2026-10-13T19:06:10.1333905Z   Downloaded tray-icon v0.25.1
+quality	Install frozen development tools	2026-10-13T19:06:10.1569487Z   Downloaded windows-targets v0.42.2
+quality	Install frozen development tools	2026-10-13T19:06:10.1637373Z   Downloaded time-core v0.1.9
+quality	Install frozen development tools	2026-10-13T19:06:10.1720496Z   Downloaded phf_shared v0.13.1
+quality	Install frozen development tools	2026-10-13T19:06:10.1794794Z   Downloaded cargo-platform v0.1.9
+quality	Install frozen development tools	2026-10-13T19:06:10.1894819Z   Downloaded windows-threading v0.2.1
+quality	Install frozen development tools	2026-10-13T19:06:10.1976837Z   Downloaded hyper-util v0.1.21
+quality	Install frozen development tools	2026-10-13T19:06:10.2480712Z   Downloaded shlex v2.0.1
+quality	Install frozen development tools	2026-10-13T19:06:10.2587027Z   Downloaded wasm-bindgen-macro v0.2.129
+quality	Install frozen development tools	2026-10-13T19:06:10.2669797Z   Downloaded proc-macro-error v1.0.4
+quality	Install frozen development tools	2026-10-13T19:06:10.8051346Z   Downloaded markup5ever v0.39.0
+quality	Install frozen development tools	2026-10-13T19:06:10.8176100Z   Downloaded lock_api v0.4.14
+quality	Install frozen development tools	2026-10-13T19:06:10.8266611Z   Downloaded cargo_toml v1.0.1
+quality	Install frozen development tools	2026-10-13T19:06:10.8371913Z   Downloaded objc2-exception-helper v0.1.1
+quality	Install frozen development tools	2026-10-13T19:06:10.8448547Z   Downloaded javascriptcore-rs-sys v1.1.1
+quality	Install frozen development tools	2026-10-13T19:06:10.8548705Z   Downloaded libappindicator-sys v0.9.0
+quality	Install frozen development tools	2026-10-13T19:06:10.8608989Z   Downloaded jiff-static v0.2.38
+quality	Install frozen development tools	2026-10-13T19:06:10.8715579Z   Downloaded parking_lot v0.12.5
+quality	Install frozen development tools	2026-10-13T19:06:10.8915280Z   Downloaded glib-macros v0.18.5
+quality	Install frozen development tools	2026-10-13T19:06:10.9122124Z   Downloaded cairo-rs v0.18.5
+quality	Install frozen development tools	2026-10-13T19:06:10.9399992Z   Downloaded foldhash v0.2.0
+quality	Install frozen development tools	2026-10-13T19:06:10.9496551Z   Downloaded block2 v0.6.2
+quality	Install frozen development tools	2026-10-13T19:06:10.9632457Z   Downloaded erased-serde v0.4.10
+quality	Install frozen development tools	2026-10-13T19:06:10.9860067Z   Downloaded objc2-encode v4.1.0
+quality	Install frozen development tools	2026-10-13T19:06:10.9973459Z   Downloaded glib-sys v0.18.1
+quality	Install frozen development tools	2026-10-13T19:06:11.0094583Z   Downloaded bitflags v2.13.2
+quality	Install frozen development tools	2026-10-13T19:06:11.0527259Z   Downloaded cfb v0.14.0
+quality	Install frozen development tools	2026-10-13T19:06:11.1039631Z   Downloaded alloc-stdlib v0.3.0
+quality	Install frozen development tools	2026-10-13T19:06:11.1155264Z   Downloaded cairo-sys-rs v0.18.2
+quality	Install frozen development tools	2026-10-13T19:06:11.1226947Z   Downloaded typenum v1.20.1
+quality	Install frozen development tools	2026-10-13T19:06:11.1433430Z   Downloaded schemars_derive v0.8.22
+quality	Install frozen development tools	2026-10-13T19:06:11.1601029Z   Downloaded serde v1.0.229
+quality	Install frozen development tools	2026-10-13T19:06:11.1881565Z   Downloaded webkit2gtk v2.0.2
+quality	Install frozen development tools	2026-10-13T19:06:11.2548211Z   Downloaded objc2-core-image v0.3.2
+quality	Install frozen development tools	2026-10-13T19:06:11.2811796Z   Downloaded urlpattern v0.6.0
+quality	Install frozen development tools	2026-10-13T19:06:11.2997307Z   Downloaded swift-rs v1.0.9
+quality	Install frozen development tools	2026-10-13T19:06:11.3204849Z   Downloaded bit-vec v0.8.0
+quality	Install frozen development tools	2026-10-13T19:06:11.3348928Z   Downloaded cfg-expr v0.15.8
+quality	Install frozen development tools	2026-10-13T19:06:11.3610807Z   Downloaded tao-macros v0.1.4
+quality	Install frozen development tools	2026-10-13T19:06:11.3707662Z   Downloaded sha2 v0.10.9
+quality	Install frozen development tools	2026-10-13T19:06:11.3989777Z   Downloaded tokio-util v0.7.20
+quality	Install frozen development tools	2026-10-13T19:06:11.4673796Z   Downloaded writeable v0.6.4
+quality	Install frozen development tools	2026-10-13T19:06:11.4867676Z   Downloaded powerfmt v0.2.1
+quality	Install frozen development tools	2026-10-13T19:06:11.4977968Z   Downloaded jiff-tzdb-platform v0.1.3
+quality	Install frozen development tools	2026-10-13T19:06:11.5052191Z   Downloaded tauri-utils v2.10.1
+quality	Install frozen development tools	2026-10-13T19:06:11.5334229Z   Downloaded gdk-sys v0.18.2
+quality	Install frozen development tools	2026-10-13T19:06:11.5467094Z   Downloaded crc32fast v1.5.2
+quality	Install frozen development tools	2026-10-13T19:06:11.5629090Z   Downloaded fdeflate v0.3.7
+quality	Install frozen development tools	2026-10-13T19:06:11.5793992Z   Downloaded objc2-core-location v0.3.2
+quality	Install frozen development tools	2026-10-13T19:06:11.6063013Z   Downloaded serde_core v1.0.229
+quality	Install frozen development tools	2026-10-13T19:06:11.6285070Z   Downloaded zerofrom-derive v0.1.8
+quality	Install frozen development tools	2026-10-13T19:06:11.6371852Z   Downloaded objc2-core-foundation v0.3.2
+quality	Install frozen development tools	2026-10-13T19:06:12.0315229Z   Downloaded futures-util v0.3.34
+quality	Install frozen development tools	2026-10-13T19:06:12.1692076Z   Downloaded objc2 v0.6.5
+quality	Install frozen development tools	2026-10-13T19:06:12.2636728Z   Downloaded serde_json v1.0.154
+quality	Install frozen development tools	2026-10-13T19:06:12.3440947Z   Downloaded crypto-common v0.1.7
+quality	Install frozen development tools	2026-10-13T19:06:12.3525403Z   Downloaded objc2-core-text v0.3.2
+quality	Install frozen development tools	2026-10-13T19:06:12.3799867Z   Downloaded windows_aarch64_msvc v0.42.2
+quality	Install frozen development tools	2026-10-13T19:06:12.3975721Z   Downloaded futures-macro v0.3.34
+quality	Install frozen development tools	2026-10-13T19:06:12.4063403Z   Downloaded form_urlencoded v1.2.2
+quality	Install frozen development tools	2026-10-13T19:06:12.4132010Z   Downloaded web_atoms v0.2.6
+quality	Install frozen development tools	2026-10-13T19:06:12.4217040Z   Downloaded cargo_metadata v0.19.2
+quality	Install frozen development tools	2026-10-13T19:06:12.4376693Z   Downloaded webview2-com-macros v0.8.1
+quality	Install frozen development tools	2026-10-13T19:06:12.4443905Z   Downloaded version-compare v0.2.1
+quality	Install frozen development tools	2026-10-13T19:06:12.4576770Z   Downloaded pango-sys v0.18.0
+quality	Install frozen development tools	2026-10-13T19:06:12.4687548Z   Downloaded gdk-pixbuf-sys v0.18.0
+quality	Install frozen development tools	2026-10-13T19:06:12.4784349Z   Downloaded atk-sys v0.18.2
+quality	Install frozen development tools	2026-10-13T19:06:12.4885465Z   Downloaded soup3 v0.5.0
+quality	Install frozen development tools	2026-10-13T19:06:12.5319648Z   Downloaded indexmap v2.14.2
+quality	Install frozen development tools	2026-10-13T19:06:12.5630656Z   Downloaded once_cell v1.21.4
+quality	Install frozen development tools	2026-10-13T19:06:12.5865237Z   Downloaded js-sys v0.3.106
+quality	Install frozen development tools	2026-10-13T19:06:12.6031648Z   Downloaded pin-project-lite v0.2.17
+quality	Install frozen development tools	2026-10-13T19:06:12.6660367Z   Downloaded litemap v0.8.3
+quality	Install frozen development tools	2026-10-13T19:06:12.6883045Z   Downloaded potential_utf v0.1.6
+quality	Install frozen development tools	2026-10-13T19:06:12.6971310Z   Downloaded webview2-com v0.39.1
+quality	Install frozen development tools	2026-10-13T19:06:12.7067586Z   Downloaded pango v0.18.3
+quality	Install frozen development tools	2026-10-13T19:06:12.7562145Z   Downloaded miniz_oxide v0.9.1
+quality	Install frozen development tools	2026-10-13T19:06:12.7738256Z   Downloaded libappindicator v0.9.0
+quality	Install frozen development tools	2026-10-13T19:06:12.7947956Z   Downloaded ndk-sys v0.6.0+11769913
+quality	Install frozen development tools	2026-10-13T19:06:12.8142934Z   Downloaded gtk3-macros v0.18.2
+quality	Install frozen development tools	2026-10-13T19:06:12.8255397Z   Downloaded hyper v1.12.0
+quality	Install frozen development tools	2026-10-13T19:06:12.8885948Z   Downloaded syn v3.0.9
+quality	Install frozen development tools	2026-10-13T19:06:12.9650698Z   Downloaded tauri v2.12.3
+quality	Install frozen development tools	2026-10-13T19:06:13.5384932Z   Downloaded toml_edit v0.20.2
+quality	Install frozen development tools	2026-10-13T19:06:13.7747105Z   Downloaded glib v0.18.5
+quality	Install frozen development tools	2026-10-13T19:06:14.0328699Z   Downloaded jni-sys v0.3.1
+quality	Install frozen development tools	2026-10-13T19:06:14.0432436Z   Downloaded windows_x86_64_gnullvm v0.42.2
+quality	Install frozen development tools	2026-10-13T19:06:14.0586786Z   Downloaded tracing v0.1.44
+quality	Install frozen development tools	2026-10-13T19:06:14.1456263Z   Downloaded rustversion v1.0.23
+quality	Install frozen development tools	2026-10-13T19:06:14.1789010Z   Downloaded zerovec v0.11.8
+quality	Install frozen development tools	2026-10-13T19:06:14.2393760Z   Downloaded synstructure v0.14.0
+quality	Install frozen development tools	2026-10-13T19:06:14.2483019Z   Downloaded tinystr v0.8.4
+quality	Install frozen development tools	2026-10-13T19:06:14.3346400Z   Downloaded serde_spanned v0.6.9
+quality	Install frozen development tools	2026-10-13T19:06:14.3436401Z   Downloaded futures-channel v0.3.34
+quality	Install frozen development tools	2026-10-13T19:06:14.3611374Z   Downloaded yoke-derive v0.8.4
+quality	Install frozen development tools	2026-10-13T19:06:14.3704447Z   Downloaded objc2-foundation v0.3.2
+quality	Install frozen development tools	2026-10-13T19:06:14.7128379Z   Downloaded num_enum v0.7.6
+quality	Install frozen development tools	2026-10-13T19:06:14.7844267Z   Downloaded zmij v1.0.23
+quality	Install frozen development tools	2026-10-13T19:06:14.7978441Z   Downloaded serde_with v3.24.0
+quality	Install frozen development tools	2026-10-13T19:06:14.9236794Z   Downloaded digest v0.10.7
+quality	Install frozen development tools	2026-10-13T19:06:14.9443292Z   Downloaded toml v0.8.2
+quality	Install frozen development tools	2026-10-13T19:06:14.9795581Z   Downloaded jiff-tzdb v0.1.9
+quality	Install frozen development tools	2026-10-13T19:06:14.9887725Z   Downloaded idna_adapter v1.2.2
+quality	Install frozen development tools	2026-10-13T19:06:14.9986382Z   Downloaded icu_normalizer v2.3.0
+quality	Install frozen development tools	2026-10-13T19:06:15.0374998Z   Downloaded gdk v0.18.2
+quality	Install frozen development tools	2026-10-13T19:06:15.0977104Z   Downloaded toml_edit v0.25.17+spec-1.1.0
+quality	Install frozen development tools	2026-10-13T19:06:15.1350246Z   Downloaded icu_properties_data v2.3.0
+quality	Install frozen development tools	2026-10-13T19:06:15.2435365Z   Downloaded syn v1.0.109
+quality	Install frozen development tools	2026-10-13T19:06:15.3164881Z   Downloaded proc-macro-crate v2.0.2
+quality	Install frozen development tools	2026-10-13T19:06:15.3272346Z   Downloaded toml_edit v0.19.15
+quality	Install frozen development tools	2026-10-13T19:06:15.5593633Z   Downloaded windows_x86_64_msvc v0.42.2
+quality	Install frozen development tools	2026-10-13T19:06:15.5791821Z   Downloaded windows_x86_64_gnu v0.42.2
+quality	Install frozen development tools	2026-10-13T19:06:15.6049491Z   Downloaded windows_i686_gnu v0.42.2
+quality	Install frozen development tools	2026-10-13T19:06:15.6306593Z   Downloaded web-sys v0.3.106
+quality	Install frozen development tools	2026-10-13T19:06:17.1945141Z   Downloaded icu_locale_core v2.3.0
+quality	Install frozen development tools	2026-10-13T19:06:17.7211388Z   Downloaded percent-encoding v2.3.2
+quality	Install frozen development tools	2026-10-13T19:06:17.7292313Z   Downloaded displaydoc v0.2.7
+quality	Install frozen development tools	2026-10-13T19:06:17.7526772Z   Downloaded tokio v1.53.2
+quality	Install frozen development tools	2026-10-13T19:06:18.1586387Z   Downloaded wasm-bindgen-shared v0.2.129
+quality	Install frozen development tools	2026-10-13T19:06:18.1675723Z   Downloaded futures-task v0.3.34
+quality	Install frozen development tools	2026-10-13T19:06:18.1827970Z   Downloaded icu_properties v2.3.0
+quality	Install frozen development tools	2026-10-13T19:06:18.2055586Z   Downloaded icu_provider v2.3.1
+quality	Install frozen development tools	2026-10-13T19:06:18.2259653Z   Downloaded objc2-core-graphics v0.3.2
+quality	Install frozen development tools	2026-10-13T19:06:18.2733377Z   Downloaded bitflags v1.3.2
+quality	Install frozen development tools	2026-10-13T19:06:18.3060275Z   Downloaded target-lexicon v0.12.16
+quality	Install frozen development tools	2026-10-13T19:06:18.3262740Z   Downloaded gobject-sys v0.18.0
+quality	Install frozen development tools	2026-10-13T19:06:18.3380818Z   Downloaded dpi v0.1.2
+quality	Install frozen development tools	2026-10-13T19:06:18.3468842Z   Downloaded objc2-web-kit v0.3.2
+quality	Install frozen development tools	2026-10-13T19:06:18.4912723Z   Downloaded cfg-if v1.0.5
+quality	Install frozen development tools	2026-10-13T19:06:18.5027453Z   Downloaded darling v0.24.1
+quality	Install frozen development tools	2026-10-13T19:06:18.8545456Z   Downloaded log v0.4.34
+quality	Install frozen development tools	2026-10-13T19:06:18.8772322Z   Downloaded defmt-macros v1.1.1
+quality	Install frozen development tools	2026-10-13T19:06:18.9141778Z   Downloaded objc2-core-data v0.3.2
+quality	Install frozen development tools	2026-10-13T19:06:18.9693435Z   Downloaded cesu8 v1.1.0
+quality	Install frozen development tools	2026-10-13T19:06:18.9764763Z   Downloaded libdbus-sys v0.2.7
+quality	Install frozen development tools	2026-10-13T19:06:19.2076989Z   Downloaded vswhom-sys v0.1.3
+quality	Install frozen development tools	2026-10-13T19:06:19.2220733Z   Downloaded r-efi v6.0.0
+quality	Install frozen development tools	2026-10-13T19:06:19.2686356Z   Downloaded stable_deref_trait v1.2.1
+quality	Install frozen development tools	2026-10-13T19:06:19.2780828Z   Downloaded icu_collections v2.3.0
+quality	Install frozen development tools	2026-10-13T19:06:19.3375970Z   Downloaded tao v0.37.1
+quality	Install frozen development tools	2026-10-13T19:06:19.4404113Z   Downloaded getrandom v0.4.3
+quality	Install frozen development tools	2026-10-13T19:06:19.4743199Z   Downloaded regex-syntax v0.8.11
+quality	Install frozen development tools	2026-10-13T19:06:19.5118492Z   Downloaded aho-corasick v1.1.5
+quality	Install frozen development tools	2026-10-13T19:06:19.5495976Z   Downloaded thiserror v2.0.21
+quality	Install frozen development tools	2026-10-13T19:06:19.6254665Z   Downloaded thiserror-impl v2.0.21
+quality	Install frozen development tools	2026-10-13T19:06:19.6399341Z   Downloaded time-macros v0.2.32
+quality	Install frozen development tools	2026-10-13T19:06:19.6662073Z   Downloaded pkg-config v0.3.34
+quality	Install frozen development tools	2026-10-13T19:06:19.6782068Z   Downloaded soup3-sys v0.5.0
+quality	Install frozen development tools	2026-10-13T19:06:19.6883651Z   Downloaded gtk-sys v0.18.2
+quality	Install frozen development tools	2026-10-13T19:06:19.7014519Z   Downloaded adler2 v2.0.1
+quality	Install frozen development tools	2026-10-13T19:06:19.7122235Z   Downloaded gio-sys v0.18.1
+quality	Install frozen development tools	2026-10-13T19:06:19.7241564Z   Downloaded version_check v0.9.5
+quality	Install frozen development tools	2026-10-13T19:06:19.7374981Z   Downloaded gio v0.18.4
+quality	Install frozen development tools	2026-10-13T19:06:20.2573286Z   Downloaded windows-sys v0.45.0
+quality	Install frozen development tools	2026-10-13T19:06:20.6017613Z   Downloaded x11 v2.21.0
+quality	Install frozen development tools	2026-10-13T19:06:20.6254290Z   Downloaded foreign-types v0.5.0
+quality	Install frozen development tools	2026-10-13T19:06:20.6333351Z   Downloaded core-foundation v0.10.1
+quality	Install frozen development tools	2026-10-13T19:06:20.6530026Z   Downloaded wasm-streams v0.5.0
+quality	Install frozen development tools	2026-10-13T19:06:20.6972078Z   Downloaded find-msvc-tools v0.1.14
+quality	Install frozen development tools	2026-10-13T19:06:20.7116033Z   Downloaded dunce v1.0.5
+quality	Install frozen development tools	2026-10-13T19:06:20.7233358Z   Downloaded regex v1.13.1
+quality	Install frozen development tools	2026-10-13T19:06:20.7688840Z   Downloaded jiff-core v0.1.1
+quality	Install frozen development tools	2026-10-13T19:06:20.7937046Z   Downloaded defmt v1.1.1
+quality	Install frozen development tools	2026-10-13T19:06:20.8465527Z   Downloaded itoa v1.0.18
+quality	Install frozen development tools	2026-10-13T19:06:20.8586021Z   Downloaded ident_case v1.0.1
+quality	Install frozen development tools	2026-10-13T19:06:20.8662871Z   Downloaded proc-macro-error-attr v1.0.4
+quality	Install frozen development tools	2026-10-13T19:06:20.8748697Z   Downloaded futures-io v0.3.34
+quality	Install frozen development tools	2026-10-13T19:06:20.8821686Z   Downloaded time v0.3.55
+quality	Install frozen development tools	2026-10-13T19:06:21.0163125Z   Downloaded brotli v9.0.0
+quality	Install frozen development tools	2026-10-13T19:06:21.0868604Z   Downloaded gtk v0.18.2
+quality	Install frozen development tools	2026-10-13T19:06:21.7976131Z   Downloaded png v0.18.1
+quality	Install frozen development tools	2026-10-13T19:06:21.8302747Z   Downloaded serialize-to-javascript v0.1.2
+quality	Install frozen development tools	2026-10-13T19:06:21.8397594Z   Downloaded http-body v1.1.0
+quality	Install frozen development tools	2026-10-13T19:06:21.8487043Z   Downloaded slab v0.4.12
+quality	Install frozen development tools	2026-10-13T19:06:21.8592988Z   Downloaded zerotrie v0.2.5
+quality	Install frozen development tools	2026-10-13T19:06:21.8906890Z   Downloaded regex-automata v0.4.18
+quality	Install frozen development tools	2026-10-13T19:06:21.9750066Z   Downloaded serde_with_macros v3.24.0
+quality	Install frozen development tools	2026-10-13T19:06:21.9901051Z   Downloaded ref-cast-impl v1.0.27
+quality	Install frozen development tools	2026-10-13T19:06:21.9973302Z   Downloaded jiff v0.2.38
+quality	Install frozen development tools	2026-10-13T19:06:22.1001831Z   Downloaded syn v2.0.119
+quality	Install frozen development tools	2026-10-13T19:06:22.2074518Z   Downloaded futures-executor v0.3.34
+quality	Install frozen development tools	2026-10-13T19:06:22.2202836Z   Downloaded objc2-io-surface v0.3.2
+quality	Install frozen development tools	2026-10-13T19:06:22.2354342Z   Downloaded wasm-bindgen v0.2.129
+quality	Install frozen development tools	2026-10-13T19:06:22.2564527Z   Downloaded smallvec v1.16.3
+quality	Install frozen development tools	2026-10-13T19:06:22.2659846Z   Downloaded base64 v0.21.7
+quality	Install frozen development tools	2026-10-13T19:06:22.3031996Z   Downloaded strsim v0.11.1
+quality	Install frozen development tools	2026-10-13T19:06:22.3137769Z   Downloaded defmt-parser v1.0.0
+quality	Install frozen development tools	2026-10-13T19:06:22.3217493Z   Downloaded sync_wrapper v1.0.2
+quality	Install frozen development tools	2026-10-13T19:06:22.3285720Z   Downloaded hashbrown v0.17.1
+quality	Install frozen development tools	2026-10-13T19:06:22.3658679Z   Downloaded cookie v0.18.2
+quality	Install frozen development tools	2026-10-13T19:06:22.3857817Z   Downloaded atomic-waker v1.1.2
+quality	Install frozen development tools	2026-10-13T19:06:22.3956465Z   Downloaded same-file v1.0.6
+quality	Install frozen development tools	2026-10-13T19:06:22.4076477Z   Downloaded utf8_iter v1.0.4
+quality	Install frozen development tools	2026-10-13T19:06:22.4169427Z   Downloaded http-body-util v0.1.5
+quality	Install frozen development tools	2026-10-13T19:06:22.4371863Z   Downloaded flate2 v1.1.10
+quality	Install frozen development tools	2026-10-13T19:06:22.4929171Z   Downloaded proc-macro-crate v3.5.0
+quality	Install frozen development tools	2026-10-13T19:06:22.5066843Z   Downloaded tower-http v0.6.11
+quality	Install frozen development tools	2026-10-13T19:06:22.5948739Z   Downloaded webkit2gtk-sys v2.0.2
+quality	Install frozen development tools	2026-10-13T19:06:22.6035693Z   Downloaded simd-adler32 v0.3.10
+quality	Install frozen development tools	2026-10-13T19:06:22.9746420Z   Downloaded semver v1.0.28
+quality	Install frozen development tools	2026-10-13T19:06:22.9990756Z   Downloaded miniz_oxide v0.8.9
+quality	Install frozen development tools	2026-10-13T19:06:23.0191576Z   Downloaded crossbeam-utils v0.8.23
+quality	Install frozen development tools	2026-10-13T19:06:23.0476991Z   Downloaded x11-dl v2.21.0
+quality	Install frozen development tools	2026-10-13T19:06:23.0723168Z   Downloaded windows_aarch64_gnullvm v0.42.2
+quality	Install frozen development tools	2026-10-13T19:06:23.0868176Z   Downloaded muda v0.20.0
+quality	Install frozen development tools	2026-10-13T19:06:23.1327330Z   Downloaded objc2-cloud-kit v0.3.2
+quality	Install frozen development tools	2026-10-13T19:06:23.1882867Z   Downloaded proc-macro-crate v1.3.1
+quality	Install frozen development tools	2026-10-13T19:06:23.1975561Z   Downloaded mio v1.2.4
+quality	Install frozen development tools	2026-10-13T19:06:23.2495958Z   Downloaded yoke v0.8.3
+quality	Install frozen development tools	2026-10-13T19:06:23.2663486Z   Downloaded autocfg v1.5.1
+quality	Install frozen development tools	2026-10-13T19:06:23.2822615Z   Downloaded heck v0.4.1
+quality	Install frozen development tools	2026-10-13T19:06:23.2956424Z   Downloaded objc2-user-notifications v0.3.2
+quality	Install frozen development tools	2026-10-13T19:06:23.3138707Z   Downloaded windows-sys v0.61.2
+quality	Install frozen development tools	2026-10-13T19:06:23.6147869Z   Downloaded url v2.5.8
+quality	Install frozen development tools	2026-10-13T19:06:23.6346911Z   Downloaded serde_spanned v1.1.2
+quality	Install frozen development tools	2026-10-13T19:06:23.6431387Z   Downloaded cpufeatures v0.2.17
+quality	Install frozen development tools	2026-10-13T19:06:23.6545256Z   Downloaded toml_parser v1.1.5+spec-1.1.0
+quality	Install frozen development tools	2026-10-13T19:06:23.6722185Z   Downloaded cc v1.8.0
+quality	Install frozen development tools	2026-10-13T19:06:23.7000127Z   Downloaded thiserror-impl v1.0.69
+quality	Install frozen development tools	2026-10-13T19:06:23.7148291Z   Downloaded reqwest v0.13.5
+quality	Install frozen development tools	2026-10-13T19:06:23.7529909Z   Downloaded ref-cast v1.0.27
+quality	Install frozen development tools	2026-10-13T19:06:23.7853992Z   Downloaded gdk-pixbuf v0.18.5
+quality	Install frozen development tools	2026-10-13T19:06:23.8138653Z   Downloaded atk v0.18.2
+quality	Install frozen development tools	2026-10-13T19:06:23.8477900Z   Downloaded tauri-runtime-wry v2.12.1
+quality	Install frozen development tools	2026-10-13T19:06:23.8658932Z   Downloaded rustc_version v0.4.1
+quality	Install frozen development tools	2026-10-13T19:06:23.8765557Z   Downloaded dyn-clone v1.0.20
+quality	Install frozen development tools	2026-10-13T19:06:23.8906036Z   Downloaded memoffset v0.9.1
+quality	Install frozen development tools	2026-10-13T19:06:23.9009113Z   Downloaded embed-resource v3.0.12
+quality	Install frozen development tools	2026-10-13T19:06:23.9161668Z   Downloaded dbus v0.9.12
+quality	Install frozen development tools	2026-10-13T19:06:23.9573232Z   Downloaded png v0.17.16
+quality	Install frozen development tools	2026-10-13T19:06:24.0865579Z   Downloaded idna v1.1.0
+quality	Install frozen development tools	2026-10-13T19:06:24.4472927Z   Downloaded indexmap v1.9.3
+quality	Install frozen development tools	2026-10-13T19:06:24.4754792Z   Downloaded toml v1.1.8+spec-1.1.0
+quality	Install frozen development tools	2026-10-13T19:06:24.5100441Z   Downloaded zerofrom v0.1.8
+quality	Install frozen development tools	2026-10-13T19:06:24.5179261Z   Downloaded schemars v0.9.0
+quality	Install frozen development tools	2026-10-13T19:06:24.8268962Z   Downloaded keyboard-types v0.8.3
+quality	Install frozen development tools	2026-10-13T19:06:24.8503985Z   Downloaded gdkx11 v0.18.2
+quality	Install frozen development tools	2026-10-13T19:06:24.8720455Z   Downloaded deranged v0.5.8
+quality	Install frozen development tools	2026-10-13T19:06:24.8822240Z   Downloaded portable-atomic-util v0.2.8
+quality	Install frozen development tools	2026-10-13T19:06:24.8953444Z   Downloaded portable-atomic v1.15.0
+quality	Install frozen development tools	2026-10-13T19:06:24.9591070Z   Downloaded zlib-rs v0.6.8
+quality	Install frozen development tools	2026-10-13T19:06:25.0020606Z   Downloaded futures-core v0.3.34
+quality	Install frozen development tools	2026-10-13T19:06:25.0126095Z   Downloaded vswhom v0.1.0
+quality	Install frozen development tools	2026-10-13T19:06:25.0223303Z   Downloaded crossbeam-channel v0.5.17
+quality	Install frozen development tools	2026-10-13T19:06:25.0585944Z   Downloaded wry v0.57.0
+quality	Install frozen development tools	2026-10-13T19:06:25.1233329Z   Downloaded winapi v0.3.9
+quality	Install frozen development tools	2026-10-13T19:06:25.6641472Z   Downloaded wasi v0.11.1+wasi-snapshot-preview1
+quality	Install frozen development tools	2026-10-13T19:06:25.6800460Z   Downloaded libc v0.2.190
+quality	Install frozen development tools	2026-10-13T19:06:26.0499427Z   Downloaded darling_core v0.24.1
+quality	Install frozen development tools	2026-10-13T19:06:26.1118449Z   Downloaded num-conv v0.2.2
+quality	Install frozen development tools	2026-10-13T19:06:26.1225690Z   Downloaded socket2 v0.6.5
+quality	Install frozen development tools	2026-10-13T19:06:26.1336895Z   Downloaded ndk v0.9.0
+quality	Install frozen development tools	2026-10-13T19:06:26.1577872Z   Downloaded winapi-x86_64-pc-windows-gnu v0.4.0
+quality	Install frozen development tools	2026-10-13T19:06:27.5248552Z   Downloaded javascriptcore-rs v1.1.2
+quality	Install frozen development tools	2026-10-13T19:06:27.5542213Z   Downloaded schemars v1.2.2
+quality	Install frozen development tools	2026-10-13T19:06:27.7330394Z   Downloaded bumpalo v3.20.3
+quality	Install frozen development tools	2026-10-13T19:06:27.7499681Z   Downloaded objc2-ui-kit v0.3.2
+quality	Install frozen development tools	2026-10-13T19:06:28.0523995Z   Downloaded wasm-bindgen-macro-support v0.2.129
+quality	Install frozen development tools	2026-10-13T19:06:28.0672125Z   Downloaded windows v0.62.2
+quality	Install frozen development tools	2026-10-13T19:06:30.1362809Z   Downloaded webview2-com-sys v0.39.1
+quality	Install frozen development tools	2026-10-13T19:06:30.2278469Z   Downloaded dtoa-short v0.3.5
+quality	Install frozen development tools	2026-10-13T19:06:30.2345264Z   Downloaded winapi-i686-pc-windows-gnu v0.4.0
+quality	Install frozen development tools	2026-10-13T19:06:31.7995265Z   Downloaded memchr v2.8.3
+quality	Install frozen development tools	2026-10-13T19:06:31.8411508Z   Downloaded libloading v0.7.4
+quality	Install frozen development tools	2026-10-13T19:06:31.8616278Z   Downloaded wit-bindgen v0.57.1
+quality	Validate quality contract and workflow	﻿2026-10-13T19:06:32.1547075Z ##[group]Run node scripts/quality-ci.mjs validate --manifest contracts/quality-ci.json
+quality	Validate quality contract and workflow	2026-10-13T19:06:32.1547810Z ^[[36;1mnode scripts/quality-ci.mjs validate --manifest contracts/quality-ci.json^[[0m
+quality	Validate quality contract and workflow	2026-10-13T19:06:32.1630476Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+quality	Validate quality contract and workflow	2026-10-13T19:06:32.1630816Z env:
+quality	Validate quality contract and workflow	2026-10-13T19:06:32.1631073Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Validate quality contract and workflow	2026-10-13T19:06:32.1631534Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.13.15\x64/lib/pkgconfig
+quality	Validate quality contract and workflow	2026-10-13T19:06:32.1631994Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Validate quality contract and workflow	2026-10-13T19:06:32.1632401Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Validate quality contract and workflow	2026-10-13T19:06:32.1632816Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Validate quality contract and workflow	2026-10-13T19:06:32.1633177Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+quality	Validate quality contract and workflow	2026-10-13T19:06:32.1633453Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+quality	Validate quality contract and workflow	2026-10-13T19:06:32.1633728Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+quality	Validate quality contract and workflow	2026-10-13T19:06:32.1634049Z ##[endgroup]
+quality	Validate quality contract and workflow	2026-10-13T19:06:32.5616786Z {"valid":true,"repository":"Asdb24/CV-Manager","runner":"windows-2025","actions":4,"tasks":["format:check","lint","typecheck","test"]}
+quality	Format	﻿2026-10-13T19:06:32.7072442Z ##[group]Run node scripts/tasks.mjs format:check
+quality	Format	2026-10-13T19:06:32.7072850Z ^[[36;1mnode scripts/tasks.mjs format:check^[[0m
+quality	Format	2026-10-13T19:06:32.7144898Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+quality	Format	2026-10-13T19:06:32.7145236Z env:
+quality	Format	2026-10-13T19:06:32.7145500Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Format	2026-10-13T19:06:32.7145968Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.13.15\x64/lib/pkgconfig
+quality	Format	2026-10-13T19:06:32.7146428Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Format	2026-10-13T19:06:32.7146831Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Format	2026-10-13T19:06:32.7147229Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Format	2026-10-13T19:06:32.7147588Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+quality	Format	2026-10-13T19:06:32.7147868Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+quality	Format	2026-10-13T19:06:32.7148157Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+quality	Format	2026-10-13T19:06:32.7148425Z ##[endgroup]
+quality	Format	2026-10-13T19:06:33.1284256Z Checking formatting...
+quality	Format	2026-10-13T19:06:33.8841061Z All matched files use Prettier code style!
+quality	Format	2026-10-13T19:06:34.0315636Z 76 files already formatted
+quality	Prepare existing desktop assets for Rust checks	﻿2026-10-13T19:06:34.7897432Z ##[group]Run node ../../node_modules/vite/bin/vite.js build
+quality	Prepare existing desktop assets for Rust checks	2026-10-13T19:06:34.7897925Z ^[[36;1mnode ../../node_modules/vite/bin/vite.js build^[[0m
+quality	Prepare existing desktop assets for Rust checks	2026-10-13T19:06:34.7992491Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+quality	Prepare existing desktop assets for Rust checks	2026-10-13T19:06:34.7993057Z env:
+quality	Prepare existing desktop assets for Rust checks	2026-10-13T19:06:34.7993477Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Prepare existing desktop assets for Rust checks	2026-10-13T19:06:34.7994270Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.13.15\x64/lib/pkgconfig
+quality	Prepare existing desktop assets for Rust checks	2026-10-13T19:06:34.7995053Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Prepare existing desktop assets for Rust checks	2026-10-13T19:06:34.7995746Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Prepare existing desktop assets for Rust checks	2026-10-13T19:06:34.7996460Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Prepare existing desktop assets for Rust checks	2026-10-13T19:06:34.7997046Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+quality	Prepare existing desktop assets for Rust checks	2026-10-13T19:06:34.7997506Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+quality	Prepare existing desktop assets for Rust checks	2026-10-13T19:06:34.7998302Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+quality	Prepare existing desktop assets for Rust checks	2026-10-13T19:06:34.7998928Z   APP_CONFIG_FILE: D:\a\CV-Manager\CV-Manager/infra/config/test.json
+quality	Prepare existing desktop assets for Rust checks	2026-10-13T19:06:34.7999549Z   APP_PROFILE: test
+quality	Prepare existing desktop assets for Rust checks	2026-10-13T19:06:34.7999845Z ##[endgroup]
+quality	Prepare existing desktop assets for Rust checks	2026-10-13T19:06:36.2868625Z ^[[36mvite v8.3.4 ^[[32mbuilding client environment for production...^[[36m^[[39m
+quality	Prepare existing desktop assets for Rust checks	2026-10-13T19:06:36.2986646Z transforming...
+quality	Prepare existing desktop assets for Rust checks	2026-10-13T19:06:36.6609237Z ✓ 557 modules transformed.
+quality	Prepare existing desktop assets for Rust checks	2026-10-13T19:06:36.7089768Z rendering chunks...
+quality	Prepare existing desktop assets for Rust checks	2026-10-13T19:06:36.7560617Z computing gzip size...
+quality	Prepare existing desktop assets for Rust checks	2026-10-13T19:06:36.7616497Z dist/index.html                   0.41 kB │ gzip:  0.30 kB
+quality	Prepare existing desktop assets for Rust checks	2026-10-13T19:06:36.7617674Z dist/assets/index-DXn37Ez9.css    2.87 kB │ gzip:  0.98 kB
+quality	Prepare existing desktop assets for Rust checks	2026-10-13T19:06:36.7618631Z dist/assets/index-DRA6Orev.js   339.90 kB │ gzip: 98.12 kB
+quality	Prepare existing desktop assets for Rust checks	2026-10-13T19:06:36.7619038Z 
+quality	Prepare existing desktop assets for Rust checks	2026-10-13T19:06:36.8114789Z ^[[32m✓ built in 523ms^[[39m
+quality	Lint	﻿2026-10-13T19:06:37.0681708Z ##[group]Run node scripts/tasks.mjs lint
+quality	Lint	2026-10-13T19:06:37.0682148Z ^[[36;1mnode scripts/tasks.mjs lint^[[0m
+quality	Lint	2026-10-13T19:06:37.0756258Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+quality	Lint	2026-10-13T19:06:37.0756610Z env:
+quality	Lint	2026-10-13T19:06:37.0756875Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Lint	2026-10-13T19:06:37.0757343Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.13.15\x64/lib/pkgconfig
+quality	Lint	2026-10-13T19:06:37.0757815Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Lint	2026-10-13T19:06:37.0758234Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Lint	2026-10-13T19:06:37.0758638Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Lint	2026-10-13T19:06:37.0758977Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+quality	Lint	2026-10-13T19:06:37.0759433Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+quality	Lint	2026-10-13T19:06:37.0759708Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+quality	Lint	2026-10-13T19:06:37.0759983Z ##[endgroup]
+quality	Lint	2026-10-13T19:06:45.6982879Z All checks passed!
+quality	Lint	2026-10-13T19:06:46.9186932Z    Compiling proc-macro2 v1.0.107
+quality	Lint	2026-10-13T19:06:46.9187764Z    Compiling unicode-ident v1.0.27
+quality	Lint	2026-10-13T19:06:46.9188293Z    Compiling quote v1.0.47
+quality	Lint	2026-10-13T19:06:46.9188803Z    Compiling serde_core v1.0.229
+quality	Lint	2026-10-13T19:06:47.0484049Z    Compiling siphasher v1.0.4
+quality	Lint	2026-10-13T19:06:47.2398729Z    Compiling cfg-if v1.0.5
+quality	Lint	2026-10-13T19:06:47.2796047Z    Compiling phf_shared v0.13.1
+quality	Lint	2026-10-13T19:06:49.1094921Z    Compiling fastrand v2.5.0
+quality	Lint	2026-10-13T19:06:49.1095485Z     Checking windows-link v0.2.1
+quality	Lint	2026-10-13T19:06:49.3303946Z    Compiling phf_generator v0.13.1
+quality	Lint	2026-10-13T19:06:49.6176055Z    Compiling icu_properties_data v2.3.0
+quality	Lint	2026-10-13T19:06:49.9740886Z    Compiling icu_normalizer_data v2.3.0
+quality	Lint	2026-10-13T19:06:50.7250627Z    Compiling syn v3.0.9
+quality	Lint	2026-10-13T19:06:50.8180331Z    Compiling syn v2.0.119
+quality	Lint	2026-10-13T19:06:52.3764200Z    Compiling stable_deref_trait v1.2.1
+quality	Lint	2026-10-13T19:06:52.5387135Z    Compiling smallvec v1.16.3
+quality	Lint	2026-10-13T19:06:52.7975232Z    Compiling thiserror v2.0.21
+quality	Lint	2026-10-13T19:06:52.9528733Z    Compiling zmij v1.0.23
+quality	Lint	2026-10-13T19:06:53.3446446Z    Compiling serde v1.0.229
+quality	Lint	2026-10-13T19:06:53.3939912Z    Compiling parking_lot_core v0.9.12
+quality	Lint	2026-10-13T19:06:53.7493565Z    Compiling memchr v2.8.3
+quality	Lint	2026-10-13T19:06:53.8200061Z    Compiling typeid v1.0.3
+quality	Lint	2026-10-13T19:06:54.1375736Z    Compiling time-core v0.1.9
+quality	Lint	2026-10-13T19:06:54.4157856Z    Compiling num-conv v0.2.2
+quality	Lint	2026-10-13T19:06:54.6584103Z    Compiling phf_codegen v0.13.1
+quality	Lint	2026-10-13T19:06:54.8289057Z    Compiling itoa v1.0.18
+quality	Lint	2026-10-13T19:06:54.8588345Z    Compiling litemap v0.8.3
+quality	Lint	2026-10-13T19:06:55.0664044Z    Compiling ident_case v1.0.1
+quality	Lint	2026-10-13T19:06:55.1209578Z    Compiling strsim v0.11.1
+quality	Lint	2026-10-13T19:06:55.1943169Z    Compiling writeable v0.6.4
+quality	Lint	2026-10-13T19:06:55.4992778Z    Compiling windows-sys v0.61.2
+quality	Lint	2026-10-13T19:06:55.5865646Z    Compiling utf8_iter v1.0.4
+quality	Lint	2026-10-13T19:06:56.1305781Z    Compiling synstructure v0.14.0
+quality	Lint	2026-10-13T19:06:57.0822353Z    Compiling darling_core v0.24.1
+quality	Lint	2026-10-13T19:06:59.2988028Z    Compiling phf_macros v0.13.1
+quality	Lint	2026-10-13T19:06:59.7312543Z    Compiling zerofrom-derive v0.1.8
+quality	Lint	2026-10-13T19:07:00.5886226Z    Compiling yoke-derive v0.8.4
+quality	Lint	2026-10-13T19:07:02.0638463Z    Compiling zerovec-derive v0.11.6
+quality	Lint	2026-10-13T19:07:02.5184052Z    Compiling displaydoc v0.2.7
+quality	Lint	2026-10-13T19:07:02.8728244Z    Compiling serde_derive v1.0.229
+quality	Lint	2026-10-13T19:07:03.4917956Z    Compiling zerofrom v0.1.8
+quality	Lint	2026-10-13T19:07:03.5777025Z    Compiling thiserror-impl v2.0.21
+quality	Lint	2026-10-13T19:07:03.6385039Z    Compiling yoke v0.8.3
+quality	Lint	2026-10-13T19:07:03.9051493Z    Compiling zerovec v0.11.8
+quality	Lint	2026-10-13T19:07:04.2587693Z    Compiling zerotrie v0.2.5
+quality	Lint	2026-10-13T19:07:04.7064872Z    Compiling erased-serde v0.4.10
+quality	Lint	2026-10-13T19:07:04.8225834Z    Compiling tinystr v0.8.4
+quality	Lint	2026-10-13T19:07:05.0442278Z    Compiling potential_utf v0.1.6
+quality	Lint	2026-10-13T19:07:05.1002780Z    Compiling icu_locale_core v2.3.0
+quality	Lint	2026-10-13T19:07:05.2119298Z    Compiling icu_collections v2.3.0
+quality	Lint	2026-10-13T19:07:06.0046920Z    Compiling darling_macro v0.24.1
+quality	Lint	2026-10-13T19:07:06.5241508Z    Compiling icu_provider v2.3.1
+quality	Lint	2026-10-13T19:07:06.7479539Z    Compiling scopeguard v1.2.0
+quality	Lint	2026-10-13T19:07:06.8364460Z    Compiling new_debug_unreachable v1.0.6
+quality	Lint	2026-10-13T19:07:06.8925313Z    Compiling version_check v0.9.5
+quality	Lint	2026-10-13T19:07:07.0132045Z    Compiling lock_api v0.4.14
+quality	Lint	2026-10-13T19:07:07.0679502Z    Compiling darling v0.24.1
+quality	Lint	2026-10-13T19:07:07.1552239Z    Compiling phf v0.13.1
+quality	Lint	2026-10-13T19:07:07.4350437Z    Compiling string_cache_codegen v0.6.1
+quality	Lint	2026-10-13T19:07:07.5046774Z    Compiling libc v0.2.190
+quality	Lint	2026-10-13T19:07:07.7180336Z    Compiling precomputed-hash v0.1.1
+quality	Lint	2026-10-13T19:07:07.7969065Z    Compiling getrandom v0.4.3
+quality	Lint	2026-10-13T19:07:08.1049035Z    Compiling anyhow v1.0.104
+quality	Lint	2026-10-13T19:07:08.1299520Z    Compiling serde_json v1.0.154
+quality	Lint	2026-10-13T19:07:08.1534329Z    Compiling web_atoms v0.2.6
+quality	Lint	2026-10-13T19:07:08.7398981Z    Compiling parking_lot v0.12.5
+quality	Lint	2026-10-13T19:07:08.9987488Z    Compiling icu_properties v2.3.0
+quality	Lint	2026-10-13T19:07:09.1461222Z    Compiling icu_normalizer v2.3.0
+quality	Lint	2026-10-13T19:07:09.2826381Z    Compiling serde_with_macros v3.24.0
+quality	Lint	2026-10-13T19:07:09.8415795Z    Compiling semver v1.0.28
+quality	Lint	2026-10-13T19:07:10.0615361Z    Compiling winnow v1.0.4
+quality	Lint	2026-10-13T19:07:10.6224655Z    Compiling toml_parser v1.1.5+spec-1.1.0
+quality	Lint	2026-10-13T19:07:10.9684522Z    Compiling idna_adapter v1.2.2
+quality	Lint	2026-10-13T19:07:11.1285587Z    Compiling string_cache v0.9.0
+quality	Lint	2026-10-13T19:07:11.7267478Z    Compiling serde_spanned v1.1.2
+quality	Lint	2026-10-13T19:07:11.7601000Z    Compiling toml_datetime v1.1.2+spec-1.1.0
+quality	Lint	2026-10-13T19:07:11.8480309Z    Compiling toml_writer v1.1.3+spec-1.1.0
+quality	Lint	2026-10-13T19:07:11.8702194Z    Compiling autocfg v1.5.1
+quality	Lint	2026-10-13T19:07:12.1310616Z    Compiling dtoa v1.0.11
+quality	Lint	2026-10-13T19:07:12.1673439Z    Compiling shlex v2.0.1
+quality	Lint	2026-10-13T19:07:12.4002175Z    Compiling log v0.4.34
+quality	Lint	2026-10-13T19:07:12.4761808Z    Compiling find-msvc-tools v0.1.14
+quality	Lint	2026-10-13T19:07:12.5426407Z    Compiling percent-encoding v2.3.2
+quality	Lint	2026-10-13T19:07:12.7655501Z    Compiling form_urlencoded v1.2.2
+quality	Lint	2026-10-13T19:07:12.8619898Z    Compiling indexmap v1.9.3
+quality	Lint	2026-10-13T19:07:12.9590542Z    Compiling dtoa-short v0.3.5
+quality	Lint	2026-10-13T19:07:13.0884072Z    Compiling cc v1.8.0
+quality	Lint	2026-10-13T19:07:13.0918854Z    Compiling toml v1.1.8+spec-1.1.0
+quality	Lint	2026-10-13T19:07:14.0070804Z    Compiling uuid v1.28.0
+quality	Lint	2026-10-13T19:07:14.6588490Z    Compiling idna v1.1.0
+quality	Lint	2026-10-13T19:07:15.2348429Z    Compiling tendril v0.5.1
+quality	Lint	2026-10-13T19:07:15.6679446Z    Compiling cssparser-macros v0.7.1
+quality	Lint	2026-10-13T19:07:15.8008714Z    Compiling derive_more-impl v2.1.1
+quality	Lint	2026-10-13T19:07:15.8877401Z    Compiling windows-interface v0.59.3
+quality	Lint	2026-10-13T19:07:16.1430755Z    Compiling windows-implement v0.60.2
+quality	Lint	2026-10-13T19:07:16.1936109Z    Compiling selectors v0.38.0
+quality	Lint	2026-10-13T19:07:16.7249955Z    Compiling aho-corasick v1.1.5
+quality	Lint	2026-10-13T19:07:17.0224235Z     Checking windows-strings v0.5.1
+quality	Lint	2026-10-13T19:07:17.2492631Z     Checking windows-result v0.4.1
+quality	Lint	2026-10-13T19:07:17.4216440Z    Compiling alloc-no-stdlib v3.0.0
+quality	Lint	2026-10-13T19:07:17.5287845Z    Compiling camino v1.2.6
+quality	Lint	2026-10-13T19:07:17.5503324Z    Compiling regex-syntax v0.8.11
+quality	Lint	2026-10-13T19:07:18.1315252Z    Compiling bitflags v2.13.2
+quality	Lint	2026-10-13T19:07:18.8919215Z    Compiling alloc-stdlib v0.3.0
+quality	Lint	2026-10-13T19:07:18.9991822Z     Checking windows-core v0.62.2
+quality	Lint	2026-10-13T19:07:19.4907142Z    Compiling derive_more v2.1.1
+quality	Lint	2026-10-13T19:07:19.6337232Z    Compiling cssparser v0.37.0
+quality	Lint	2026-10-13T19:07:20.0415495Z    Compiling vswhom-sys v0.1.3
+quality	Lint	2026-10-13T19:07:20.4104514Z    Compiling regex-automata v0.4.18
+quality	Lint	2026-10-13T19:07:21.2593188Z    Compiling markup5ever v0.39.0
+quality	Lint	2026-10-13T19:07:21.5910712Z    Compiling url v2.5.8
+quality	Lint	2026-10-13T19:07:22.2159224Z    Compiling winapi-util v0.1.11
+quality	Lint	2026-10-13T19:07:22.4982307Z    Compiling serde_derive_internals v0.29.1
+quality	Lint	2026-10-13T19:07:23.0110239Z    Compiling servo_arc v0.4.3
+quality	Lint	2026-10-13T19:07:23.0815526Z    Compiling deranged v0.5.8
+quality	Lint	2026-10-13T19:07:23.2310976Z    Compiling web-time v1.1.0
+quality	Lint	2026-10-13T19:07:23.3428511Z    Compiling hashbrown v0.17.1
+quality	Lint	2026-10-13T19:07:24.1408925Z    Compiling equivalent v1.0.2
+quality	Lint	2026-10-13T19:07:24.2430911Z    Compiling powerfmt v0.2.1
+quality	Lint	2026-10-13T19:07:24.2593498Z    Compiling fnv v1.0.7
+quality	Lint	2026-10-13T19:07:24.3402018Z    Compiling hashbrown v0.12.3
+quality	Lint	2026-10-13T19:07:24.4427901Z    Compiling rustc-hash v2.1.3
+quality	Lint	2026-10-13T19:07:24.5568000Z    Compiling bit-vec v0.8.0
+quality	Lint	2026-10-13T19:07:24.8665352Z    Compiling schemars v0.8.22
+quality	Lint	2026-10-13T19:07:24.9718062Z    Compiling time v0.3.55
+quality	Lint	2026-10-13T19:07:25.1492403Z    Compiling bit-set v0.8.0
+quality	Lint	2026-10-13T19:07:25.7519366Z    Compiling cfb v0.14.0
+quality	Lint	2026-10-13T19:07:26.2538070Z    Compiling indexmap v2.14.2
+quality	Lint	2026-10-13T19:07:26.8861583Z    Compiling schemars_derive v0.8.22
+quality	Lint	2026-10-13T19:07:27.0137065Z    Compiling regex v1.13.1
+quality	Lint	2026-10-13T19:07:27.6845055Z    Compiling same-file v1.0.6
+quality	Lint	2026-10-13T19:07:27.8447410Z    Compiling html5ever v0.39.0
+quality	Lint	2026-10-13T19:07:28.5837589Z    Compiling brotli-decompressor v6.0.1
+quality	Lint	2026-10-13T19:07:29.0737142Z    Compiling jsonptr v0.7.1
+quality	Lint	2026-10-13T19:07:29.3482165Z    Compiling cargo-platform v0.1.9
+quality	Lint	2026-10-13T19:07:29.7894513Z    Compiling quick-xml v0.42.0
+quality	Lint	2026-10-13T19:07:30.0067463Z    Compiling dunce v1.0.5
+quality	Lint	2026-10-13T19:07:30.1763772Z    Compiling simd-adler32 v0.3.10
+quality	Lint	2026-10-13T19:07:30.3508826Z    Compiling bytes v1.12.1
+quality	Lint	2026-10-13T19:07:30.4174285Z    Compiling foldhash v0.2.0
+quality	Lint	2026-10-13T19:07:30.6261997Z    Compiling base64 v0.23.1
+quality	Lint	2026-10-13T19:07:31.6594896Z    Compiling dyn-clone v1.0.20
+quality	Lint	2026-10-13T19:07:31.8802548Z    Compiling http v1.5.0
+quality	Lint	2026-10-13T19:07:31.9472218Z    Compiling plist v1.10.1
+quality	Lint	2026-10-13T19:07:33.2619085Z    Compiling dom_query v0.28.0
+quality	Lint	2026-10-13T19:07:34.0498705Z    Compiling brotli v9.0.0
+quality	Lint	2026-10-13T19:07:35.1139193Z    Compiling cargo_metadata v0.19.2
+quality	Lint	2026-10-13T19:07:35.9266939Z    Compiling json-patch v4.2.0
+quality	Lint	2026-10-13T19:07:36.6280394Z    Compiling serde-untagged v0.1.9
+quality	Lint	2026-10-13T19:07:36.9573563Z    Compiling walkdir v2.5.0
+quality	Lint	2026-10-13T19:07:37.5060781Z    Compiling urlpattern v0.6.0
+quality	Lint	2026-10-13T19:07:37.8563885Z    Compiling infer v0.22.0
+quality	Lint	2026-10-13T19:07:38.6609557Z    Compiling serde_with v3.24.0
+quality	Lint	2026-10-13T19:07:39.1986792Z    Compiling generic-array v0.14.7
+quality	Lint	2026-10-13T19:07:39.2965355Z     Checking windows-threading v0.2.1
+quality	Lint	2026-10-13T19:07:39.3839041Z    Compiling ctor v1.0.13
+quality	Lint	2026-10-13T19:07:39.5096533Z    Compiling adler2 v2.0.1
+quality	Lint	2026-10-13T19:07:39.6113357Z    Compiling crc32fast v1.5.2
+quality	Lint	2026-10-13T19:07:39.6253184Z    Compiling glob v0.3.4
+quality	Lint	2026-10-13T19:07:39.9954494Z     Checking windows-future v0.3.2
+quality	Lint	2026-10-13T19:07:40.2667566Z     Checking windows-numerics v0.3.1
+quality	Lint	2026-10-13T19:07:40.4443385Z     Checking windows-collections v0.3.2
+quality	Lint	2026-10-13T19:07:40.6290082Z    Compiling vswhom v0.1.0
+quality	Lint	2026-10-13T19:07:40.6731076Z    Compiling rustc_version v0.4.1
+quality	Lint	2026-10-13T19:07:40.8023837Z    Compiling winreg v0.56.0
+quality	Lint	2026-10-13T19:07:41.1178777Z    Compiling time-macros v0.2.32
+quality	Lint	2026-10-13T19:07:41.4974706Z    Compiling tauri-utils v2.10.1
+quality	Lint	2026-10-13T19:07:41.6418010Z    Compiling typenum v1.20.1
+quality	Lint	2026-10-13T19:07:43.1552443Z    Compiling option-ext v0.2.0
+quality	Lint	2026-10-13T19:07:43.6148802Z    Compiling dirs-sys v0.5.0
+quality	Lint	2026-10-13T19:07:44.7896298Z     Checking windows v0.62.2
+quality	Lint	2026-10-13T19:07:45.1573090Z    Compiling embed-resource v3.0.12
+quality	Lint	2026-10-13T19:07:46.3741906Z    Compiling miniz_oxide v0.9.1
+quality	Lint	2026-10-13T19:07:47.8964564Z    Compiling webview2-com-sys v0.39.1
+quality	Lint	2026-10-13T19:07:48.5716280Z     Checking raw-window-handle v0.6.2
+quality	Lint	2026-10-13T19:07:48.8638093Z    Compiling heck v0.5.0
+quality	Lint	2026-10-13T19:07:50.8217864Z    Compiling crossbeam-utils v0.8.23
+quality	Lint	2026-10-13T19:07:52.2417783Z    Compiling flate2 v1.1.10
+quality	Lint	2026-10-13T19:07:53.7518628Z    Compiling tauri-winres v0.3.6
+quality	Lint	2026-10-13T19:07:54.2707308Z    Compiling dirs v7.0.0
+quality	Lint	2026-10-13T19:07:54.4139208Z    Compiling miniz_oxide v0.8.9
+quality	Lint	2026-10-13T19:07:55.0015920Z    Compiling fdeflate v0.3.7
+quality	Lint	2026-10-13T19:07:55.7399896Z    Compiling cargo_toml v1.0.1
+quality	Lint	2026-10-13T19:07:55.7873906Z     Checking dpi v0.1.2
+quality	Lint	2026-10-13T19:07:56.2636582Z    Compiling cookie v0.18.2
+quality	Lint	2026-10-13T19:08:00.5840605Z    Compiling tauri-build v2.7.2
+quality	Lint	2026-10-13T19:08:05.4871889Z    Compiling crypto-common v0.1.7
+quality	Lint	2026-10-13T19:08:05.5562980Z    Compiling block-buffer v0.10.4
+quality	Lint	2026-10-13T19:08:05.7925912Z    Compiling webview2-com-macros v0.8.1
+quality	Lint	2026-10-13T19:08:06.8705385Z     Checking windows-version v0.1.7
+quality	Lint	2026-10-13T19:08:06.9805133Z     Checking pin-project-lite v0.2.17
+quality	Lint	2026-10-13T19:08:07.2960896Z    Compiling bitflags v1.3.2
+quality	Lint	2026-10-13T19:08:07.7347688Z    Compiling png v0.17.16
+quality	Lint	2026-10-13T19:08:09.4128935Z    Compiling digest v0.10.7
+quality	Lint	2026-10-13T19:08:09.9457403Z     Checking crossbeam-channel v0.5.17
+quality	Lint	2026-10-13T19:08:14.1554311Z    Compiling tauri-runtime v2.12.1
+quality	Lint	2026-10-13T19:08:14.4299520Z     Checking tracing-core v0.1.36
+quality	Lint	2026-10-13T19:08:14.6059956Z     Checking once_cell v1.21.4
+quality	Lint	2026-10-13T19:08:14.8949692Z    Compiling byteorder v1.5.0
+quality	Lint	2026-10-13T19:08:15.0319924Z    Compiling wry v0.57.0
+quality	Lint	2026-10-13T19:08:15.2059927Z    Compiling cpufeatures v0.2.17
+quality	Lint	2026-10-13T19:08:15.3040680Z    Compiling sha2 v0.10.9
+quality	Lint	2026-10-13T19:08:15.5001646Z    Compiling ico v0.5.0
+quality	Lint	2026-10-13T19:08:15.9247862Z     Checking tracing v0.1.44
+quality	Lint	2026-10-13T19:08:16.1606295Z    Compiling tauri v2.12.3
+quality	Lint	2026-10-13T19:08:16.7182770Z    Compiling png v0.18.1
+quality	Lint	2026-10-13T19:08:17.8936945Z    Compiling tauri-runtime-wry v2.12.1
+quality	Lint	2026-10-13T19:08:18.1629452Z    Compiling muda v0.20.0
+quality	Lint	2026-10-13T19:08:18.4131952Z     Checking unicode-segmentation v1.13.3
+quality	Lint	2026-10-13T19:08:18.7377509Z    Compiling getrandom v0.3.4
+quality	Lint	2026-10-13T19:08:18.9466408Z    Compiling tauri-codegen v2.7.2
+quality	Lint	2026-10-13T19:08:19.4547315Z     Checking softbuffer v0.4.8
+quality	Lint	2026-10-13T19:08:19.7304179Z     Checking keyboard-types v0.8.3
+quality	Lint	2026-10-13T19:08:21.0291015Z    Compiling serialize-to-javascript-impl v0.1.2
+quality	Lint	2026-10-13T19:08:21.5707961Z     Checking serialize-to-javascript v0.1.2
+quality	Lint	2026-10-13T19:08:22.2321474Z    Compiling tauri-macros v2.7.2
+quality	Lint	2026-10-13T19:08:22.5670510Z    Compiling agency-cv-shell v0.1.0 (D:\a\CV-Manager\CV-Manager\apps\desktop\src-tauri)
+quality	Lint	2026-10-13T19:08:22.7501450Z     Checking tokio v1.53.2
+quality	Lint	2026-10-13T19:08:23.9639007Z     Checking window-vibrancy v0.8.1
+quality	Lint	2026-10-13T19:08:24.1687752Z    Compiling serde_repr v0.1.21
+quality	Lint	2026-10-13T19:08:24.7170349Z     Checking mime v0.3.17
+quality	Lint	2026-10-13T19:08:28.4473271Z     Checking tao v0.37.1
+quality	Lint	2026-10-13T19:08:31.3362599Z     Checking webview2-com v0.39.1
+quality	Lint	2026-10-13T19:08:40.4051411Z     Finished `dev` profile [unoptimized + debuginfo] target(s) in 1m 54s
+quality	Types	﻿2026-10-13T19:08:40.5847054Z ##[group]Run node scripts/tasks.mjs typecheck
+quality	Types	2026-10-13T19:08:40.5847485Z ^[[36;1mnode scripts/tasks.mjs typecheck^[[0m
+quality	Types	2026-10-13T19:08:40.5921725Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+quality	Types	2026-10-13T19:08:40.5922089Z env:
+quality	Types	2026-10-13T19:08:40.5922360Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Types	2026-10-13T19:08:40.5923120Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.13.15\x64/lib/pkgconfig
+quality	Types	2026-10-13T19:08:40.5923585Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Types	2026-10-13T19:08:40.5923980Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Types	2026-10-13T19:08:40.5924370Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.15\x64
+quality	Types	2026-10-13T19:08:40.5924710Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+quality	Types	2026-10-13T19:08:40.5924983Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+quality	Types	2026-10-13T19:08:40.5925256Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+quality	Types	2026-10-13T19:08:40.5925529Z ##[endgroup]
+quality	Types	2026-10-13T19:08:41.5285017Z Generating route types...
+quality	Types	2026-10-13T19:08:41.5472406Z ✓ Types generated successfully
+quality	Types	2026-10-13T19:09:13.1116299Z tests\auth\test_identity.py:28: error: Returning Any from function declared to return "int"  [no-any-return]
+quality	Types	2026-10-13T19:09:13.1938725Z Found 1 error in 1 file (checked 48 source files)
+quality	Types	2026-10-13T19:09:13.3384370Z ##[error]Process completed with exit code 1.
+quality	Post Checkout reviewed commit	﻿2026-10-13T19:09:13.3686008Z Post job cleanup.
+quality	Post Checkout reviewed commit	2026-10-13T19:09:13.5851893Z [command]"C:\Program Files\Git\bin\git.exe" version
+quality	Post Checkout reviewed commit	2026-10-13T19:09:13.6151700Z git version 2.55.0.windows.5
+quality	Post Checkout reviewed commit	2026-10-13T19:09:13.6222498Z Temporarily overriding HOME='D:\a\_temp\99f9f23b-ed3a-40d5-898d-a54658ecc1fa' before making global git config changes
+quality	Post Checkout reviewed commit	2026-10-13T19:09:13.6223603Z Adding repository directory to the temporary git global config as a safe directory
+quality	Post Checkout reviewed commit	2026-10-13T19:09:13.6234023Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\CV-Manager\CV-Manager
+quality	Post Checkout reviewed commit	2026-10-13T19:09:13.6545127Z Removing SSH command configuration
+quality	Post Checkout reviewed commit	2026-10-13T19:09:13.6556794Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+quality	Post Checkout reviewed commit	2026-10-13T19:09:13.6879318Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+quality	Post Checkout reviewed commit	2026-10-13T19:09:14.2454012Z Removing HTTP extra header
+quality	Post Checkout reviewed commit	2026-10-13T19:09:14.2465071Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+quality	Post Checkout reviewed commit	2026-10-13T19:09:14.2765478Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+quality	Post Checkout reviewed commit	2026-10-13T19:09:14.8100432Z Removing includeIf entries pointing to credentials config files
+quality	Post Checkout reviewed commit	2026-10-13T19:09:14.8117627Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+quality	Post Checkout reviewed commit	2026-10-13T19:09:14.8425873Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+quality	Complete job	﻿2026-10-13T19:09:15.4275925Z Cleaning up orphan processes

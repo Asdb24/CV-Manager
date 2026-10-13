@@ -1,6 +1,6 @@
 # Hồ sơ tuyển dụng
 
-Nền tảng quản lý CV của một đơn vị tuyển dụng: khung Windows Tauri, website công khai Next.js, API/worker và cấu hình có kiểm tra. Phases 01–04 đã PASS trong phạm vi đã kiểm chứng. Phase 05 đang hoàn tất roadmap 45 phase và quality CI trên GitHub. Giao diện hiện chưa hỗ trợ đăng nhập, hồ sơ, điểm đánh giá hoặc nộp CV. Các chức năng này được thực hiện ở đúng phase sở hữu.
+Nền tảng quản lý CV của một đơn vị tuyển dụng: khung Windows Tauri, website công khai Next.js, API/worker và cấu hình có kiểm tra. Phases 01–05 đã PASS trong phạm vi đã kiểm chứng. Roadmap 45 phase và quality CI trên GitHub đã có bằng chứng; Phase 06 là bước tiếp theo khi có prompt riêng. Giao diện hiện chưa hỗ trợ đăng nhập, hồ sơ, điểm đánh giá hoặc nộp CV. Các chức năng này được thực hiện ở đúng phase sở hữu.
 
 Đọc [trạng thái hiện tại](docs/STATUS.md), [kiến trúc](docs/architecture/ARCHITECTURE.md), [cấu hình](docs/architecture/CONFIGURATION.md), [luồng dữ liệu](docs/architecture/DATA_FLOW.md) và [cách tái lập kiểm tra](docs/architecture/REPRODUCIBILITY.md), [roadmap 45 phase](docs/architecture/PHASE_ROADMAP.md) và [quality CI](docs/ci/QUALITY_WORKFLOW.md). Đây là môi trường phát triển dùng dữ liệu tổng hợp; chưa phải bộ cài phát hành.
 
